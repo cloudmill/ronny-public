@@ -7,7 +7,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
-    <script type="module" crossorigin src="assets/index-3ec0e910.js"></script>
+    <script type="module" crossorigin src="assets/index-f2b0191c.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
@@ -66,7 +66,7 @@
           </div>
         </div>
       </div>
-      <header class="header --message --white">
+      <header class="header --white --message">
         <div class="header__inner">
           <div class="header-block">
             <div class="message">
@@ -348,8 +348,15 @@
                             </svg>
                             <p>удалить</p>
                           </button>
-                          <input type="checkbox" id="customCheckbox"/>
-                          <label for="customCheckbox">Адрес по умолчанию</label>
+                          <div class="checkbox">
+                            <label class="container">
+                              <input type="checkbox"/><span class="checkmark">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M20 7L14.6093 13.4688C12.4732 16.0322 11.4051 17.3139 10 17.3139C8.59488 17.3139 7.52681 16.0322 5.39067 13.4688L4 11.8" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                                </svg></span>
+                              <p>Адрес по умолчанию</p>
+                            </label>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -429,8 +436,8 @@
         </div>
       </div>
       <div class="footer footer-mt">
+        <div class="footer__decor"></div>
         <div class="footer__inner">
-          <div class="footer__decor"></div>
           <div class="footer__desktop">
             <div class="footer__left"> 
               <div class="footer__left-row">

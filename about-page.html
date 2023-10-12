@@ -7,7 +7,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
-    <script type="module" crossorigin src="assets/index-3ec0e910.js"></script>
+    <script type="module" crossorigin src="assets/index-f2b0191c.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
@@ -66,7 +66,7 @@
           </div>
         </div>
       </div>
-      <header class="header --message --white">
+      <header class="header --white --message">
         <div class="header__inner">
           <div class="header-block">
             <div class="message">
@@ -300,7 +300,7 @@
               <div class="breadcrumb"><a href="#">Главная</a><span>•</span></div>
               <div class="breadcrumb active"><a href="#">Корзина</a><span>•</span></div>
             </div>
-            <h1 class="about-page__title">СТУДИЯ ТРИКОТАЖА RONNNY</h1>
+            <h1 class="about-page__title">СТУДИЯ ТРИКОТАЖА <br> RONNNY</h1>
             <div class="swiper-twoSlides mt-section about-page__slider">
               <div class="container"> 
                 <div class="swiper-twoSlides__inner"> 
@@ -350,7 +350,7 @@
                 </div>
               </div>
             </div>
-            <h2 class="title about-page__subtitle">Наша компания <br> была основана в 2014 году</h2>
+            <h2 class="title about-page__title2">Наша компания <br> была основана в 2014 году</h2>
             <div class="about-page__box"> 
               <div class="about-page__decor"> 
                 <svg width="228" height="454" viewBox="0 0 228 454" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -359,7 +359,9 @@
                 </svg>
               </div>
               <div class="about-page__left">
-                <div class="about-page__left-img"> </div>
+                <div class="about-page__left-video"> 
+                  <video src="mp4/about.mp4" autoplay loop muted> </video>
+                </div>
                 <div class="about-page__block">
                   <p class="about-page__subtitle">По мере накопления компетенций модели становились сложнее и качественнее, росло их разнообразие</p>
                   <div class="about-page__block-text"> 
@@ -375,7 +377,12 @@
                     <p class="about-page__text">Поэтому, после приобретения первой и единственной на тот момент немецкой <span> вязальной машины Stoll </span> мы встали на путь изучения ее возможностей.Начальными продуктами стали пледы и наволочки, затем появилась женская одежда, ещё чуть позже — мужская и детская.</p>
                   </div>
                 </div>
-                <div class="about-page__right-img"> </div>
+                <div class="about-page__right-img"> 
+                  <picture class="picture">
+                    <source class="lazyload" type="image/webp" srcset="images/image 36.webp 1x" alt="image 36.jpg" media="(min-width: 769px)"/>
+                    <source class="lazyload" type="image/jpeg" srcset="images/image 36.jpg 1x" alt="image 36.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/image 36.jpg" alt="image 36.jpg"/>
+                  </picture>
+                </div>
               </div>
             </div>
           </div>
@@ -470,8 +477,8 @@
         </div>
       </section>
       <div class="footer footer-mt">
+        <div class="footer__decor"></div>
         <div class="footer__inner">
-          <div class="footer__decor"></div>
           <div class="footer__desktop">
             <div class="footer__left"> 
               <div class="footer__left-row">
