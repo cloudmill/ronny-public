@@ -3,7 +3,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>bayers-search</title>
+    <title>subscription</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
@@ -574,99 +574,116 @@
           </div>
         </div>
       </header>
-      <main>
+      <section class="subscription">
         <div class="container">
-          <div class="breadcrumbs">
-            <div class="breadcrumb"><a href="#">Главная</a><span>•</span></div>
-            <div class="breadcrumb"><a href="#">Покупателям</a><span>•</span></div>
-            <div class="breadcrumb active"><a href="#">Определить заказ</a><span>•</span></div>
+          <div class="lk-response">
+            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="Tick">
+                <path id="Vector" d="M13 1.25L8.95699 6.10161C7.35489 8.02413 6.55384 8.98539 5.5 8.98539C4.44616 8.98539 3.64511 8.02413 2.043 6.10161L1 4.85" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+              </g>
+            </svg>
+            <p>данные успешно обновлены</p>
           </div>
-          <section class="bayers">
-            <div class="bayers__inner">
-              <h1 class="title bayers__title">Покупателям</h1>
-              <ul class="bayers-tubs">
-                <li class="bayers-tubs__item"> <a>Доставка</a></li>
-                <li class="bayers-tubs__item"> <a>Оплата</a></li>
-                <li class="bayers-tubs__item"> <a>Возврат</a></li>
-                <li class="bayers-tubs__item"> <a>Размерная таблица</a></li>
-                <li class="bayers-tubs__item active"> <a>Отследить заказ  </a></li>
-              </ul>
-              <div class="bayers__content"> 
-                <div class="bayers-search">
-                  <div class="bayers-search__inner"> 
-                    <h2 class="bayers-search__title title2">Где сейчас находится мой заказ?</h2>
-                    <form class="bayers-search__form">
-                      <div class="bayers-search__form-input">
-                        <div class="input-wrapper input-wrapper-dark" data-input-parent="">
-                          <div class="input-wrapper__placeholder">Номер заказа</div>
-                          <input class="input input-dark" data-input="" required="required" placeholder="Номер заказа"/>
-                          <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
-                            <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                          </svg>
-                        </div>
+          <div class="subscription__inner"> 
+            <div class="breadcrumbs">
+              <div class="breadcrumb"><a href="#">Главная</a><span>•</span></div>
+              <div class="breadcrumb active"><a href="#">Корзина</a><span>•</span></div>
+            </div>
+            <div class="subscription__box">
+              <div class="subscription__sidebar"> 
+                <sidebar class="sidebar-lk">
+                  <h2 class="sidebar-lk__title">Здравствуйте, <span>Спартак</span></h2>
+                  <ul class="sidebar-lk__list"> 
+                    <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Мои заказы</a></li>
+                    <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Мой гардероб</a></li>
+                    <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Мои данные</a></li>
+                    <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Мои адреса</a></li>
+                    <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Избранное</a></li>
+                    <li class="sidebar-lk__item active"><a class="sidebar-lk__link" href="#">Управление рассылками</a></li>
+                    <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Выйти</a></li>
+                  </ul>
+                </sidebar>
+              </div>
+              <div class="subscription__block"> 
+                <h1 class="title subscription__title">Управление рассылками</h1>
+                <p class="subscription__description">Здесь Вы можете настроить темы рассылок или отказаться от рассылки совсем</p>
+                <form class="subscription__form">
+                  <div class="checkbox">
+                    <label class="container">
+                      <input type="checkbox" data-subscription="sms"/><span class="checkmark">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M20 7L14.6093 13.4688C12.4732 16.0322 11.4051 17.3139 10 17.3139C8.59488 17.3139 7.52681 16.0322 5.39067 13.4688L4 11.8" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                        </svg></span>
+                      <p>Я хочу получать SMS</p>
+                    </label>
+                  </div>
+                  <div class="subscription__row">
+                    <div class="checkbox">
+                      <label class="container">
+                        <input type="checkbox" data-subscription="email"/><span class="checkmark">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 7L14.6093 13.4688C12.4732 16.0322 11.4051 17.3139 10 17.3139C8.59488 17.3139 7.52681 16.0322 5.39067 13.4688L4 11.8" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                          </svg></span>
+                        <p>Я хочу получать E-mail</p>
+                      </label>
+                    </div>
+                    <div class="subscription__accordion-button"> 
+                      <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Vector">
+                          <path id="vector-5" d="M1 1.9165L6 6.9165L11 1.9165" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="subscription__accordion-list">
+                    <div class="subscription__accordion-inner">
+                      <div class="checkbox">
+                        <label class="container">
+                          <input type="checkbox"/><span class="checkmark">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M20 7L14.6093 13.4688C12.4732 16.0322 11.4051 17.3139 10 17.3139C8.59488 17.3139 7.52681 16.0322 5.39067 13.4688L4 11.8" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                            </svg></span>
+                          <p>Поступление новых моделей</p>
+                        </label>
                       </div>
-                    </form>
-                    <div class="bayers-search__results">
-                      <div class="bayers-search__block">
-                        <div class="route">
-                          <div class="route__left"><span class="route__circle"> </span><span class="route__line"></span></div>
-                          <div class="route__right">
-                            <p class="route__text"> Поступил в сортировочный центр, Челябинск</p>
-                            <p class="route__date">22.05.2023, 13:38</p>
-                          </div>
-                        </div>
-                        <div class="route">
-                          <div class="route__left"><span class="route__circle"> </span><span class="route__line"></span></div>
-                          <div class="route__right">
-                            <p class="route__text">Принято в сортировочном центре, Челябинск</p>
-                            <p class="route__date">22.05.2023, 13:38</p>
-                          </div>
-                        </div>
-                        <div class="route">
-                          <div class="route__left"><span class="route__circle"> </span><span class="route__line"></span></div>
-                          <div class="route__right">
-                            <p class="route__text">Отсортирован в сортировочном центре, Челябинск</p>
-                            <p class="route__date">22.05.2023, 13:38</p>
-                          </div>
-                        </div>
-                        <div class="route active">
-                          <div class="route__left"><span class="route__circle"> </span><span class="route__line"></span></div>
-                          <div class="route__right">
-                            <p class="route__text">Принято в сортировочном центре, Челябинск</p>
-                            <p class="route__date">22.05.2023, 13:38</p>
-                          </div>
-                        </div>
-                        <div class="route empty">
-                          <div class="route__left"><span class="route__circle"> </span><span class="route__line"></span></div>
-                          <div class="route__right">
-                            <p class="route__text">Принято в сортировочном центре, Челябинск</p>
-                            <p class="route__date">22.05.2023, 13:38</p>
-                          </div>
-                        </div>
+                      <div class="checkbox">
+                        <label class="container">
+                          <input type="checkbox"/><span class="checkmark">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M20 7L14.6093 13.4688C12.4732 16.0322 11.4051 17.3139 10 17.3139C8.59488 17.3139 7.52681 16.0322 5.39067 13.4688L4 11.8" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                            </svg></span>
+                          <p>Скидки, акции и распродажи</p>
+                        </label>
                       </div>
-                      <div class="bayers-search__date"> 
-                        <div class="bayers-search__date-left">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
-                            <path d="M13.6531 3.41024L6.31062 7.49404C4.64687 8.41529 3.28564 10.7253 3.28564 12.6228V20.3915C3.28564 22.289 4.64687 24.599 6.31062 25.5203L13.6531 29.6041C15.2206 30.4703 17.7919 30.4703 19.3594 29.6041L26.7019 25.5203C28.3656 24.599 29.7269 22.289 29.7269 20.3915V12.6228C29.7269 10.7253 28.3656 8.41529 26.7019 7.49404L19.3594 3.41024C17.7781 2.53024 15.2206 2.53024 13.6531 3.41024Z" fill="#C19F86"></path>
-                            <path d="M4.3584 10.2302L16.4996 17.2565L28.5584 10.2714" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M16.4995 29.7139V17.2427" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M23.3749 18.2055V13.173L10.3262 5.63794" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                          </svg>
-                        </div>
-                        <div class="bayers-search__date-right">
-                          <p class="bayers-search__date-text">Доставка ожидается</p>
-                          <p class="bayers-search__date-date">22.05.2023</p>
-                        </div>
+                      <div class="checkbox">
+                        <label class="container">
+                          <input type="checkbox"/><span class="checkmark">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M20 7L14.6093 13.4688C12.4732 16.0322 11.4051 17.3139 10 17.3139C8.59488 17.3139 7.52681 16.0322 5.39067 13.4688L4 11.8" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                            </svg></span>
+                          <p>Персональные предложения</p>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label class="container">
+                          <input type="checkbox"/><span class="checkmark">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M20 7L14.6093 13.4688C12.4732 16.0322 11.4051 17.3139 10 17.3139C8.59488 17.3139 7.52681 16.0322 5.39067 13.4688L4 11.8" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                            </svg></span>
+                          <p>Новости</p>
+                        </label>
                       </div>
                     </div>
                   </div>
-                </div>
+                  <div class="subscription__button">
+                    <button class="btn" disabled="true">Обновить</button>
+                  </div>
+                </form>
               </div>
             </div>
-          </section>
+          </div>
         </div>
-      </main>
+      </section>
       <div class="footer footer-mt">
         <div class="footer__decor"></div>
         <div class="footer__inner">

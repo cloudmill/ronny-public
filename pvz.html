@@ -3,7 +3,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>bayers-search</title>
+    <title>pvz</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
@@ -574,99 +574,321 @@
           </div>
         </div>
       </header>
-      <main>
+      <div class="modal" data-modal="lk-delete">
+        <div class="overlay"> </div>
+        <div class="modal__inner">
+          <div class="modal__close">
+            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="Add">
+                <path id="Vector" d="M9.57191 9.57191L28.4281 28.4281M9.57191 28.4281L19 19L28.4281 9.5719" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+              </g>
+            </svg>
+          </div>
+          <div class="address-delete-modal">
+            <p class="address-delete-modal__title"> удалить этот адрес?</p>
+            <div class="address-delete-modal__bottom"> 
+              <button class="btn btn_white address-delete-modal__close">Нет</button>
+              <button class="btn address-delete-modal__ok">да</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="overlay"></div>
+        <div class="sidebar__inner">
+          <div class="sidebar-map" data-sidebar="map">
+            <div class="sidebar-map__inner">
+              <button class="sidebar__close btn-sidebar-close" data-sidebar-close="map">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.5719 10.5721L29.4281 29.4283M10.5719 29.4283L20 20.0002L29.4281 10.5721" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                </svg>
+              </button>
+              <div class="sidebar-map__left">
+                <div class="sidebar-map__top"> 
+                  <h3 class="sidebar-map__top__title">Пункты выдачи в г. Москва</h3>
+                  <div class="input-wrapper" data-input-parent="">
+                    <div class="input-wrapper__placeholder">введите адрес</div>
+                    <input class="input" data-input="" required="required" name="" placeholder="введите адрес"/>
+                    <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
+                      <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="sidebar-map__list">
+                  <div class="sidebar-map__item">
+                    <p class="sidebar-map__item-title">CDEK</p>
+                    <p class="sidebar-map__item-address">ул. Черняховского, 19</p>
+                    <div class="sidebar-map__item-time">
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Time Circle 6">
+                          <g id="Vector">
+                            <path d="M4.47639 1.87676C4.71898 1.68269 4.75831 1.32871 4.56424 1.08613C4.37017 0.843545 4.01619 0.804214 3.77361 0.998282L1.89861 2.49828C1.65602 2.69235 1.61669 3.04633 1.81076 3.28891C2.00483 3.5315 2.35881 3.57083 2.60139 3.37676L4.47639 1.87676Z" fill="#62215B"></path>
+                            <path d="M14.2264 0.998282C13.9838 0.804214 13.6298 0.843545 13.4358 1.08613C13.2417 1.32871 13.281 1.68269 13.5236 1.87676L15.3986 3.37676C15.6412 3.57083 15.9952 3.5315 16.1892 3.28891C16.3833 3.04633 16.344 2.69235 16.1014 2.49828L14.2264 0.998282Z" fill="#62215B"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.43752C4.5472 1.43752 0.9375 5.04723 0.9375 9.50002C0.9375 13.9528 4.5472 17.5625 9 17.5625C13.4528 17.5625 17.0625 13.9528 17.0625 9.50002C17.0625 5.04723 13.4528 1.43752 9 1.43752ZM9.5625 6.50002C9.5625 6.18936 9.31066 5.93752 9 5.93752C8.68934 5.93752 8.4375 6.18936 8.4375 6.50002L8.4375 9.12502C8.4375 10.057 9.19302 10.8125 10.125 10.8125H11.25C11.5607 10.8125 11.8125 10.5607 11.8125 10.25C11.8125 9.93936 11.5607 9.68752 11.25 9.68752H10.125C9.81434 9.68752 9.5625 9.43568 9.5625 9.12502L9.5625 6.50002Z" fill="#62215B"></path>
+                          </g>
+                        </g>
+                      </svg>
+                      <p>Режим работы 10:00-21:00</p>
+                    </div>
+                  </div>
+                  <div class="sidebar-map__item"> 
+                    <p class="sidebar-map__item-title">CDEK</p>
+                    <p class="sidebar-map__item-address">ул. Черняховского, 19</p>
+                    <div class="sidebar-map__item-time">
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Time Circle 6">
+                          <g id="Vector">
+                            <path d="M4.47639 1.87676C4.71898 1.68269 4.75831 1.32871 4.56424 1.08613C4.37017 0.843545 4.01619 0.804214 3.77361 0.998282L1.89861 2.49828C1.65602 2.69235 1.61669 3.04633 1.81076 3.28891C2.00483 3.5315 2.35881 3.57083 2.60139 3.37676L4.47639 1.87676Z" fill="#62215B"></path>
+                            <path d="M14.2264 0.998282C13.9838 0.804214 13.6298 0.843545 13.4358 1.08613C13.2417 1.32871 13.281 1.68269 13.5236 1.87676L15.3986 3.37676C15.6412 3.57083 15.9952 3.5315 16.1892 3.28891C16.3833 3.04633 16.344 2.69235 16.1014 2.49828L14.2264 0.998282Z" fill="#62215B"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.43752C4.5472 1.43752 0.9375 5.04723 0.9375 9.50002C0.9375 13.9528 4.5472 17.5625 9 17.5625C13.4528 17.5625 17.0625 13.9528 17.0625 9.50002C17.0625 5.04723 13.4528 1.43752 9 1.43752ZM9.5625 6.50002C9.5625 6.18936 9.31066 5.93752 9 5.93752C8.68934 5.93752 8.4375 6.18936 8.4375 6.50002L8.4375 9.12502C8.4375 10.057 9.19302 10.8125 10.125 10.8125H11.25C11.5607 10.8125 11.8125 10.5607 11.8125 10.25C11.8125 9.93936 11.5607 9.68752 11.25 9.68752H10.125C9.81434 9.68752 9.5625 9.43568 9.5625 9.12502L9.5625 6.50002Z" fill="#62215B"></path>
+                          </g>
+                        </g>
+                      </svg>
+                      <p>Режим работы 10:00-21:00</p>
+                    </div>
+                  </div>
+                  <div class="sidebar-map__item"> 
+                    <p class="sidebar-map__item-title">CDEK</p>
+                    <p class="sidebar-map__item-address">ул. Черняховского, 19</p>
+                    <div class="sidebar-map__item-time">
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Time Circle 6">
+                          <g id="Vector">
+                            <path d="M4.47639 1.87676C4.71898 1.68269 4.75831 1.32871 4.56424 1.08613C4.37017 0.843545 4.01619 0.804214 3.77361 0.998282L1.89861 2.49828C1.65602 2.69235 1.61669 3.04633 1.81076 3.28891C2.00483 3.5315 2.35881 3.57083 2.60139 3.37676L4.47639 1.87676Z" fill="#62215B"></path>
+                            <path d="M14.2264 0.998282C13.9838 0.804214 13.6298 0.843545 13.4358 1.08613C13.2417 1.32871 13.281 1.68269 13.5236 1.87676L15.3986 3.37676C15.6412 3.57083 15.9952 3.5315 16.1892 3.28891C16.3833 3.04633 16.344 2.69235 16.1014 2.49828L14.2264 0.998282Z" fill="#62215B"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.43752C4.5472 1.43752 0.9375 5.04723 0.9375 9.50002C0.9375 13.9528 4.5472 17.5625 9 17.5625C13.4528 17.5625 17.0625 13.9528 17.0625 9.50002C17.0625 5.04723 13.4528 1.43752 9 1.43752ZM9.5625 6.50002C9.5625 6.18936 9.31066 5.93752 9 5.93752C8.68934 5.93752 8.4375 6.18936 8.4375 6.50002L8.4375 9.12502C8.4375 10.057 9.19302 10.8125 10.125 10.8125H11.25C11.5607 10.8125 11.8125 10.5607 11.8125 10.25C11.8125 9.93936 11.5607 9.68752 11.25 9.68752H10.125C9.81434 9.68752 9.5625 9.43568 9.5625 9.12502L9.5625 6.50002Z" fill="#62215B"></path>
+                          </g>
+                        </g>
+                      </svg>
+                      <p>Режим работы 10:00-21:00</p>
+                    </div>
+                  </div>
+                  <div class="sidebar-map__item"> 
+                    <p class="sidebar-map__item-title">CDEK</p>
+                    <p class="sidebar-map__item-address">ул. Черняховского, 19</p>
+                    <div class="sidebar-map__item-time">
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Time Circle 6">
+                          <g id="Vector">
+                            <path d="M4.47639 1.87676C4.71898 1.68269 4.75831 1.32871 4.56424 1.08613C4.37017 0.843545 4.01619 0.804214 3.77361 0.998282L1.89861 2.49828C1.65602 2.69235 1.61669 3.04633 1.81076 3.28891C2.00483 3.5315 2.35881 3.57083 2.60139 3.37676L4.47639 1.87676Z" fill="#62215B"></path>
+                            <path d="M14.2264 0.998282C13.9838 0.804214 13.6298 0.843545 13.4358 1.08613C13.2417 1.32871 13.281 1.68269 13.5236 1.87676L15.3986 3.37676C15.6412 3.57083 15.9952 3.5315 16.1892 3.28891C16.3833 3.04633 16.344 2.69235 16.1014 2.49828L14.2264 0.998282Z" fill="#62215B"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.43752C4.5472 1.43752 0.9375 5.04723 0.9375 9.50002C0.9375 13.9528 4.5472 17.5625 9 17.5625C13.4528 17.5625 17.0625 13.9528 17.0625 9.50002C17.0625 5.04723 13.4528 1.43752 9 1.43752ZM9.5625 6.50002C9.5625 6.18936 9.31066 5.93752 9 5.93752C8.68934 5.93752 8.4375 6.18936 8.4375 6.50002L8.4375 9.12502C8.4375 10.057 9.19302 10.8125 10.125 10.8125H11.25C11.5607 10.8125 11.8125 10.5607 11.8125 10.25C11.8125 9.93936 11.5607 9.68752 11.25 9.68752H10.125C9.81434 9.68752 9.5625 9.43568 9.5625 9.12502L9.5625 6.50002Z" fill="#62215B"></path>
+                          </g>
+                        </g>
+                      </svg>
+                      <p>Режим работы 10:00-21:00</p>
+                    </div>
+                  </div>
+                  <div class="sidebar-map__item"> 
+                    <p class="sidebar-map__item-title">CDEK</p>
+                    <p class="sidebar-map__item-address">ул. Черняховского, 19</p>
+                    <div class="sidebar-map__item-time">
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Time Circle 6">
+                          <g id="Vector">
+                            <path d="M4.47639 1.87676C4.71898 1.68269 4.75831 1.32871 4.56424 1.08613C4.37017 0.843545 4.01619 0.804214 3.77361 0.998282L1.89861 2.49828C1.65602 2.69235 1.61669 3.04633 1.81076 3.28891C2.00483 3.5315 2.35881 3.57083 2.60139 3.37676L4.47639 1.87676Z" fill="#62215B"></path>
+                            <path d="M14.2264 0.998282C13.9838 0.804214 13.6298 0.843545 13.4358 1.08613C13.2417 1.32871 13.281 1.68269 13.5236 1.87676L15.3986 3.37676C15.6412 3.57083 15.9952 3.5315 16.1892 3.28891C16.3833 3.04633 16.344 2.69235 16.1014 2.49828L14.2264 0.998282Z" fill="#62215B"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.43752C4.5472 1.43752 0.9375 5.04723 0.9375 9.50002C0.9375 13.9528 4.5472 17.5625 9 17.5625C13.4528 17.5625 17.0625 13.9528 17.0625 9.50002C17.0625 5.04723 13.4528 1.43752 9 1.43752ZM9.5625 6.50002C9.5625 6.18936 9.31066 5.93752 9 5.93752C8.68934 5.93752 8.4375 6.18936 8.4375 6.50002L8.4375 9.12502C8.4375 10.057 9.19302 10.8125 10.125 10.8125H11.25C11.5607 10.8125 11.8125 10.5607 11.8125 10.25C11.8125 9.93936 11.5607 9.68752 11.25 9.68752H10.125C9.81434 9.68752 9.5625 9.43568 9.5625 9.12502L9.5625 6.50002Z" fill="#62215B"></path>
+                          </g>
+                        </g>
+                      </svg>
+                      <p>Режим работы 10:00-21:00</p>
+                    </div>
+                  </div>
+                  <div class="sidebar-map__item"> 
+                    <p class="sidebar-map__item-title">CDEK</p>
+                    <p class="sidebar-map__item-address">ул. Черняховского, 19</p>
+                    <div class="sidebar-map__item-time">
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Time Circle 6">
+                          <g id="Vector">
+                            <path d="M4.47639 1.87676C4.71898 1.68269 4.75831 1.32871 4.56424 1.08613C4.37017 0.843545 4.01619 0.804214 3.77361 0.998282L1.89861 2.49828C1.65602 2.69235 1.61669 3.04633 1.81076 3.28891C2.00483 3.5315 2.35881 3.57083 2.60139 3.37676L4.47639 1.87676Z" fill="#62215B"></path>
+                            <path d="M14.2264 0.998282C13.9838 0.804214 13.6298 0.843545 13.4358 1.08613C13.2417 1.32871 13.281 1.68269 13.5236 1.87676L15.3986 3.37676C15.6412 3.57083 15.9952 3.5315 16.1892 3.28891C16.3833 3.04633 16.344 2.69235 16.1014 2.49828L14.2264 0.998282Z" fill="#62215B"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.43752C4.5472 1.43752 0.9375 5.04723 0.9375 9.50002C0.9375 13.9528 4.5472 17.5625 9 17.5625C13.4528 17.5625 17.0625 13.9528 17.0625 9.50002C17.0625 5.04723 13.4528 1.43752 9 1.43752ZM9.5625 6.50002C9.5625 6.18936 9.31066 5.93752 9 5.93752C8.68934 5.93752 8.4375 6.18936 8.4375 6.50002L8.4375 9.12502C8.4375 10.057 9.19302 10.8125 10.125 10.8125H11.25C11.5607 10.8125 11.8125 10.5607 11.8125 10.25C11.8125 9.93936 11.5607 9.68752 11.25 9.68752H10.125C9.81434 9.68752 9.5625 9.43568 9.5625 9.12502L9.5625 6.50002Z" fill="#62215B"></path>
+                          </g>
+                        </g>
+                      </svg>
+                      <p>Режим работы 10:00-21:00</p>
+                    </div>
+                  </div>
+                  <div class="sidebar-map__item"> 
+                    <p class="sidebar-map__item-title">CDEK</p>
+                    <p class="sidebar-map__item-address">ул. Черняховского, 19</p>
+                    <div class="sidebar-map__item-time">
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Time Circle 6">
+                          <g id="Vector">
+                            <path d="M4.47639 1.87676C4.71898 1.68269 4.75831 1.32871 4.56424 1.08613C4.37017 0.843545 4.01619 0.804214 3.77361 0.998282L1.89861 2.49828C1.65602 2.69235 1.61669 3.04633 1.81076 3.28891C2.00483 3.5315 2.35881 3.57083 2.60139 3.37676L4.47639 1.87676Z" fill="#62215B"></path>
+                            <path d="M14.2264 0.998282C13.9838 0.804214 13.6298 0.843545 13.4358 1.08613C13.2417 1.32871 13.281 1.68269 13.5236 1.87676L15.3986 3.37676C15.6412 3.57083 15.9952 3.5315 16.1892 3.28891C16.3833 3.04633 16.344 2.69235 16.1014 2.49828L14.2264 0.998282Z" fill="#62215B"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.43752C4.5472 1.43752 0.9375 5.04723 0.9375 9.50002C0.9375 13.9528 4.5472 17.5625 9 17.5625C13.4528 17.5625 17.0625 13.9528 17.0625 9.50002C17.0625 5.04723 13.4528 1.43752 9 1.43752ZM9.5625 6.50002C9.5625 6.18936 9.31066 5.93752 9 5.93752C8.68934 5.93752 8.4375 6.18936 8.4375 6.50002L8.4375 9.12502C8.4375 10.057 9.19302 10.8125 10.125 10.8125H11.25C11.5607 10.8125 11.8125 10.5607 11.8125 10.25C11.8125 9.93936 11.5607 9.68752 11.25 9.68752H10.125C9.81434 9.68752 9.5625 9.43568 9.5625 9.12502L9.5625 6.50002Z" fill="#62215B"></path>
+                          </g>
+                        </g>
+                      </svg>
+                      <p>Режим работы 10:00-21:00</p>
+                    </div>
+                  </div>
+                  <div class="sidebar-map__item"> 
+                    <p class="sidebar-map__item-title">CDEK</p>
+                    <p class="sidebar-map__item-address">ул. Черняховского, 19</p>
+                    <div class="sidebar-map__item-time">
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Time Circle 6">
+                          <g id="Vector">
+                            <path d="M4.47639 1.87676C4.71898 1.68269 4.75831 1.32871 4.56424 1.08613C4.37017 0.843545 4.01619 0.804214 3.77361 0.998282L1.89861 2.49828C1.65602 2.69235 1.61669 3.04633 1.81076 3.28891C2.00483 3.5315 2.35881 3.57083 2.60139 3.37676L4.47639 1.87676Z" fill="#62215B"></path>
+                            <path d="M14.2264 0.998282C13.9838 0.804214 13.6298 0.843545 13.4358 1.08613C13.2417 1.32871 13.281 1.68269 13.5236 1.87676L15.3986 3.37676C15.6412 3.57083 15.9952 3.5315 16.1892 3.28891C16.3833 3.04633 16.344 2.69235 16.1014 2.49828L14.2264 0.998282Z" fill="#62215B"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.43752C4.5472 1.43752 0.9375 5.04723 0.9375 9.50002C0.9375 13.9528 4.5472 17.5625 9 17.5625C13.4528 17.5625 17.0625 13.9528 17.0625 9.50002C17.0625 5.04723 13.4528 1.43752 9 1.43752ZM9.5625 6.50002C9.5625 6.18936 9.31066 5.93752 9 5.93752C8.68934 5.93752 8.4375 6.18936 8.4375 6.50002L8.4375 9.12502C8.4375 10.057 9.19302 10.8125 10.125 10.8125H11.25C11.5607 10.8125 11.8125 10.5607 11.8125 10.25C11.8125 9.93936 11.5607 9.68752 11.25 9.68752H10.125C9.81434 9.68752 9.5625 9.43568 9.5625 9.12502L9.5625 6.50002Z" fill="#62215B"></path>
+                          </g>
+                        </g>
+                      </svg>
+                      <p>Режим работы 10:00-21:00</p>
+                    </div>
+                  </div>
+                  <div class="sidebar-map__item"> 
+                    <p class="sidebar-map__item-title">CDEK</p>
+                    <p class="sidebar-map__item-address">ул. Черняховского, 19</p>
+                    <div class="sidebar-map__item-time">
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Time Circle 6">
+                          <g id="Vector">
+                            <path d="M4.47639 1.87676C4.71898 1.68269 4.75831 1.32871 4.56424 1.08613C4.37017 0.843545 4.01619 0.804214 3.77361 0.998282L1.89861 2.49828C1.65602 2.69235 1.61669 3.04633 1.81076 3.28891C2.00483 3.5315 2.35881 3.57083 2.60139 3.37676L4.47639 1.87676Z" fill="#62215B"></path>
+                            <path d="M14.2264 0.998282C13.9838 0.804214 13.6298 0.843545 13.4358 1.08613C13.2417 1.32871 13.281 1.68269 13.5236 1.87676L15.3986 3.37676C15.6412 3.57083 15.9952 3.5315 16.1892 3.28891C16.3833 3.04633 16.344 2.69235 16.1014 2.49828L14.2264 0.998282Z" fill="#62215B"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.43752C4.5472 1.43752 0.9375 5.04723 0.9375 9.50002C0.9375 13.9528 4.5472 17.5625 9 17.5625C13.4528 17.5625 17.0625 13.9528 17.0625 9.50002C17.0625 5.04723 13.4528 1.43752 9 1.43752ZM9.5625 6.50002C9.5625 6.18936 9.31066 5.93752 9 5.93752C8.68934 5.93752 8.4375 6.18936 8.4375 6.50002L8.4375 9.12502C8.4375 10.057 9.19302 10.8125 10.125 10.8125H11.25C11.5607 10.8125 11.8125 10.5607 11.8125 10.25C11.8125 9.93936 11.5607 9.68752 11.25 9.68752H10.125C9.81434 9.68752 9.5625 9.43568 9.5625 9.12502L9.5625 6.50002Z" fill="#62215B"></path>
+                          </g>
+                        </g>
+                      </svg>
+                      <p>Режим работы 10:00-21:00</p>
+                    </div>
+                  </div>
+                  <div class="sidebar-map__item"> 
+                    <p class="sidebar-map__item-title">CDEK</p>
+                    <p class="sidebar-map__item-address">ул. Черняховского, 19</p>
+                    <div class="sidebar-map__item-time">
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Time Circle 6">
+                          <g id="Vector">
+                            <path d="M4.47639 1.87676C4.71898 1.68269 4.75831 1.32871 4.56424 1.08613C4.37017 0.843545 4.01619 0.804214 3.77361 0.998282L1.89861 2.49828C1.65602 2.69235 1.61669 3.04633 1.81076 3.28891C2.00483 3.5315 2.35881 3.57083 2.60139 3.37676L4.47639 1.87676Z" fill="#62215B"></path>
+                            <path d="M14.2264 0.998282C13.9838 0.804214 13.6298 0.843545 13.4358 1.08613C13.2417 1.32871 13.281 1.68269 13.5236 1.87676L15.3986 3.37676C15.6412 3.57083 15.9952 3.5315 16.1892 3.28891C16.3833 3.04633 16.344 2.69235 16.1014 2.49828L14.2264 0.998282Z" fill="#62215B"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.43752C4.5472 1.43752 0.9375 5.04723 0.9375 9.50002C0.9375 13.9528 4.5472 17.5625 9 17.5625C13.4528 17.5625 17.0625 13.9528 17.0625 9.50002C17.0625 5.04723 13.4528 1.43752 9 1.43752ZM9.5625 6.50002C9.5625 6.18936 9.31066 5.93752 9 5.93752C8.68934 5.93752 8.4375 6.18936 8.4375 6.50002L8.4375 9.12502C8.4375 10.057 9.19302 10.8125 10.125 10.8125H11.25C11.5607 10.8125 11.8125 10.5607 11.8125 10.25C11.8125 9.93936 11.5607 9.68752 11.25 9.68752H10.125C9.81434 9.68752 9.5625 9.43568 9.5625 9.12502L9.5625 6.50002Z" fill="#62215B"></path>
+                          </g>
+                        </g>
+                      </svg>
+                      <p>Режим работы 10:00-21:00</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="sidebar-map__button">
+                  <button class="btn">выбрать</button>
+                </div>
+              </div>
+              <div class="sidebar-map__map" style="background-color: red"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lk-address-page">
         <div class="container">
           <div class="breadcrumbs">
             <div class="breadcrumb"><a href="#">Главная</a><span>•</span></div>
-            <div class="breadcrumb"><a href="#">Покупателям</a><span>•</span></div>
-            <div class="breadcrumb active"><a href="#">Определить заказ</a><span>•</span></div>
+            <div class="breadcrumb active"><a href="#">Личный кабинет</a><span>•</span></div>
           </div>
-          <section class="bayers">
-            <div class="bayers__inner">
-              <h1 class="title bayers__title">Покупателям</h1>
-              <ul class="bayers-tubs">
-                <li class="bayers-tubs__item"> <a>Доставка</a></li>
-                <li class="bayers-tubs__item"> <a>Оплата</a></li>
-                <li class="bayers-tubs__item"> <a>Возврат</a></li>
-                <li class="bayers-tubs__item"> <a>Размерная таблица</a></li>
-                <li class="bayers-tubs__item active"> <a>Отследить заказ  </a></li>
-              </ul>
-              <div class="bayers__content"> 
-                <div class="bayers-search">
-                  <div class="bayers-search__inner"> 
-                    <h2 class="bayers-search__title title2">Где сейчас находится мой заказ?</h2>
-                    <form class="bayers-search__form">
-                      <div class="bayers-search__form-input">
-                        <div class="input-wrapper input-wrapper-dark" data-input-parent="">
-                          <div class="input-wrapper__placeholder">Номер заказа</div>
-                          <input class="input input-dark" data-input="" required="required" placeholder="Номер заказа"/>
-                          <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
-                            <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                          </svg>
+        </div>
+        <div class="lk-address-page__inner">
+          <sidebar class="sidebar-lk">
+            <h2 class="sidebar-lk__title">Здравствуйте, <span>Спартак</span></h2>
+            <ul class="sidebar-lk__list"> 
+              <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Мои заказы</a></li>
+              <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Мой гардероб</a></li>
+              <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Мои данные</a></li>
+              <li class="sidebar-lk__item active"><a class="sidebar-lk__link" href="#">Мои адреса</a></li>
+              <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Избранное</a></li>
+              <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Управление рассылками</a></li>
+              <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Выйти</a></li>
+            </ul>
+          </sidebar>
+          <div class="lk-pvz">
+            <div class="lk-pvz__inner">
+              <h1 class="title lk-address__title">Мои адреса</h1>
+              <div class="lk-address__tubs"><a class="lk-address__link">курьерская доставка</a><a class="lk-address__link active">пункты выдачи заказов</a><a class="lk-address__link">почта россии</a>
+              </div>
+              <div class="lk-pvz-empty"> 
+                <p class="lk-pvz-empty__text">список пунктов выдачи пуст</p>
+                <div class="lk-pvz-empty__button">
+                  <button class="btn">Добавить</button>
+                </div>
+              </div>
+              <div class="lk-pvz-add"> 
+                <div class="lk-pvz-add__inner"> 
+                  <h3 class="lk-pvz-add__title">добавить пункт выдачи</h3>
+                  <p class="lk-pvz-add__description">Населенный пункт *</p>
+                  <div class="lk-pvz-add__input">
+                    <div class="input-wrapper" data-input-parent="" data-input-city="">
+                      <div class="input-wrapper__placeholder">введите значение</div>
+                      <input class="input" data-input="" required="required" name="" placeholder="введите значение"/>
+                      <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
+                        <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      <div class="input-city"> 
+                        <div class="input-city__inner"> 
+                          <ul>
+                            <li>
+                              <p href="#">Россия, Санкт-Петербург</p>
+                            </li>
+                            <li>
+                              <p href="#">Россия, Санкт-Петербург</p>
+                            </li>
+                            <li>
+                              <p href="#">Россия, Санкт-Петербург</p>
+                            </li>
+                            <li>
+                              <p href="#">Россия, Санкт-Петербург          </p>
+                            </li>
+                            <li>
+                              <p href="#">Россия, Санкт-Петербург</p>
+                            </li>
+                            <li>
+                              <p href="#">Россия, Санкт-Петербург</p>
+                            </li>
+                          </ul>
                         </div>
                       </div>
-                    </form>
-                    <div class="bayers-search__results">
-                      <div class="bayers-search__block">
-                        <div class="route">
-                          <div class="route__left"><span class="route__circle"> </span><span class="route__line"></span></div>
-                          <div class="route__right">
-                            <p class="route__text"> Поступил в сортировочный центр, Челябинск</p>
-                            <p class="route__date">22.05.2023, 13:38</p>
-                          </div>
-                        </div>
-                        <div class="route">
-                          <div class="route__left"><span class="route__circle"> </span><span class="route__line"></span></div>
-                          <div class="route__right">
-                            <p class="route__text">Принято в сортировочном центре, Челябинск</p>
-                            <p class="route__date">22.05.2023, 13:38</p>
-                          </div>
-                        </div>
-                        <div class="route">
-                          <div class="route__left"><span class="route__circle"> </span><span class="route__line"></span></div>
-                          <div class="route__right">
-                            <p class="route__text">Отсортирован в сортировочном центре, Челябинск</p>
-                            <p class="route__date">22.05.2023, 13:38</p>
-                          </div>
-                        </div>
-                        <div class="route active">
-                          <div class="route__left"><span class="route__circle"> </span><span class="route__line"></span></div>
-                          <div class="route__right">
-                            <p class="route__text">Принято в сортировочном центре, Челябинск</p>
-                            <p class="route__date">22.05.2023, 13:38</p>
-                          </div>
-                        </div>
-                        <div class="route empty">
-                          <div class="route__left"><span class="route__circle"> </span><span class="route__line"></span></div>
-                          <div class="route__right">
-                            <p class="route__text">Принято в сортировочном центре, Челябинск</p>
-                            <p class="route__date">22.05.2023, 13:38</p>
-                          </div>
+                    </div>
+                  </div>
+                  <div class="lk-pvz-add__list">
+                    <div class="pick-up"> 
+                      <div class="pick-up__inner">
+                        <label>
+                          <input type="checkbox"/><span class="pick-up__decor"> 
+                            <div class="circle"></div></span>
+                          <p>Пункт выдачи <span>СДЭК</span></p>
+                        </label>
+                      </div>
+                      <div class="pick-up__button" data-sidebar-button="map">
+                        <div class="pick-up__button-inner">
+                          <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.83301 10.0002H17.1663M10.4997 16.6668V10.0002L10.4997 3.3335" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                          </svg>
+                          <p>Выбрать пункт выдачи</p>
                         </div>
                       </div>
-                      <div class="bayers-search__date"> 
-                        <div class="bayers-search__date-left">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
-                            <path d="M13.6531 3.41024L6.31062 7.49404C4.64687 8.41529 3.28564 10.7253 3.28564 12.6228V20.3915C3.28564 22.289 4.64687 24.599 6.31062 25.5203L13.6531 29.6041C15.2206 30.4703 17.7919 30.4703 19.3594 29.6041L26.7019 25.5203C28.3656 24.599 29.7269 22.289 29.7269 20.3915V12.6228C29.7269 10.7253 28.3656 8.41529 26.7019 7.49404L19.3594 3.41024C17.7781 2.53024 15.2206 2.53024 13.6531 3.41024Z" fill="#C19F86"></path>
-                            <path d="M4.3584 10.2302L16.4996 17.2565L28.5584 10.2714" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M16.4995 29.7139V17.2427" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M23.3749 18.2055V13.173L10.3262 5.63794" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                          </svg>
-                        </div>
-                        <div class="bayers-search__date-right">
-                          <p class="bayers-search__date-text">Доставка ожидается</p>
-                          <p class="bayers-search__date-date">22.05.2023</p>
-                        </div>
+                      <div class="pick-up__info"> 
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g id="Information Circle">
+                            <path id="Vector" d="M11 10V16M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                            <path id="Vector_2" d="M12 7C12 7.55228 11.5523 8 11 8C10.4477 8 10 7.55228 10 7C10 6.44772 10.4477 6 11 6C11.5523 6 12 6.44772 12 7Z" fill="#62215B"></path>
+                          </g>
+                        </svg>
+                        <p>укажите населенный пункт, чтобы выбрать пункт выдачи</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
         </div>
-      </main>
+      </div>
       <div class="footer footer-mt">
         <div class="footer__decor"></div>
         <div class="footer__inner">

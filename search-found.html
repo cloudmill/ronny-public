@@ -3,7 +3,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>bayers-search</title>
+    <title>search-found</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
@@ -574,99 +574,634 @@
           </div>
         </div>
       </header>
-      <main>
-        <div class="container">
-          <div class="breadcrumbs">
-            <div class="breadcrumb"><a href="#">Главная</a><span>•</span></div>
-            <div class="breadcrumb"><a href="#">Покупателям</a><span>•</span></div>
-            <div class="breadcrumb active"><a href="#">Определить заказ</a><span>•</span></div>
-          </div>
-          <section class="bayers">
-            <div class="bayers__inner">
-              <h1 class="title bayers__title">Покупателям</h1>
-              <ul class="bayers-tubs">
-                <li class="bayers-tubs__item"> <a>Доставка</a></li>
-                <li class="bayers-tubs__item"> <a>Оплата</a></li>
-                <li class="bayers-tubs__item"> <a>Возврат</a></li>
-                <li class="bayers-tubs__item"> <a>Размерная таблица</a></li>
-                <li class="bayers-tubs__item active"> <a>Отследить заказ  </a></li>
-              </ul>
-              <div class="bayers__content"> 
-                <div class="bayers-search">
-                  <div class="bayers-search__inner"> 
-                    <h2 class="bayers-search__title title2">Где сейчас находится мой заказ?</h2>
-                    <form class="bayers-search__form">
-                      <div class="bayers-search__form-input">
-                        <div class="input-wrapper input-wrapper-dark" data-input-parent="">
-                          <div class="input-wrapper__placeholder">Номер заказа</div>
-                          <input class="input input-dark" data-input="" required="required" placeholder="Номер заказа"/>
-                          <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
-                            <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                          </svg>
+      <section class="search-found">
+        <div class="container"> 
+          <div class="search-found__inner"> 
+            <h1 class="search-found__title">По запросу <span class="search-found__title-product">"Кардиган" </span>Найдено <span class="search-found__title-number">10 </span>товаров</h1>
+            <div class="search-found__search"> 
+              <form class="search__form">
+                <div class="input-wrapper" data-input-parent="">
+                  <div class="input-wrapper__placeholder">Введите адрес в обычном формате|например, кардиган</div>
+                  <input class="input" data-input="" required="required" name="" placeholder="Введите адрес в обычном формате|например, кардиган"/>
+                  <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
+                    <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <button class="btn">Найти</button>
+              </form>
+            </div>
+            <div class="search-found__box"> 
+              <div class="catalog-controls"> 
+                <div class="catalog-controls__block">
+                  <button class="catalog-controls__nav" data-catalog-button="price">Цена
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="Vector">
+                        <path id="vector-5" d="M1 1.9165L6 6.9165L11 1.9165" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </g>
+                    </svg>
+                  </button>
+                  <button class="catalog-controls__nav" data-catalog-button="size">Размер и рост
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="Vector">
+                        <path id="vector-5" d="M1 1.9165L6 6.9165L11 1.9165" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </g>
+                    </svg>
+                  </button>
+                  <button class="catalog-controls__nav" data-catalog-button="colors">Цвет
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="Vector">
+                        <path id="vector-5" d="M1 1.9165L6 6.9165L11 1.9165" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </g>
+                    </svg>
+                  </button>
+                  <button class="catalog-controls__nav" data-catalog-button="compound">Состав
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="Vector">
+                        <path id="vector-5" d="M1 1.9165L6 6.9165L11 1.9165" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </g>
+                    </svg>
+                  </button>
+                  <div class="catalog-controls__price" data-catalog-modal="price">
+                    <div class="catalog-controls__price-inputs">
+                      <div class="input-wrapper" data-input-parent="">
+                        <div class="input-wrapper__placeholder">от 460</div>
+                        <input class="input" data-input="" required="required" name="" placeholder="от 460" min="460"/>
+                        <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
+                          <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </div><span> </span>
+                      <div class="input-wrapper" data-input-parent="">
+                        <div class="input-wrapper__placeholder">до 9 460</div>
+                        <input class="input" data-input="" required="required" name="" placeholder="до 9 460" min="9460"/>
+                        <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
+                          <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="catalog-controls__price-button"> 
+                      <button class="btn">Применить</button>
+                    </div>
+                  </div>
+                  <div class="catalog-controls__size" data-catalog-modal="size">
+                    <div class="catalog-controls__size-list">
+                      <div class="catalog-controls__size-col">
+                        <div class="checkbox">
+                          <label class="container">
+                            <input type="checkbox"/><span class="checkmark">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 7L14.6093 13.4688C12.4732 16.0322 11.4051 17.3139 10 17.3139C8.59488 17.3139 7.52681 16.0322 5.39067 13.4688L4 11.8" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                              </svg></span>
+                            <p>40</p>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label class="container">
+                            <input type="checkbox"/><span class="checkmark">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 7L14.6093 13.4688C12.4732 16.0322 11.4051 17.3139 10 17.3139C8.59488 17.3139 7.52681 16.0322 5.39067 13.4688L4 11.8" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                              </svg></span>
+                            <p>42</p>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label class="container">
+                            <input type="checkbox"/><span class="checkmark">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 7L14.6093 13.4688C12.4732 16.0322 11.4051 17.3139 10 17.3139C8.59488 17.3139 7.52681 16.0322 5.39067 13.4688L4 11.8" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                              </svg></span>
+                            <p>44</p>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label class="container">
+                            <input type="checkbox"/><span class="checkmark">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 7L14.6093 13.4688C12.4732 16.0322 11.4051 17.3139 10 17.3139C8.59488 17.3139 7.52681 16.0322 5.39067 13.4688L4 11.8" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                              </svg></span>
+                            <p>46</p>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label class="container">
+                            <input type="checkbox"/><span class="checkmark">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 7L14.6093 13.4688C12.4732 16.0322 11.4051 17.3139 10 17.3139C8.59488 17.3139 7.52681 16.0322 5.39067 13.4688L4 11.8" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                              </svg></span>
+                            <p>48</p>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label class="container">
+                            <input type="checkbox"/><span class="checkmark">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 7L14.6093 13.4688C12.4732 16.0322 11.4051 17.3139 10 17.3139C8.59488 17.3139 7.52681 16.0322 5.39067 13.4688L4 11.8" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                              </svg></span>
+                            <p>50</p>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label class="container">
+                            <input type="checkbox"/><span class="checkmark">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 7L14.6093 13.4688C12.4732 16.0322 11.4051 17.3139 10 17.3139C8.59488 17.3139 7.52681 16.0322 5.39067 13.4688L4 11.8" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                              </svg></span>
+                            <p>52</p>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label class="container">
+                            <input type="checkbox"/><span class="checkmark">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 7L14.6093 13.4688C12.4732 16.0322 11.4051 17.3139 10 17.3139C8.59488 17.3139 7.52681 16.0322 5.39067 13.4688L4 11.8" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                              </svg></span>
+                            <p>54</p>
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label class="container">
+                            <input type="checkbox"/><span class="checkmark">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 7L14.6093 13.4688C12.4732 16.0322 11.4051 17.3139 10 17.3139C8.59488 17.3139 7.52681 16.0322 5.39067 13.4688L4 11.8" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                              </svg></span>
+                            <p>56</p>
+                          </label>
                         </div>
                       </div>
-                    </form>
-                    <div class="bayers-search__results">
-                      <div class="bayers-search__block">
-                        <div class="route">
-                          <div class="route__left"><span class="route__circle"> </span><span class="route__line"></span></div>
-                          <div class="route__right">
-                            <p class="route__text"> Поступил в сортировочный центр, Челябинск</p>
-                            <p class="route__date">22.05.2023, 13:38</p>
-                          </div>
+                      <div class="catalog-controls__size-col">
+                        <div class="checkbox">
+                          <label class="container">
+                            <input type="checkbox"/><span class="checkmark">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 7L14.6093 13.4688C12.4732 16.0322 11.4051 17.3139 10 17.3139C8.59488 17.3139 7.52681 16.0322 5.39067 13.4688L4 11.8" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                              </svg></span>
+                            <p>158</p>
+                          </label>
                         </div>
-                        <div class="route">
-                          <div class="route__left"><span class="route__circle"> </span><span class="route__line"></span></div>
-                          <div class="route__right">
-                            <p class="route__text">Принято в сортировочном центре, Челябинск</p>
-                            <p class="route__date">22.05.2023, 13:38</p>
-                          </div>
+                        <div class="checkbox">
+                          <label class="container">
+                            <input type="checkbox"/><span class="checkmark">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 7L14.6093 13.4688C12.4732 16.0322 11.4051 17.3139 10 17.3139C8.59488 17.3139 7.52681 16.0322 5.39067 13.4688L4 11.8" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                              </svg></span>
+                            <p>164</p>
+                          </label>
                         </div>
-                        <div class="route">
-                          <div class="route__left"><span class="route__circle"> </span><span class="route__line"></span></div>
-                          <div class="route__right">
-                            <p class="route__text">Отсортирован в сортировочном центре, Челябинск</p>
-                            <p class="route__date">22.05.2023, 13:38</p>
-                          </div>
+                        <div class="checkbox">
+                          <label class="container">
+                            <input type="checkbox"/><span class="checkmark">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 7L14.6093 13.4688C12.4732 16.0322 11.4051 17.3139 10 17.3139C8.59488 17.3139 7.52681 16.0322 5.39067 13.4688L4 11.8" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                              </svg></span>
+                            <p>170</p>
+                          </label>
                         </div>
-                        <div class="route active">
-                          <div class="route__left"><span class="route__circle"> </span><span class="route__line"></span></div>
-                          <div class="route__right">
-                            <p class="route__text">Принято в сортировочном центре, Челябинск</p>
-                            <p class="route__date">22.05.2023, 13:38</p>
-                          </div>
+                        <div class="checkbox">
+                          <label class="container">
+                            <input type="checkbox"/><span class="checkmark">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 7L14.6093 13.4688C12.4732 16.0322 11.4051 17.3139 10 17.3139C8.59488 17.3139 7.52681 16.0322 5.39067 13.4688L4 11.8" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                              </svg></span>
+                            <p>176</p>
+                          </label>
                         </div>
-                        <div class="route empty">
-                          <div class="route__left"><span class="route__circle"> </span><span class="route__line"></span></div>
-                          <div class="route__right">
-                            <p class="route__text">Принято в сортировочном центре, Челябинск</p>
-                            <p class="route__date">22.05.2023, 13:38</p>
+                      </div>
+                    </div>
+                    <div class="catalog-controls__size-button"> 
+                      <button class="btn">Применить</button>
+                    </div>
+                  </div>
+                  <div class="catalog-controls__colors" data-catalog-modal="colors"><a class="catalog-controls__colors-row"><span style="background-color: white; border: 1px solid #EBEBEB;"></span>
+                      <p>Белый              </p></a>
+                    <div class="catalog-controls__colors-row"><span style="background-color: #4A4A4A"></span>
+                      <p>Черный</p>
+                    </div>
+                    <div class="catalog-controls__colors-row"><span style="background-color: #EBD5C6"></span>
+                      <p>Бежевый</p>
+                    </div>
+                    <div class="catalog-controls__colors-row"><span style="background-color: #F7F050"></span>
+                      <p>Желтый</p>
+                    </div>
+                    <div class="catalog-controls__colors-row"><span style="background-color: #FF4A4A"></span>
+                      <p>Красный</p>
+                    </div>
+                    <div class="catalog-controls__colors-row"><span style="background-color: #3F75FF"></span>
+                      <p>Синий</p>
+                    </div>
+                    <div class="catalog-controls__colors-row"><span style="background-color: #72D5FF"></span>
+                      <p>Голубой</p>
+                    </div>
+                    <div class="catalog-controls__colors-row"><span style="background-color: #72FFFF"></span>
+                      <p>Берюзовый</p>
+                    </div>
+                    <div class="catalog-controls__colors-row"><span style="background-color: #C19F86"></span>
+                      <p>Коричневый</p>
+                    </div>
+                    <div class="catalog-controls__colors-row"><span style="background-color: #4A4A4A"></span>
+                      <p>Черный</p>
+                    </div>
+                    <div class="catalog-controls__colors-row"><span style="background-color: #EBD5C6"></span>
+                      <p>Бежевый</p>
+                    </div>
+                    <div class="catalog-controls__colors-row"><span style="background-color: #F7F050"></span>
+                      <p>Желтый</p>
+                    </div>
+                    <div class="catalog-controls__colors-row"><span style="background-color: #FF4A4A"></span>
+                      <p>Красный</p>
+                    </div>
+                    <div class="catalog-controls__colors-row"><span style="background-color: #3F75FF"></span>
+                      <p>Синий</p>
+                    </div>
+                    <div class="catalog-controls__colors-row"><span style="background-color: #72D5FF"></span>
+                      <p>Голубой</p>
+                    </div>
+                    <div class="catalog-controls__colors-row"><span style="background-color: #72FFFF"></span>
+                      <p>Берюзовый</p>
+                    </div>
+                    <div class="catalog-controls__colors-row"><span style="background-color: #C19F86"></span>
+                      <p>Коричневый</p>
+                    </div>
+                  </div>
+                  <div class="catalog-controls__compound" data-catalog-modal="compound">
+                    <div class="checkbox">
+                      <label class="container">
+                        <input type="checkbox"/><span class="checkmark">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 7L14.6093 13.4688C12.4732 16.0322 11.4051 17.3139 10 17.3139C8.59488 17.3139 7.52681 16.0322 5.39067 13.4688L4 11.8" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                          </svg></span>
+                        <p>Хлопок</p>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label class="container">
+                        <input type="checkbox"/><span class="checkmark">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 7L14.6093 13.4688C12.4732 16.0322 11.4051 17.3139 10 17.3139C8.59488 17.3139 7.52681 16.0322 5.39067 13.4688L4 11.8" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                          </svg></span>
+                        <p>Вискоза</p>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label class="container">
+                        <input type="checkbox"/><span class="checkmark">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 7L14.6093 13.4688C12.4732 16.0322 11.4051 17.3139 10 17.3139C8.59488 17.3139 7.52681 16.0322 5.39067 13.4688L4 11.8" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                          </svg></span>
+                        <p>Люрекс</p>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label class="container">
+                        <input type="checkbox"/><span class="checkmark">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 7L14.6093 13.4688C12.4732 16.0322 11.4051 17.3139 10 17.3139C8.59488 17.3139 7.52681 16.0322 5.39067 13.4688L4 11.8" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                          </svg></span>
+                        <p>Шерсть</p>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label class="container">
+                        <input type="checkbox"/><span class="checkmark">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 7L14.6093 13.4688C12.4732 16.0322 11.4051 17.3139 10 17.3139C8.59488 17.3139 7.52681 16.0322 5.39067 13.4688L4 11.8" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                          </svg></span>
+                        <p>Полиэстер</p>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="catalog-controls__default" data-catalog-modal="default"><a>По популярности</a><a>По новизне</a><a>Цена по возрастанию</a><a>Цена по убыванию</a>
+                  </div>
+                </div>
+                <div class="catalog-controls__block">
+                  <button class="catalog-controls__nav" data-catalog-button="default">По умолчанию
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="Vector">
+                        <path id="vector-5" d="M1 1.9165L6 6.9165L11 1.9165" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="catalog">
+                <div class="catalog__inner"> 
+                  <div class="catalog-card">
+                    <div class="catalog-card__inner">
+                      <div class="catalog-card__top">
+                        <div class="catalog-card__img active" data-card-img="1">
+                          <picture class="picture">
+                            <source class="lazyload" type="image/webp" srcset="webp/slide3.webp 1x" alt="slide3.jpg" media="(min-width: 769px)"/>
+                            <source class="lazyload" type="image/jpeg" srcset="images/slide3.jpg 1x" alt="slide3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide3.jpg" alt="slide3.jpg"/>
+                          </picture>
+                        </div>
+                        <div class="catalog-card__favourites">
+                          <svg class="catalog-card__favourites-empty active" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Vector">
+                              <path id="vetor" d="M9.27757 19.2719C9.65978 19.6706 10.2928 19.6839 10.6915 19.3017C11.0901 18.9195 11.1035 18.2865 10.7213 17.8878L9.27757 19.2719ZM3.08564 11.3685L2.35803 12.0546L2.3638 12.0606L3.08564 11.3685ZM3.08564 3.01839L2.37949 2.31032C2.37223 2.31756 2.36508 2.32491 2.35805 2.33237L3.08564 3.01839ZM9.43679 3.19855C9.89337 3.50927 10.5154 3.39103 10.8261 2.93445C11.1369 2.47786 11.0186 1.85584 10.562 1.54511L9.43679 3.19855ZM9.27757 17.8879C8.89538 18.2865 8.90874 18.9196 9.30742 19.3018C9.7061 19.684 10.3391 19.6706 10.7213 19.2719L9.27757 17.8879ZM14.7244 15.0962C15.1065 14.6975 15.0932 14.0645 14.6945 13.6823C14.2958 13.3001 13.6628 13.3135 13.2806 13.7122L14.7244 15.0962ZM9.2776 17.8878C8.89539 18.2865 8.90873 18.9195 9.30739 19.3017C9.70605 19.6839 10.3391 19.6706 10.7213 19.2719L9.2776 17.8878ZM16.9132 11.3685L17.6351 12.0606L17.6408 12.0546L16.9132 11.3685ZM16.9132 3.01839L17.6408 2.33237C17.6338 2.32491 17.6266 2.31756 17.6194 2.31032L16.9132 3.01839ZM9.43683 1.54511C8.98025 1.85584 8.862 2.47786 9.17273 2.93445C9.48345 3.39103 10.1055 3.50927 10.5621 3.19855L9.43683 1.54511ZM9.2776 19.2719C9.6598 19.6706 10.2928 19.684 10.6915 19.3018C11.0902 18.9196 11.1035 18.2865 10.7214 17.8879L9.2776 19.2719ZM6.71832 13.7122C6.33613 13.3135 5.7031 13.3001 5.30442 13.6823C4.90574 14.0645 4.89238 14.6975 5.27457 15.0962L6.71832 13.7122ZM10.5308 1.52469C10.0629 1.23122 9.44577 1.3726 9.1523 1.84047C8.85884 2.30833 9.00022 2.92551 9.46808 3.21898L10.5308 1.52469ZM11.0917 3.26208L10.3692 3.95341L10.3697 3.95388L11.0917 3.26208ZM11.8244 5.47231C12.2065 5.87111 12.8395 5.88467 13.2383 5.50259C13.6371 5.12052 13.6507 4.4875 13.2686 4.0887L11.8244 5.47231ZM10.7213 17.8878L3.80748 10.6765L2.3638 12.0606L9.27757 19.2719L10.7213 17.8878ZM3.81322 10.6825C1.9659 8.72327 1.9659 5.66366 3.81322 3.7044L2.35805 2.33237C-0.215705 5.06209 -0.215705 9.32484 2.35805 12.0546L3.81322 10.6825ZM3.79178 3.72645C5.3032 2.21914 7.67211 1.9976 9.43679 3.19855L10.562 1.54511C8.00409 -0.195675 4.57031 0.125443 2.37949 2.31032L3.79178 3.72645ZM10.7213 19.2719L14.7244 15.0962L13.2806 13.7122L9.27757 17.8879L10.7213 19.2719ZM10.7213 19.2719L17.6351 12.0606L16.1914 10.6765L9.2776 17.8878L10.7213 19.2719ZM17.6408 12.0546C20.2146 9.32484 20.2146 5.06209 17.6408 2.33237L16.1856 3.7044C18.033 5.66366 18.033 8.72327 16.1856 10.6825L17.6408 12.0546ZM17.6194 2.31032C15.4285 0.125443 11.9948 -0.195675 9.43683 1.54511L10.5621 3.19855C12.3267 1.9976 14.6957 2.21914 16.2071 3.72645L17.6194 2.31032ZM10.7214 17.8879L6.71832 13.7122L5.27457 15.0962L9.2776 19.2719L10.7214 17.8879ZM9.46808 3.21898C9.79761 3.42567 10.1003 3.67236 10.3692 3.95341L11.8143 2.57074C11.4313 2.17043 11.0002 1.81908 10.5308 1.52469L9.46808 3.21898ZM10.3697 3.95388L11.8244 5.47231L13.2686 4.0887L11.8138 2.57027L10.3697 3.95388Z" fill="#62215B"></path>
+                            </g>
+                          </svg>
+                          <svg class="catalog-card__favourites-full" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Vector">
+                              <path id="vetor" fill-rule="evenodd" clip-rule="evenodd" d="M8.9999 17.5798L2.08613 10.3685C-0.124412 8.02396 -0.124412 4.36279 2.08613 2.0183C3.93724 0.172199 6.83859 -0.0991274 8.9999 1.37174M8.99994 17.5798L13.003 13.4041L8.99994 17.5798ZM8.99994 17.5798L15.9137 10.3685C18.1242 8.02396 18.1242 4.36279 15.9137 2.0183C14.0626 0.172199 11.1612 -0.0991274 8.99994 1.37174M8.99997 17.5798L4.99693 13.4041L8.99997 17.5798ZM8.99994 1.37174C9.39937 1.62228 9.76626 1.9213 10.0922 2.26198L11.547 3.78042" fill="#62215B"></path>
+                            </g>
+                          </svg>
+                        </div>
+                        <div class="catalog-card__place">
+                          <div class="place place_sale">
+                            <p>sale</p>
                           </div>
                         </div>
                       </div>
-                      <div class="bayers-search__date"> 
-                        <div class="bayers-search__date-left">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
-                            <path d="M13.6531 3.41024L6.31062 7.49404C4.64687 8.41529 3.28564 10.7253 3.28564 12.6228V20.3915C3.28564 22.289 4.64687 24.599 6.31062 25.5203L13.6531 29.6041C15.2206 30.4703 17.7919 30.4703 19.3594 29.6041L26.7019 25.5203C28.3656 24.599 29.7269 22.289 29.7269 20.3915V12.6228C29.7269 10.7253 28.3656 8.41529 26.7019 7.49404L19.3594 3.41024C17.7781 2.53024 15.2206 2.53024 13.6531 3.41024Z" fill="#C19F86"></path>
-                            <path d="M4.3584 10.2302L16.4996 17.2565L28.5584 10.2714" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M16.4995 29.7139V17.2427" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M23.3749 18.2055V13.173L10.3262 5.63794" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <div class="catalog-card__bottom"> 
+                        <h2 class="catalog-card__title">Джемпер ажурный на пуговицах</h2>
+                        <div class="catalog-card__price">
+                          <p class="catalog-card__newPrice">1000 ₽</p>
+                          <p class="catalog-card__oldPrice">2000 ₽</p>
+                        </div>
+                        <div class="catalog-card__colors"><a class="catalog-card__colors-item active">
+                            <div class="catalog-card__colors-circle" style=" background-color:#A972A9"></div></a><a class="catalog-card__colors-more">+еще цвета</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog-card">
+                    <div class="catalog-card__inner">
+                      <div class="catalog-card__top">
+                        <div class="catalog-card__windows catalog-card__windows_2">
+                          <div class="catalog-card__window" data-card-window="1">
+                            <div class="catalog-card__window-item"></div>
+                          </div>
+                          <div class="catalog-card__window" data-card-window="2">
+                            <div class="catalog-card__window-item"></div>
+                          </div>
+                        </div>
+                        <div class="catalog-card__img active" data-card-img="1">
+                          <picture class="picture">
+                            <source class="lazyload" type="image/webp" srcset="webp/slide3.webp 1x" alt="slide3.jpg" media="(min-width: 769px)"/>
+                            <source class="lazyload" type="image/jpeg" srcset="images/slide3.jpg 1x" alt="slide3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide3.jpg" alt="slide3.jpg"/>
+                          </picture>
+                        </div>
+                        <div class="catalog-card__img" data-card-img="2">
+                          <picture class="picture">
+                            <source class="lazyload" type="image/webp" srcset="webp/slide1.webp 1x" alt="slide1.jpg" media="(min-width: 769px)"/>
+                            <source class="lazyload" type="image/jpeg" srcset="images/slide1.jpg 1x" alt="slide1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide1.jpg" alt="slide1.jpg"/>
+                          </picture>
+                        </div>
+                        <div class="catalog-card__favourites">
+                          <svg class="catalog-card__favourites-empty active" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Vector">
+                              <path id="vetor" d="M9.27757 19.2719C9.65978 19.6706 10.2928 19.6839 10.6915 19.3017C11.0901 18.9195 11.1035 18.2865 10.7213 17.8878L9.27757 19.2719ZM3.08564 11.3685L2.35803 12.0546L2.3638 12.0606L3.08564 11.3685ZM3.08564 3.01839L2.37949 2.31032C2.37223 2.31756 2.36508 2.32491 2.35805 2.33237L3.08564 3.01839ZM9.43679 3.19855C9.89337 3.50927 10.5154 3.39103 10.8261 2.93445C11.1369 2.47786 11.0186 1.85584 10.562 1.54511L9.43679 3.19855ZM9.27757 17.8879C8.89538 18.2865 8.90874 18.9196 9.30742 19.3018C9.7061 19.684 10.3391 19.6706 10.7213 19.2719L9.27757 17.8879ZM14.7244 15.0962C15.1065 14.6975 15.0932 14.0645 14.6945 13.6823C14.2958 13.3001 13.6628 13.3135 13.2806 13.7122L14.7244 15.0962ZM9.2776 17.8878C8.89539 18.2865 8.90873 18.9195 9.30739 19.3017C9.70605 19.6839 10.3391 19.6706 10.7213 19.2719L9.2776 17.8878ZM16.9132 11.3685L17.6351 12.0606L17.6408 12.0546L16.9132 11.3685ZM16.9132 3.01839L17.6408 2.33237C17.6338 2.32491 17.6266 2.31756 17.6194 2.31032L16.9132 3.01839ZM9.43683 1.54511C8.98025 1.85584 8.862 2.47786 9.17273 2.93445C9.48345 3.39103 10.1055 3.50927 10.5621 3.19855L9.43683 1.54511ZM9.2776 19.2719C9.6598 19.6706 10.2928 19.684 10.6915 19.3018C11.0902 18.9196 11.1035 18.2865 10.7214 17.8879L9.2776 19.2719ZM6.71832 13.7122C6.33613 13.3135 5.7031 13.3001 5.30442 13.6823C4.90574 14.0645 4.89238 14.6975 5.27457 15.0962L6.71832 13.7122ZM10.5308 1.52469C10.0629 1.23122 9.44577 1.3726 9.1523 1.84047C8.85884 2.30833 9.00022 2.92551 9.46808 3.21898L10.5308 1.52469ZM11.0917 3.26208L10.3692 3.95341L10.3697 3.95388L11.0917 3.26208ZM11.8244 5.47231C12.2065 5.87111 12.8395 5.88467 13.2383 5.50259C13.6371 5.12052 13.6507 4.4875 13.2686 4.0887L11.8244 5.47231ZM10.7213 17.8878L3.80748 10.6765L2.3638 12.0606L9.27757 19.2719L10.7213 17.8878ZM3.81322 10.6825C1.9659 8.72327 1.9659 5.66366 3.81322 3.7044L2.35805 2.33237C-0.215705 5.06209 -0.215705 9.32484 2.35805 12.0546L3.81322 10.6825ZM3.79178 3.72645C5.3032 2.21914 7.67211 1.9976 9.43679 3.19855L10.562 1.54511C8.00409 -0.195675 4.57031 0.125443 2.37949 2.31032L3.79178 3.72645ZM10.7213 19.2719L14.7244 15.0962L13.2806 13.7122L9.27757 17.8879L10.7213 19.2719ZM10.7213 19.2719L17.6351 12.0606L16.1914 10.6765L9.2776 17.8878L10.7213 19.2719ZM17.6408 12.0546C20.2146 9.32484 20.2146 5.06209 17.6408 2.33237L16.1856 3.7044C18.033 5.66366 18.033 8.72327 16.1856 10.6825L17.6408 12.0546ZM17.6194 2.31032C15.4285 0.125443 11.9948 -0.195675 9.43683 1.54511L10.5621 3.19855C12.3267 1.9976 14.6957 2.21914 16.2071 3.72645L17.6194 2.31032ZM10.7214 17.8879L6.71832 13.7122L5.27457 15.0962L9.2776 19.2719L10.7214 17.8879ZM9.46808 3.21898C9.79761 3.42567 10.1003 3.67236 10.3692 3.95341L11.8143 2.57074C11.4313 2.17043 11.0002 1.81908 10.5308 1.52469L9.46808 3.21898ZM10.3697 3.95388L11.8244 5.47231L13.2686 4.0887L11.8138 2.57027L10.3697 3.95388Z" fill="#62215B"></path>
+                            </g>
+                          </svg>
+                          <svg class="catalog-card__favourites-full" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Vector">
+                              <path id="vetor" fill-rule="evenodd" clip-rule="evenodd" d="M8.9999 17.5798L2.08613 10.3685C-0.124412 8.02396 -0.124412 4.36279 2.08613 2.0183C3.93724 0.172199 6.83859 -0.0991274 8.9999 1.37174M8.99994 17.5798L13.003 13.4041L8.99994 17.5798ZM8.99994 17.5798L15.9137 10.3685C18.1242 8.02396 18.1242 4.36279 15.9137 2.0183C14.0626 0.172199 11.1612 -0.0991274 8.99994 1.37174M8.99997 17.5798L4.99693 13.4041L8.99997 17.5798ZM8.99994 1.37174C9.39937 1.62228 9.76626 1.9213 10.0922 2.26198L11.547 3.78042" fill="#62215B"></path>
+                            </g>
                           </svg>
                         </div>
-                        <div class="bayers-search__date-right">
-                          <p class="bayers-search__date-text">Доставка ожидается</p>
-                          <p class="bayers-search__date-date">22.05.2023</p>
+                        <div class="catalog-card__place">
+                          <div class="place place_sale">
+                            <p>sale</p>
+                          </div>
                         </div>
+                      </div>
+                      <div class="catalog-card__bottom"> 
+                        <h2 class="catalog-card__title">Джемпер ажурный на пуговицах</h2>
+                        <div class="catalog-card__price">
+                          <p class="catalog-card__newPrice">1000 ₽</p>
+                          <p class="catalog-card__oldPrice">2000 ₽</p>
+                        </div>
+                        <div class="catalog-card__colors"><a class="catalog-card__colors-item active">
+                            <div class="catalog-card__colors-circle" style=" background-color:#A972A9"></div></a><a class="catalog-card__colors-item">
+                            <div class="catalog-card__colors-circle" style=" background-color:#E8C9AA"></div></a><a class="catalog-card__colors-more">+еще цвета</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog-card">
+                    <div class="catalog-card__inner">
+                      <div class="catalog-card__top">
+                        <div class="catalog-card__windows catalog-card__windows_3">
+                          <div class="catalog-card__window" data-card-window="1">
+                            <div class="catalog-card__window-item"></div>
+                          </div>
+                          <div class="catalog-card__window" data-card-window="2">
+                            <div class="catalog-card__window-item"></div>
+                          </div>
+                          <div class="catalog-card__window" data-card-window="3">
+                            <div class="catalog-card__window-item"></div>
+                          </div>
+                        </div>
+                        <div class="catalog-card__img active" data-card-img="1">
+                          <picture class="picture">
+                            <source class="lazyload" type="image/webp" srcset="webp/slide3.webp 1x" alt="slide3.jpg" media="(min-width: 769px)"/>
+                            <source class="lazyload" type="image/jpeg" srcset="images/slide3.jpg 1x" alt="slide3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide3.jpg" alt="slide3.jpg"/>
+                          </picture>
+                        </div>
+                        <div class="catalog-card__img" data-card-img="2">
+                          <picture class="picture">
+                            <source class="lazyload" type="image/webp" srcset="webp/slide1.webp 1x" alt="slide1.jpg" media="(min-width: 769px)"/>
+                            <source class="lazyload" type="image/jpeg" srcset="images/slide1.jpg 1x" alt="slide1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide1.jpg" alt="slide1.jpg"/>
+                          </picture>
+                        </div>
+                        <div class="catalog-card__img" data-card-img="3">
+                          <picture class="picture">
+                            <source class="lazyload" type="image/webp" srcset="webp/pr1.webp 1x" alt="pr1.jpg" media="(min-width: 769px)"/>
+                            <source class="lazyload" type="image/jpeg" srcset="images/pr1.jpg 1x" alt="pr1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/pr1.jpg" alt="pr1.jpg"/>
+                          </picture>
+                        </div>
+                        <div class="catalog-card__favourites">
+                          <svg class="catalog-card__favourites-empty active" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Vector">
+                              <path id="vetor" d="M9.27757 19.2719C9.65978 19.6706 10.2928 19.6839 10.6915 19.3017C11.0901 18.9195 11.1035 18.2865 10.7213 17.8878L9.27757 19.2719ZM3.08564 11.3685L2.35803 12.0546L2.3638 12.0606L3.08564 11.3685ZM3.08564 3.01839L2.37949 2.31032C2.37223 2.31756 2.36508 2.32491 2.35805 2.33237L3.08564 3.01839ZM9.43679 3.19855C9.89337 3.50927 10.5154 3.39103 10.8261 2.93445C11.1369 2.47786 11.0186 1.85584 10.562 1.54511L9.43679 3.19855ZM9.27757 17.8879C8.89538 18.2865 8.90874 18.9196 9.30742 19.3018C9.7061 19.684 10.3391 19.6706 10.7213 19.2719L9.27757 17.8879ZM14.7244 15.0962C15.1065 14.6975 15.0932 14.0645 14.6945 13.6823C14.2958 13.3001 13.6628 13.3135 13.2806 13.7122L14.7244 15.0962ZM9.2776 17.8878C8.89539 18.2865 8.90873 18.9195 9.30739 19.3017C9.70605 19.6839 10.3391 19.6706 10.7213 19.2719L9.2776 17.8878ZM16.9132 11.3685L17.6351 12.0606L17.6408 12.0546L16.9132 11.3685ZM16.9132 3.01839L17.6408 2.33237C17.6338 2.32491 17.6266 2.31756 17.6194 2.31032L16.9132 3.01839ZM9.43683 1.54511C8.98025 1.85584 8.862 2.47786 9.17273 2.93445C9.48345 3.39103 10.1055 3.50927 10.5621 3.19855L9.43683 1.54511ZM9.2776 19.2719C9.6598 19.6706 10.2928 19.684 10.6915 19.3018C11.0902 18.9196 11.1035 18.2865 10.7214 17.8879L9.2776 19.2719ZM6.71832 13.7122C6.33613 13.3135 5.7031 13.3001 5.30442 13.6823C4.90574 14.0645 4.89238 14.6975 5.27457 15.0962L6.71832 13.7122ZM10.5308 1.52469C10.0629 1.23122 9.44577 1.3726 9.1523 1.84047C8.85884 2.30833 9.00022 2.92551 9.46808 3.21898L10.5308 1.52469ZM11.0917 3.26208L10.3692 3.95341L10.3697 3.95388L11.0917 3.26208ZM11.8244 5.47231C12.2065 5.87111 12.8395 5.88467 13.2383 5.50259C13.6371 5.12052 13.6507 4.4875 13.2686 4.0887L11.8244 5.47231ZM10.7213 17.8878L3.80748 10.6765L2.3638 12.0606L9.27757 19.2719L10.7213 17.8878ZM3.81322 10.6825C1.9659 8.72327 1.9659 5.66366 3.81322 3.7044L2.35805 2.33237C-0.215705 5.06209 -0.215705 9.32484 2.35805 12.0546L3.81322 10.6825ZM3.79178 3.72645C5.3032 2.21914 7.67211 1.9976 9.43679 3.19855L10.562 1.54511C8.00409 -0.195675 4.57031 0.125443 2.37949 2.31032L3.79178 3.72645ZM10.7213 19.2719L14.7244 15.0962L13.2806 13.7122L9.27757 17.8879L10.7213 19.2719ZM10.7213 19.2719L17.6351 12.0606L16.1914 10.6765L9.2776 17.8878L10.7213 19.2719ZM17.6408 12.0546C20.2146 9.32484 20.2146 5.06209 17.6408 2.33237L16.1856 3.7044C18.033 5.66366 18.033 8.72327 16.1856 10.6825L17.6408 12.0546ZM17.6194 2.31032C15.4285 0.125443 11.9948 -0.195675 9.43683 1.54511L10.5621 3.19855C12.3267 1.9976 14.6957 2.21914 16.2071 3.72645L17.6194 2.31032ZM10.7214 17.8879L6.71832 13.7122L5.27457 15.0962L9.2776 19.2719L10.7214 17.8879ZM9.46808 3.21898C9.79761 3.42567 10.1003 3.67236 10.3692 3.95341L11.8143 2.57074C11.4313 2.17043 11.0002 1.81908 10.5308 1.52469L9.46808 3.21898ZM10.3697 3.95388L11.8244 5.47231L13.2686 4.0887L11.8138 2.57027L10.3697 3.95388Z" fill="#62215B"></path>
+                            </g>
+                          </svg>
+                          <svg class="catalog-card__favourites-full" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Vector">
+                              <path id="vetor" fill-rule="evenodd" clip-rule="evenodd" d="M8.9999 17.5798L2.08613 10.3685C-0.124412 8.02396 -0.124412 4.36279 2.08613 2.0183C3.93724 0.172199 6.83859 -0.0991274 8.9999 1.37174M8.99994 17.5798L13.003 13.4041L8.99994 17.5798ZM8.99994 17.5798L15.9137 10.3685C18.1242 8.02396 18.1242 4.36279 15.9137 2.0183C14.0626 0.172199 11.1612 -0.0991274 8.99994 1.37174M8.99997 17.5798L4.99693 13.4041L8.99997 17.5798ZM8.99994 1.37174C9.39937 1.62228 9.76626 1.9213 10.0922 2.26198L11.547 3.78042" fill="#62215B"></path>
+                            </g>
+                          </svg>
+                        </div>
+                        <div class="catalog-card__place">
+                          <div class="place place_sale">
+                            <p>sale</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="catalog-card__bottom"> 
+                        <h2 class="catalog-card__title">Джемпер ажурный на пуговицах</h2>
+                        <div class="catalog-card__price">
+                          <p class="catalog-card__newPrice">1000 ₽</p>
+                          <p class="catalog-card__oldPrice">2000 ₽</p>
+                        </div>
+                        <div class="catalog-card__colors"><a class="catalog-card__colors-item active">
+                            <div class="catalog-card__colors-circle" style=" background-color:#A972A9"></div></a><a class="catalog-card__colors-item">
+                            <div class="catalog-card__colors-circle" style=" background-color:#CD0200"></div></a><a class="catalog-card__colors-item">
+                            <div class="catalog-card__colors-circle" style=" background-color:#E8C9AA"></div></a><a class="catalog-card__colors-more">+еще цвета</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog-card">
+                    <div class="catalog-card__inner">
+                      <div class="catalog-card__top">
+                        <div class="catalog-card__windows catalog-card__windows_4">
+                          <div class="catalog-card__window" data-card-window="1">
+                            <div class="catalog-card__window-item"></div>
+                          </div>
+                          <div class="catalog-card__window" data-card-window="2">
+                            <div class="catalog-card__window-item"></div>
+                          </div>
+                          <div class="catalog-card__window" data-card-window="3">
+                            <div class="catalog-card__window-item"></div>
+                          </div>
+                          <div class="catalog-card__window" data-card-window="4">
+                            <div class="catalog-card__window-item"></div>
+                          </div>
+                        </div>
+                        <div class="catalog-card__img active" data-card-img="1">
+                          <picture class="picture">
+                            <source class="lazyload" type="image/webp" srcset="webp/slide3.webp 1x" alt="slide3.jpg" media="(min-width: 769px)"/>
+                            <source class="lazyload" type="image/jpeg" srcset="images/slide3.jpg 1x" alt="slide3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide3.jpg" alt="slide3.jpg"/>
+                          </picture>
+                        </div>
+                        <div class="catalog-card__img" data-card-img="2">
+                          <picture class="picture">
+                            <source class="lazyload" type="image/webp" srcset="webp/slide1.webp 1x" alt="slide1.jpg" media="(min-width: 769px)"/>
+                            <source class="lazyload" type="image/jpeg" srcset="images/slide1.jpg 1x" alt="slide1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide1.jpg" alt="slide1.jpg"/>
+                          </picture>
+                        </div>
+                        <div class="catalog-card__img" data-card-img="3">
+                          <picture class="picture">
+                            <source class="lazyload" type="image/webp" srcset="webp/pr1.webp 1x" alt="pr1.jpg" media="(min-width: 769px)"/>
+                            <source class="lazyload" type="image/jpeg" srcset="images/pr1.jpg 1x" alt="pr1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/pr1.jpg" alt="pr1.jpg"/>
+                          </picture>
+                        </div>
+                        <div class="catalog-card__img" data-card-img="4">
+                          <picture class="picture">
+                            <source class="lazyload" type="image/webp" srcset="webp/slide3.webp 1x" alt="slide3.jpg" media="(min-width: 769px)"/>
+                            <source class="lazyload" type="image/jpeg" srcset="images/slide3.jpg 1x" alt="slide3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide3.jpg" alt="slide3.jpg"/>
+                          </picture>
+                        </div>
+                        <div class="catalog-card__favourites">
+                          <svg class="catalog-card__favourites-empty active" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Vector">
+                              <path id="vetor" d="M9.27757 19.2719C9.65978 19.6706 10.2928 19.6839 10.6915 19.3017C11.0901 18.9195 11.1035 18.2865 10.7213 17.8878L9.27757 19.2719ZM3.08564 11.3685L2.35803 12.0546L2.3638 12.0606L3.08564 11.3685ZM3.08564 3.01839L2.37949 2.31032C2.37223 2.31756 2.36508 2.32491 2.35805 2.33237L3.08564 3.01839ZM9.43679 3.19855C9.89337 3.50927 10.5154 3.39103 10.8261 2.93445C11.1369 2.47786 11.0186 1.85584 10.562 1.54511L9.43679 3.19855ZM9.27757 17.8879C8.89538 18.2865 8.90874 18.9196 9.30742 19.3018C9.7061 19.684 10.3391 19.6706 10.7213 19.2719L9.27757 17.8879ZM14.7244 15.0962C15.1065 14.6975 15.0932 14.0645 14.6945 13.6823C14.2958 13.3001 13.6628 13.3135 13.2806 13.7122L14.7244 15.0962ZM9.2776 17.8878C8.89539 18.2865 8.90873 18.9195 9.30739 19.3017C9.70605 19.6839 10.3391 19.6706 10.7213 19.2719L9.2776 17.8878ZM16.9132 11.3685L17.6351 12.0606L17.6408 12.0546L16.9132 11.3685ZM16.9132 3.01839L17.6408 2.33237C17.6338 2.32491 17.6266 2.31756 17.6194 2.31032L16.9132 3.01839ZM9.43683 1.54511C8.98025 1.85584 8.862 2.47786 9.17273 2.93445C9.48345 3.39103 10.1055 3.50927 10.5621 3.19855L9.43683 1.54511ZM9.2776 19.2719C9.6598 19.6706 10.2928 19.684 10.6915 19.3018C11.0902 18.9196 11.1035 18.2865 10.7214 17.8879L9.2776 19.2719ZM6.71832 13.7122C6.33613 13.3135 5.7031 13.3001 5.30442 13.6823C4.90574 14.0645 4.89238 14.6975 5.27457 15.0962L6.71832 13.7122ZM10.5308 1.52469C10.0629 1.23122 9.44577 1.3726 9.1523 1.84047C8.85884 2.30833 9.00022 2.92551 9.46808 3.21898L10.5308 1.52469ZM11.0917 3.26208L10.3692 3.95341L10.3697 3.95388L11.0917 3.26208ZM11.8244 5.47231C12.2065 5.87111 12.8395 5.88467 13.2383 5.50259C13.6371 5.12052 13.6507 4.4875 13.2686 4.0887L11.8244 5.47231ZM10.7213 17.8878L3.80748 10.6765L2.3638 12.0606L9.27757 19.2719L10.7213 17.8878ZM3.81322 10.6825C1.9659 8.72327 1.9659 5.66366 3.81322 3.7044L2.35805 2.33237C-0.215705 5.06209 -0.215705 9.32484 2.35805 12.0546L3.81322 10.6825ZM3.79178 3.72645C5.3032 2.21914 7.67211 1.9976 9.43679 3.19855L10.562 1.54511C8.00409 -0.195675 4.57031 0.125443 2.37949 2.31032L3.79178 3.72645ZM10.7213 19.2719L14.7244 15.0962L13.2806 13.7122L9.27757 17.8879L10.7213 19.2719ZM10.7213 19.2719L17.6351 12.0606L16.1914 10.6765L9.2776 17.8878L10.7213 19.2719ZM17.6408 12.0546C20.2146 9.32484 20.2146 5.06209 17.6408 2.33237L16.1856 3.7044C18.033 5.66366 18.033 8.72327 16.1856 10.6825L17.6408 12.0546ZM17.6194 2.31032C15.4285 0.125443 11.9948 -0.195675 9.43683 1.54511L10.5621 3.19855C12.3267 1.9976 14.6957 2.21914 16.2071 3.72645L17.6194 2.31032ZM10.7214 17.8879L6.71832 13.7122L5.27457 15.0962L9.2776 19.2719L10.7214 17.8879ZM9.46808 3.21898C9.79761 3.42567 10.1003 3.67236 10.3692 3.95341L11.8143 2.57074C11.4313 2.17043 11.0002 1.81908 10.5308 1.52469L9.46808 3.21898ZM10.3697 3.95388L11.8244 5.47231L13.2686 4.0887L11.8138 2.57027L10.3697 3.95388Z" fill="#62215B"></path>
+                            </g>
+                          </svg>
+                          <svg class="catalog-card__favourites-full" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Vector">
+                              <path id="vetor" fill-rule="evenodd" clip-rule="evenodd" d="M8.9999 17.5798L2.08613 10.3685C-0.124412 8.02396 -0.124412 4.36279 2.08613 2.0183C3.93724 0.172199 6.83859 -0.0991274 8.9999 1.37174M8.99994 17.5798L13.003 13.4041L8.99994 17.5798ZM8.99994 17.5798L15.9137 10.3685C18.1242 8.02396 18.1242 4.36279 15.9137 2.0183C14.0626 0.172199 11.1612 -0.0991274 8.99994 1.37174M8.99997 17.5798L4.99693 13.4041L8.99997 17.5798ZM8.99994 1.37174C9.39937 1.62228 9.76626 1.9213 10.0922 2.26198L11.547 3.78042" fill="#62215B"></path>
+                            </g>
+                          </svg>
+                        </div>
+                        <div class="catalog-card__place">
+                          <div class="place place_sale">
+                            <p>sale</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="catalog-card__bottom"> 
+                        <h2 class="catalog-card__title">Джемпер ажурный на пуговицах</h2>
+                        <div class="catalog-card__price">
+                          <p class="catalog-card__newPrice">1000 ₽</p>
+                          <p class="catalog-card__oldPrice">2000 ₽</p>
+                        </div>
+                        <div class="catalog-card__colors"><a class="catalog-card__colors-item active">
+                            <div class="catalog-card__colors-circle" style=" background-color:#A972A9"></div></a><a class="catalog-card__colors-item">
+                            <div class="catalog-card__colors-circle" style=" background-color:#CD0200"></div></a><a class="catalog-card__colors-item">
+                            <div class="catalog-card__colors-circle" style=" background-color:#E8C9AA"></div></a><a class="catalog-card__colors-item">
+                            <div class="catalog-card__colors-circle" style=" background-color:#D9EFFC"></div></a><a class="catalog-card__colors-more">+еще цвета</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog-card">
+                    <div class="catalog-card__inner">
+                      <div class="catalog-card__top">
+                        <div class="catalog-card__windows catalog-card__windows_5">
+                          <div class="catalog-card__window" data-card-window="1">
+                            <div class="catalog-card__window-item"></div>
+                          </div>
+                          <div class="catalog-card__window" data-card-window="2">
+                            <div class="catalog-card__window-item"></div>
+                          </div>
+                          <div class="catalog-card__window" data-card-window="3">
+                            <div class="catalog-card__window-item"></div>
+                          </div>
+                          <div class="catalog-card__window" data-card-window="4">
+                            <div class="catalog-card__window-item"></div>
+                          </div>
+                          <div class="catalog-card__window" data-card-window="5">
+                            <div class="catalog-card__window-item"></div>
+                          </div>
+                        </div>
+                        <div class="catalog-card__img active" data-card-img="1">
+                          <picture class="picture">
+                            <source class="lazyload" type="image/webp" srcset="webp/slide3.webp 1x" alt="slide3.jpg" media="(min-width: 769px)"/>
+                            <source class="lazyload" type="image/jpeg" srcset="images/slide3.jpg 1x" alt="slide3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide3.jpg" alt="slide3.jpg"/>
+                          </picture>
+                        </div>
+                        <div class="catalog-card__img" data-card-img="2">
+                          <picture class="picture">
+                            <source class="lazyload" type="image/webp" srcset="webp/slide1.webp 1x" alt="slide1.jpg" media="(min-width: 769px)"/>
+                            <source class="lazyload" type="image/jpeg" srcset="images/slide1.jpg 1x" alt="slide1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide1.jpg" alt="slide1.jpg"/>
+                          </picture>
+                        </div>
+                        <div class="catalog-card__img" data-card-img="3">
+                          <picture class="picture">
+                            <source class="lazyload" type="image/webp" srcset="webp/pr1.webp 1x" alt="pr1.jpg" media="(min-width: 769px)"/>
+                            <source class="lazyload" type="image/jpeg" srcset="images/pr1.jpg 1x" alt="pr1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/pr1.jpg" alt="pr1.jpg"/>
+                          </picture>
+                        </div>
+                        <div class="catalog-card__img" data-card-img="4">
+                          <picture class="picture">
+                            <source class="lazyload" type="image/webp" srcset="webp/slide3.webp 1x" alt="slide3.jpg" media="(min-width: 769px)"/>
+                            <source class="lazyload" type="image/jpeg" srcset="images/slide3.jpg 1x" alt="slide3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide3.jpg" alt="slide3.jpg"/>
+                          </picture>
+                        </div>
+                        <div class="catalog-card__img" data-card-img="5">
+                          <picture class="picture">
+                            <source class="lazyload" type="image/webp" srcset="webp/slide1.webp 1x" alt="slide1.jpg" media="(min-width: 769px)"/>
+                            <source class="lazyload" type="image/jpeg" srcset="images/slide1.jpg 1x" alt="slide1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide1.jpg" alt="slide1.jpg"/>
+                          </picture>
+                        </div>
+                        <div class="catalog-card__favourites">
+                          <svg class="catalog-card__favourites-empty active" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Vector">
+                              <path id="vetor" d="M9.27757 19.2719C9.65978 19.6706 10.2928 19.6839 10.6915 19.3017C11.0901 18.9195 11.1035 18.2865 10.7213 17.8878L9.27757 19.2719ZM3.08564 11.3685L2.35803 12.0546L2.3638 12.0606L3.08564 11.3685ZM3.08564 3.01839L2.37949 2.31032C2.37223 2.31756 2.36508 2.32491 2.35805 2.33237L3.08564 3.01839ZM9.43679 3.19855C9.89337 3.50927 10.5154 3.39103 10.8261 2.93445C11.1369 2.47786 11.0186 1.85584 10.562 1.54511L9.43679 3.19855ZM9.27757 17.8879C8.89538 18.2865 8.90874 18.9196 9.30742 19.3018C9.7061 19.684 10.3391 19.6706 10.7213 19.2719L9.27757 17.8879ZM14.7244 15.0962C15.1065 14.6975 15.0932 14.0645 14.6945 13.6823C14.2958 13.3001 13.6628 13.3135 13.2806 13.7122L14.7244 15.0962ZM9.2776 17.8878C8.89539 18.2865 8.90873 18.9195 9.30739 19.3017C9.70605 19.6839 10.3391 19.6706 10.7213 19.2719L9.2776 17.8878ZM16.9132 11.3685L17.6351 12.0606L17.6408 12.0546L16.9132 11.3685ZM16.9132 3.01839L17.6408 2.33237C17.6338 2.32491 17.6266 2.31756 17.6194 2.31032L16.9132 3.01839ZM9.43683 1.54511C8.98025 1.85584 8.862 2.47786 9.17273 2.93445C9.48345 3.39103 10.1055 3.50927 10.5621 3.19855L9.43683 1.54511ZM9.2776 19.2719C9.6598 19.6706 10.2928 19.684 10.6915 19.3018C11.0902 18.9196 11.1035 18.2865 10.7214 17.8879L9.2776 19.2719ZM6.71832 13.7122C6.33613 13.3135 5.7031 13.3001 5.30442 13.6823C4.90574 14.0645 4.89238 14.6975 5.27457 15.0962L6.71832 13.7122ZM10.5308 1.52469C10.0629 1.23122 9.44577 1.3726 9.1523 1.84047C8.85884 2.30833 9.00022 2.92551 9.46808 3.21898L10.5308 1.52469ZM11.0917 3.26208L10.3692 3.95341L10.3697 3.95388L11.0917 3.26208ZM11.8244 5.47231C12.2065 5.87111 12.8395 5.88467 13.2383 5.50259C13.6371 5.12052 13.6507 4.4875 13.2686 4.0887L11.8244 5.47231ZM10.7213 17.8878L3.80748 10.6765L2.3638 12.0606L9.27757 19.2719L10.7213 17.8878ZM3.81322 10.6825C1.9659 8.72327 1.9659 5.66366 3.81322 3.7044L2.35805 2.33237C-0.215705 5.06209 -0.215705 9.32484 2.35805 12.0546L3.81322 10.6825ZM3.79178 3.72645C5.3032 2.21914 7.67211 1.9976 9.43679 3.19855L10.562 1.54511C8.00409 -0.195675 4.57031 0.125443 2.37949 2.31032L3.79178 3.72645ZM10.7213 19.2719L14.7244 15.0962L13.2806 13.7122L9.27757 17.8879L10.7213 19.2719ZM10.7213 19.2719L17.6351 12.0606L16.1914 10.6765L9.2776 17.8878L10.7213 19.2719ZM17.6408 12.0546C20.2146 9.32484 20.2146 5.06209 17.6408 2.33237L16.1856 3.7044C18.033 5.66366 18.033 8.72327 16.1856 10.6825L17.6408 12.0546ZM17.6194 2.31032C15.4285 0.125443 11.9948 -0.195675 9.43683 1.54511L10.5621 3.19855C12.3267 1.9976 14.6957 2.21914 16.2071 3.72645L17.6194 2.31032ZM10.7214 17.8879L6.71832 13.7122L5.27457 15.0962L9.2776 19.2719L10.7214 17.8879ZM9.46808 3.21898C9.79761 3.42567 10.1003 3.67236 10.3692 3.95341L11.8143 2.57074C11.4313 2.17043 11.0002 1.81908 10.5308 1.52469L9.46808 3.21898ZM10.3697 3.95388L11.8244 5.47231L13.2686 4.0887L11.8138 2.57027L10.3697 3.95388Z" fill="#62215B"></path>
+                            </g>
+                          </svg>
+                          <svg class="catalog-card__favourites-full" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Vector">
+                              <path id="vetor" fill-rule="evenodd" clip-rule="evenodd" d="M8.9999 17.5798L2.08613 10.3685C-0.124412 8.02396 -0.124412 4.36279 2.08613 2.0183C3.93724 0.172199 6.83859 -0.0991274 8.9999 1.37174M8.99994 17.5798L13.003 13.4041L8.99994 17.5798ZM8.99994 17.5798L15.9137 10.3685C18.1242 8.02396 18.1242 4.36279 15.9137 2.0183C14.0626 0.172199 11.1612 -0.0991274 8.99994 1.37174M8.99997 17.5798L4.99693 13.4041L8.99997 17.5798ZM8.99994 1.37174C9.39937 1.62228 9.76626 1.9213 10.0922 2.26198L11.547 3.78042" fill="#62215B"></path>
+                            </g>
+                          </svg>
+                        </div>
+                        <div class="catalog-card__place">
+                          <div class="place place_sale">
+                            <p>sale</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="catalog-card__bottom"> 
+                        <h2 class="catalog-card__title">Джемпер ажурный на пуговицах</h2>
+                        <div class="catalog-card__price">
+                          <p class="catalog-card__newPrice">1000 ₽</p>
+                          <p class="catalog-card__oldPrice">2000 ₽</p>
+                        </div>
+                        <div class="catalog-card__colors"><a class="catalog-card__colors-item active">
+                            <div class="catalog-card__colors-circle" style=" background-color:#A972A9"></div></a><a class="catalog-card__colors-item">
+                            <div class="catalog-card__colors-circle" style=" background-color:#CD0200"></div></a><a class="catalog-card__colors-item">
+                            <div class="catalog-card__colors-circle" style=" background-color:#E8C9AA"></div></a><a class="catalog-card__colors-item">
+                            <div class="catalog-card__colors-circle" style=" background-color:#D9EFFC"></div></a><a class="catalog-card__colors-item">
+                            <div class="catalog-card__colors-circle" style=" background-color:#9CBA88"></div></a><a class="catalog-card__colors-more">+еще цвета</a></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
         </div>
-      </main>
+      </section>
       <div class="footer footer-mt">
         <div class="footer__decor"></div>
         <div class="footer__inner">

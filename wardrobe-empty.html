@@ -3,7 +3,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>bayers-search</title>
+    <title>wardrobe-empty</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
@@ -574,99 +574,41 @@
           </div>
         </div>
       </header>
-      <main>
+      <div class="lk-address-page wardrobe">
         <div class="container">
           <div class="breadcrumbs">
             <div class="breadcrumb"><a href="#">Главная</a><span>•</span></div>
-            <div class="breadcrumb"><a href="#">Покупателям</a><span>•</span></div>
-            <div class="breadcrumb active"><a href="#">Определить заказ</a><span>•</span></div>
+            <div class="breadcrumb active"><a href="#">Личный кабинет</a><span>•</span></div>
           </div>
-          <section class="bayers">
-            <div class="bayers__inner">
-              <h1 class="title bayers__title">Покупателям</h1>
-              <ul class="bayers-tubs">
-                <li class="bayers-tubs__item"> <a>Доставка</a></li>
-                <li class="bayers-tubs__item"> <a>Оплата</a></li>
-                <li class="bayers-tubs__item"> <a>Возврат</a></li>
-                <li class="bayers-tubs__item"> <a>Размерная таблица</a></li>
-                <li class="bayers-tubs__item active"> <a>Отследить заказ  </a></li>
+          <div class="lk-address-page__inner wardrobe__inner">
+            <sidebar class="sidebar-lk">
+              <h2 class="sidebar-lk__title">Здравствуйте, <span>Спартак</span></h2>
+              <ul class="sidebar-lk__list"> 
+                <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Мои заказы</a></li>
+                <li class="sidebar-lk__item active"><a class="sidebar-lk__link" href="#">Мой гардероб</a></li>
+                <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Мои данные</a></li>
+                <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Мои адреса</a></li>
+                <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Избранное</a></li>
+                <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Управление рассылками</a></li>
+                <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Выйти</a></li>
               </ul>
-              <div class="bayers__content"> 
-                <div class="bayers-search">
-                  <div class="bayers-search__inner"> 
-                    <h2 class="bayers-search__title title2">Где сейчас находится мой заказ?</h2>
-                    <form class="bayers-search__form">
-                      <div class="bayers-search__form-input">
-                        <div class="input-wrapper input-wrapper-dark" data-input-parent="">
-                          <div class="input-wrapper__placeholder">Номер заказа</div>
-                          <input class="input input-dark" data-input="" required="required" placeholder="Номер заказа"/>
-                          <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
-                            <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                          </svg>
-                        </div>
-                      </div>
-                    </form>
-                    <div class="bayers-search__results">
-                      <div class="bayers-search__block">
-                        <div class="route">
-                          <div class="route__left"><span class="route__circle"> </span><span class="route__line"></span></div>
-                          <div class="route__right">
-                            <p class="route__text"> Поступил в сортировочный центр, Челябинск</p>
-                            <p class="route__date">22.05.2023, 13:38</p>
-                          </div>
-                        </div>
-                        <div class="route">
-                          <div class="route__left"><span class="route__circle"> </span><span class="route__line"></span></div>
-                          <div class="route__right">
-                            <p class="route__text">Принято в сортировочном центре, Челябинск</p>
-                            <p class="route__date">22.05.2023, 13:38</p>
-                          </div>
-                        </div>
-                        <div class="route">
-                          <div class="route__left"><span class="route__circle"> </span><span class="route__line"></span></div>
-                          <div class="route__right">
-                            <p class="route__text">Отсортирован в сортировочном центре, Челябинск</p>
-                            <p class="route__date">22.05.2023, 13:38</p>
-                          </div>
-                        </div>
-                        <div class="route active">
-                          <div class="route__left"><span class="route__circle"> </span><span class="route__line"></span></div>
-                          <div class="route__right">
-                            <p class="route__text">Принято в сортировочном центре, Челябинск</p>
-                            <p class="route__date">22.05.2023, 13:38</p>
-                          </div>
-                        </div>
-                        <div class="route empty">
-                          <div class="route__left"><span class="route__circle"> </span><span class="route__line"></span></div>
-                          <div class="route__right">
-                            <p class="route__text">Принято в сортировочном центре, Челябинск</p>
-                            <p class="route__date">22.05.2023, 13:38</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="bayers-search__date"> 
-                        <div class="bayers-search__date-left">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
-                            <path d="M13.6531 3.41024L6.31062 7.49404C4.64687 8.41529 3.28564 10.7253 3.28564 12.6228V20.3915C3.28564 22.289 4.64687 24.599 6.31062 25.5203L13.6531 29.6041C15.2206 30.4703 17.7919 30.4703 19.3594 29.6041L26.7019 25.5203C28.3656 24.599 29.7269 22.289 29.7269 20.3915V12.6228C29.7269 10.7253 28.3656 8.41529 26.7019 7.49404L19.3594 3.41024C17.7781 2.53024 15.2206 2.53024 13.6531 3.41024Z" fill="#C19F86"></path>
-                            <path d="M4.3584 10.2302L16.4996 17.2565L28.5584 10.2714" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M16.4995 29.7139V17.2427" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M23.3749 18.2055V13.173L10.3262 5.63794" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                          </svg>
-                        </div>
-                        <div class="bayers-search__date-right">
-                          <p class="bayers-search__date-text">Доставка ожидается</p>
-                          <p class="bayers-search__date-date">22.05.2023</p>
-                        </div>
-                      </div>
-                    </div>
+            </sidebar>
+            <div class="wardrobe__block"> 
+              <h3 class="wardrobe__title title">Мой гардероб</h3>
+              <div class="wardrobe-empty">
+                <div class="wardrobe-empty__inner"> 
+                  <div class="wardrobe-empty__block"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="61" height="60" viewBox="0 0 61 60" fill="none">
+                      <path d="M29.43 27.5828C29.43 28.8042 29.43 30.0264 29.43 31.2485C29.43 32.7902 30.7076 34.0403 32.2834 34.0403C36.4443 34.0403 40.606 34.0403 44.767 34.0403C48.1519 34.0403 51.4076 35.3126 53.8601 37.5942C55.107 38.7542 56.0408 40.0315 56.7584 41.5621C57.1101 42.311 57.3826 43.0746 57.5831 43.8744C57.7464 44.5249 58.2393 45.9054 57.1222 45.9054C39.3741 45.9054 21.6252 45.9054 3.87703 45.9054C2.75992 45.9054 3.25285 44.5256 3.41549 43.8758C3.61666 43.0753 3.88916 42.3103 4.24155 41.5614C4.9599 40.0308 5.89367 38.7535 7.14132 37.5928C9.59454 35.3119 12.8496 34.0403 16.233 34.0403C18.6106 34.0403 20.9889 34.0403 23.3665 34.0403C23.9571 34.0403 24.4365 33.5712 24.4365 32.9933C24.4365 32.4154 23.9571 31.9464 23.3665 31.9464C20.9889 31.9464 18.6106 31.9464 16.233 31.9464C11.6975 31.9464 7.39385 33.9105 4.47981 37.3116C2.99034 39.0502 2.01376 40.8879 1.41526 43.0801C1.12064 44.1599 0.742568 45.1154 1.24619 46.2893C1.69132 47.3251 2.72782 48 3.87703 48C21.6252 48 39.3741 48 57.1222 48C58.27 48 59.3072 47.3265 59.7531 46.2907C60.2574 45.1175 59.8801 44.162 59.5854 43.0822C58.9869 40.8907 58.0111 39.053 56.5223 37.3137C53.6076 33.9111 49.3032 31.9464 44.767 31.9464C40.606 31.9464 36.4443 31.9464 32.2834 31.9464C31.779 31.9464 31.57 31.7419 31.57 31.2485C31.57 30.0264 31.57 28.8042 31.57 27.5828C31.57 26.9365 32.0551 26.9295 32.5273 26.8116C33.5988 26.5443 34.5261 26.1108 35.4114 25.4631C36.7154 24.5097 37.5664 23.4126 38.1528 21.9273C39.2863 19.0566 38.6429 15.8056 36.4964 13.5568C31.8154 8.65228 23.415 11.1991 22.3892 17.8338C22.3007 18.4062 22.7031 18.9394 23.2873 19.0259C23.8715 19.1125 24.4165 18.7195 24.5057 18.1472C25.3796 12.4973 33.1094 11.2033 35.8537 16.2467C37.0821 18.5053 36.6926 21.2803 34.8871 23.1306C33.9462 24.0952 32.8883 24.5621 31.6028 24.8713C30.3259 25.1791 29.43 26.2972 29.43 27.5828Z" fill="#C19F86"></path>
+                    </svg>
+                    <p class="wardrobe-empty__text">в гардеробе пока ничего нет</p><a class="btn wardrobe-empty__button" href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
         </div>
-      </main>
+      </div>
       <div class="footer footer-mt">
         <div class="footer__decor"></div>
         <div class="footer__inner">

@@ -7,60 +7,62 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
-    <script type="module" crossorigin src="assets/index-f2b0191c.js"></script>
+    <script type="module" crossorigin src="assets/index-692df965.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
-  <body>
+  <body style="opacity:0">
     <div class="wrapper">
-      <div class="modal" data-modal="login">
-        <div class="overlay"> </div>
-        <div class="modal__inner">
-          <div class="modal__close">
-            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g id="Add">
-                <path id="Vector" d="M9.57191 9.57191L28.4281 28.4281M9.57191 28.4281L19 19L28.4281 9.5719" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
-              </g>
-            </svg>
-          </div>
-          <div class="login">
-            <div class="login__inner"> 
-              <h3 class="login__title">вход или регистрация</h3>
-              <div class="login__box">
-                <form class="login-registration login__block active">
-                  <div class="input-wrapper" data-input-parent="">
-                    <div class="input-wrapper__placeholder">номер телефона</div>
-                    <input class="input" data-input="" required="required" name="" placeholder="номер телефона" data-mask-phone="data-mask-phone"/>
-                    <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                      <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                  </div>
-                  <button class="btn login-registration__button" disabled="disabled">Далее</button>
-                </form>
-                <form class="form login-sms login__block"> 
-                  <p class="login-sms__text"> </p>
-                  <div class="input-wrapper" data-input-parent="">
-                    <div class="input-wrapper__placeholder">код из смс</div>
-                    <input class="input" data-input="" required="required" placeholder="код из смс"/>
-                    <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                      <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                    <div class="spinner input-wrapper__spinner">
-                      <svg id="loader-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                        <path fill="#000" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
-                          <animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform>
-                        </path>
+      <div class="all-modals" style="opacity:0">
+        <div class="modal" data-modal="login">
+          <div class="overlay"> </div>
+          <div class="modal__inner">
+            <div class="modal__close">
+              <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Add">
+                  <path id="Vector" d="M9.57191 9.57191L28.4281 28.4281M9.57191 28.4281L19 19L28.4281 9.5719" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                </g>
+              </svg>
+            </div>
+            <div class="login">
+              <div class="login__inner"> 
+                <h3 class="login__title">вход или регистрация</h3>
+                <div class="login__box">
+                  <form class="login-registration login__block active">
+                    <div class="input-wrapper" data-input-parent="">
+                      <div class="input-wrapper__placeholder">номер телефона</div>
+                      <input class="input" data-input="" required="required" name="" placeholder="номер телефона" data-mask-phone="data-mask-phone"/>
+                      <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
+                        <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                       </svg>
                     </div>
-                  </div>
-                  <div class="login-sms__bottom">
-                    <div class="login-sms__block login-sms__time">
-                      <p>Повторная отправка через <span>0:59</span></p>
+                    <button class="btn login-registration__button" disabled="disabled">Далее</button>
+                  </form>
+                  <form class="form login-sms login__block"> 
+                    <p class="login-sms__text"> </p>
+                    <div class="input-wrapper" data-input-parent="">
+                      <div class="input-wrapper__placeholder">код из смс</div>
+                      <input class="input" data-input="" required="required" placeholder="код из смс"/>
+                      <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
+                        <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      <div class="spinner input-wrapper__spinner">
+                        <svg id="loader-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                          <path fill="#000" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
+                            <animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform>
+                          </path>
+                        </svg>
+                      </div>
                     </div>
-                    <div class="login-sms__block login-sms__link"><a>Запросить новый код</a></div>
-                  </div>
-                </form>
+                    <div class="login-sms__bottom">
+                      <div class="login-sms__block login-sms__time">
+                        <p>Повторная отправка через <span>0:59</span></p>
+                      </div>
+                      <div class="login-sms__block login-sms__link"><a>Запросить новый код</a></div>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
@@ -89,9 +91,9 @@
                     <p class="search__title">вам может понравиться</p>
                     <form class="search__form">
                       <div class="input-wrapper" data-input-parent="">
-                        <div class="input-wrapper__placeholder">Введите адрес в обычном формате|например, кардиган</div>
-                        <input class="input" data-input="" required="required" name="" placeholder="Введите адрес в обычном формате|например, кардиган"/>
-                        <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <div class="input-wrapper__placeholder">Введите адрес в обычном формате | например, кардиган</div>
+                        <input class="input" data-input="" required="required" name="" placeholder="Введите адрес в обычном формате | например, кардиган"/>
+                        <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
                           <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                           <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -107,39 +109,318 @@
                     </div>
                   </div>
                   <div class="search__bottom"> 
-                    <div class="search-cards"> </div>
-                    <div class="search-offen"> 
-                      <p class="search-offen__title">ЧАСТО ИЩУТ</p>
-                      <ul class="search-offen__list"> 
-                        <li><a href="#"> 
-                            <p>брюки</p>
-                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <g id="Search 2">
-                                <path id="Vector" d="M22.0404 20.4595C21.6498 20.069 21.0167 20.069 20.6261 20.4595C20.2356 20.85 20.2356 21.4832 20.6261 21.8737L22.0404 20.4595ZM22.9596 24.2072C23.3501 24.5977 23.9833 24.5977 24.3738 24.2072C24.7643 23.8166 24.7643 23.1835 24.3738 22.7929L22.9596 24.2072ZM20.6261 21.8737L22.9596 24.2072L24.3738 22.7929L22.0404 20.4595L20.6261 21.8737ZM11 19.3333C6.3056 19.3333 2.5 15.5277 2.5 10.8333H0.5C0.5 16.6323 5.20103 21.3333 11 21.3333V19.3333ZM19.5001 10.8333C19.5001 15.5277 15.6945 19.3333 11 19.3333V21.3333C16.799 21.3333 21.5001 16.6323 21.5001 10.8333H19.5001ZM11 2.33325C15.6945 2.33325 19.5001 6.13885 19.5001 10.8333H21.5001C21.5001 5.03428 16.799 0.333252 11 0.333252V2.33325ZM11 0.333252C5.20103 0.333252 0.5 5.03428 0.5 10.8333H2.5C2.5 6.13885 6.3056 2.33325 11 2.33325V0.333252Z" fill="#62215B"></path>
-                              </g>
-                            </svg></a></li>
-                        <li><a href="#"> 
-                            <p>кардиган</p>
-                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <g id="Search 2">
-                                <path id="Vector" d="M22.0404 20.4595C21.6498 20.069 21.0167 20.069 20.6261 20.4595C20.2356 20.85 20.2356 21.4832 20.6261 21.8737L22.0404 20.4595ZM22.9596 24.2072C23.3501 24.5977 23.9833 24.5977 24.3738 24.2072C24.7643 23.8166 24.7643 23.1835 24.3738 22.7929L22.9596 24.2072ZM20.6261 21.8737L22.9596 24.2072L24.3738 22.7929L22.0404 20.4595L20.6261 21.8737ZM11 19.3333C6.3056 19.3333 2.5 15.5277 2.5 10.8333H0.5C0.5 16.6323 5.20103 21.3333 11 21.3333V19.3333ZM19.5001 10.8333C19.5001 15.5277 15.6945 19.3333 11 19.3333V21.3333C16.799 21.3333 21.5001 16.6323 21.5001 10.8333H19.5001ZM11 2.33325C15.6945 2.33325 19.5001 6.13885 19.5001 10.8333H21.5001C21.5001 5.03428 16.799 0.333252 11 0.333252V2.33325ZM11 0.333252C5.20103 0.333252 0.5 5.03428 0.5 10.8333H2.5C2.5 6.13885 6.3056 2.33325 11 2.33325V0.333252Z" fill="#62215B"></path>
-                              </g>
-                            </svg></a></li>
-                        <li><a href="#"> 
-                            <p>юбка</p>
-                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <g id="Search 2">
-                                <path id="Vector" d="M22.0404 20.4595C21.6498 20.069 21.0167 20.069 20.6261 20.4595C20.2356 20.85 20.2356 21.4832 20.6261 21.8737L22.0404 20.4595ZM22.9596 24.2072C23.3501 24.5977 23.9833 24.5977 24.3738 24.2072C24.7643 23.8166 24.7643 23.1835 24.3738 22.7929L22.9596 24.2072ZM20.6261 21.8737L22.9596 24.2072L24.3738 22.7929L22.0404 20.4595L20.6261 21.8737ZM11 19.3333C6.3056 19.3333 2.5 15.5277 2.5 10.8333H0.5C0.5 16.6323 5.20103 21.3333 11 21.3333V19.3333ZM19.5001 10.8333C19.5001 15.5277 15.6945 19.3333 11 19.3333V21.3333C16.799 21.3333 21.5001 16.6323 21.5001 10.8333H19.5001ZM11 2.33325C15.6945 2.33325 19.5001 6.13885 19.5001 10.8333H21.5001C21.5001 5.03428 16.799 0.333252 11 0.333252V2.33325ZM11 0.333252C5.20103 0.333252 0.5 5.03428 0.5 10.8333H2.5C2.5 6.13885 6.3056 2.33325 11 2.33325V0.333252Z" fill="#62215B"></path>
-                              </g>
-                            </svg></a></li>
-                        <li><a href="#"> 
-                            <p>футболка</p>
-                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <g id="Search 2">
-                                <path id="Vector" d="M22.0404 20.4595C21.6498 20.069 21.0167 20.069 20.6261 20.4595C20.2356 20.85 20.2356 21.4832 20.6261 21.8737L22.0404 20.4595ZM22.9596 24.2072C23.3501 24.5977 23.9833 24.5977 24.3738 24.2072C24.7643 23.8166 24.7643 23.1835 24.3738 22.7929L22.9596 24.2072ZM20.6261 21.8737L22.9596 24.2072L24.3738 22.7929L22.0404 20.4595L20.6261 21.8737ZM11 19.3333C6.3056 19.3333 2.5 15.5277 2.5 10.8333H0.5C0.5 16.6323 5.20103 21.3333 11 21.3333V19.3333ZM19.5001 10.8333C19.5001 15.5277 15.6945 19.3333 11 19.3333V21.3333C16.799 21.3333 21.5001 16.6323 21.5001 10.8333H19.5001ZM11 2.33325C15.6945 2.33325 19.5001 6.13885 19.5001 10.8333H21.5001C21.5001 5.03428 16.799 0.333252 11 0.333252V2.33325ZM11 0.333252C5.20103 0.333252 0.5 5.03428 0.5 10.8333H2.5C2.5 6.13885 6.3056 2.33325 11 2.33325V0.333252Z" fill="#62215B"></path>
-                              </g>
-                            </svg></a></li>
-                      </ul>
+                    <div class="search__bottom-results">
+                      <div class="search-cards">
+                        <div class="catalog">
+                          <div class="catalog__inner"> 
+                            <div class="catalog-card catalog-card-search">
+                              <div class="catalog-card__inner">
+                                <div class="catalog-card__top">
+                                  <div class="catalog-card__windows catalog-card__windows_2">
+                                    <div class="catalog-card__window" data-card-window="1">
+                                      <div class="catalog-card__window-item"></div>
+                                    </div>
+                                    <div class="catalog-card__window" data-card-window="2">
+                                      <div class="catalog-card__window-item"></div>
+                                    </div>
+                                  </div>
+                                  <div class="catalog-card__img active" data-card-img="1">
+                                    <picture class="picture">
+                                      <source class="lazyload" type="image/webp" srcset="webp/slide3.webp 1x" alt="slide3.jpg" media="(min-width: 769px)"/>
+                                      <source class="lazyload" type="image/jpeg" srcset="images/slide3.jpg 1x" alt="slide3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide3.jpg" alt="slide3.jpg"/>
+                                    </picture>
+                                  </div>
+                                  <div class="catalog-card__img" data-card-img="2">
+                                    <picture class="picture">
+                                      <source class="lazyload" type="image/webp" srcset="webp/slide1.webp 1x" alt="slide1.jpg" media="(min-width: 769px)"/>
+                                      <source class="lazyload" type="image/jpeg" srcset="images/slide1.jpg 1x" alt="slide1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide1.jpg" alt="slide1.jpg"/>
+                                    </picture>
+                                  </div>
+                                  <div class="catalog-card__favourites">
+                                    <svg class="catalog-card__favourites-empty active" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <g id="Vector">
+                                        <path id="vetor" d="M9.27757 19.2719C9.65978 19.6706 10.2928 19.6839 10.6915 19.3017C11.0901 18.9195 11.1035 18.2865 10.7213 17.8878L9.27757 19.2719ZM3.08564 11.3685L2.35803 12.0546L2.3638 12.0606L3.08564 11.3685ZM3.08564 3.01839L2.37949 2.31032C2.37223 2.31756 2.36508 2.32491 2.35805 2.33237L3.08564 3.01839ZM9.43679 3.19855C9.89337 3.50927 10.5154 3.39103 10.8261 2.93445C11.1369 2.47786 11.0186 1.85584 10.562 1.54511L9.43679 3.19855ZM9.27757 17.8879C8.89538 18.2865 8.90874 18.9196 9.30742 19.3018C9.7061 19.684 10.3391 19.6706 10.7213 19.2719L9.27757 17.8879ZM14.7244 15.0962C15.1065 14.6975 15.0932 14.0645 14.6945 13.6823C14.2958 13.3001 13.6628 13.3135 13.2806 13.7122L14.7244 15.0962ZM9.2776 17.8878C8.89539 18.2865 8.90873 18.9195 9.30739 19.3017C9.70605 19.6839 10.3391 19.6706 10.7213 19.2719L9.2776 17.8878ZM16.9132 11.3685L17.6351 12.0606L17.6408 12.0546L16.9132 11.3685ZM16.9132 3.01839L17.6408 2.33237C17.6338 2.32491 17.6266 2.31756 17.6194 2.31032L16.9132 3.01839ZM9.43683 1.54511C8.98025 1.85584 8.862 2.47786 9.17273 2.93445C9.48345 3.39103 10.1055 3.50927 10.5621 3.19855L9.43683 1.54511ZM9.2776 19.2719C9.6598 19.6706 10.2928 19.684 10.6915 19.3018C11.0902 18.9196 11.1035 18.2865 10.7214 17.8879L9.2776 19.2719ZM6.71832 13.7122C6.33613 13.3135 5.7031 13.3001 5.30442 13.6823C4.90574 14.0645 4.89238 14.6975 5.27457 15.0962L6.71832 13.7122ZM10.5308 1.52469C10.0629 1.23122 9.44577 1.3726 9.1523 1.84047C8.85884 2.30833 9.00022 2.92551 9.46808 3.21898L10.5308 1.52469ZM11.0917 3.26208L10.3692 3.95341L10.3697 3.95388L11.0917 3.26208ZM11.8244 5.47231C12.2065 5.87111 12.8395 5.88467 13.2383 5.50259C13.6371 5.12052 13.6507 4.4875 13.2686 4.0887L11.8244 5.47231ZM10.7213 17.8878L3.80748 10.6765L2.3638 12.0606L9.27757 19.2719L10.7213 17.8878ZM3.81322 10.6825C1.9659 8.72327 1.9659 5.66366 3.81322 3.7044L2.35805 2.33237C-0.215705 5.06209 -0.215705 9.32484 2.35805 12.0546L3.81322 10.6825ZM3.79178 3.72645C5.3032 2.21914 7.67211 1.9976 9.43679 3.19855L10.562 1.54511C8.00409 -0.195675 4.57031 0.125443 2.37949 2.31032L3.79178 3.72645ZM10.7213 19.2719L14.7244 15.0962L13.2806 13.7122L9.27757 17.8879L10.7213 19.2719ZM10.7213 19.2719L17.6351 12.0606L16.1914 10.6765L9.2776 17.8878L10.7213 19.2719ZM17.6408 12.0546C20.2146 9.32484 20.2146 5.06209 17.6408 2.33237L16.1856 3.7044C18.033 5.66366 18.033 8.72327 16.1856 10.6825L17.6408 12.0546ZM17.6194 2.31032C15.4285 0.125443 11.9948 -0.195675 9.43683 1.54511L10.5621 3.19855C12.3267 1.9976 14.6957 2.21914 16.2071 3.72645L17.6194 2.31032ZM10.7214 17.8879L6.71832 13.7122L5.27457 15.0962L9.2776 19.2719L10.7214 17.8879ZM9.46808 3.21898C9.79761 3.42567 10.1003 3.67236 10.3692 3.95341L11.8143 2.57074C11.4313 2.17043 11.0002 1.81908 10.5308 1.52469L9.46808 3.21898ZM10.3697 3.95388L11.8244 5.47231L13.2686 4.0887L11.8138 2.57027L10.3697 3.95388Z" fill="#62215B"></path>
+                                      </g>
+                                    </svg>
+                                    <svg class="catalog-card__favourites-full" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <g id="Vector">
+                                        <path id="vetor" fill-rule="evenodd" clip-rule="evenodd" d="M8.9999 17.5798L2.08613 10.3685C-0.124412 8.02396 -0.124412 4.36279 2.08613 2.0183C3.93724 0.172199 6.83859 -0.0991274 8.9999 1.37174M8.99994 17.5798L13.003 13.4041L8.99994 17.5798ZM8.99994 17.5798L15.9137 10.3685C18.1242 8.02396 18.1242 4.36279 15.9137 2.0183C14.0626 0.172199 11.1612 -0.0991274 8.99994 1.37174M8.99997 17.5798L4.99693 13.4041L8.99997 17.5798ZM8.99994 1.37174C9.39937 1.62228 9.76626 1.9213 10.0922 2.26198L11.547 3.78042" fill="#62215B"></path>
+                                      </g>
+                                    </svg>
+                                  </div>
+                                  <div class="catalog-card__place">
+                                    <div class="place place_sale">
+                                      <p>sale</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="catalog-card__bottom"> 
+                                  <h2 class="catalog-card__title">Джемпер ажурный на пуговицах</h2>
+                                  <div class="catalog-card__price">
+                                    <p class="catalog-card__newPrice">1000 ₽</p>
+                                    <p class="catalog-card__oldPrice">2000 ₽</p>
+                                  </div>
+                                  <div class="catalog-card__colors"><a class="catalog-card__colors-item active">
+                                      <div class="catalog-card__colors-circle" style=" background-color:#A972A9"></div></a><a class="catalog-card__colors-item">
+                                      <div class="catalog-card__colors-circle" style=" background-color:#E8C9AA"></div></a><a class="catalog-card__colors-more">+еще цвета</a></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="catalog-card catalog-card-search">
+                              <div class="catalog-card__inner">
+                                <div class="catalog-card__top">
+                                  <div class="catalog-card__windows catalog-card__windows_3">
+                                    <div class="catalog-card__window" data-card-window="1">
+                                      <div class="catalog-card__window-item"></div>
+                                    </div>
+                                    <div class="catalog-card__window" data-card-window="2">
+                                      <div class="catalog-card__window-item"></div>
+                                    </div>
+                                    <div class="catalog-card__window" data-card-window="3">
+                                      <div class="catalog-card__window-item"></div>
+                                    </div>
+                                  </div>
+                                  <div class="catalog-card__img active" data-card-img="1">
+                                    <picture class="picture">
+                                      <source class="lazyload" type="image/webp" srcset="webp/slide3.webp 1x" alt="slide3.jpg" media="(min-width: 769px)"/>
+                                      <source class="lazyload" type="image/jpeg" srcset="images/slide3.jpg 1x" alt="slide3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide3.jpg" alt="slide3.jpg"/>
+                                    </picture>
+                                  </div>
+                                  <div class="catalog-card__img" data-card-img="2">
+                                    <picture class="picture">
+                                      <source class="lazyload" type="image/webp" srcset="webp/slide1.webp 1x" alt="slide1.jpg" media="(min-width: 769px)"/>
+                                      <source class="lazyload" type="image/jpeg" srcset="images/slide1.jpg 1x" alt="slide1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide1.jpg" alt="slide1.jpg"/>
+                                    </picture>
+                                  </div>
+                                  <div class="catalog-card__img" data-card-img="3">
+                                    <picture class="picture">
+                                      <source class="lazyload" type="image/webp" srcset="webp/pr1.webp 1x" alt="pr1.jpg" media="(min-width: 769px)"/>
+                                      <source class="lazyload" type="image/jpeg" srcset="images/pr1.jpg 1x" alt="pr1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/pr1.jpg" alt="pr1.jpg"/>
+                                    </picture>
+                                  </div>
+                                  <div class="catalog-card__favourites">
+                                    <svg class="catalog-card__favourites-empty active" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <g id="Vector">
+                                        <path id="vetor" d="M9.27757 19.2719C9.65978 19.6706 10.2928 19.6839 10.6915 19.3017C11.0901 18.9195 11.1035 18.2865 10.7213 17.8878L9.27757 19.2719ZM3.08564 11.3685L2.35803 12.0546L2.3638 12.0606L3.08564 11.3685ZM3.08564 3.01839L2.37949 2.31032C2.37223 2.31756 2.36508 2.32491 2.35805 2.33237L3.08564 3.01839ZM9.43679 3.19855C9.89337 3.50927 10.5154 3.39103 10.8261 2.93445C11.1369 2.47786 11.0186 1.85584 10.562 1.54511L9.43679 3.19855ZM9.27757 17.8879C8.89538 18.2865 8.90874 18.9196 9.30742 19.3018C9.7061 19.684 10.3391 19.6706 10.7213 19.2719L9.27757 17.8879ZM14.7244 15.0962C15.1065 14.6975 15.0932 14.0645 14.6945 13.6823C14.2958 13.3001 13.6628 13.3135 13.2806 13.7122L14.7244 15.0962ZM9.2776 17.8878C8.89539 18.2865 8.90873 18.9195 9.30739 19.3017C9.70605 19.6839 10.3391 19.6706 10.7213 19.2719L9.2776 17.8878ZM16.9132 11.3685L17.6351 12.0606L17.6408 12.0546L16.9132 11.3685ZM16.9132 3.01839L17.6408 2.33237C17.6338 2.32491 17.6266 2.31756 17.6194 2.31032L16.9132 3.01839ZM9.43683 1.54511C8.98025 1.85584 8.862 2.47786 9.17273 2.93445C9.48345 3.39103 10.1055 3.50927 10.5621 3.19855L9.43683 1.54511ZM9.2776 19.2719C9.6598 19.6706 10.2928 19.684 10.6915 19.3018C11.0902 18.9196 11.1035 18.2865 10.7214 17.8879L9.2776 19.2719ZM6.71832 13.7122C6.33613 13.3135 5.7031 13.3001 5.30442 13.6823C4.90574 14.0645 4.89238 14.6975 5.27457 15.0962L6.71832 13.7122ZM10.5308 1.52469C10.0629 1.23122 9.44577 1.3726 9.1523 1.84047C8.85884 2.30833 9.00022 2.92551 9.46808 3.21898L10.5308 1.52469ZM11.0917 3.26208L10.3692 3.95341L10.3697 3.95388L11.0917 3.26208ZM11.8244 5.47231C12.2065 5.87111 12.8395 5.88467 13.2383 5.50259C13.6371 5.12052 13.6507 4.4875 13.2686 4.0887L11.8244 5.47231ZM10.7213 17.8878L3.80748 10.6765L2.3638 12.0606L9.27757 19.2719L10.7213 17.8878ZM3.81322 10.6825C1.9659 8.72327 1.9659 5.66366 3.81322 3.7044L2.35805 2.33237C-0.215705 5.06209 -0.215705 9.32484 2.35805 12.0546L3.81322 10.6825ZM3.79178 3.72645C5.3032 2.21914 7.67211 1.9976 9.43679 3.19855L10.562 1.54511C8.00409 -0.195675 4.57031 0.125443 2.37949 2.31032L3.79178 3.72645ZM10.7213 19.2719L14.7244 15.0962L13.2806 13.7122L9.27757 17.8879L10.7213 19.2719ZM10.7213 19.2719L17.6351 12.0606L16.1914 10.6765L9.2776 17.8878L10.7213 19.2719ZM17.6408 12.0546C20.2146 9.32484 20.2146 5.06209 17.6408 2.33237L16.1856 3.7044C18.033 5.66366 18.033 8.72327 16.1856 10.6825L17.6408 12.0546ZM17.6194 2.31032C15.4285 0.125443 11.9948 -0.195675 9.43683 1.54511L10.5621 3.19855C12.3267 1.9976 14.6957 2.21914 16.2071 3.72645L17.6194 2.31032ZM10.7214 17.8879L6.71832 13.7122L5.27457 15.0962L9.2776 19.2719L10.7214 17.8879ZM9.46808 3.21898C9.79761 3.42567 10.1003 3.67236 10.3692 3.95341L11.8143 2.57074C11.4313 2.17043 11.0002 1.81908 10.5308 1.52469L9.46808 3.21898ZM10.3697 3.95388L11.8244 5.47231L13.2686 4.0887L11.8138 2.57027L10.3697 3.95388Z" fill="#62215B"></path>
+                                      </g>
+                                    </svg>
+                                    <svg class="catalog-card__favourites-full" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <g id="Vector">
+                                        <path id="vetor" fill-rule="evenodd" clip-rule="evenodd" d="M8.9999 17.5798L2.08613 10.3685C-0.124412 8.02396 -0.124412 4.36279 2.08613 2.0183C3.93724 0.172199 6.83859 -0.0991274 8.9999 1.37174M8.99994 17.5798L13.003 13.4041L8.99994 17.5798ZM8.99994 17.5798L15.9137 10.3685C18.1242 8.02396 18.1242 4.36279 15.9137 2.0183C14.0626 0.172199 11.1612 -0.0991274 8.99994 1.37174M8.99997 17.5798L4.99693 13.4041L8.99997 17.5798ZM8.99994 1.37174C9.39937 1.62228 9.76626 1.9213 10.0922 2.26198L11.547 3.78042" fill="#62215B"></path>
+                                      </g>
+                                    </svg>
+                                  </div>
+                                  <div class="catalog-card__place">
+                                    <div class="place place_sale">
+                                      <p>sale</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="catalog-card__bottom"> 
+                                  <h2 class="catalog-card__title">Джемпер ажурный на пуговицах</h2>
+                                  <div class="catalog-card__price">
+                                    <p class="catalog-card__newPrice">1000 ₽</p>
+                                    <p class="catalog-card__oldPrice">2000 ₽</p>
+                                  </div>
+                                  <div class="catalog-card__colors"><a class="catalog-card__colors-item active">
+                                      <div class="catalog-card__colors-circle" style=" background-color:#A972A9"></div></a><a class="catalog-card__colors-item">
+                                      <div class="catalog-card__colors-circle" style=" background-color:#CD0200"></div></a><a class="catalog-card__colors-item">
+                                      <div class="catalog-card__colors-circle" style=" background-color:#E8C9AA"></div></a><a class="catalog-card__colors-more">+еще цвета</a></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="catalog-card catalog-card-search">
+                              <div class="catalog-card__inner">
+                                <div class="catalog-card__top">
+                                  <div class="catalog-card__windows catalog-card__windows_4">
+                                    <div class="catalog-card__window" data-card-window="1">
+                                      <div class="catalog-card__window-item"></div>
+                                    </div>
+                                    <div class="catalog-card__window" data-card-window="2">
+                                      <div class="catalog-card__window-item"></div>
+                                    </div>
+                                    <div class="catalog-card__window" data-card-window="3">
+                                      <div class="catalog-card__window-item"></div>
+                                    </div>
+                                    <div class="catalog-card__window" data-card-window="4">
+                                      <div class="catalog-card__window-item"></div>
+                                    </div>
+                                  </div>
+                                  <div class="catalog-card__img active" data-card-img="1">
+                                    <picture class="picture">
+                                      <source class="lazyload" type="image/webp" srcset="webp/slide3.webp 1x" alt="slide3.jpg" media="(min-width: 769px)"/>
+                                      <source class="lazyload" type="image/jpeg" srcset="images/slide3.jpg 1x" alt="slide3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide3.jpg" alt="slide3.jpg"/>
+                                    </picture>
+                                  </div>
+                                  <div class="catalog-card__img" data-card-img="2">
+                                    <picture class="picture">
+                                      <source class="lazyload" type="image/webp" srcset="webp/slide1.webp 1x" alt="slide1.jpg" media="(min-width: 769px)"/>
+                                      <source class="lazyload" type="image/jpeg" srcset="images/slide1.jpg 1x" alt="slide1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide1.jpg" alt="slide1.jpg"/>
+                                    </picture>
+                                  </div>
+                                  <div class="catalog-card__img" data-card-img="3">
+                                    <picture class="picture">
+                                      <source class="lazyload" type="image/webp" srcset="webp/pr1.webp 1x" alt="pr1.jpg" media="(min-width: 769px)"/>
+                                      <source class="lazyload" type="image/jpeg" srcset="images/pr1.jpg 1x" alt="pr1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/pr1.jpg" alt="pr1.jpg"/>
+                                    </picture>
+                                  </div>
+                                  <div class="catalog-card__img" data-card-img="4">
+                                    <picture class="picture">
+                                      <source class="lazyload" type="image/webp" srcset="webp/slide3.webp 1x" alt="slide3.jpg" media="(min-width: 769px)"/>
+                                      <source class="lazyload" type="image/jpeg" srcset="images/slide3.jpg 1x" alt="slide3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide3.jpg" alt="slide3.jpg"/>
+                                    </picture>
+                                  </div>
+                                  <div class="catalog-card__favourites">
+                                    <svg class="catalog-card__favourites-empty active" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <g id="Vector">
+                                        <path id="vetor" d="M9.27757 19.2719C9.65978 19.6706 10.2928 19.6839 10.6915 19.3017C11.0901 18.9195 11.1035 18.2865 10.7213 17.8878L9.27757 19.2719ZM3.08564 11.3685L2.35803 12.0546L2.3638 12.0606L3.08564 11.3685ZM3.08564 3.01839L2.37949 2.31032C2.37223 2.31756 2.36508 2.32491 2.35805 2.33237L3.08564 3.01839ZM9.43679 3.19855C9.89337 3.50927 10.5154 3.39103 10.8261 2.93445C11.1369 2.47786 11.0186 1.85584 10.562 1.54511L9.43679 3.19855ZM9.27757 17.8879C8.89538 18.2865 8.90874 18.9196 9.30742 19.3018C9.7061 19.684 10.3391 19.6706 10.7213 19.2719L9.27757 17.8879ZM14.7244 15.0962C15.1065 14.6975 15.0932 14.0645 14.6945 13.6823C14.2958 13.3001 13.6628 13.3135 13.2806 13.7122L14.7244 15.0962ZM9.2776 17.8878C8.89539 18.2865 8.90873 18.9195 9.30739 19.3017C9.70605 19.6839 10.3391 19.6706 10.7213 19.2719L9.2776 17.8878ZM16.9132 11.3685L17.6351 12.0606L17.6408 12.0546L16.9132 11.3685ZM16.9132 3.01839L17.6408 2.33237C17.6338 2.32491 17.6266 2.31756 17.6194 2.31032L16.9132 3.01839ZM9.43683 1.54511C8.98025 1.85584 8.862 2.47786 9.17273 2.93445C9.48345 3.39103 10.1055 3.50927 10.5621 3.19855L9.43683 1.54511ZM9.2776 19.2719C9.6598 19.6706 10.2928 19.684 10.6915 19.3018C11.0902 18.9196 11.1035 18.2865 10.7214 17.8879L9.2776 19.2719ZM6.71832 13.7122C6.33613 13.3135 5.7031 13.3001 5.30442 13.6823C4.90574 14.0645 4.89238 14.6975 5.27457 15.0962L6.71832 13.7122ZM10.5308 1.52469C10.0629 1.23122 9.44577 1.3726 9.1523 1.84047C8.85884 2.30833 9.00022 2.92551 9.46808 3.21898L10.5308 1.52469ZM11.0917 3.26208L10.3692 3.95341L10.3697 3.95388L11.0917 3.26208ZM11.8244 5.47231C12.2065 5.87111 12.8395 5.88467 13.2383 5.50259C13.6371 5.12052 13.6507 4.4875 13.2686 4.0887L11.8244 5.47231ZM10.7213 17.8878L3.80748 10.6765L2.3638 12.0606L9.27757 19.2719L10.7213 17.8878ZM3.81322 10.6825C1.9659 8.72327 1.9659 5.66366 3.81322 3.7044L2.35805 2.33237C-0.215705 5.06209 -0.215705 9.32484 2.35805 12.0546L3.81322 10.6825ZM3.79178 3.72645C5.3032 2.21914 7.67211 1.9976 9.43679 3.19855L10.562 1.54511C8.00409 -0.195675 4.57031 0.125443 2.37949 2.31032L3.79178 3.72645ZM10.7213 19.2719L14.7244 15.0962L13.2806 13.7122L9.27757 17.8879L10.7213 19.2719ZM10.7213 19.2719L17.6351 12.0606L16.1914 10.6765L9.2776 17.8878L10.7213 19.2719ZM17.6408 12.0546C20.2146 9.32484 20.2146 5.06209 17.6408 2.33237L16.1856 3.7044C18.033 5.66366 18.033 8.72327 16.1856 10.6825L17.6408 12.0546ZM17.6194 2.31032C15.4285 0.125443 11.9948 -0.195675 9.43683 1.54511L10.5621 3.19855C12.3267 1.9976 14.6957 2.21914 16.2071 3.72645L17.6194 2.31032ZM10.7214 17.8879L6.71832 13.7122L5.27457 15.0962L9.2776 19.2719L10.7214 17.8879ZM9.46808 3.21898C9.79761 3.42567 10.1003 3.67236 10.3692 3.95341L11.8143 2.57074C11.4313 2.17043 11.0002 1.81908 10.5308 1.52469L9.46808 3.21898ZM10.3697 3.95388L11.8244 5.47231L13.2686 4.0887L11.8138 2.57027L10.3697 3.95388Z" fill="#62215B"></path>
+                                      </g>
+                                    </svg>
+                                    <svg class="catalog-card__favourites-full" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <g id="Vector">
+                                        <path id="vetor" fill-rule="evenodd" clip-rule="evenodd" d="M8.9999 17.5798L2.08613 10.3685C-0.124412 8.02396 -0.124412 4.36279 2.08613 2.0183C3.93724 0.172199 6.83859 -0.0991274 8.9999 1.37174M8.99994 17.5798L13.003 13.4041L8.99994 17.5798ZM8.99994 17.5798L15.9137 10.3685C18.1242 8.02396 18.1242 4.36279 15.9137 2.0183C14.0626 0.172199 11.1612 -0.0991274 8.99994 1.37174M8.99997 17.5798L4.99693 13.4041L8.99997 17.5798ZM8.99994 1.37174C9.39937 1.62228 9.76626 1.9213 10.0922 2.26198L11.547 3.78042" fill="#62215B"></path>
+                                      </g>
+                                    </svg>
+                                  </div>
+                                  <div class="catalog-card__place">
+                                    <div class="place place_sale">
+                                      <p>sale</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="catalog-card__bottom"> 
+                                  <h2 class="catalog-card__title">Джемпер ажурный на пуговицах</h2>
+                                  <div class="catalog-card__price">
+                                    <p class="catalog-card__newPrice">1000 ₽</p>
+                                    <p class="catalog-card__oldPrice">2000 ₽</p>
+                                  </div>
+                                  <div class="catalog-card__colors"><a class="catalog-card__colors-item active">
+                                      <div class="catalog-card__colors-circle" style=" background-color:#A972A9"></div></a><a class="catalog-card__colors-item">
+                                      <div class="catalog-card__colors-circle" style=" background-color:#CD0200"></div></a><a class="catalog-card__colors-item">
+                                      <div class="catalog-card__colors-circle" style=" background-color:#E8C9AA"></div></a><a class="catalog-card__colors-item">
+                                      <div class="catalog-card__colors-circle" style=" background-color:#D9EFFC"></div></a><a class="catalog-card__colors-more">+еще цвета</a></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="catalog-card catalog-card-search">
+                              <div class="catalog-card__inner">
+                                <div class="catalog-card__top">
+                                  <div class="catalog-card__windows catalog-card__windows_5">
+                                    <div class="catalog-card__window" data-card-window="1">
+                                      <div class="catalog-card__window-item"></div>
+                                    </div>
+                                    <div class="catalog-card__window" data-card-window="2">
+                                      <div class="catalog-card__window-item"></div>
+                                    </div>
+                                    <div class="catalog-card__window" data-card-window="3">
+                                      <div class="catalog-card__window-item"></div>
+                                    </div>
+                                    <div class="catalog-card__window" data-card-window="4">
+                                      <div class="catalog-card__window-item"></div>
+                                    </div>
+                                    <div class="catalog-card__window" data-card-window="5">
+                                      <div class="catalog-card__window-item"></div>
+                                    </div>
+                                  </div>
+                                  <div class="catalog-card__img active" data-card-img="1">
+                                    <picture class="picture">
+                                      <source class="lazyload" type="image/webp" srcset="webp/slide3.webp 1x" alt="slide3.jpg" media="(min-width: 769px)"/>
+                                      <source class="lazyload" type="image/jpeg" srcset="images/slide3.jpg 1x" alt="slide3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide3.jpg" alt="slide3.jpg"/>
+                                    </picture>
+                                  </div>
+                                  <div class="catalog-card__img" data-card-img="2">
+                                    <picture class="picture">
+                                      <source class="lazyload" type="image/webp" srcset="webp/slide1.webp 1x" alt="slide1.jpg" media="(min-width: 769px)"/>
+                                      <source class="lazyload" type="image/jpeg" srcset="images/slide1.jpg 1x" alt="slide1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide1.jpg" alt="slide1.jpg"/>
+                                    </picture>
+                                  </div>
+                                  <div class="catalog-card__img" data-card-img="3">
+                                    <picture class="picture">
+                                      <source class="lazyload" type="image/webp" srcset="webp/pr1.webp 1x" alt="pr1.jpg" media="(min-width: 769px)"/>
+                                      <source class="lazyload" type="image/jpeg" srcset="images/pr1.jpg 1x" alt="pr1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/pr1.jpg" alt="pr1.jpg"/>
+                                    </picture>
+                                  </div>
+                                  <div class="catalog-card__img" data-card-img="4">
+                                    <picture class="picture">
+                                      <source class="lazyload" type="image/webp" srcset="webp/slide3.webp 1x" alt="slide3.jpg" media="(min-width: 769px)"/>
+                                      <source class="lazyload" type="image/jpeg" srcset="images/slide3.jpg 1x" alt="slide3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide3.jpg" alt="slide3.jpg"/>
+                                    </picture>
+                                  </div>
+                                  <div class="catalog-card__img" data-card-img="5">
+                                    <picture class="picture">
+                                      <source class="lazyload" type="image/webp" srcset="webp/slide1.webp 1x" alt="slide1.jpg" media="(min-width: 769px)"/>
+                                      <source class="lazyload" type="image/jpeg" srcset="images/slide1.jpg 1x" alt="slide1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide1.jpg" alt="slide1.jpg"/>
+                                    </picture>
+                                  </div>
+                                  <div class="catalog-card__favourites">
+                                    <svg class="catalog-card__favourites-empty active" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <g id="Vector">
+                                        <path id="vetor" d="M9.27757 19.2719C9.65978 19.6706 10.2928 19.6839 10.6915 19.3017C11.0901 18.9195 11.1035 18.2865 10.7213 17.8878L9.27757 19.2719ZM3.08564 11.3685L2.35803 12.0546L2.3638 12.0606L3.08564 11.3685ZM3.08564 3.01839L2.37949 2.31032C2.37223 2.31756 2.36508 2.32491 2.35805 2.33237L3.08564 3.01839ZM9.43679 3.19855C9.89337 3.50927 10.5154 3.39103 10.8261 2.93445C11.1369 2.47786 11.0186 1.85584 10.562 1.54511L9.43679 3.19855ZM9.27757 17.8879C8.89538 18.2865 8.90874 18.9196 9.30742 19.3018C9.7061 19.684 10.3391 19.6706 10.7213 19.2719L9.27757 17.8879ZM14.7244 15.0962C15.1065 14.6975 15.0932 14.0645 14.6945 13.6823C14.2958 13.3001 13.6628 13.3135 13.2806 13.7122L14.7244 15.0962ZM9.2776 17.8878C8.89539 18.2865 8.90873 18.9195 9.30739 19.3017C9.70605 19.6839 10.3391 19.6706 10.7213 19.2719L9.2776 17.8878ZM16.9132 11.3685L17.6351 12.0606L17.6408 12.0546L16.9132 11.3685ZM16.9132 3.01839L17.6408 2.33237C17.6338 2.32491 17.6266 2.31756 17.6194 2.31032L16.9132 3.01839ZM9.43683 1.54511C8.98025 1.85584 8.862 2.47786 9.17273 2.93445C9.48345 3.39103 10.1055 3.50927 10.5621 3.19855L9.43683 1.54511ZM9.2776 19.2719C9.6598 19.6706 10.2928 19.684 10.6915 19.3018C11.0902 18.9196 11.1035 18.2865 10.7214 17.8879L9.2776 19.2719ZM6.71832 13.7122C6.33613 13.3135 5.7031 13.3001 5.30442 13.6823C4.90574 14.0645 4.89238 14.6975 5.27457 15.0962L6.71832 13.7122ZM10.5308 1.52469C10.0629 1.23122 9.44577 1.3726 9.1523 1.84047C8.85884 2.30833 9.00022 2.92551 9.46808 3.21898L10.5308 1.52469ZM11.0917 3.26208L10.3692 3.95341L10.3697 3.95388L11.0917 3.26208ZM11.8244 5.47231C12.2065 5.87111 12.8395 5.88467 13.2383 5.50259C13.6371 5.12052 13.6507 4.4875 13.2686 4.0887L11.8244 5.47231ZM10.7213 17.8878L3.80748 10.6765L2.3638 12.0606L9.27757 19.2719L10.7213 17.8878ZM3.81322 10.6825C1.9659 8.72327 1.9659 5.66366 3.81322 3.7044L2.35805 2.33237C-0.215705 5.06209 -0.215705 9.32484 2.35805 12.0546L3.81322 10.6825ZM3.79178 3.72645C5.3032 2.21914 7.67211 1.9976 9.43679 3.19855L10.562 1.54511C8.00409 -0.195675 4.57031 0.125443 2.37949 2.31032L3.79178 3.72645ZM10.7213 19.2719L14.7244 15.0962L13.2806 13.7122L9.27757 17.8879L10.7213 19.2719ZM10.7213 19.2719L17.6351 12.0606L16.1914 10.6765L9.2776 17.8878L10.7213 19.2719ZM17.6408 12.0546C20.2146 9.32484 20.2146 5.06209 17.6408 2.33237L16.1856 3.7044C18.033 5.66366 18.033 8.72327 16.1856 10.6825L17.6408 12.0546ZM17.6194 2.31032C15.4285 0.125443 11.9948 -0.195675 9.43683 1.54511L10.5621 3.19855C12.3267 1.9976 14.6957 2.21914 16.2071 3.72645L17.6194 2.31032ZM10.7214 17.8879L6.71832 13.7122L5.27457 15.0962L9.2776 19.2719L10.7214 17.8879ZM9.46808 3.21898C9.79761 3.42567 10.1003 3.67236 10.3692 3.95341L11.8143 2.57074C11.4313 2.17043 11.0002 1.81908 10.5308 1.52469L9.46808 3.21898ZM10.3697 3.95388L11.8244 5.47231L13.2686 4.0887L11.8138 2.57027L10.3697 3.95388Z" fill="#62215B"></path>
+                                      </g>
+                                    </svg>
+                                    <svg class="catalog-card__favourites-full" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <g id="Vector">
+                                        <path id="vetor" fill-rule="evenodd" clip-rule="evenodd" d="M8.9999 17.5798L2.08613 10.3685C-0.124412 8.02396 -0.124412 4.36279 2.08613 2.0183C3.93724 0.172199 6.83859 -0.0991274 8.9999 1.37174M8.99994 17.5798L13.003 13.4041L8.99994 17.5798ZM8.99994 17.5798L15.9137 10.3685C18.1242 8.02396 18.1242 4.36279 15.9137 2.0183C14.0626 0.172199 11.1612 -0.0991274 8.99994 1.37174M8.99997 17.5798L4.99693 13.4041L8.99997 17.5798ZM8.99994 1.37174C9.39937 1.62228 9.76626 1.9213 10.0922 2.26198L11.547 3.78042" fill="#62215B"></path>
+                                      </g>
+                                    </svg>
+                                  </div>
+                                  <div class="catalog-card__place">
+                                    <div class="place place_sale">
+                                      <p>sale</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="catalog-card__bottom"> 
+                                  <h2 class="catalog-card__title">Джемпер ажурный на пуговицах</h2>
+                                  <div class="catalog-card__price">
+                                    <p class="catalog-card__newPrice">1000 ₽</p>
+                                    <p class="catalog-card__oldPrice">2000 ₽</p>
+                                  </div>
+                                  <div class="catalog-card__colors"><a class="catalog-card__colors-item active">
+                                      <div class="catalog-card__colors-circle" style=" background-color:#A972A9"></div></a><a class="catalog-card__colors-item">
+                                      <div class="catalog-card__colors-circle" style=" background-color:#CD0200"></div></a><a class="catalog-card__colors-item">
+                                      <div class="catalog-card__colors-circle" style=" background-color:#E8C9AA"></div></a><a class="catalog-card__colors-item">
+                                      <div class="catalog-card__colors-circle" style=" background-color:#D9EFFC"></div></a><a class="catalog-card__colors-item">
+                                      <div class="catalog-card__colors-circle" style=" background-color:#9CBA88"></div></a><a class="catalog-card__colors-more">+еще цвета</a></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="search-offen"> 
+                        <p class="search-offen__title">ЧАСТО ИЩУТ</p>
+                        <ul class="search-offen__list"> 
+                          <li><a href="#"> 
+                              <p>брюки</p>
+                              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="Search 2">
+                                  <path id="Vector" d="M22.0404 20.4595C21.6498 20.069 21.0167 20.069 20.6261 20.4595C20.2356 20.85 20.2356 21.4832 20.6261 21.8737L22.0404 20.4595ZM22.9596 24.2072C23.3501 24.5977 23.9833 24.5977 24.3738 24.2072C24.7643 23.8166 24.7643 23.1835 24.3738 22.7929L22.9596 24.2072ZM20.6261 21.8737L22.9596 24.2072L24.3738 22.7929L22.0404 20.4595L20.6261 21.8737ZM11 19.3333C6.3056 19.3333 2.5 15.5277 2.5 10.8333H0.5C0.5 16.6323 5.20103 21.3333 11 21.3333V19.3333ZM19.5001 10.8333C19.5001 15.5277 15.6945 19.3333 11 19.3333V21.3333C16.799 21.3333 21.5001 16.6323 21.5001 10.8333H19.5001ZM11 2.33325C15.6945 2.33325 19.5001 6.13885 19.5001 10.8333H21.5001C21.5001 5.03428 16.799 0.333252 11 0.333252V2.33325ZM11 0.333252C5.20103 0.333252 0.5 5.03428 0.5 10.8333H2.5C2.5 6.13885 6.3056 2.33325 11 2.33325V0.333252Z" fill="#62215B"></path>
+                                </g>
+                              </svg></a></li>
+                          <li><a href="#"> 
+                              <p>кардиган</p>
+                              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="Search 2">
+                                  <path id="Vector" d="M22.0404 20.4595C21.6498 20.069 21.0167 20.069 20.6261 20.4595C20.2356 20.85 20.2356 21.4832 20.6261 21.8737L22.0404 20.4595ZM22.9596 24.2072C23.3501 24.5977 23.9833 24.5977 24.3738 24.2072C24.7643 23.8166 24.7643 23.1835 24.3738 22.7929L22.9596 24.2072ZM20.6261 21.8737L22.9596 24.2072L24.3738 22.7929L22.0404 20.4595L20.6261 21.8737ZM11 19.3333C6.3056 19.3333 2.5 15.5277 2.5 10.8333H0.5C0.5 16.6323 5.20103 21.3333 11 21.3333V19.3333ZM19.5001 10.8333C19.5001 15.5277 15.6945 19.3333 11 19.3333V21.3333C16.799 21.3333 21.5001 16.6323 21.5001 10.8333H19.5001ZM11 2.33325C15.6945 2.33325 19.5001 6.13885 19.5001 10.8333H21.5001C21.5001 5.03428 16.799 0.333252 11 0.333252V2.33325ZM11 0.333252C5.20103 0.333252 0.5 5.03428 0.5 10.8333H2.5C2.5 6.13885 6.3056 2.33325 11 2.33325V0.333252Z" fill="#62215B"></path>
+                                </g>
+                              </svg></a></li>
+                          <li><a href="#"> 
+                              <p>юбка</p>
+                              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="Search 2">
+                                  <path id="Vector" d="M22.0404 20.4595C21.6498 20.069 21.0167 20.069 20.6261 20.4595C20.2356 20.85 20.2356 21.4832 20.6261 21.8737L22.0404 20.4595ZM22.9596 24.2072C23.3501 24.5977 23.9833 24.5977 24.3738 24.2072C24.7643 23.8166 24.7643 23.1835 24.3738 22.7929L22.9596 24.2072ZM20.6261 21.8737L22.9596 24.2072L24.3738 22.7929L22.0404 20.4595L20.6261 21.8737ZM11 19.3333C6.3056 19.3333 2.5 15.5277 2.5 10.8333H0.5C0.5 16.6323 5.20103 21.3333 11 21.3333V19.3333ZM19.5001 10.8333C19.5001 15.5277 15.6945 19.3333 11 19.3333V21.3333C16.799 21.3333 21.5001 16.6323 21.5001 10.8333H19.5001ZM11 2.33325C15.6945 2.33325 19.5001 6.13885 19.5001 10.8333H21.5001C21.5001 5.03428 16.799 0.333252 11 0.333252V2.33325ZM11 0.333252C5.20103 0.333252 0.5 5.03428 0.5 10.8333H2.5C2.5 6.13885 6.3056 2.33325 11 2.33325V0.333252Z" fill="#62215B"></path>
+                                </g>
+                              </svg></a></li>
+                          <li><a href="#"> 
+                              <p>футболка</p>
+                              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="Search 2">
+                                  <path id="Vector" d="M22.0404 20.4595C21.6498 20.069 21.0167 20.069 20.6261 20.4595C20.2356 20.85 20.2356 21.4832 20.6261 21.8737L22.0404 20.4595ZM22.9596 24.2072C23.3501 24.5977 23.9833 24.5977 24.3738 24.2072C24.7643 23.8166 24.7643 23.1835 24.3738 22.7929L22.9596 24.2072ZM20.6261 21.8737L22.9596 24.2072L24.3738 22.7929L22.0404 20.4595L20.6261 21.8737ZM11 19.3333C6.3056 19.3333 2.5 15.5277 2.5 10.8333H0.5C0.5 16.6323 5.20103 21.3333 11 21.3333V19.3333ZM19.5001 10.8333C19.5001 15.5277 15.6945 19.3333 11 19.3333V21.3333C16.799 21.3333 21.5001 16.6323 21.5001 10.8333H19.5001ZM11 2.33325C15.6945 2.33325 19.5001 6.13885 19.5001 10.8333H21.5001C21.5001 5.03428 16.799 0.333252 11 0.333252V2.33325ZM11 0.333252C5.20103 0.333252 0.5 5.03428 0.5 10.8333H2.5C2.5 6.13885 6.3056 2.33325 11 2.33325V0.333252Z" fill="#62215B"></path>
+                                </g>
+                              </svg></a></li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -176,7 +457,7 @@
                     </li>
                   </ul>
                 </nav>
-              </div><a class="header-block__logo">
+              </div><a class="header-block__logo" href="#">
                 <div class="header-block__logo_1">
                   <svg xmlns="http://www.w3.org/2000/svg" width="62" height="56" viewBox="0 0 62 56" fill="none">
                     <path d="M29.5889 52.488C36.8479 55.8267 43.3799 55.8099 50.1301 52.4377C51.215 51.8952 52.4509 51.0563 53.5471 50.3181L54.2182 49.8651L54.3076 49.9266C54.604 50.128 54.8278 50.3349 55.0738 50.6369L55.2304 50.8326C55.4038 51.0451 55.4038 51.0451 55.6051 51.2073L55.8176 51.3807C56.1643 51.6659 56.4775 52.0014 56.7851 52.3258C56.9753 52.5271 57.171 52.7285 57.3667 52.9242C57.9819 53.517 58.7089 54.0427 59.4136 54.5516C59.5925 54.6802 59.7715 54.8089 59.9449 54.9375C60.0455 55.0158 60.1238 55.0773 60.1797 55.1221C60.2301 55.1612 60.2804 55.2059 60.2972 55.2115C60.3252 55.2115 60.4146 55.1668 60.5209 55.1109C59.5422 53.2765 58.6306 51.8616 57.2101 49.9658L55.9295 48.1315L55.991 48.0364C56.5167 47.2534 57.0256 46.6103 57.5121 45.9839C58.3622 44.9046 59.1675 43.8812 59.9505 42.2873C63.8596 34.346 62.2713 21.0024 54.3636 15.7007L54.2238 15.6112L56.9585 11.6405L57.0815 11.7021C57.9428 12.1159 59.2961 11.3945 59.7435 11.0813C60.8229 10.3207 61.2815 8.76042 60.8397 7.37348C60.3755 5.91944 59.0724 5.08616 57.2661 5.08616C56.3713 5.08616 55.387 5.67896 54.8166 6.56817C54.1734 7.56363 54.1119 8.76601 54.6488 9.94602C54.9005 10.4997 54.6376 10.8464 54.3524 11.2155C54.3021 11.2826 54.2461 11.3553 54.1902 11.428C54.1343 11.5063 54.0616 11.607 53.9777 11.7244C53.5527 12.3116 52.6579 13.5252 52.5516 13.9446L52.5125 14.0956L52.3615 14.0621C52.3223 14.0509 52.2944 14.0397 51.9308 13.8272C51.0081 13.2847 48.5586 11.8419 46.6627 11.2267C40.5669 9.24697 33.1457 10.2984 27.749 13.9167L27.6148 14.0062L27.5253 13.8719C26.9548 13.0163 25.663 11.5287 24.4159 10.0858C23.1072 8.57027 21.7482 7.00438 21.1107 6.05366L21.0716 5.99774L21.0883 5.93063C21.1778 5.54474 21.2505 5.30986 21.3064 5.12531C21.4183 4.75621 21.4686 4.60521 21.4686 3.78871C21.4686 2.63666 20.6801 1.5629 19.4553 1.05958C18.4263 0.63455 16.9163 0.589811 15.7531 1.75305C15.2889 2.21722 14.7465 3.16235 14.7465 4.30322C14.7465 5.93622 16.2229 7.47974 17.7888 7.47974L19.2931 7.34552L19.3435 7.44059C19.5224 7.78174 19.6063 7.87121 19.7405 8.01662C19.8188 8.10051 19.9083 8.20117 20.0369 8.36335C20.3333 8.73805 20.9317 9.44829 21.6308 10.2648C23.2302 12.1495 25.2156 14.4927 25.6182 15.2533L25.6574 15.3316L25.6126 15.4099C25.5959 15.4322 25.5959 15.4322 25.2659 15.7622C24.5948 16.4221 23.0177 17.96 22.7046 18.3627C17.168 25.4875 16.6143 34.7263 21.3176 41.8847C23.6832 45.4862 27.3575 48.0811 31.6693 49.194L31.7364 49.2108C34.2027 49.8428 38.1006 50.2119 40.964 49.1549C41.2716 49.043 41.5065 48.9256 41.7581 48.8026C41.9706 48.6963 42.1887 48.59 42.4628 48.4782C50.4041 45.2905 52.5013 37.8022 52.5013 34.2901C52.5013 32.0251 52.1042 30.2579 51.2486 28.72C50.6669 27.6742 49.9735 26.4942 49.129 25.6497C49.1122 25.6329 47.4904 24.0391 46.0364 23.3288L45.7679 23.1946C42.8822 21.7406 37.2282 20.8793 33.5707 26.5501C32.5921 28.0712 32.2677 30.3697 32.7263 32.5564C32.9388 33.5686 33.7161 34.7039 34.3928 35.3806C35.7854 36.7731 37.9049 37.461 39.7896 37.1422C41.3163 36.885 42.5187 35.9846 43.1786 34.62C44.23 32.4334 43.4974 30.6661 42.4572 29.7322C41.3331 28.7256 39.7896 28.5354 38.6152 29.2624C37.9888 29.6483 37.5638 30.2803 37.4519 30.9961C37.3513 31.6448 37.519 32.2656 37.9329 32.7577C38.2405 33.1212 38.3523 33.1772 39.0514 33.2946C39.7728 33.4176 40.3544 33.166 40.6117 32.6123C40.8466 32.1146 40.7179 31.533 40.2873 31.1695C40.1587 31.0576 40.0636 31.0073 39.9797 30.9626C39.7784 30.8507 39.6665 30.7724 39.5547 30.353L39.5211 30.2299L39.633 30.1684C40.2538 29.8217 41.0031 30.023 41.5344 30.6885C42.1608 31.4771 42.3901 32.8193 41.4058 33.9154C40.8801 34.5026 40.1531 34.8214 39.3086 34.8437C38.2069 34.8717 37.2226 34.4019 36.7417 33.921C35.5505 32.7298 35.3659 30.6494 36.3055 28.9604C37.3065 27.1541 39.2359 26.3823 41.4673 26.8968C43.1674 27.2883 44.5152 28.3397 45.2646 29.8552C46.1091 31.5609 46.1314 33.6525 45.3149 35.4533C44.6271 36.9801 42.5858 39.0437 40.9975 39.4128C36.3614 40.4865 32.1447 38.5571 30.2488 34.5082C28.4592 30.6717 29.0688 24.973 34.4711 20.8905C36.2551 19.5427 38.8724 18.771 41.6575 18.771C49.4925 18.771 56.3713 25.5211 56.3713 33.2107C56.3713 37.2932 55.1913 41.2583 53.0437 44.3677L52.848 44.6194C52.4677 45.1003 52.2832 45.3408 51.1759 46.4369C49.0843 48.9535 45.136 51.0284 40.8801 51.8337C37.2058 52.5327 31.6581 52.6166 26.1104 49.0766C25.7804 48.8808 25.5455 48.7019 25.3162 48.5229C25.1485 48.3943 24.9751 48.2601 24.757 48.1203C24.6619 48.0588 24.5669 47.9916 24.4718 47.9245C24.1362 47.6785 23.8119 47.4492 23.3477 47.3932C23.6217 48.797 28.353 51.8896 29.5889 52.488Z" fill="#C19F86"></path>
@@ -318,117 +599,130 @@
             <div class="breadcrumb"><a href="#">Главная</a><span>•</span></div>
             <div class="breadcrumb active"><a href="#">Личный кабинет</a><span>•</span></div>
           </div>
-          <div class="lk-address-page__inner">
-            <div class="lk-address">
-              <div class="lk-address__inner"> 
-                <h1 class="title lk-address__title">Мои адреса</h1>
-                <div class="lk-address__tubs"> <a class="lk-address__link active">курьерская доставка</a><a class="lk-address__link">пункты выдачи заказов</a><a class="lk-address__link">почта россии</a></div>
-                <div class="lk-address__box">
-                  <div class="lk-address__block lk-address-empty active">
-                    <p class="lk-address-empty__text">список адресов пуст</p>
-                  </div>
-                  <div class="lk-address__block lk-address-success active"> 
-                    <div class="address">
-                      <div class="address__inner">
-                        <p class="address__text">Воронеж, ул. Черняховского, 19, корп. 2, кв. 401</p>
-                        <div class="address__bottom"> 
-                          <button class="address__change">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <g id="Edit 2">
-                                <path id="Vector" d="M5.9433 13.8505L5.5794 12.9191L5.9433 13.8505ZM2.56297 14.4997L2.06297 15.3657L2.06297 15.3657L2.56297 14.4997ZM1.43495 11.2476L0.446355 11.3982L1.43495 11.2476ZM1.84354 9.07908L2.70956 9.57908L1.84354 9.07908ZM1.35675 10.1101L0.374035 9.92498H0.374035L1.35675 10.1101ZM7.61704 12.4124L8.48306 12.9124L7.61704 12.4124ZM6.96752 13.3495L7.61922 14.108L6.96752 13.3495ZM5.0089 3.59651L4.14288 3.09651L5.0089 3.59651ZM14.1756 15.8764C14.7279 15.8764 15.1756 15.4287 15.1756 14.8764C15.1756 14.3241 14.7279 13.8764 14.1756 13.8764V15.8764ZM9.17557 13.8764C8.62328 13.8764 8.17557 14.3241 8.17557 14.8764C8.17557 15.4287 8.62328 15.8764 9.17557 15.8764V13.8764ZM9.91638 6.42984L6.75101 11.9124L8.48306 12.9124L11.6484 7.42984L9.91638 6.42984ZM2.70956 9.57908L5.87493 4.09651L4.14288 3.09651L0.977511 8.57908L2.70956 9.57908ZM5.5794 12.9191C4.65476 13.2803 4.06207 13.5093 3.61412 13.6139C3.19231 13.7125 3.09378 13.6514 3.06297 13.6336L2.06297 15.3657C2.72588 15.7484 3.42198 15.7127 4.06914 15.5615C4.69016 15.4164 5.44077 15.1205 6.30721 14.782L5.5794 12.9191ZM0.446355 11.3982C0.586415 12.3178 0.705464 13.1158 0.890321 13.7262C1.08296 14.3622 1.40006 14.9829 2.06297 15.3657L3.06297 13.6336C3.03216 13.6158 2.93002 13.561 2.80446 13.1465C2.67112 12.7062 2.57302 12.0785 2.42355 11.0971L0.446355 11.3982ZM0.977511 8.57908C0.722111 9.02145 0.465405 9.44004 0.374035 9.92498L2.33945 10.2953C2.35319 10.2224 2.38598 10.1395 2.70956 9.57908L0.977511 8.57908ZM2.42355 11.0971C2.32611 10.4573 2.32572 10.3682 2.33945 10.2953L0.374035 9.92498C0.282666 10.4099 0.369446 10.8932 0.446355 11.3982L2.42355 11.0971ZM6.75101 11.9124C6.42743 12.4729 6.37209 12.5427 6.31581 12.591L7.61922 14.108C7.99351 13.7864 8.22766 13.3548 8.48306 12.9124L6.75101 11.9124ZM6.30721 14.782C6.78299 14.5961 7.24493 14.4296 7.61922 14.108L6.31581 12.591C6.25953 12.6394 6.18219 12.6836 5.5794 12.9191L6.30721 14.782ZM9.06232 3.24245C9.76722 3.64942 10.2077 3.90619 10.5046 4.13534C10.7786 4.34676 10.8063 4.44328 10.8163 4.48059L12.7482 3.96295C12.5795 3.33342 12.1776 2.90011 11.7265 2.55198C11.2984 2.22159 10.7183 1.8891 10.0623 1.5104L9.06232 3.24245ZM11.6484 7.42984C12.0271 6.77391 12.3633 6.1959 12.5689 5.6957C12.7855 5.16865 12.9168 4.59248 12.7482 3.96295L10.8163 4.48059C10.8263 4.51789 10.8506 4.61534 10.719 4.93541C10.5764 5.28233 10.3234 5.72495 9.91638 6.42984L11.6484 7.42984ZM10.0623 1.5104C9.40639 1.1317 8.82838 0.795531 8.32818 0.589948C7.80113 0.373331 7.22496 0.241982 6.59543 0.410663L7.11306 2.34251C7.15037 2.33252 7.24781 2.30825 7.56789 2.4398C7.91481 2.58239 8.35742 2.83548 9.06232 3.24245L10.0623 1.5104ZM5.87493 4.09651C6.2819 3.39161 6.53867 2.95112 6.76782 2.65418C6.97924 2.38022 7.07576 2.35251 7.11306 2.34251L6.59543 0.410663C5.9659 0.579345 5.53259 0.981185 5.18446 1.4323C4.85407 1.86045 4.52158 2.44058 4.14288 3.09651L5.87493 4.09651ZM11.2824 6.06382L5.5089 2.73048L4.5089 4.46253L10.2824 7.79587L11.2824 6.06382ZM14.1756 13.8764H9.17557V15.8764H14.1756V13.8764Z" fill="#62215B"></path>
-                              </g>
-                            </svg>
-                            <p>изменить</p>
-                          </button>
-                          <button class="address__delete" data-btn-modal="lk-delete">
-                            <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <g id="Delete 2">
-                                <path id="Vector" d="M13.4317 10.6489L14.4221 10.7868L13.4317 10.6489ZM13.213 12.2198L14.2035 12.3576V12.3576L13.213 12.2198ZM2.78826 12.2198L3.77872 12.0819L2.78826 12.2198ZM2.56965 10.6489L1.5792 10.7868L2.56965 10.6489ZM5.65369 18.1134L5.2649 19.0347H5.2649L5.65369 18.1134ZM3.39655 15.4663L4.3352 15.1214L3.39655 15.4663ZM12.6047 15.4663L13.5434 15.8112L12.6047 15.4663ZM10.3476 18.1134L9.95883 17.192H9.95882L10.3476 18.1134ZM3.16283 7.40476C3.1106 6.85495 2.62254 6.45159 2.07273 6.50383C1.52292 6.55607 1.11956 7.04413 1.1718 7.59394L3.16283 7.40476ZM14.8295 7.59394C14.8817 7.04413 14.4784 6.55607 13.9286 6.50383C13.3788 6.45159 12.8907 6.85495 12.8385 7.40476L14.8295 7.59394ZM14.6673 6.83268C15.2196 6.83268 15.6673 6.38497 15.6673 5.83268C15.6673 5.2804 15.2196 4.83268 14.6673 4.83268V6.83268ZM1.33398 4.83268C0.7817 4.83268 0.333984 5.2804 0.333984 5.83268C0.333984 6.38497 0.7817 6.83268 1.33398 6.83268V4.83268ZM5.33398 14.9993C5.33398 15.5516 5.7817 15.9993 6.33398 15.9993C6.88627 15.9993 7.33398 15.5516 7.33398 14.9993H5.33398ZM7.33398 8.33268C7.33398 7.7804 6.88627 7.33268 6.33398 7.33268C5.7817 7.33268 5.33398 7.7804 5.33398 8.33268H7.33398ZM8.66732 14.9993C8.66732 15.5516 9.11503 15.9993 9.66732 15.9993C10.2196 15.9993 10.6673 15.5516 10.6673 14.9993H8.66732ZM10.6673 8.33268C10.6673 7.7804 10.2196 7.33268 9.66732 7.33268C9.11503 7.33268 8.66732 7.7804 8.66732 8.33268H10.6673ZM11.334 5.83268V6.83268H12.334V5.83268H11.334ZM4.66732 5.83268H3.66732V6.83268H4.66732V5.83268ZM12.4412 10.5111L12.2226 12.0819L14.2035 12.3576L14.4221 10.7868L12.4412 10.5111ZM3.77872 12.0819L3.56011 10.5111L1.5792 10.7868L1.79781 12.3576L3.77872 12.0819ZM8.00065 17.3327C6.69266 17.3327 6.33092 17.3138 6.04248 17.192L5.2649 19.0347C6.01586 19.3516 6.87232 19.3327 8.00065 19.3327V17.3327ZM1.79781 12.3576C2.02819 14.013 2.15966 14.9994 2.4579 15.8112L4.3352 15.1214C4.12966 14.562 4.02353 13.8411 3.77872 12.0819L1.79781 12.3576ZM6.04248 17.192C5.39566 16.9191 4.74043 16.2244 4.3352 15.1214L2.4579 15.8112C2.99476 17.2724 3.96801 18.4874 5.2649 19.0347L6.04248 17.192ZM12.2226 12.0819C11.9778 13.8411 11.8716 14.562 11.6661 15.1214L13.5434 15.8112C13.8416 14.9994 13.9731 14.013 14.2035 12.3576L12.2226 12.0819ZM8.00065 19.3327C9.12898 19.3327 9.98544 19.3516 10.7364 19.0347L9.95882 17.192C9.67038 17.3138 9.30864 17.3327 8.00065 17.3327V19.3327ZM11.6661 15.1214C11.2609 16.2244 10.6056 16.9191 9.95883 17.192L10.7364 19.0347C12.0333 18.4874 13.0065 17.2724 13.5434 15.8112L11.6661 15.1214ZM3.56011 10.5111C3.37456 9.17783 3.23773 8.19305 3.16283 7.40476L1.1718 7.59394C1.25177 8.43564 1.39602 9.47052 1.5792 10.7868L3.56011 10.5111ZM14.4221 10.7868C14.6053 9.47052 14.7495 8.43564 14.8295 7.59394L12.8385 7.40476C12.7636 8.19305 12.6267 9.17782 12.4412 10.5111L14.4221 10.7868ZM14.6673 4.83268H1.33398V6.83268H14.6673V4.83268ZM7.33398 14.9993V8.33268H5.33398V14.9993H7.33398ZM10.6673 14.9993V8.33268H8.66732V14.9993H10.6673ZM10.334 4.99935V5.83268H12.334V4.99935H10.334ZM11.334 4.83268H4.66732V6.83268H11.334V4.83268ZM5.66732 5.83268V4.99935H3.66732V5.83268H5.66732ZM8.00065 2.66602C9.28932 2.66602 10.334 3.71068 10.334 4.99935H12.334C12.334 2.60612 10.3939 0.666016 8.00065 0.666016V2.66602ZM8.00065 0.666016C5.60742 0.666016 3.66732 2.60612 3.66732 4.99935H5.66732C5.66732 3.71068 6.71199 2.66602 8.00065 2.66602V0.666016Z" fill="#62215B"></path>
-                              </g>
-                            </svg>
-                            <p>удалить</p>
-                          </button>
-                          <div class="checkbox">
-                            <label class="container">
-                              <input type="checkbox"/><span class="checkmark">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M20 7L14.6093 13.4688C12.4732 16.0322 11.4051 17.3139 10 17.3139C8.59488 17.3139 7.52681 16.0322 5.39067 13.4688L4 11.8" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
-                                </svg></span>
-                              <p>Адрес по умолчанию</p>
-                            </label>
-                          </div>
+        </div>
+        <div class="lk-address-page__inner">
+          <sidebar class="sidebar-lk">
+            <h2 class="sidebar-lk__title">Здравствуйте, <span>Спартак</span></h2>
+            <ul class="sidebar-lk__list"> 
+              <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Мои заказы</a></li>
+              <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Мой гардероб</a></li>
+              <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Мои данные</a></li>
+              <li class="sidebar-lk__item active"><a class="sidebar-lk__link" href="#">Мои адреса</a></li>
+              <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Избранное</a></li>
+              <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Управление рассылками</a></li>
+              <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Выйти</a></li>
+            </ul>
+          </sidebar>
+          <div class="lk-address">
+            <div class="lk-address__inner"> 
+              <h1 class="title lk-address__title">Мои адреса</h1>
+              <div class="lk-address__tubs"><a class="lk-address__link active">курьерская доставка</a><a class="lk-address__link">пункты выдачи заказов</a><a class="lk-address__link">почта россии</a>
+              </div>
+              <div class="lk-address__box">
+                <div class="lk-address__block lk-address-empty active">
+                  <p class="lk-adadress-empty__text">список адресов пуст</p>
+                </div>
+                <div class="lk-address__block lk-address-success active"> 
+                  <div class="address">
+                    <div class="address__inner">
+                      <p class="address__text">Воронеж, ул. Черняховского, 19, корп. 2, кв. 401</p>
+                      <div class="address__bottom"> 
+                        <button class="address__change">
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Edit 2">
+                              <path id="Vector" d="M5.9433 13.8505L5.5794 12.9191L5.9433 13.8505ZM2.56297 14.4997L2.06297 15.3657L2.06297 15.3657L2.56297 14.4997ZM1.43495 11.2476L0.446355 11.3982L1.43495 11.2476ZM1.84354 9.07908L2.70956 9.57908L1.84354 9.07908ZM1.35675 10.1101L0.374035 9.92498H0.374035L1.35675 10.1101ZM7.61704 12.4124L8.48306 12.9124L7.61704 12.4124ZM6.96752 13.3495L7.61922 14.108L6.96752 13.3495ZM5.0089 3.59651L4.14288 3.09651L5.0089 3.59651ZM14.1756 15.8764C14.7279 15.8764 15.1756 15.4287 15.1756 14.8764C15.1756 14.3241 14.7279 13.8764 14.1756 13.8764V15.8764ZM9.17557 13.8764C8.62328 13.8764 8.17557 14.3241 8.17557 14.8764C8.17557 15.4287 8.62328 15.8764 9.17557 15.8764V13.8764ZM9.91638 6.42984L6.75101 11.9124L8.48306 12.9124L11.6484 7.42984L9.91638 6.42984ZM2.70956 9.57908L5.87493 4.09651L4.14288 3.09651L0.977511 8.57908L2.70956 9.57908ZM5.5794 12.9191C4.65476 13.2803 4.06207 13.5093 3.61412 13.6139C3.19231 13.7125 3.09378 13.6514 3.06297 13.6336L2.06297 15.3657C2.72588 15.7484 3.42198 15.7127 4.06914 15.5615C4.69016 15.4164 5.44077 15.1205 6.30721 14.782L5.5794 12.9191ZM0.446355 11.3982C0.586415 12.3178 0.705464 13.1158 0.890321 13.7262C1.08296 14.3622 1.40006 14.9829 2.06297 15.3657L3.06297 13.6336C3.03216 13.6158 2.93002 13.561 2.80446 13.1465C2.67112 12.7062 2.57302 12.0785 2.42355 11.0971L0.446355 11.3982ZM0.977511 8.57908C0.722111 9.02145 0.465405 9.44004 0.374035 9.92498L2.33945 10.2953C2.35319 10.2224 2.38598 10.1395 2.70956 9.57908L0.977511 8.57908ZM2.42355 11.0971C2.32611 10.4573 2.32572 10.3682 2.33945 10.2953L0.374035 9.92498C0.282666 10.4099 0.369446 10.8932 0.446355 11.3982L2.42355 11.0971ZM6.75101 11.9124C6.42743 12.4729 6.37209 12.5427 6.31581 12.591L7.61922 14.108C7.99351 13.7864 8.22766 13.3548 8.48306 12.9124L6.75101 11.9124ZM6.30721 14.782C6.78299 14.5961 7.24493 14.4296 7.61922 14.108L6.31581 12.591C6.25953 12.6394 6.18219 12.6836 5.5794 12.9191L6.30721 14.782ZM9.06232 3.24245C9.76722 3.64942 10.2077 3.90619 10.5046 4.13534C10.7786 4.34676 10.8063 4.44328 10.8163 4.48059L12.7482 3.96295C12.5795 3.33342 12.1776 2.90011 11.7265 2.55198C11.2984 2.22159 10.7183 1.8891 10.0623 1.5104L9.06232 3.24245ZM11.6484 7.42984C12.0271 6.77391 12.3633 6.1959 12.5689 5.6957C12.7855 5.16865 12.9168 4.59248 12.7482 3.96295L10.8163 4.48059C10.8263 4.51789 10.8506 4.61534 10.719 4.93541C10.5764 5.28233 10.3234 5.72495 9.91638 6.42984L11.6484 7.42984ZM10.0623 1.5104C9.40639 1.1317 8.82838 0.795531 8.32818 0.589948C7.80113 0.373331 7.22496 0.241982 6.59543 0.410663L7.11306 2.34251C7.15037 2.33252 7.24781 2.30825 7.56789 2.4398C7.91481 2.58239 8.35742 2.83548 9.06232 3.24245L10.0623 1.5104ZM5.87493 4.09651C6.2819 3.39161 6.53867 2.95112 6.76782 2.65418C6.97924 2.38022 7.07576 2.35251 7.11306 2.34251L6.59543 0.410663C5.9659 0.579345 5.53259 0.981185 5.18446 1.4323C4.85407 1.86045 4.52158 2.44058 4.14288 3.09651L5.87493 4.09651ZM11.2824 6.06382L5.5089 2.73048L4.5089 4.46253L10.2824 7.79587L11.2824 6.06382ZM14.1756 13.8764H9.17557V15.8764H14.1756V13.8764Z" fill="#62215B"></path>
+                            </g>
+                          </svg>
+                          <p>изменить</p>
+                        </button>
+                        <button class="address__delete">
+                          <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Delete 2">
+                              <path id="Vector" d="M13.4317 10.6489L14.4221 10.7868L13.4317 10.6489ZM13.213 12.2198L14.2035 12.3576V12.3576L13.213 12.2198ZM2.78826 12.2198L3.77872 12.0819L2.78826 12.2198ZM2.56965 10.6489L1.5792 10.7868L2.56965 10.6489ZM5.65369 18.1134L5.2649 19.0347H5.2649L5.65369 18.1134ZM3.39655 15.4663L4.3352 15.1214L3.39655 15.4663ZM12.6047 15.4663L13.5434 15.8112L12.6047 15.4663ZM10.3476 18.1134L9.95883 17.192H9.95882L10.3476 18.1134ZM3.16283 7.40476C3.1106 6.85495 2.62254 6.45159 2.07273 6.50383C1.52292 6.55607 1.11956 7.04413 1.1718 7.59394L3.16283 7.40476ZM14.8295 7.59394C14.8817 7.04413 14.4784 6.55607 13.9286 6.50383C13.3788 6.45159 12.8907 6.85495 12.8385 7.40476L14.8295 7.59394ZM14.6673 6.83268C15.2196 6.83268 15.6673 6.38497 15.6673 5.83268C15.6673 5.2804 15.2196 4.83268 14.6673 4.83268V6.83268ZM1.33398 4.83268C0.7817 4.83268 0.333984 5.2804 0.333984 5.83268C0.333984 6.38497 0.7817 6.83268 1.33398 6.83268V4.83268ZM5.33398 14.9993C5.33398 15.5516 5.7817 15.9993 6.33398 15.9993C6.88627 15.9993 7.33398 15.5516 7.33398 14.9993H5.33398ZM7.33398 8.33268C7.33398 7.7804 6.88627 7.33268 6.33398 7.33268C5.7817 7.33268 5.33398 7.7804 5.33398 8.33268H7.33398ZM8.66732 14.9993C8.66732 15.5516 9.11503 15.9993 9.66732 15.9993C10.2196 15.9993 10.6673 15.5516 10.6673 14.9993H8.66732ZM10.6673 8.33268C10.6673 7.7804 10.2196 7.33268 9.66732 7.33268C9.11503 7.33268 8.66732 7.7804 8.66732 8.33268H10.6673ZM11.334 5.83268V6.83268H12.334V5.83268H11.334ZM4.66732 5.83268H3.66732V6.83268H4.66732V5.83268ZM12.4412 10.5111L12.2226 12.0819L14.2035 12.3576L14.4221 10.7868L12.4412 10.5111ZM3.77872 12.0819L3.56011 10.5111L1.5792 10.7868L1.79781 12.3576L3.77872 12.0819ZM8.00065 17.3327C6.69266 17.3327 6.33092 17.3138 6.04248 17.192L5.2649 19.0347C6.01586 19.3516 6.87232 19.3327 8.00065 19.3327V17.3327ZM1.79781 12.3576C2.02819 14.013 2.15966 14.9994 2.4579 15.8112L4.3352 15.1214C4.12966 14.562 4.02353 13.8411 3.77872 12.0819L1.79781 12.3576ZM6.04248 17.192C5.39566 16.9191 4.74043 16.2244 4.3352 15.1214L2.4579 15.8112C2.99476 17.2724 3.96801 18.4874 5.2649 19.0347L6.04248 17.192ZM12.2226 12.0819C11.9778 13.8411 11.8716 14.562 11.6661 15.1214L13.5434 15.8112C13.8416 14.9994 13.9731 14.013 14.2035 12.3576L12.2226 12.0819ZM8.00065 19.3327C9.12898 19.3327 9.98544 19.3516 10.7364 19.0347L9.95882 17.192C9.67038 17.3138 9.30864 17.3327 8.00065 17.3327V19.3327ZM11.6661 15.1214C11.2609 16.2244 10.6056 16.9191 9.95883 17.192L10.7364 19.0347C12.0333 18.4874 13.0065 17.2724 13.5434 15.8112L11.6661 15.1214ZM3.56011 10.5111C3.37456 9.17783 3.23773 8.19305 3.16283 7.40476L1.1718 7.59394C1.25177 8.43564 1.39602 9.47052 1.5792 10.7868L3.56011 10.5111ZM14.4221 10.7868C14.6053 9.47052 14.7495 8.43564 14.8295 7.59394L12.8385 7.40476C12.7636 8.19305 12.6267 9.17782 12.4412 10.5111L14.4221 10.7868ZM14.6673 4.83268H1.33398V6.83268H14.6673V4.83268ZM7.33398 14.9993V8.33268H5.33398V14.9993H7.33398ZM10.6673 14.9993V8.33268H8.66732V14.9993H10.6673ZM10.334 4.99935V5.83268H12.334V4.99935H10.334ZM11.334 4.83268H4.66732V6.83268H11.334V4.83268ZM5.66732 5.83268V4.99935H3.66732V5.83268H5.66732ZM8.00065 2.66602C9.28932 2.66602 10.334 3.71068 10.334 4.99935H12.334C12.334 2.60612 10.3939 0.666016 8.00065 0.666016V2.66602ZM8.00065 0.666016C5.60742 0.666016 3.66732 2.60612 3.66732 4.99935H5.66732C5.66732 3.71068 6.71199 2.66602 8.00065 2.66602V0.666016Z" fill="#62215B"></path>
+                            </g>
+                          </svg>
+                          <p>удалить</p>
+                        </button>
+                        <div class="checkbox">
+                          <label class="container">
+                            <input type="checkbox" data-checkbox-address=""/><span class="checkmark">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 7L14.6093 13.4688C12.4732 16.0322 11.4051 17.3139 10 17.3139C8.59488 17.3139 7.52681 16.0322 5.39067 13.4688L4 11.8" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                              </svg></span>
+                            <p>Адрес по умолчанию</p>
+                          </label>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="lk-address__block lk-address-add">
-                    <h3 class="lk-address-add__title">добавить адрес</h3>
-                    <form class="lk-address-add__form">
+                </div>
+                <div class="lk-address__block lk-address-add">
+                  <h3 class="lk-address-add__title">добавить адрес</h3>
+                  <form class="lk-address-add__form">
+                    <div class="lk-address-add__item"> 
+                      <p class="lk-address-add__description">Населенный пункт *</p>
+                      <div class="input-wrapper" data-input-parent="">
+                        <div class="input-wrapper__placeholder">Введите значение</div>
+                        <input class="input" data-input="" required="required" name="place" placeholder="Введите значение"/>
+                        <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
+                          <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="lk-address-add__item"> 
+                      <p class="lk-address-add__description">улица *</p>
+                      <div class="input-wrapper" data-input-parent="">
+                        <div class="input-wrapper__placeholder">укажите улицу</div>
+                        <input class="input" data-input="" required="required" name="street" placeholder="укажите улицу"/>
+                        <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
+                          <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="lk-address-add__items"> 
                       <div class="lk-address-add__item"> 
-                        <p class="lk-address-add__description">Населенный пункт *</p>
+                        <p class="lk-address-add__description">дом *</p>
                         <div class="input-wrapper" data-input-parent="">
-                          <div class="input-wrapper__placeholder">Введите значение</div>
-                          <input class="input" data-input="" required="required" name="place" placeholder="Введите значение"/>
-                          <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                          <div class="input-wrapper__placeholder">дом</div>
+                          <input class="input" data-input="" required="required" name="house" placeholder="дом"/>
+                          <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
                             <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                             <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                           </svg>
                         </div>
                       </div>
                       <div class="lk-address-add__item"> 
-                        <p class="lk-address-add__description">улица *</p>
+                        <p class="lk-address-add__description">корпус *</p>
                         <div class="input-wrapper" data-input-parent="">
-                          <div class="input-wrapper__placeholder">укажите улицу</div>
-                          <input class="input" data-input="" required="required" name="street" placeholder="укажите улицу"/>
-                          <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                          <div class="input-wrapper__placeholder">корпус</div>
+                          <input class="input" data-input="" required="required" name="frame" placeholder="корпус"/>
+                          <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
                             <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                             <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                           </svg>
                         </div>
                       </div>
-                      <div class="lk-address-add__items"> 
-                        <div class="lk-address-add__item"> 
-                          <p class="lk-address-add__description">дом *</p>
-                          <div class="input-wrapper" data-input-parent="">
-                            <div class="input-wrapper__placeholder">дом</div>
-                            <input class="input" data-input="" required="required" name="house" placeholder="дом"/>
-                            <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                              <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                              <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                          </div>
-                        </div>
-                        <div class="lk-address-add__item"> 
-                          <p class="lk-address-add__description">корпус *</p>
-                          <div class="input-wrapper" data-input-parent="">
-                            <div class="input-wrapper__placeholder">корпус</div>
-                            <input class="input" data-input="" required="required" name="frame" placeholder="корпус"/>
-                            <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                              <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                              <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                          </div>
-                        </div>
-                        <div class="lk-address-add__item"> 
-                          <p class="lk-address-add__description">квартира * *</p>
-                          <div class="input-wrapper" data-input-parent="">
-                            <div class="input-wrapper__placeholder">квартира *</div>
-                            <input class="input" data-input="" required="required" name="apartament" placeholder="квартира *"/>
-                            <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                              <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                              <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                          </div>
+                      <div class="lk-address-add__item"> 
+                        <p class="lk-address-add__description">квартира * *</p>
+                        <div class="input-wrapper" data-input-parent="">
+                          <div class="input-wrapper__placeholder">квартира *</div>
+                          <input class="input" data-input="" required="required" name="apartament" placeholder="квартира *"/>
+                          <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
+                            <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
                         </div>
                       </div>
-                      <div class="lk-address-add__button"> 
-                        <button class="btn">сохранить</button>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="lk-address__block lk-address-btn active">
-                    <button class="btn">Добавить адрес</button>
-                  </div>
+                    </div>
+                    <div class="lk-address-add__button"> 
+                      <button class="btn">сохранить</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="lk-address__block lk-address-btn active">
+                  <button class="btn">Добавить адрес</button>
                 </div>
               </div>
             </div>
@@ -493,7 +787,7 @@
                     <div class="input-wrapper" data-input-parent="">
                       <div class="input-wrapper__placeholder">ваш e-mail</div>
                       <input class="input" data-input="" required="required" name="" placeholder="ваш e-mail"/>
-                      <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                      <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
                         <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                         <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                       </svg>
