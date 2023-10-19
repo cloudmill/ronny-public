@@ -7,7 +7,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
-    <script type="module" crossorigin src="assets/index-00e0b732.js"></script>
+    <script type="module" crossorigin src="assets/index-b97c3b5b.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body style="opacity:0">
@@ -62,6 +62,22 @@
                       <div class="login-sms__block login-sms__link"><a>Запросить новый код</a></div>
                     </div>
                   </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" data-modal="footer">
+          <div class="overlay"> </div>
+          <div class="modal__inner">
+            <div class="footer-modal">
+              <div class="footer-modal__inner"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="61" height="61" viewBox="0 0 61 61" fill="none">
+                  <path d="M54.5752 3.50509C53.5888 2.76534 52.1091 2.76534 51.1227 3.99826L43.971 12.8753C40.0253 10.1629 35.3397 8.68337 30.1609 8.68337C16.5974 8.68337 5.5 19.7797 5.5 33.3418C5.5 46.9039 16.5974 58.0002 30.1609 58.0002C43.7244 58.0002 54.8218 46.9039 54.8218 33.3418C54.8218 28.4101 53.3422 23.9716 50.8761 20.0262L49.1498 21.9989L47.4235 23.9716L33.1202 41.9723C32.627 42.4654 31.8872 42.9586 31.1473 42.9586C30.4075 42.9586 29.9143 42.712 29.4211 42.2188L18.8169 30.876C18.0771 30.1362 18.0771 28.9033 18.3237 28.1635C18.3237 27.9169 18.5703 27.6704 18.8169 27.4238C19.8033 26.4374 21.283 26.4374 22.2694 27.4238L30.9007 36.794L44.4642 19.7797L45.9439 17.807L47.4235 15.8343L54.5752 6.95728C55.8083 5.97094 55.8083 4.49143 54.5752 3.50509Z" fill="#C19F86"></path>
+                </svg>
+                <p>спасибо за подписку!</p>
+                <div class="footer-modal__btn">
+                  <button class="btn">Закрыть</button>
                 </div>
               </div>
             </div>
@@ -476,7 +492,7 @@
                 </div></a>
               <div class="header-block__controls">
                 <ul class="header-controls"> 
-                  <li class="header-controls__item"> <a class="header-controls__link">
+                  <li class="header-controls__item"> <a class="header-controls__link" data-search-button>
                       <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="Search 2">
                           <path id="Vector" d="M22.0404 20.4595C21.6498 20.069 21.0167 20.069 20.6261 20.4595C20.2356 20.85 20.2356 21.4832 20.6261 21.8737L22.0404 20.4595ZM22.9596 24.2072C23.3501 24.5977 23.9833 24.5977 24.3738 24.2072C24.7643 23.8166 24.7643 23.1835 24.3738 22.7929L22.9596 24.2072ZM20.6261 21.8737L22.9596 24.2072L24.3738 22.7929L22.0404 20.4595L20.6261 21.8737ZM11 19.3333C6.3056 19.3333 2.5 15.5277 2.5 10.8333H0.5C0.5 16.6323 5.20103 21.3333 11 21.3333V19.3333ZM19.5001 10.8333C19.5001 15.5277 15.6945 19.3333 11 19.3333V21.3333C16.799 21.3333 21.5001 16.6323 21.5001 10.8333H19.5001ZM11 2.33325C15.6945 2.33325 19.5001 6.13885 19.5001 10.8333H21.5001C21.5001 5.03428 16.799 0.333252 11 0.333252V2.33325ZM11 0.333252C5.20103 0.333252 0.5 5.03428 0.5 10.8333H2.5C2.5 6.13885 6.3056 2.33325 11 2.33325V0.333252Z" fill="#62215B"></path>
@@ -504,7 +520,9 @@
               </div>
             </div>
             <div class="header__menu">
+              <div class="overlay"></div>
               <div class="header-menu">
+                <div class="overlay"></div>
                 <div class="header-menu__inner"> 
                   <div class="header-menu__catalog">
                     <div class="header-menu__catalog-item"><a class="header-menu__catalog-title header__bold">Женщинам вяжем</a>
@@ -1250,7 +1268,7 @@
                       </div>
                     </div>
                     <div class="sidebar-colors__bottom">
-                      <button class="btn sidebar-colors__btn">выбрать этот цвет</button>
+                      <button class="btn sidebar-colors__btn" data-sidebar-color="button">выбрать этот цвет</button>
                       <p class="sidebar-colors__text">Цвет готового изделия может незначительно отличаться от выбранного вами оттенка в связи с особенностями цветопередачи конкретного монитора.</p>
                     </div>
                   </div>
@@ -2119,7 +2137,7 @@
                     </div>
                     <div class="sidebar-measurement__table"> 
                       <p class="sidebar-measurement__text">Сравните данные значения с параметрами одежды, которая хорошо на вас сидит.</p>
-                      <table>
+                      <table class="table">
                         <thead>
                           <th>Рост</th>
                           <th>Размер</th>
@@ -2193,7 +2211,7 @@
                           </tr>
                         </tbody>
                       </table>
-                      <table>
+                      <table class="table">
                         <thead>
                           <th>Рост</th>
                           <th>Размер</th>
@@ -2259,11 +2277,11 @@
                       </table>
                       <p class="sidebar-measurement__subtext">Размеры указаны в сантиметрах</p>
                       <p class="sidebar-measurement__text mt-40">Не уверены в правильном выбере размера? Напишите или позвоните, и мы вам поможем.</p>
-                      <div class="sidebar-measurement__socials"> <a href="#"> 
+                      <div class="sidebar-measurement__socials"> <a class="svg-hover" href="#">  
                           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                             <rect width="48" height="48" rx="24" fill="#62215B"></rect>
                             <path d="M25.0718 32C16.8719 32 12.1949 26.3694 12 17H16.1074C16.2423 23.8769 19.2704 26.7898 21.6689 27.3904V17H25.5366V22.9309C27.9051 22.6757 30.3933 19.973 31.2328 17H35.1004C34.4558 20.6637 31.7575 23.3664 29.8387 24.4775C31.7575 25.3784 34.8307 27.7357 36 32H31.7425C30.8281 29.1471 28.5497 26.9399 25.5366 26.6396V32H25.0718Z" fill="#FFF4EA"></path>
-                          </svg></a><a href="#"> 
+                          </svg></a><a class="svg-hover" href="#"> 
                           <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="48" height="48" rx="24" fill="#62215B"></rect>
                             <g clip-path="url(#clip0_51_2267)">
@@ -2274,16 +2292,16 @@
                                 <rect width="24" height="24" fill="white" transform="translate(12 12)"></rect>
                               </clippath>
                             </defs>
-                          </svg></a><a href="#"> 
+                          </svg></a><a class="svg-hover" href="#">  
                           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                             <rect width="48" height="48" rx="24" fill="#62215B"></rect>
                             <path d="M15.1648 22.5325L26.4825 18.0803C27.5997 17.6165 31.3884 16.1324 31.3884 16.1324C31.3884 16.1324 33.1371 15.4831 32.9914 17.06C32.9428 17.7093 32.5542 19.9818 32.1656 22.4398L30.9513 29.7211C30.9513 29.7211 30.8541 30.7878 30.0284 30.9733C29.2026 31.1588 27.8426 30.324 27.5997 30.1385C27.4054 29.9994 23.9567 27.9124 22.6938 26.892C22.3537 26.6138 21.9652 26.0572 22.7423 25.408C24.491 23.8775 26.5797 21.976 27.8426 20.7702C28.4255 20.2137 29.0083 18.9151 26.5797 20.4919L19.7308 24.8978C19.7308 24.8978 18.9536 25.3616 17.4964 24.9442C16.0392 24.5268 14.3391 23.9703 14.3391 23.9703C14.3391 23.9703 13.1733 23.2746 15.1648 22.5325Z" fill="#FFF4EA"></path>
-                          </svg></a><a href="#"> 
+                          </svg></a><a class="svg-hover" href="#">  
                           <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="48" height="48" rx="24" fill="#62215B"></rect>
                             <path d="M14.3332 18.4095C14 19.6495 14 21.3601 14 24C14 27.7497 14 29.6246 14.9549 30.9389C15.2633 31.3634 15.6366 31.7367 16.0611 32.0451C17.3754 33 19.2503 33 23 33H25C28.7497 33 30.6246 33 31.9389 32.0451C32.3634 31.7367 32.7367 31.3634 33.0451 30.9389C34 29.6246 34 27.7497 34 24C34 21.3513 34 19.6381 33.6634 18.3971L31.5607 20.4999C29.9284 22.1321 28.6492 23.4113 27.517 24.2752C26.3581 25.1594 25.2653 25.6789 23.9999 25.6789C22.7344 25.6789 21.6417 25.1594 20.4827 24.2752C19.3505 23.4113 18.0713 22.1321 16.439 20.4998L14.4839 18.5447L14.3332 18.4095Z" fill="#FBF2E9"></path>
                             <path d="M15 17L15.1088 17.0901L15.5159 17.4554L17.4591 19.3986C19.1408 21.0803 20.3498 22.287 21.3926 23.0827C22.4181 23.8651 23.1942 24.1789 23.9999 24.1789C24.8055 24.1789 25.5816 23.8651 26.6071 23.0827C27.6499 22.287 28.8589 21.0803 30.5406 19.3986L32.8485 17.0907L32.9741 16.9658C32.6657 16.5413 32.3634 16.2633 31.9389 15.9549C30.6246 15 28.7497 15 25 15H23C19.2503 15 17.3754 15 16.0611 15.9549C15.6366 16.2633 15.3084 16.5755 15 17Z" fill="#FBF2E9"></path>
-                          </svg></a><a href="#"> 
+                          </svg></a><a class="svg-hover" href="#">  
                           <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="48" height="48" rx="24" fill="#62215B"></rect>
                             <path d="M24.99 14.75C25.8509 14.75 26.2319 14.7508 26.5461 14.7789C30.0394 15.0917 32.8079 17.8602 33.1207 21.3535C33.1488 21.6677 33.1496 22.0487 33.1496 22.9095V23.8995C33.1496 24.3137 33.4854 24.6495 33.8996 24.6495C34.3138 24.6495 34.6496 24.3137 34.6496 23.8995V22.8591C34.6496 22.0622 34.6496 21.6093 34.6147 21.2197C34.2372 17.0037 30.8959 13.6623 26.6799 13.2849C26.2902 13.25 25.8374 13.25 25.0404 13.25H24.0001C23.5859 13.25 23.2501 13.5858 23.2501 14C23.2501 14.4142 23.5859 14.75 24.0001 14.75L24.99 14.75Z" fill="#FBF2E9"></path>
@@ -2597,13 +2615,14 @@
                           </div>
                         </div>
                       </div>
-                      <button class="sidebar-reviews-write__button"> 
+                      <label class="sidebar-reviews-write__button"> 
                         <svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <g id="Attachment">
                             <path id="Vector" d="M8.36076 12.1014L9.15159 9.14998C9.58836 7.51994 8.62102 5.84447 6.99099 5.4077C5.36095 4.97094 3.68548 5.93827 3.24871 7.5683L1.27162 14.9469C0.834855 16.5769 1.80219 18.2524 3.43223 18.6892C4.18075 18.8897 4.93885 18.7942 5.58218 18.4744C5.97699 18.2782 6.32858 17.9974 6.60821 17.6488M6.20015 8.35914L5.40932 11.3106C4.97255 12.9406 5.93988 14.6161 7.56992 15.0529C9.19996 15.4896 10.8754 14.5223 11.3122 12.8923L13.2893 5.51365C13.7261 3.88362 12.7587 2.20814 11.1287 1.77138C10.3802 1.57081 9.62206 1.66633 8.97872 1.98613C8.58391 2.1824 8.23233 2.46313 7.9527 2.81174" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
                           </g>
-                        </svg>прикрепить файл
-                      </button>
+                        </svg>
+                        <input type="file"/>прикрепить файл
+                      </label>
                     </form>
                     <div class="sidebar-reviews-write__bottom">
                       <button class="btn">отправить</button>
@@ -2689,11 +2708,11 @@
                       </table>
                       <p class="sidebar-size__subtext">Размеры указаны в сантиметрах</p>
                       <p class="sidebar-size__text mt-40">Не уверены в правильном выбере размера? Напишите или позвоните, и мы вам поможем.</p>
-                      <div class="sidebar-size__socials"> <a href="#"> 
+                      <div class="sidebar-size__socials"> <a class="svg-hover" href="#"> 
                           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                             <rect width="48" height="48" rx="24" fill="#62215B"></rect>
                             <path d="M25.0718 32C16.8719 32 12.1949 26.3694 12 17H16.1074C16.2423 23.8769 19.2704 26.7898 21.6689 27.3904V17H25.5366V22.9309C27.9051 22.6757 30.3933 19.973 31.2328 17H35.1004C34.4558 20.6637 31.7575 23.3664 29.8387 24.4775C31.7575 25.3784 34.8307 27.7357 36 32H31.7425C30.8281 29.1471 28.5497 26.9399 25.5366 26.6396V32H25.0718Z" fill="#FFF4EA"></path>
-                          </svg></a><a href="#"> 
+                          </svg></a><a class="svg-hover" href="#"> 
                           <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="48" height="48" rx="24" fill="#62215B"></rect>
                             <g clip-path="url(#clip0_51_2267)">
@@ -2704,16 +2723,16 @@
                                 <rect width="24" height="24" fill="white" transform="translate(12 12)"></rect>
                               </clippath>
                             </defs>
-                          </svg></a><a href="#"> 
+                          </svg></a><a class="svg-hover" href="#"> 
                           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                             <rect width="48" height="48" rx="24" fill="#62215B"></rect>
                             <path d="M15.1648 22.5325L26.4825 18.0803C27.5997 17.6165 31.3884 16.1324 31.3884 16.1324C31.3884 16.1324 33.1371 15.4831 32.9914 17.06C32.9428 17.7093 32.5542 19.9818 32.1656 22.4398L30.9513 29.7211C30.9513 29.7211 30.8541 30.7878 30.0284 30.9733C29.2026 31.1588 27.8426 30.324 27.5997 30.1385C27.4054 29.9994 23.9567 27.9124 22.6938 26.892C22.3537 26.6138 21.9652 26.0572 22.7423 25.408C24.491 23.8775 26.5797 21.976 27.8426 20.7702C28.4255 20.2137 29.0083 18.9151 26.5797 20.4919L19.7308 24.8978C19.7308 24.8978 18.9536 25.3616 17.4964 24.9442C16.0392 24.5268 14.3391 23.9703 14.3391 23.9703C14.3391 23.9703 13.1733 23.2746 15.1648 22.5325Z" fill="#FFF4EA"></path>
-                          </svg></a><a href="#"> 
+                          </svg></a><a class="svg-hover" href="#"> 
                           <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="48" height="48" rx="24" fill="#62215B"></rect>
                             <path d="M14.3332 18.4095C14 19.6495 14 21.3601 14 24C14 27.7497 14 29.6246 14.9549 30.9389C15.2633 31.3634 15.6366 31.7367 16.0611 32.0451C17.3754 33 19.2503 33 23 33H25C28.7497 33 30.6246 33 31.9389 32.0451C32.3634 31.7367 32.7367 31.3634 33.0451 30.9389C34 29.6246 34 27.7497 34 24C34 21.3513 34 19.6381 33.6634 18.3971L31.5607 20.4999C29.9284 22.1321 28.6492 23.4113 27.517 24.2752C26.3581 25.1594 25.2653 25.6789 23.9999 25.6789C22.7344 25.6789 21.6417 25.1594 20.4827 24.2752C19.3505 23.4113 18.0713 22.1321 16.439 20.4998L14.4839 18.5447L14.3332 18.4095Z" fill="#FBF2E9"></path>
                             <path d="M15 17L15.1088 17.0901L15.5159 17.4554L17.4591 19.3986C19.1408 21.0803 20.3498 22.287 21.3926 23.0827C22.4181 23.8651 23.1942 24.1789 23.9999 24.1789C24.8055 24.1789 25.5816 23.8651 26.6071 23.0827C27.6499 22.287 28.8589 21.0803 30.5406 19.3986L32.8485 17.0907L32.9741 16.9658C32.6657 16.5413 32.3634 16.2633 31.9389 15.9549C30.6246 15 28.7497 15 25 15H23C19.2503 15 17.3754 15 16.0611 15.9549C15.6366 16.2633 15.3084 16.5755 15 17Z" fill="#FBF2E9"></path>
-                          </svg></a><a href="#"> 
+                          </svg></a><a class="svg-hover" href="#"> 
                           <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="48" height="48" rx="24" fill="#62215B"></rect>
                             <path d="M24.99 14.75C25.8509 14.75 26.2319 14.7508 26.5461 14.7789C30.0394 15.0917 32.8079 17.8602 33.1207 21.3535C33.1488 21.6677 33.1496 22.0487 33.1496 22.9095V23.8995C33.1496 24.3137 33.4854 24.6495 33.8996 24.6495C34.3138 24.6495 34.6496 24.3137 34.6496 23.8995V22.8591C34.6496 22.0622 34.6496 21.6093 34.6147 21.2197C34.2372 17.0037 30.8959 13.6623 26.6799 13.2849C26.2902 13.25 25.8374 13.25 25.0404 13.25H24.0001C23.5859 13.25 23.2501 13.5858 23.2501 14C23.2501 14.4142 23.5859 14.75 24.0001 14.75L24.99 14.75Z" fill="#FBF2E9"></path>
@@ -2733,22 +2752,23 @@
             <div class="product-detail">
               <div class="product-detail__inner"> 
                 <div class="product-detail__photos">
-                  <picture class="picture">
-                    <source class="lazyload" type="image/webp" srcset="webp/prod1.webp 1x" alt="prod1.jpg" media="(min-width: 769px)"/>
-                    <source class="lazyload" type="image/jpeg" srcset="images/prod1.jpg 1x" alt="prod1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/prod1.jpg" alt="prod1.jpg"/>
-                  </picture>
-                  <picture class="picture">
-                    <source class="lazyload" type="image/webp" srcset="webp/prod2.webp 1x" alt="prod2.jpg" media="(min-width: 769px)"/>
-                    <source class="lazyload" type="image/jpeg" srcset="images/prod2.jpg 1x" alt="prod2.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/prod2.jpg" alt="prod2.jpg"/>
-                  </picture>
-                  <picture class="picture">
-                    <source class="lazyload" type="image/webp" srcset="webp/prod3.webp 1x" alt="prod3.jpg" media="(min-width: 769px)"/>
-                    <source class="lazyload" type="image/jpeg" srcset="images/prod3.jpg 1x" alt="prod3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/prod3.jpg" alt="prod3.jpg"/>
-                  </picture>
-                  <picture class="picture">
-                    <source class="lazyload" type="image/webp" srcset="webp/prod4.webp 1x" alt="prod4.jpg" media="(min-width: 769px)"/>
-                    <source class="lazyload" type="image/jpeg" srcset="images/prod4.jpg 1x" alt="prod4.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/prod4.jpg" alt="prod4.jpg"/>
-                  </picture>
+                  <!--FIXME: сделать увеличение--><a class="swiper-img" href="images/prod1.jpg" data-fancybox="gallery">
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/prod1.webp 1x" alt="prod1.jpg" media="(min-width: 769px)"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/prod1.jpg 1x" alt="prod1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/prod1.jpg" alt="prod1.jpg"/>
+                    </picture></a><a class="swiper-img" href="images/prod2.jpg" data-fancybox="gallery">
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/prod2.webp 1x" alt="prod2.jpg" media="(min-width: 769px)"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/prod2.jpg 1x" alt="prod2.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/prod2.jpg" alt="prod2.jpg"/>
+                    </picture></a><a class="swiper-img" href="images/prod3.jpg" data-fancybox="gallery">
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/prod3.webp 1x" alt="prod3.jpg" media="(min-width: 769px)"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/prod3.jpg 1x" alt="prod3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/prod3.jpg" alt="prod3.jpg"/>
+                    </picture></a><a class="swiper-img" href="images/prod4.jpg" data-fancybox="gallery">
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/prod4.webp 1x" alt="prod4.jpg" media="(min-width: 769px)"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/prod4.jpg 1x" alt="prod4.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/prod4.jpg" alt="prod4.jpg"/>
+                    </picture></a>
                 </div>
                 <div class="product-detail__description">
                   <div class="product-detail__places">
@@ -2765,16 +2785,73 @@
                     <p class="product-detail__price_old">5 100 ₽</p>
                   </div>
                   <div class="product-detail__colors">
-                    <p class="product-detail__description">020 Голубой</p>
+                    <div class="product-detail-color"> <a class="product-detail-color__item --active" href="#"><span style="background-color: #E8C9AA"></span></a><a class="product-detail-color__item" href="#"><span style="background-color: #A6C4E8"></span></a><a class="product-detail-color__item" href="#"><span style="background-color: #F0F0F0"></span></a></div>
+                    <p class="product-detail__colors-description">020 Голубой</p>
                   </div>
-                  <div class="product-detail__btn-color">
+                  <div class="product-detail__buttons">
+                    <div class="product-detail__target" data-sidebar-color="targetColor"></div>
                     <button class="card-detail-btn" data-sidebar-button="colors">
                       <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.83301 10.0002H17.1663M10.4997 16.6668V10.0002L10.4997 3.3335" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
                       </svg>
                       <p>Нужен другой цвет?</p>
                     </button>
-                    <div class="div"></div>
+                  </div>
+                  <div class="product-detail__buttons">
+                    <div class="input-wrapper" data-input-parent="" data-input-city="">
+                      <div class="input-wrapper__placeholder">Выберите размер</div>
+                      <input class="input" data-input="" required="required" name="" placeholder="Выберите размер"/>
+                      <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
+                        <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      <div class="input-city"> 
+                        <div class="input-city__inner"> 
+                          <ul>
+                            <li>
+                              <p href="#">XS</p>
+                            </li>
+                            <li>
+                              <p href="#">S</p>
+                            </li>
+                            <li>
+                              <p href="#">M</p>
+                            </li>
+                            <li>
+                              <p href="#">L     </p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input-wrapper" data-input-parent="" data-input-city="">
+                      <div class="input-wrapper__placeholder">Выберите размер</div>
+                      <input class="input" data-input="" required="required" name="" placeholder="Выберите размер"/>
+                      <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
+                        <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      <div class="input-city"> 
+                        <div class="input-city__inner"> 
+                          <ul>
+                            <li>
+                              <p href="#">XS</p>
+                            </li>
+                            <li>
+                              <p href="#">S</p>
+                            </li>
+                            <li>
+                              <p href="#">M</p>
+                            </li>
+                            <li>
+                              <p href="#">L     </p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-detail__buttons">
                     <button class="card-detail-btn" data-sidebar-button="size">
                       <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.83301 10.0002H17.1663M10.4997 16.6668V10.0002L10.4997 3.3335" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
@@ -3215,7 +3292,8 @@
                             </div>
                           </div>
                         </div>
-                        <div class="reviews__block-button">
+                        <p class="reviews__block-text">4.5</p>
+                        <div class="reviews__block-button" data-sidebar-button="reviews-write">
                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                             <path d="M1.33203 8H14.6654M7.9987 14.6667V8L7.9987 1.33334" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
                           </svg>
@@ -4246,5 +4324,6 @@
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=2c7ef0d6-68f5-4f54-81d8-7c206552eaf6&amp;lang=ru_RU" type="text/javascript"></script>
   </body>
 </html>
