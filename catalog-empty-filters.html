@@ -7,7 +7,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
-    <script type="module" crossorigin src="assets/index-36503ec7.js"></script>
+    <script type="module" crossorigin src="assets/index-fc3c7b25.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body style="opacity:0">
@@ -101,7 +101,6 @@
             </div>
             <div class="header-block__inner">
               <div class="search">
-                <div class="overlay"></div>
                 <div class="search__inner"> 
                   <div class="search__top"> 
                     <p class="search__title">вам может понравиться</p>
@@ -612,6 +611,82 @@
           </div>
         </div>
       </header>
+      <div class="mobile-window --active" data-mobile-window-block="filter">
+        <div class="overlay"></div>
+        <div class="mobile-window__inner">
+          <div class="mobile-window__top"> 
+            <div class="mobile-window__back"></div>
+            <p class="mobile-window__title">ФИЛЬТР</p>
+            <button class="mobile-window__close" data-mobile-window-off="data-mobile-window-off">
+              <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.83301 10.0002H17.1663M10.4997 16.6668V10.0002L10.4997 3.3335" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="mobile-window__block">
+            <div class="mobile-window-filters">
+              <div class="mobile-window-filters__inner">
+                <div class="div"> 
+                  <ul class="mobile-window-filters__list">
+                    <li data-button-filters="price">
+                      <p>цена</p>
+                      <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Vector">
+                          <path id="vector-5" d="M1 1.91675L6 6.91675L11 1.91675" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                      </svg>
+                    </li>
+                    <li>
+                      <p>размер и рост</p>
+                      <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Vector">
+                          <path id="vector-5" d="M1 1.91675L6 6.91675L11 1.91675" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                      </svg>
+                    </li>
+                    <li>
+                      <p>цвет</p>
+                      <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Vector">
+                          <path id="vector-5" d="M1 1.91675L6 6.91675L11 1.91675" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                      </svg>
+                    </li>
+                    <li>
+                      <p>Состав</p>
+                      <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Vector">
+                          <path id="vector-5" d="M1 1.91675L6 6.91675L11 1.91675" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+                <div class="window --active" data-window-filters="price">
+                  <div class="mobile-window__top"> 
+                    <div class="mobile-window__back" data-window-back="data-window-back">
+                      <button>
+                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g id="Vector">
+                            <path id="vector-5" d="M1 1.91675L6 6.91675L11 1.91675" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </g>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="mobile-window__title">Цена</p>
+                    <button class="mobile-window__close" data-mobile-window-off="data-mobile-window-off">
+                      <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.83301 10.0002H17.1663M10.4997 16.6668V10.0002L10.4997 3.3335" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="mobile-price"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <section class="catalog-page">
         <div class="container">
           <div class="catalog-page__inner">
@@ -622,8 +697,14 @@
             <div class="catalog-page__top"> 
               <h1 class="title catalog-page__title">Женщинам вяжем</h1>
             </div>
-            <div class="catalog-controls"> 
-              <div class="catalog-controls__block">
+            <div class="catalog-controls">
+              <div class="filter-mobile max-d-flex" data-mobile-window="filter">
+                <p>фильтр</p><span> </span>
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.83301 10.0002H17.1663M10.4997 16.6668V10.0002L10.4997 3.3335" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                </svg>
+              </div>
+              <div class="catalog-controls__block min-d-flex">
                 <div class="catalog-controls__default catalog-controls-empty" data-catalog-modal="default"><a>По популярности</a><a>По новизне</a><a>Цена по возрастанию</a><a>Цена по убыванию</a>
                 </div>
                 <div class="catalog-filters">
