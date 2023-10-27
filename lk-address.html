@@ -7,7 +7,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
-    <script type="module" crossorigin src="assets/index-fc3c7b25.js"></script>
+    <script type="module" crossorigin src="assets/index-7130dada.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body style="opacity:0">
@@ -36,7 +36,7 @@
                         <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                       </svg>
                     </div>
-                    <button class="btn login-registration__button" disabled="disabled">Далее</button>
+                    <button class="btn login-registration__button" data-btn="data-btn" disabled="disabled">Далее</button>
                   </form>
                   <form class="form login-sms login__block"> 
                     <p class="login-sms__text"> </p>
@@ -77,28 +77,16 @@
                 </svg>
                 <p>спасибо за подписку!</p>
                 <div class="footer-modal__btn">
-                  <button class="btn">Закрыть</button>
+                  <button class="btn" data-btn="data-btn">Закрыть</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <header class="header --white --message">
+      <header class="header --white">
         <div class="header__inner">
           <div class="header-block">
-            <div class="message">
-              <div class="message__inner"> 
-                <p>-1000 ₽ на первый заказ от 7000 ₽ по промокоду «скидка»</p>
-                <div class="message__close"> 
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="Add">
-                      <path id="Vector" d="M4.22876 4.22876L11.7712 11.7712M4.22876 11.7712L8 7.99999L11.7712 4.22876" stroke="#62215B" stroke-width="1.5" stroke-linecap="round"></path>
-                    </g>
-                  </svg>
-                </div>
-              </div>
-            </div>
             <div class="header-block__inner">
               <div class="search">
                 <div class="search__inner"> 
@@ -113,7 +101,7 @@
                           <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
                       </div>
-                      <button class="btn">Найти</button>
+                      <button class="btn" data-btn="data-btn">Найти</button>
                     </form>
                     <div class="search__close">
                       <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -177,7 +165,7 @@
                                   </div>
                                   <div class="catalog-card__colors"><a class="catalog-card__colors-item active">
                                       <div class="catalog-card__colors-circle" style=" background-color:#A972A9"></div></a><a class="catalog-card__colors-item">
-                                      <div class="catalog-card__colors-circle" style=" background-color:#E8C9AA"></div></a><a class="catalog-card__colors-more">+еще цвета</a></div>
+                                      <div class="catalog-card__colors-circle" style=" background-color:#E8C9AA"></div></a></div>
                                 </div>
                               </div>
                             </div>
@@ -240,163 +228,76 @@
                                   <div class="catalog-card__colors"><a class="catalog-card__colors-item active">
                                       <div class="catalog-card__colors-circle" style=" background-color:#A972A9"></div></a><a class="catalog-card__colors-item">
                                       <div class="catalog-card__colors-circle" style=" background-color:#CD0200"></div></a><a class="catalog-card__colors-item">
+                                      <div class="catalog-card__colors-circle" style=" background-color:#E8C9AA"></div></a></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="catalog-card catalog-card-search">
+                              <div class="catalog-card__inner">
+                                <div class="catalog-card__top">
+                                  <div class="catalog-card__windows catalog-card__windows_3">
+                                    <div class="catalog-card__window" data-card-window="1">
+                                      <div class="catalog-card__window-item"></div>
+                                    </div>
+                                    <div class="catalog-card__window" data-card-window="2">
+                                      <div class="catalog-card__window-item"></div>
+                                    </div>
+                                    <div class="catalog-card__window" data-card-window="3">
+                                      <div class="catalog-card__window-item"></div>
+                                    </div>
+                                  </div>
+                                  <div class="catalog-card__img active" data-card-img="1">
+                                    <picture class="picture">
+                                      <source class="lazyload" type="image/webp" srcset="webp/slide3.webp 1x" alt="slide3.jpg" media="(min-width: 769px)"/>
+                                      <source class="lazyload" type="image/jpeg" srcset="images/slide3.jpg 1x" alt="slide3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide3.jpg" alt="slide3.jpg"/>
+                                    </picture>
+                                  </div>
+                                  <div class="catalog-card__img" data-card-img="2">
+                                    <picture class="picture">
+                                      <source class="lazyload" type="image/webp" srcset="webp/slide1.webp 1x" alt="slide1.jpg" media="(min-width: 769px)"/>
+                                      <source class="lazyload" type="image/jpeg" srcset="images/slide1.jpg 1x" alt="slide1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide1.jpg" alt="slide1.jpg"/>
+                                    </picture>
+                                  </div>
+                                  <div class="catalog-card__img" data-card-img="3">
+                                    <picture class="picture">
+                                      <source class="lazyload" type="image/webp" srcset="webp/pr1.webp 1x" alt="pr1.jpg" media="(min-width: 769px)"/>
+                                      <source class="lazyload" type="image/jpeg" srcset="images/pr1.jpg 1x" alt="pr1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/pr1.jpg" alt="pr1.jpg"/>
+                                    </picture>
+                                  </div>
+                                  <div class="catalog-card__img" data-card-img="4">
+                                    <picture class="picture">
+                                      <source class="lazyload" type="image/webp" srcset="webp/slide3.webp 1x" alt="slide3.jpg" media="(min-width: 769px)"/>
+                                      <source class="lazyload" type="image/jpeg" srcset="images/slide3.jpg 1x" alt="slide3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide3.jpg" alt="slide3.jpg"/>
+                                    </picture>
+                                  </div>
+                                  <div class="catalog-card__favourites">
+                                    <svg class="catalog-card__favourites-empty active" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <g id="Vector">
+                                        <path id="vetor" d="M9.27757 19.2719C9.65978 19.6706 10.2928 19.6839 10.6915 19.3017C11.0901 18.9195 11.1035 18.2865 10.7213 17.8878L9.27757 19.2719ZM3.08564 11.3685L2.35803 12.0546L2.3638 12.0606L3.08564 11.3685ZM3.08564 3.01839L2.37949 2.31032C2.37223 2.31756 2.36508 2.32491 2.35805 2.33237L3.08564 3.01839ZM9.43679 3.19855C9.89337 3.50927 10.5154 3.39103 10.8261 2.93445C11.1369 2.47786 11.0186 1.85584 10.562 1.54511L9.43679 3.19855ZM9.27757 17.8879C8.89538 18.2865 8.90874 18.9196 9.30742 19.3018C9.7061 19.684 10.3391 19.6706 10.7213 19.2719L9.27757 17.8879ZM14.7244 15.0962C15.1065 14.6975 15.0932 14.0645 14.6945 13.6823C14.2958 13.3001 13.6628 13.3135 13.2806 13.7122L14.7244 15.0962ZM9.2776 17.8878C8.89539 18.2865 8.90873 18.9195 9.30739 19.3017C9.70605 19.6839 10.3391 19.6706 10.7213 19.2719L9.2776 17.8878ZM16.9132 11.3685L17.6351 12.0606L17.6408 12.0546L16.9132 11.3685ZM16.9132 3.01839L17.6408 2.33237C17.6338 2.32491 17.6266 2.31756 17.6194 2.31032L16.9132 3.01839ZM9.43683 1.54511C8.98025 1.85584 8.862 2.47786 9.17273 2.93445C9.48345 3.39103 10.1055 3.50927 10.5621 3.19855L9.43683 1.54511ZM9.2776 19.2719C9.6598 19.6706 10.2928 19.684 10.6915 19.3018C11.0902 18.9196 11.1035 18.2865 10.7214 17.8879L9.2776 19.2719ZM6.71832 13.7122C6.33613 13.3135 5.7031 13.3001 5.30442 13.6823C4.90574 14.0645 4.89238 14.6975 5.27457 15.0962L6.71832 13.7122ZM10.5308 1.52469C10.0629 1.23122 9.44577 1.3726 9.1523 1.84047C8.85884 2.30833 9.00022 2.92551 9.46808 3.21898L10.5308 1.52469ZM11.0917 3.26208L10.3692 3.95341L10.3697 3.95388L11.0917 3.26208ZM11.8244 5.47231C12.2065 5.87111 12.8395 5.88467 13.2383 5.50259C13.6371 5.12052 13.6507 4.4875 13.2686 4.0887L11.8244 5.47231ZM10.7213 17.8878L3.80748 10.6765L2.3638 12.0606L9.27757 19.2719L10.7213 17.8878ZM3.81322 10.6825C1.9659 8.72327 1.9659 5.66366 3.81322 3.7044L2.35805 2.33237C-0.215705 5.06209 -0.215705 9.32484 2.35805 12.0546L3.81322 10.6825ZM3.79178 3.72645C5.3032 2.21914 7.67211 1.9976 9.43679 3.19855L10.562 1.54511C8.00409 -0.195675 4.57031 0.125443 2.37949 2.31032L3.79178 3.72645ZM10.7213 19.2719L14.7244 15.0962L13.2806 13.7122L9.27757 17.8879L10.7213 19.2719ZM10.7213 19.2719L17.6351 12.0606L16.1914 10.6765L9.2776 17.8878L10.7213 19.2719ZM17.6408 12.0546C20.2146 9.32484 20.2146 5.06209 17.6408 2.33237L16.1856 3.7044C18.033 5.66366 18.033 8.72327 16.1856 10.6825L17.6408 12.0546ZM17.6194 2.31032C15.4285 0.125443 11.9948 -0.195675 9.43683 1.54511L10.5621 3.19855C12.3267 1.9976 14.6957 2.21914 16.2071 3.72645L17.6194 2.31032ZM10.7214 17.8879L6.71832 13.7122L5.27457 15.0962L9.2776 19.2719L10.7214 17.8879ZM9.46808 3.21898C9.79761 3.42567 10.1003 3.67236 10.3692 3.95341L11.8143 2.57074C11.4313 2.17043 11.0002 1.81908 10.5308 1.52469L9.46808 3.21898ZM10.3697 3.95388L11.8244 5.47231L13.2686 4.0887L11.8138 2.57027L10.3697 3.95388Z" fill="#62215B"></path>
+                                      </g>
+                                    </svg>
+                                    <svg class="catalog-card__favourites-full" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <g id="Vector">
+                                        <path id="vetor" fill-rule="evenodd" clip-rule="evenodd" d="M8.9999 17.5798L2.08613 10.3685C-0.124412 8.02396 -0.124412 4.36279 2.08613 2.0183C3.93724 0.172199 6.83859 -0.0991274 8.9999 1.37174M8.99994 17.5798L13.003 13.4041L8.99994 17.5798ZM8.99994 17.5798L15.9137 10.3685C18.1242 8.02396 18.1242 4.36279 15.9137 2.0183C14.0626 0.172199 11.1612 -0.0991274 8.99994 1.37174M8.99997 17.5798L4.99693 13.4041L8.99997 17.5798ZM8.99994 1.37174C9.39937 1.62228 9.76626 1.9213 10.0922 2.26198L11.547 3.78042" fill="#62215B"></path>
+                                      </g>
+                                    </svg>
+                                  </div>
+                                  <div class="catalog-card__place">
+                                    <div class="place place_sale">
+                                      <p>sale</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="catalog-card__bottom"> 
+                                  <h2 class="catalog-card__title">Джемпер ажурный на пуговицах</h2>
+                                  <div class="catalog-card__price">
+                                    <p class="catalog-card__newPrice">1000 ₽</p>
+                                    <p class="catalog-card__oldPrice">2000 ₽</p>
+                                  </div>
+                                  <div class="catalog-card__colors"><a class="catalog-card__colors-item active">
+                                      <div class="catalog-card__colors-circle" style=" background-color:#A972A9"></div></a><a class="catalog-card__colors-item">
+                                      <div class="catalog-card__colors-circle" style=" background-color:#CD0200"></div></a><a class="catalog-card__colors-item">
                                       <div class="catalog-card__colors-circle" style=" background-color:#E8C9AA"></div></a><a class="catalog-card__colors-more">+еще цвета</a></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="catalog-card catalog-card-search">
-                              <div class="catalog-card__inner">
-                                <div class="catalog-card__top">
-                                  <div class="catalog-card__windows catalog-card__windows_4">
-                                    <div class="catalog-card__window" data-card-window="1">
-                                      <div class="catalog-card__window-item"></div>
-                                    </div>
-                                    <div class="catalog-card__window" data-card-window="2">
-                                      <div class="catalog-card__window-item"></div>
-                                    </div>
-                                    <div class="catalog-card__window" data-card-window="3">
-                                      <div class="catalog-card__window-item"></div>
-                                    </div>
-                                    <div class="catalog-card__window" data-card-window="4">
-                                      <div class="catalog-card__window-item"></div>
-                                    </div>
-                                  </div>
-                                  <div class="catalog-card__img active" data-card-img="1">
-                                    <picture class="picture">
-                                      <source class="lazyload" type="image/webp" srcset="webp/slide3.webp 1x" alt="slide3.jpg" media="(min-width: 769px)"/>
-                                      <source class="lazyload" type="image/jpeg" srcset="images/slide3.jpg 1x" alt="slide3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide3.jpg" alt="slide3.jpg"/>
-                                    </picture>
-                                  </div>
-                                  <div class="catalog-card__img" data-card-img="2">
-                                    <picture class="picture">
-                                      <source class="lazyload" type="image/webp" srcset="webp/slide1.webp 1x" alt="slide1.jpg" media="(min-width: 769px)"/>
-                                      <source class="lazyload" type="image/jpeg" srcset="images/slide1.jpg 1x" alt="slide1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide1.jpg" alt="slide1.jpg"/>
-                                    </picture>
-                                  </div>
-                                  <div class="catalog-card__img" data-card-img="3">
-                                    <picture class="picture">
-                                      <source class="lazyload" type="image/webp" srcset="webp/pr1.webp 1x" alt="pr1.jpg" media="(min-width: 769px)"/>
-                                      <source class="lazyload" type="image/jpeg" srcset="images/pr1.jpg 1x" alt="pr1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/pr1.jpg" alt="pr1.jpg"/>
-                                    </picture>
-                                  </div>
-                                  <div class="catalog-card__img" data-card-img="4">
-                                    <picture class="picture">
-                                      <source class="lazyload" type="image/webp" srcset="webp/slide3.webp 1x" alt="slide3.jpg" media="(min-width: 769px)"/>
-                                      <source class="lazyload" type="image/jpeg" srcset="images/slide3.jpg 1x" alt="slide3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide3.jpg" alt="slide3.jpg"/>
-                                    </picture>
-                                  </div>
-                                  <div class="catalog-card__favourites">
-                                    <svg class="catalog-card__favourites-empty active" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <g id="Vector">
-                                        <path id="vetor" d="M9.27757 19.2719C9.65978 19.6706 10.2928 19.6839 10.6915 19.3017C11.0901 18.9195 11.1035 18.2865 10.7213 17.8878L9.27757 19.2719ZM3.08564 11.3685L2.35803 12.0546L2.3638 12.0606L3.08564 11.3685ZM3.08564 3.01839L2.37949 2.31032C2.37223 2.31756 2.36508 2.32491 2.35805 2.33237L3.08564 3.01839ZM9.43679 3.19855C9.89337 3.50927 10.5154 3.39103 10.8261 2.93445C11.1369 2.47786 11.0186 1.85584 10.562 1.54511L9.43679 3.19855ZM9.27757 17.8879C8.89538 18.2865 8.90874 18.9196 9.30742 19.3018C9.7061 19.684 10.3391 19.6706 10.7213 19.2719L9.27757 17.8879ZM14.7244 15.0962C15.1065 14.6975 15.0932 14.0645 14.6945 13.6823C14.2958 13.3001 13.6628 13.3135 13.2806 13.7122L14.7244 15.0962ZM9.2776 17.8878C8.89539 18.2865 8.90873 18.9195 9.30739 19.3017C9.70605 19.6839 10.3391 19.6706 10.7213 19.2719L9.2776 17.8878ZM16.9132 11.3685L17.6351 12.0606L17.6408 12.0546L16.9132 11.3685ZM16.9132 3.01839L17.6408 2.33237C17.6338 2.32491 17.6266 2.31756 17.6194 2.31032L16.9132 3.01839ZM9.43683 1.54511C8.98025 1.85584 8.862 2.47786 9.17273 2.93445C9.48345 3.39103 10.1055 3.50927 10.5621 3.19855L9.43683 1.54511ZM9.2776 19.2719C9.6598 19.6706 10.2928 19.684 10.6915 19.3018C11.0902 18.9196 11.1035 18.2865 10.7214 17.8879L9.2776 19.2719ZM6.71832 13.7122C6.33613 13.3135 5.7031 13.3001 5.30442 13.6823C4.90574 14.0645 4.89238 14.6975 5.27457 15.0962L6.71832 13.7122ZM10.5308 1.52469C10.0629 1.23122 9.44577 1.3726 9.1523 1.84047C8.85884 2.30833 9.00022 2.92551 9.46808 3.21898L10.5308 1.52469ZM11.0917 3.26208L10.3692 3.95341L10.3697 3.95388L11.0917 3.26208ZM11.8244 5.47231C12.2065 5.87111 12.8395 5.88467 13.2383 5.50259C13.6371 5.12052 13.6507 4.4875 13.2686 4.0887L11.8244 5.47231ZM10.7213 17.8878L3.80748 10.6765L2.3638 12.0606L9.27757 19.2719L10.7213 17.8878ZM3.81322 10.6825C1.9659 8.72327 1.9659 5.66366 3.81322 3.7044L2.35805 2.33237C-0.215705 5.06209 -0.215705 9.32484 2.35805 12.0546L3.81322 10.6825ZM3.79178 3.72645C5.3032 2.21914 7.67211 1.9976 9.43679 3.19855L10.562 1.54511C8.00409 -0.195675 4.57031 0.125443 2.37949 2.31032L3.79178 3.72645ZM10.7213 19.2719L14.7244 15.0962L13.2806 13.7122L9.27757 17.8879L10.7213 19.2719ZM10.7213 19.2719L17.6351 12.0606L16.1914 10.6765L9.2776 17.8878L10.7213 19.2719ZM17.6408 12.0546C20.2146 9.32484 20.2146 5.06209 17.6408 2.33237L16.1856 3.7044C18.033 5.66366 18.033 8.72327 16.1856 10.6825L17.6408 12.0546ZM17.6194 2.31032C15.4285 0.125443 11.9948 -0.195675 9.43683 1.54511L10.5621 3.19855C12.3267 1.9976 14.6957 2.21914 16.2071 3.72645L17.6194 2.31032ZM10.7214 17.8879L6.71832 13.7122L5.27457 15.0962L9.2776 19.2719L10.7214 17.8879ZM9.46808 3.21898C9.79761 3.42567 10.1003 3.67236 10.3692 3.95341L11.8143 2.57074C11.4313 2.17043 11.0002 1.81908 10.5308 1.52469L9.46808 3.21898ZM10.3697 3.95388L11.8244 5.47231L13.2686 4.0887L11.8138 2.57027L10.3697 3.95388Z" fill="#62215B"></path>
-                                      </g>
-                                    </svg>
-                                    <svg class="catalog-card__favourites-full" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <g id="Vector">
-                                        <path id="vetor" fill-rule="evenodd" clip-rule="evenodd" d="M8.9999 17.5798L2.08613 10.3685C-0.124412 8.02396 -0.124412 4.36279 2.08613 2.0183C3.93724 0.172199 6.83859 -0.0991274 8.9999 1.37174M8.99994 17.5798L13.003 13.4041L8.99994 17.5798ZM8.99994 17.5798L15.9137 10.3685C18.1242 8.02396 18.1242 4.36279 15.9137 2.0183C14.0626 0.172199 11.1612 -0.0991274 8.99994 1.37174M8.99997 17.5798L4.99693 13.4041L8.99997 17.5798ZM8.99994 1.37174C9.39937 1.62228 9.76626 1.9213 10.0922 2.26198L11.547 3.78042" fill="#62215B"></path>
-                                      </g>
-                                    </svg>
-                                  </div>
-                                  <div class="catalog-card__place">
-                                    <div class="place place_sale">
-                                      <p>sale</p>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="catalog-card__bottom"> 
-                                  <h2 class="catalog-card__title">Джемпер ажурный на пуговицах</h2>
-                                  <div class="catalog-card__price">
-                                    <p class="catalog-card__newPrice">1000 ₽</p>
-                                    <p class="catalog-card__oldPrice">2000 ₽</p>
-                                  </div>
-                                  <div class="catalog-card__colors"><a class="catalog-card__colors-item active">
-                                      <div class="catalog-card__colors-circle" style=" background-color:#A972A9"></div></a><a class="catalog-card__colors-item">
-                                      <div class="catalog-card__colors-circle" style=" background-color:#CD0200"></div></a><a class="catalog-card__colors-item">
-                                      <div class="catalog-card__colors-circle" style=" background-color:#E8C9AA"></div></a><a class="catalog-card__colors-item">
-                                      <div class="catalog-card__colors-circle" style=" background-color:#D9EFFC"></div></a><a class="catalog-card__colors-more">+еще цвета</a></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="catalog-card catalog-card-search">
-                              <div class="catalog-card__inner">
-                                <div class="catalog-card__top">
-                                  <div class="catalog-card__windows catalog-card__windows_5">
-                                    <div class="catalog-card__window" data-card-window="1">
-                                      <div class="catalog-card__window-item"></div>
-                                    </div>
-                                    <div class="catalog-card__window" data-card-window="2">
-                                      <div class="catalog-card__window-item"></div>
-                                    </div>
-                                    <div class="catalog-card__window" data-card-window="3">
-                                      <div class="catalog-card__window-item"></div>
-                                    </div>
-                                    <div class="catalog-card__window" data-card-window="4">
-                                      <div class="catalog-card__window-item"></div>
-                                    </div>
-                                    <div class="catalog-card__window" data-card-window="5">
-                                      <div class="catalog-card__window-item"></div>
-                                    </div>
-                                  </div>
-                                  <div class="catalog-card__img active" data-card-img="1">
-                                    <picture class="picture">
-                                      <source class="lazyload" type="image/webp" srcset="webp/slide3.webp 1x" alt="slide3.jpg" media="(min-width: 769px)"/>
-                                      <source class="lazyload" type="image/jpeg" srcset="images/slide3.jpg 1x" alt="slide3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide3.jpg" alt="slide3.jpg"/>
-                                    </picture>
-                                  </div>
-                                  <div class="catalog-card__img" data-card-img="2">
-                                    <picture class="picture">
-                                      <source class="lazyload" type="image/webp" srcset="webp/slide1.webp 1x" alt="slide1.jpg" media="(min-width: 769px)"/>
-                                      <source class="lazyload" type="image/jpeg" srcset="images/slide1.jpg 1x" alt="slide1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide1.jpg" alt="slide1.jpg"/>
-                                    </picture>
-                                  </div>
-                                  <div class="catalog-card__img" data-card-img="3">
-                                    <picture class="picture">
-                                      <source class="lazyload" type="image/webp" srcset="webp/pr1.webp 1x" alt="pr1.jpg" media="(min-width: 769px)"/>
-                                      <source class="lazyload" type="image/jpeg" srcset="images/pr1.jpg 1x" alt="pr1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/pr1.jpg" alt="pr1.jpg"/>
-                                    </picture>
-                                  </div>
-                                  <div class="catalog-card__img" data-card-img="4">
-                                    <picture class="picture">
-                                      <source class="lazyload" type="image/webp" srcset="webp/slide3.webp 1x" alt="slide3.jpg" media="(min-width: 769px)"/>
-                                      <source class="lazyload" type="image/jpeg" srcset="images/slide3.jpg 1x" alt="slide3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide3.jpg" alt="slide3.jpg"/>
-                                    </picture>
-                                  </div>
-                                  <div class="catalog-card__img" data-card-img="5">
-                                    <picture class="picture">
-                                      <source class="lazyload" type="image/webp" srcset="webp/slide1.webp 1x" alt="slide1.jpg" media="(min-width: 769px)"/>
-                                      <source class="lazyload" type="image/jpeg" srcset="images/slide1.jpg 1x" alt="slide1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide1.jpg" alt="slide1.jpg"/>
-                                    </picture>
-                                  </div>
-                                  <div class="catalog-card__favourites">
-                                    <svg class="catalog-card__favourites-empty active" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <g id="Vector">
-                                        <path id="vetor" d="M9.27757 19.2719C9.65978 19.6706 10.2928 19.6839 10.6915 19.3017C11.0901 18.9195 11.1035 18.2865 10.7213 17.8878L9.27757 19.2719ZM3.08564 11.3685L2.35803 12.0546L2.3638 12.0606L3.08564 11.3685ZM3.08564 3.01839L2.37949 2.31032C2.37223 2.31756 2.36508 2.32491 2.35805 2.33237L3.08564 3.01839ZM9.43679 3.19855C9.89337 3.50927 10.5154 3.39103 10.8261 2.93445C11.1369 2.47786 11.0186 1.85584 10.562 1.54511L9.43679 3.19855ZM9.27757 17.8879C8.89538 18.2865 8.90874 18.9196 9.30742 19.3018C9.7061 19.684 10.3391 19.6706 10.7213 19.2719L9.27757 17.8879ZM14.7244 15.0962C15.1065 14.6975 15.0932 14.0645 14.6945 13.6823C14.2958 13.3001 13.6628 13.3135 13.2806 13.7122L14.7244 15.0962ZM9.2776 17.8878C8.89539 18.2865 8.90873 18.9195 9.30739 19.3017C9.70605 19.6839 10.3391 19.6706 10.7213 19.2719L9.2776 17.8878ZM16.9132 11.3685L17.6351 12.0606L17.6408 12.0546L16.9132 11.3685ZM16.9132 3.01839L17.6408 2.33237C17.6338 2.32491 17.6266 2.31756 17.6194 2.31032L16.9132 3.01839ZM9.43683 1.54511C8.98025 1.85584 8.862 2.47786 9.17273 2.93445C9.48345 3.39103 10.1055 3.50927 10.5621 3.19855L9.43683 1.54511ZM9.2776 19.2719C9.6598 19.6706 10.2928 19.684 10.6915 19.3018C11.0902 18.9196 11.1035 18.2865 10.7214 17.8879L9.2776 19.2719ZM6.71832 13.7122C6.33613 13.3135 5.7031 13.3001 5.30442 13.6823C4.90574 14.0645 4.89238 14.6975 5.27457 15.0962L6.71832 13.7122ZM10.5308 1.52469C10.0629 1.23122 9.44577 1.3726 9.1523 1.84047C8.85884 2.30833 9.00022 2.92551 9.46808 3.21898L10.5308 1.52469ZM11.0917 3.26208L10.3692 3.95341L10.3697 3.95388L11.0917 3.26208ZM11.8244 5.47231C12.2065 5.87111 12.8395 5.88467 13.2383 5.50259C13.6371 5.12052 13.6507 4.4875 13.2686 4.0887L11.8244 5.47231ZM10.7213 17.8878L3.80748 10.6765L2.3638 12.0606L9.27757 19.2719L10.7213 17.8878ZM3.81322 10.6825C1.9659 8.72327 1.9659 5.66366 3.81322 3.7044L2.35805 2.33237C-0.215705 5.06209 -0.215705 9.32484 2.35805 12.0546L3.81322 10.6825ZM3.79178 3.72645C5.3032 2.21914 7.67211 1.9976 9.43679 3.19855L10.562 1.54511C8.00409 -0.195675 4.57031 0.125443 2.37949 2.31032L3.79178 3.72645ZM10.7213 19.2719L14.7244 15.0962L13.2806 13.7122L9.27757 17.8879L10.7213 19.2719ZM10.7213 19.2719L17.6351 12.0606L16.1914 10.6765L9.2776 17.8878L10.7213 19.2719ZM17.6408 12.0546C20.2146 9.32484 20.2146 5.06209 17.6408 2.33237L16.1856 3.7044C18.033 5.66366 18.033 8.72327 16.1856 10.6825L17.6408 12.0546ZM17.6194 2.31032C15.4285 0.125443 11.9948 -0.195675 9.43683 1.54511L10.5621 3.19855C12.3267 1.9976 14.6957 2.21914 16.2071 3.72645L17.6194 2.31032ZM10.7214 17.8879L6.71832 13.7122L5.27457 15.0962L9.2776 19.2719L10.7214 17.8879ZM9.46808 3.21898C9.79761 3.42567 10.1003 3.67236 10.3692 3.95341L11.8143 2.57074C11.4313 2.17043 11.0002 1.81908 10.5308 1.52469L9.46808 3.21898ZM10.3697 3.95388L11.8244 5.47231L13.2686 4.0887L11.8138 2.57027L10.3697 3.95388Z" fill="#62215B"></path>
-                                      </g>
-                                    </svg>
-                                    <svg class="catalog-card__favourites-full" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <g id="Vector">
-                                        <path id="vetor" fill-rule="evenodd" clip-rule="evenodd" d="M8.9999 17.5798L2.08613 10.3685C-0.124412 8.02396 -0.124412 4.36279 2.08613 2.0183C3.93724 0.172199 6.83859 -0.0991274 8.9999 1.37174M8.99994 17.5798L13.003 13.4041L8.99994 17.5798ZM8.99994 17.5798L15.9137 10.3685C18.1242 8.02396 18.1242 4.36279 15.9137 2.0183C14.0626 0.172199 11.1612 -0.0991274 8.99994 1.37174M8.99997 17.5798L4.99693 13.4041L8.99997 17.5798ZM8.99994 1.37174C9.39937 1.62228 9.76626 1.9213 10.0922 2.26198L11.547 3.78042" fill="#62215B"></path>
-                                      </g>
-                                    </svg>
-                                  </div>
-                                  <div class="catalog-card__place">
-                                    <div class="place place_sale">
-                                      <p>sale</p>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="catalog-card__bottom"> 
-                                  <h2 class="catalog-card__title">Джемпер ажурный на пуговицах</h2>
-                                  <div class="catalog-card__price">
-                                    <p class="catalog-card__newPrice">1000 ₽</p>
-                                    <p class="catalog-card__oldPrice">2000 ₽</p>
-                                  </div>
-                                  <div class="catalog-card__colors"><a class="catalog-card__colors-item active">
-                                      <div class="catalog-card__colors-circle" style=" background-color:#A972A9"></div></a><a class="catalog-card__colors-item">
-                                      <div class="catalog-card__colors-circle" style=" background-color:#CD0200"></div></a><a class="catalog-card__colors-item">
-                                      <div class="catalog-card__colors-circle" style=" background-color:#E8C9AA"></div></a><a class="catalog-card__colors-item">
-                                      <div class="catalog-card__colors-circle" style=" background-color:#D9EFFC"></div></a><a class="catalog-card__colors-item">
-                                      <div class="catalog-card__colors-circle" style=" background-color:#9CBA88"></div></a><a class="catalog-card__colors-more">+еще цвета</a></div>
                                 </div>
                               </div>
                             </div>
@@ -624,8 +525,8 @@
           <div class="address-delete-modal">
             <p class="address-delete-modal__title"> удалить этот адрес?</p>
             <div class="address-delete-modal__bottom"> 
-              <button class="btn btn_white address-delete-modal__close">Нет</button>
-              <button class="btn address-delete-modal__ok">да</button>
+              <button class="btn btn_white address-delete-modal__close" data-btn-white="data-btn-white">Нет</button>
+              <button class="btn address-delete-modal__ok" data-btn="data-btn">да</button>
             </div>
           </div>
         </div>
@@ -639,16 +540,40 @@
         </div>
         <div class="lk-address-page__inner">
           <sidebar class="sidebar-lk">
-            <h2 class="sidebar-lk__title">Здравствуйте, <span>Спартак</span></h2>
-            <ul class="sidebar-lk__list"> 
-              <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Мои заказы</a></li>
-              <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Мой гардероб</a></li>
-              <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Мои данные</a></li>
-              <li class="sidebar-lk__item active"><a class="sidebar-lk__link" href="#">Мои адреса</a></li>
-              <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Избранное</a></li>
-              <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Управление рассылками</a></li>
-              <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Выйти</a></li>
-            </ul>
+            <div class="sidebar-lk__desktop">
+              <h2 class="sidebar-lk__title">Здравствуйте, Спартак</h2>
+              <ul class="sidebar-lk__list"> 
+                <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Мои заказы</a></li>
+                <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Мой гардероб</a></li>
+                <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Мои данные</a></li>
+                <li class="sidebar-lk__item active"><a class="sidebar-lk__link" href="#">Мои адреса</a></li>
+                <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Избранное</a></li>
+                <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Управление рассылками</a></li>
+                <li class="sidebar-lk__item"><a class="sidebar-lk__link" href="#">Выйти</a></li>
+              </ul>
+            </div>
+            <div class="sidebar-lk__mobile" aria-hidden="true">
+              <div class="select select-wrapper">
+                <div class="select__button">
+                  <input type="text" readonly="readonly" required="required" placeholder="Мои адреса"/>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 7.91675L10 12.9167L15 7.91675" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="select__list">
+                  <ul>
+                    <li><a href="https://ya.ru/">Мои заказы</a></li>
+                    <li><a href="https://ya.ru/">Мои гардероб</a></li>
+                    <li><a href="https://ya.ru/">Мои данные</a></li>
+                    <li><a href="https://ya.ru/">Мои адреса</a></li>
+                    <li><a href="https://ya.ru/">Избранное</a></li>
+                    <li><a href="https://ya.ru/">Управление рассылками</a></li>
+                    <li><a href="https://ya.ru/">Выйти</a></li>
+                  </ul>
+                </div>
+              </div>
+              <h2 class="sidebar-lk__title">Здарвствуйте, Спартак</h2>
+            </div>
           </sidebar>
           <div class="lk-address">
             <div class="lk-address__inner"> 
@@ -754,12 +679,12 @@
                       </div>
                     </div>
                     <div class="lk-address-add__button"> 
-                      <button class="btn">сохранить</button>
+                      <button class="btn" data-btn="data-btn">сохранить</button>
                     </div>
                   </form>
                 </div>
                 <div class="lk-address__block lk-address-btn active">
-                  <button class="btn">Добавить адрес</button>
+                  <button class="btn" data-btn="data-btn">Добавить адрес</button>
                 </div>
               </div>
             </div>
@@ -784,7 +709,7 @@
                   </div>
                 </div>
                 <div class="footer__form-btn">
-                  <button class="btn" type="submit">Подписаться</button>
+                  <button class="btn" data-btn="data-btn" type="submit">Подписаться</button>
                 </div>
               </div>
             </form>
@@ -880,7 +805,7 @@
                     </div>
                   </div>
                   <div class="footer__form-btn">
-                    <button class="btn" type="submit">Подписаться</button>
+                    <button class="btn" data-btn="data-btn" type="submit">Подписаться</button>
                   </div>
                 </div>
               </form>
