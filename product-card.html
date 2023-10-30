@@ -7,7 +7,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
-    <script type="module" crossorigin src="assets/index-7130dada.js"></script>
+    <script type="module" crossorigin src="assets/index-5ae3bc31.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body style="opacity:0">
@@ -520,7 +520,7 @@
               <div class="sidebar__inner">
                 <div class="sidebar-colors" data-sidebar="colors">
                   <div class="sidebar-colors__inner">
-                    <button class="sidebar__close btn-sidebar-close" data-sidebar-close="colors">
+                    <button class="closeButton sidebar__close" data-sidebar-close="colors">
                       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.5719 10.5721L29.4281 29.4283M10.5719 29.4283L20 20.0002L29.4281 10.5721" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
                       </svg>
@@ -1179,7 +1179,7 @@
                 </div>
                 <div class="sidebar-reviews" data-sidebar="reviews">
                   <div class="sidebar-reviews__inner">
-                    <button class="sidebar__close btn-sidebar-close" data-sidebar-close="reviews">
+                    <button class="closeButton sidebar__close" data-sidebar-close="reviews">
                       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.5719 10.5721L29.4281 29.4283M10.5719 29.4283L20 20.0002L29.4281 10.5721" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
                       </svg>
@@ -2344,7 +2344,7 @@
                 </div>
                 <div class="sidebar-measurement" data-sidebar="measurement">
                   <div class="sidebar-measurement__inner">
-                    <button class="sidebar__close btn-sidebar-close" data-sidebar-close="measurement">
+                    <button class="closeButton sidebar__close" data-sidebar-close="measurement">
                       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.5719 10.5721L29.4281 29.4283M10.5719 29.4283L20 20.0002L29.4281 10.5721" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
                       </svg>
@@ -2530,7 +2530,7 @@
                 </div>
                 <div class="sidebar-reviews-write" data-sidebar="reviews-write">
                   <div class="sidebar-reviews-write__inner">
-                    <button class="sidebar__close btn-sidebar-close" data-sidebar-close="reviews-write">
+                    <button class="closeButton sidebar__close" data-sidebar-close="reviews-write">
                       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.5719 10.5721L29.4281 29.4283M10.5719 29.4283L20 20.0002L29.4281 10.5721" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
                       </svg>
@@ -2850,7 +2850,7 @@
                 </div>
                 <div class="sidebar-size" data-sidebar="size">
                   <div class="sidebar-size__inner">
-                    <button class="sidebar__close btn-sidebar-close" data-sidebar-close="size">
+                    <button class="closeButton sidebar__close" data-sidebar-close="size">
                       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.5719 10.5721L29.4281 29.4283M10.5719 29.4283L20 20.0002L29.4281 10.5721" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
                       </svg>
@@ -2980,26 +2980,85 @@
               <div class="breadcrumb"><a href="#">Женщинам вяжем</a><span>•</span></div>
               <div class="breadcrumb active"><a href="#">ДЖЕМПЕР АЖУРНЫЙ НА ПУГОВИЦАХ ГОЛУБОЙ</a><span>•</span></div>
             </div>
-            <div class="product-detail">
-              <div class="product-detail__inner"> 
-                <div class="product-detail__photos">
-                  <!--FIXME: сделать увеличение--><a class="swiper-img" href="images/prod1.jpg" data-fancybox="gallery " data-sizes=" 100px, 100vw">
+            <div class="full-swiper" data-full-swiper="data-full-swiper">
+              <div class="swiper">
+                <div class="swiper-close">
+                  <button class="closeButton">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.5719 10.5721L29.4281 29.4283M10.5719 29.4283L20 20.0002L29.4281 10.5721" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                    </svg>
+                  </button>
+                </div>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
                     <picture class="picture">
                       <source class="lazyload" type="image/webp" srcset="webp/prod1.webp 1x" alt="prod1.jpg" media="(min-width: 769px)"/>
                       <source class="lazyload" type="image/jpeg" srcset="images/prod1.jpg 1x" alt="prod1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/prod1.jpg" alt="prod1.jpg"/>
-                    </picture></a><a class="swiper-img" href="images/prod2.jpg" data-fancybox="gallery">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide">
                     <picture class="picture">
                       <source class="lazyload" type="image/webp" srcset="webp/prod2.webp 1x" alt="prod2.jpg" media="(min-width: 769px)"/>
                       <source class="lazyload" type="image/jpeg" srcset="images/prod2.jpg 1x" alt="prod2.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/prod2.jpg" alt="prod2.jpg"/>
-                    </picture></a><a class="swiper-img" href="images/prod3.jpg" data-fancybox="gallery">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide">
                     <picture class="picture">
                       <source class="lazyload" type="image/webp" srcset="webp/prod3.webp 1x" alt="prod3.jpg" media="(min-width: 769px)"/>
                       <source class="lazyload" type="image/jpeg" srcset="images/prod3.jpg 1x" alt="prod3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/prod3.jpg" alt="prod3.jpg"/>
-                    </picture></a><a class="swiper-img" href="images/prod4.jpg" data-fancybox="gallery">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide">
                     <picture class="picture">
                       <source class="lazyload" type="image/webp" srcset="webp/prod4.webp 1x" alt="prod4.jpg" media="(min-width: 769px)"/>
                       <source class="lazyload" type="image/jpeg" srcset="images/prod4.jpg 1x" alt="prod4.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/prod4.jpg" alt="prod4.jpg"/>
-                    </picture></a>
+                    </picture>
+                  </div>
+                </div>
+                <div class="swiper-button-prev" data-full-prev="data-full-prev">
+                  <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Vector">
+                      <path id="vector-5" d="M7.5 13L1.5 7L7.5 1" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="swiper-button-next" data-full-next="data-full-next">
+                  <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Vector">
+                      <path id="vector-5" d="M7.5 13L1.5 7L7.5 1" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="product-detail">
+              <div class="product-detail__inner"> 
+                <div class="product-detail__photos">
+                  <!--FIXME: сделать увеличение-->
+                  <div class="product-detail__photo" id="1">
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/prod1.webp 1x" alt="prod1.jpg" media="(min-width: 769px)"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/prod1.jpg 1x" alt="prod1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/prod1.jpg" alt="prod1.jpg"/>
+                    </picture>
+                  </div>
+                  <div class="product-detail__photo" id="2">
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/prod2.webp 1x" alt="prod2.jpg" media="(min-width: 769px)"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/prod2.jpg 1x" alt="prod2.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/prod2.jpg" alt="prod2.jpg"/>
+                    </picture>
+                  </div>
+                  <div class="product-detail__photo" id="3">
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/prod3.webp 1x" alt="prod3.jpg" media="(min-width: 769px)"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/prod3.jpg 1x" alt="prod3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/prod3.jpg" alt="prod3.jpg"/>
+                    </picture>
+                  </div>
+                  <div class="product-detail__photo" id="4">
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/prod4.webp 1x" alt="prod4.jpg" media="(min-width: 769px)"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/prod4.jpg 1x" alt="prod4.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/prod4.jpg" alt="prod4.jpg"/>
+                    </picture>
+                  </div>
                 </div>
                 <div class="product-detail__description">
                   <div class="product-detail__places">
