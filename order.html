@@ -7,7 +7,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
-    <script type="module" crossorigin src="assets/index-029693bf.js"></script>
+    <script type="module" crossorigin src="assets/index-e4807884.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body style="opacity:0">
@@ -27,7 +27,7 @@
               <div class="login__inner"> 
                 <h3 class="login__title">вход или регистрация</h3>
                 <div class="login__box">
-                  <form class="login-registration login__block active">
+                  <form class="login-registration login__block active" data-form-phone="data-form-phone">
                     <div class="input-wrapper" data-input-parent="">
                       <div class="input-wrapper__placeholder">номер телефона</div>
                       <input class="input" data-input="" required="required" name="" placeholder="номер телефона" data-mask-phone="data-mask-phone" data-login-phone=""/>
@@ -36,14 +36,14 @@
                         <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                       </svg>
                     </div>
-                    <button class="btn login-registration__button" data-btn="data-btn" disabled="disabled">Далее</button>
+                    <button class="btn login-registration__button" data-btn="data-btn" disabled="disabled" data-btn-phone="data-btn-phone">Далее</button>
                   </form>
-                  <form class="form login-sms login__block"> 
-                    <p class="login-sms__text"> </p>
+                  <form class="form login-sms login__block" data-form-sms="data-form-sms">
+                    <p class="login-sms__text" data-text-sms="data-text-sms"></p>
                     <div class="input-wrapper" data-input-parent="">
                       <div class="input-wrapper__placeholder">код из смс</div>
-                      <input class="input" data-input="" required="required" placeholder="код из смс"/>
-                      <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
+                      <input class="input" pattern="[0-9]*" data-input="" required="required" oninput="this.value = this.value.replace(/[^0-9]/g, '')" placeholder="код из смс"/>
+                      <svg class="input-wrapper-svg input-reset" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
                         <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                         <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                       </svg>
@@ -56,28 +56,12 @@
                       </div>
                     </div>
                     <div class="login-sms__bottom">
-                      <div class="login-sms__block login-sms__time">
+                      <div class="login-sms__block login-sms__time" data-sms-time="data-sms-time">
                         <p>Повторная отправка через <span>0:59</span></p>
                       </div>
-                      <div class="login-sms__block login-sms__link"><a>Запросить новый код</a></div>
+                      <div class="login-sms__block login-sms__link" data-sms-link="data-sms-link"><a>Запросить новый код</a></div>
                     </div>
                   </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal" data-modal="footer">
-          <div class="overlay"> </div>
-          <div class="modal__inner">
-            <div class="footer-modal">
-              <div class="footer-modal__inner"> 
-                <svg xmlns="http://www.w3.org/2000/svg" width="61" height="61" viewBox="0 0 61 61" fill="none">
-                  <path d="M54.5752 3.50509C53.5888 2.76534 52.1091 2.76534 51.1227 3.99826L43.971 12.8753C40.0253 10.1629 35.3397 8.68337 30.1609 8.68337C16.5974 8.68337 5.5 19.7797 5.5 33.3418C5.5 46.9039 16.5974 58.0002 30.1609 58.0002C43.7244 58.0002 54.8218 46.9039 54.8218 33.3418C54.8218 28.4101 53.3422 23.9716 50.8761 20.0262L49.1498 21.9989L47.4235 23.9716L33.1202 41.9723C32.627 42.4654 31.8872 42.9586 31.1473 42.9586C30.4075 42.9586 29.9143 42.712 29.4211 42.2188L18.8169 30.876C18.0771 30.1362 18.0771 28.9033 18.3237 28.1635C18.3237 27.9169 18.5703 27.6704 18.8169 27.4238C19.8033 26.4374 21.283 26.4374 22.2694 27.4238L30.9007 36.794L44.4642 19.7797L45.9439 17.807L47.4235 15.8343L54.5752 6.95728C55.8083 5.97094 55.8083 4.49143 54.5752 3.50509Z" fill="#C19F86"></path>
-                </svg>
-                <p>спасибо за подписку!</p>
-                <div class="footer-modal__btn">
-                  <button class="btn" data-btn="data-btn">Закрыть</button>
                 </div>
               </div>
             </div>
@@ -198,6 +182,44 @@
                       <div class="search-cards">
                         <div class="catalog">
                           <div class="catalog__inner"> 
+                            <div class="catalog-card catalog-card-search">
+                              <div class="catalog-card__inner">
+                                <div class="catalog-card__top">
+                                  <div class="catalog-card__img active" data-card-img="1">
+                                    <picture class="picture">
+                                      <source class="lazyload" type="image/webp" srcset="webp/slide3.webp 1x" alt="slide3.jpg" media="(min-width: 769px)"/>
+                                      <source class="lazyload" type="image/jpeg" srcset="images/slide3.jpg 1x" alt="slide3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide3.jpg" alt="slide3.jpg"/>
+                                    </picture>
+                                  </div>
+                                  <div class="catalog-card__favourites">
+                                    <svg class="catalog-card__favourites-empty active" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <g id="Vector">
+                                        <path id="vetor" d="M9.27757 19.2719C9.65978 19.6706 10.2928 19.6839 10.6915 19.3017C11.0901 18.9195 11.1035 18.2865 10.7213 17.8878L9.27757 19.2719ZM3.08564 11.3685L2.35803 12.0546L2.3638 12.0606L3.08564 11.3685ZM3.08564 3.01839L2.37949 2.31032C2.37223 2.31756 2.36508 2.32491 2.35805 2.33237L3.08564 3.01839ZM9.43679 3.19855C9.89337 3.50927 10.5154 3.39103 10.8261 2.93445C11.1369 2.47786 11.0186 1.85584 10.562 1.54511L9.43679 3.19855ZM9.27757 17.8879C8.89538 18.2865 8.90874 18.9196 9.30742 19.3018C9.7061 19.684 10.3391 19.6706 10.7213 19.2719L9.27757 17.8879ZM14.7244 15.0962C15.1065 14.6975 15.0932 14.0645 14.6945 13.6823C14.2958 13.3001 13.6628 13.3135 13.2806 13.7122L14.7244 15.0962ZM9.2776 17.8878C8.89539 18.2865 8.90873 18.9195 9.30739 19.3017C9.70605 19.6839 10.3391 19.6706 10.7213 19.2719L9.2776 17.8878ZM16.9132 11.3685L17.6351 12.0606L17.6408 12.0546L16.9132 11.3685ZM16.9132 3.01839L17.6408 2.33237C17.6338 2.32491 17.6266 2.31756 17.6194 2.31032L16.9132 3.01839ZM9.43683 1.54511C8.98025 1.85584 8.862 2.47786 9.17273 2.93445C9.48345 3.39103 10.1055 3.50927 10.5621 3.19855L9.43683 1.54511ZM9.2776 19.2719C9.6598 19.6706 10.2928 19.684 10.6915 19.3018C11.0902 18.9196 11.1035 18.2865 10.7214 17.8879L9.2776 19.2719ZM6.71832 13.7122C6.33613 13.3135 5.7031 13.3001 5.30442 13.6823C4.90574 14.0645 4.89238 14.6975 5.27457 15.0962L6.71832 13.7122ZM10.5308 1.52469C10.0629 1.23122 9.44577 1.3726 9.1523 1.84047C8.85884 2.30833 9.00022 2.92551 9.46808 3.21898L10.5308 1.52469ZM11.0917 3.26208L10.3692 3.95341L10.3697 3.95388L11.0917 3.26208ZM11.8244 5.47231C12.2065 5.87111 12.8395 5.88467 13.2383 5.50259C13.6371 5.12052 13.6507 4.4875 13.2686 4.0887L11.8244 5.47231ZM10.7213 17.8878L3.80748 10.6765L2.3638 12.0606L9.27757 19.2719L10.7213 17.8878ZM3.81322 10.6825C1.9659 8.72327 1.9659 5.66366 3.81322 3.7044L2.35805 2.33237C-0.215705 5.06209 -0.215705 9.32484 2.35805 12.0546L3.81322 10.6825ZM3.79178 3.72645C5.3032 2.21914 7.67211 1.9976 9.43679 3.19855L10.562 1.54511C8.00409 -0.195675 4.57031 0.125443 2.37949 2.31032L3.79178 3.72645ZM10.7213 19.2719L14.7244 15.0962L13.2806 13.7122L9.27757 17.8879L10.7213 19.2719ZM10.7213 19.2719L17.6351 12.0606L16.1914 10.6765L9.2776 17.8878L10.7213 19.2719ZM17.6408 12.0546C20.2146 9.32484 20.2146 5.06209 17.6408 2.33237L16.1856 3.7044C18.033 5.66366 18.033 8.72327 16.1856 10.6825L17.6408 12.0546ZM17.6194 2.31032C15.4285 0.125443 11.9948 -0.195675 9.43683 1.54511L10.5621 3.19855C12.3267 1.9976 14.6957 2.21914 16.2071 3.72645L17.6194 2.31032ZM10.7214 17.8879L6.71832 13.7122L5.27457 15.0962L9.2776 19.2719L10.7214 17.8879ZM9.46808 3.21898C9.79761 3.42567 10.1003 3.67236 10.3692 3.95341L11.8143 2.57074C11.4313 2.17043 11.0002 1.81908 10.5308 1.52469L9.46808 3.21898ZM10.3697 3.95388L11.8244 5.47231L13.2686 4.0887L11.8138 2.57027L10.3697 3.95388Z" fill="#62215B"></path>
+                                      </g>
+                                    </svg>
+                                    <svg class="catalog-card__favourites-full" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <g id="Vector">
+                                        <path id="vetor" fill-rule="evenodd" clip-rule="evenodd" d="M8.9999 17.5798L2.08613 10.3685C-0.124412 8.02396 -0.124412 4.36279 2.08613 2.0183C3.93724 0.172199 6.83859 -0.0991274 8.9999 1.37174M8.99994 17.5798L13.003 13.4041L8.99994 17.5798ZM8.99994 17.5798L15.9137 10.3685C18.1242 8.02396 18.1242 4.36279 15.9137 2.0183C14.0626 0.172199 11.1612 -0.0991274 8.99994 1.37174M8.99997 17.5798L4.99693 13.4041L8.99997 17.5798ZM8.99994 1.37174C9.39937 1.62228 9.76626 1.9213 10.0922 2.26198L11.547 3.78042" fill="#62215B"></path>
+                                      </g>
+                                    </svg>
+                                  </div>
+                                  <div class="catalog-card__place">
+                                    <div class="place place_sale">
+                                      <p>sale</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="catalog-card__bottom"> 
+                                  <h2 class="catalog-card__title">Джемпер ажурный на пуговицах</h2>
+                                  <div class="catalog-card__price">
+                                    <p class="catalog-card__newPrice">1000 ₽</p>
+                                    <p class="catalog-card__oldPrice">2000 ₽</p>
+                                  </div>
+                                  <div class="catalog-card__colors"><a class="catalog-card__colors-item active">
+                                      <div class="catalog-card__colors-circle" style=" background-color:#A972A9"></div></a></div>
+                                </div>
+                              </div>
+                            </div>
                             <div class="catalog-card catalog-card-search">
                               <div class="catalog-card__inner">
                                 <div class="catalog-card__top">
@@ -521,7 +543,7 @@
             <div class="sidebar__inner">
               <div class="sidebar-map" data-sidebar="map">
                 <div class="sidebar-map__inner">
-                  <button class="sidebar__close btn-sidebar-close" data-sidebar-close="map">
+                  <button class="closeButton sidebar__close" data-sidebar-close="map">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M10.5719 10.5721L29.4281 29.4283M10.5719 29.4283L20 20.0002L29.4281 10.5721" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
                     </svg>
@@ -720,7 +742,7 @@
                 <form class="order-form">
                   <div class="order-form__inner"> 
                     <div class="col order-form__block">
-                      <h3 class="order-form__title">Контактная информация</h3>
+                      <h2 class="order-form__title">Контактная информация</h2>
                       <div class="order-form__row">
                         <div class="input-wrapper" data-input-parent="">
                           <div class="input-wrapper__placeholder">Имя *</div>
@@ -740,7 +762,7 @@
                         </div>
                         <div class="input-wrapper" data-input-parent="">
                           <div class="input-wrapper__placeholder">отчество *</div>
-                          <input class="input" data-input="" required="required" name="" placeholder="отчество *" data-storage-key="input3"/>
+                          <input class="input" data-input="" name="" placeholder="отчество *" data-storage-key="input3"/>
                           <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
                             <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                             <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -774,7 +796,7 @@
                       </div>
                     </div>
                     <div class="col order-form__block">
-                      <h3 class="order-form__title">Населенный пункт</h3>
+                      <h2 class="order-form__title">Населенный пункт</h2>
                       <div class="order-form__row">
                         <div class="input-wrapper" data-input-parent="" data-input-city="">
                           <div class="input-wrapper__placeholder">Введите адрес в обычном формате</div>
@@ -811,7 +833,7 @@
                       </div>
                     </div>
                     <div class="col order-form__block" data-order-delivery="data-order-delivery">
-                      <h3 class="order-form__title">способ доставки</h3>
+                      <h2 class="order-form__title">способ доставки</h2>
                       <div class="order-form__row">
                         <div class="order-form-item">
                           <div class="checkbox-card">
@@ -1096,7 +1118,7 @@
                       </div><a class="order-form__link">Подробнее о доставке</a>
                     </div>
                     <div class="col order-form__block" data-order-pay="data-order-pay">
-                      <h3 class="order-form__title">способ оплаты</h3>
+                      <h2 class="order-form__title">способ оплаты</h2>
                       <div class="order-form__row">
                         <div class="checkbox-card">
                           <div class="checkbox-card__inner">
@@ -1123,7 +1145,7 @@
                       </div>
                     </div>
                     <div class="col order-form__block">
-                      <h3 class="order-form__title">Комментарий</h3>
+                      <h2 class="order-form__title">Комментарий</h2>
                       <div class="order-form__row">
                         <div class="input-wrapper textarea-wrapper" data-input-parent="">
                           <div class="input-wrapper__placeholder">Например, уточнение по размеру или цвету изделия</div>
@@ -1272,7 +1294,7 @@
                 <div class="footer__form-input">
                   <div class="input-wrapper" data-input-parent="">
                     <div class="input-wrapper__placeholder">ваш e-mail</div>
-                    <input class="input" data-input="" required="required" name="" placeholder="ваш e-mail"/>
+                    <input class="input" data-input="" required="required" name="" placeholder="ваш e-mail" type="email"/>
                     <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
                       <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                       <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -1327,26 +1349,29 @@
                     </svg></a></div>
               </div>
               <div class="footer__left-bottom"> 
-                <p class="footer__copyright">© 2023. Студия трикотажа RonNny</p>
-                <p class="footer__claud">
-                   Сделано в <a href="#" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="92" height="11" viewBox="0 0 92 11" fill="none">
-                      <path d="M12.5163 1.65095C12.5163 4.29324 11.9711 6.174 10.8922 7.24418C10.0701 8.06052 9.17882 8.14418 8.83555 8.13841L8.26152 8.16148L6.7038 6.28938C7.22879 5.9115 7.5432 5.28843 7.84608 4.68266C7.94704 4.48362 8.04514 4.28747 8.15764 4.08844L10.0009 0.502887H7.11057L6.0173 2.64902L5.80961 3.06152C5.55288 3.57498 5.16343 4.35381 4.9067 4.35381H2.74325V0.502887H0V10.4951H2.74325V6.64418H3.70096L6.9519 10.4951H10.1278H10.2663C10.4538 10.4951 14.8355 10.4057 15.2336 2.79037H18.297V10.4951H21.0402V0.5H12.5192V1.65095H12.5163Z" fill="#62215B"></path>
-                      <path d="M83.2172 1.65056C83.2172 8.01397 80.7711 8.21013 80.7451 8.21013L80.7451 8.22744L80.7451 10.5005H80.9643C81.1518 10.5005 85.5335 10.4111 85.9316 2.79574H88.9979V10.5005H91.7412V0.505371H83.2201V1.65056H83.2172Z" fill="#62215B"></path>
-                      <path d="M52.8373 0.505371H44.0046V1.65056C44.0046 7.99955 41.3104 8.21013 41.2816 8.21013L40.9412 8.22744L41.4431 10.5005H53.9104V8.21013H52.8401V0.505371H52.8373ZM50.094 8.21013H45.1988C46.0382 6.88898 46.52 5.07168 46.6411 2.79574H50.094V8.21013Z" fill="#62215B"></path>
-                      <path d="M61.6984 6.09283L59.6012 0.505371H55.4272V10.4976H58.1705V4.03323L60.5935 10.4976H62.8002L65.2262 4.03323V10.4976H67.9695V0.505371H63.7955L61.6984 6.09283Z" fill="#62215B"></path>
-                      <path d="M72.4842 6.1361V0.505371H69.741V10.4976H71.3621L76.9929 4.86688V10.4976H79.7361V0.505371H78.1178L72.4842 6.1361Z" fill="#62215B"></path>
-                      <path d="M42.5743 0.505371H39.6493L37.1686 7.2784L34.6474 0.505371H31.6936L34.3647 7.50051H37.0878L36.1387 10.0938L35.9368 10.4976H38.8733L38.9426 10.3072C39.7358 8.14955 42.1474 1.58133 42.4185 0.89768L42.5743 0.505371Z" fill="#62215B"></path>
-                      <path d="M29.5615 0.779411L29.4548 0.505371H25.2145L21.7039 10.0938L21.502 10.4976H24.4385L25.0125 8.93704H29.6625L30.2365 10.4976H32.7057H33.173L32.9711 10.0938L29.5615 0.779411ZM27.3346 2.62555C27.6375 3.44189 28.0183 4.47169 28.425 5.57937H28.4221L28.8144 6.64667H25.8548L26.2471 5.57937H26.2442C26.6538 4.47169 27.0346 3.43901 27.3346 2.62555Z" fill="#62215B"></path>
-                    </svg></a></p>
+                <div class="footer__row"><a class="footer__politic" href="#">Политика конфиденциальности</a></div>
+                <div class="footer__row">
+                  <p class="footer__copyright">© 2023. Студия трикотажа RonNny</p>
+                  <p class="footer__claud">
+                     Сделано в <a href="#" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="92" height="11" viewBox="0 0 92 11" fill="none">
+                        <path d="M12.5163 1.65095C12.5163 4.29324 11.9711 6.174 10.8922 7.24418C10.0701 8.06052 9.17882 8.14418 8.83555 8.13841L8.26152 8.16148L6.7038 6.28938C7.22879 5.9115 7.5432 5.28843 7.84608 4.68266C7.94704 4.48362 8.04514 4.28747 8.15764 4.08844L10.0009 0.502887H7.11057L6.0173 2.64902L5.80961 3.06152C5.55288 3.57498 5.16343 4.35381 4.9067 4.35381H2.74325V0.502887H0V10.4951H2.74325V6.64418H3.70096L6.9519 10.4951H10.1278H10.2663C10.4538 10.4951 14.8355 10.4057 15.2336 2.79037H18.297V10.4951H21.0402V0.5H12.5192V1.65095H12.5163Z" fill="#62215B"></path>
+                        <path d="M83.2172 1.65056C83.2172 8.01397 80.7711 8.21013 80.7451 8.21013L80.7451 8.22744L80.7451 10.5005H80.9643C81.1518 10.5005 85.5335 10.4111 85.9316 2.79574H88.9979V10.5005H91.7412V0.505371H83.2201V1.65056H83.2172Z" fill="#62215B"></path>
+                        <path d="M52.8373 0.505371H44.0046V1.65056C44.0046 7.99955 41.3104 8.21013 41.2816 8.21013L40.9412 8.22744L41.4431 10.5005H53.9104V8.21013H52.8401V0.505371H52.8373ZM50.094 8.21013H45.1988C46.0382 6.88898 46.52 5.07168 46.6411 2.79574H50.094V8.21013Z" fill="#62215B"></path>
+                        <path d="M61.6984 6.09283L59.6012 0.505371H55.4272V10.4976H58.1705V4.03323L60.5935 10.4976H62.8002L65.2262 4.03323V10.4976H67.9695V0.505371H63.7955L61.6984 6.09283Z" fill="#62215B"></path>
+                        <path d="M72.4842 6.1361V0.505371H69.741V10.4976H71.3621L76.9929 4.86688V10.4976H79.7361V0.505371H78.1178L72.4842 6.1361Z" fill="#62215B"></path>
+                        <path d="M42.5743 0.505371H39.6493L37.1686 7.2784L34.6474 0.505371H31.6936L34.3647 7.50051H37.0878L36.1387 10.0938L35.9368 10.4976H38.8733L38.9426 10.3072C39.7358 8.14955 42.1474 1.58133 42.4185 0.89768L42.5743 0.505371Z" fill="#62215B"></path>
+                        <path d="M29.5615 0.779411L29.4548 0.505371H25.2145L21.7039 10.0938L21.502 10.4976H24.4385L25.0125 8.93704H29.6625L30.2365 10.4976H32.7057H33.173L32.9711 10.0938L29.5615 0.779411ZM27.3346 2.62555C27.6375 3.44189 28.0183 4.47169 28.425 5.57937H28.4221L28.8144 6.64667H25.8548L26.2471 5.57937H26.2442C26.6538 4.47169 27.0346 3.43901 27.3346 2.62555Z" fill="#62215B"></path>
+                      </svg></a></p>
+                </div>
               </div>
             </div>
             <div class="footer__right min-m"><a class="footer__phone" href="tel:89123261417">+7 912 326-14-17</a><a class="footer__mail" href="mailto:ronnny@ronnny.com">ronnny@ronnny.com</a>
-              <div class="footer__socials"> <a class="svg-hover" href="#"> 
+              <div class="footer__socials"> <a class="svg-hover" href="https://vk.com/ronnny_studio"> 
                   <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                     <rect width="48" height="48" rx="24" fill="#62215B"></rect>
                     <path d="M25.0718 32C16.8719 32 12.1949 26.3694 12 17H16.1074C16.2423 23.8769 19.2704 26.7898 21.6689 27.3904V17H25.5366V22.9309C27.9051 22.6757 30.3933 19.973 31.2328 17H35.1004C34.4558 20.6637 31.7575 23.3664 29.8387 24.4775C31.7575 25.3784 34.8307 27.7357 36 32H31.7425C30.8281 29.1471 28.5497 26.9399 25.5366 26.6396V32H25.0718Z" fill="#FFF4EA"></path>
-                  </svg></a><a class="svg-hover" href="#"> 
+                  </svg></a><a class="svg-hover" href="whatsapp://send/?phone=79123261417"> 
                   <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="48" height="48" rx="24" fill="#62215B"></rect>
                     <g clip-path="url(#clip0_51_2267)">
@@ -1357,7 +1382,7 @@
                         <rect width="24" height="24" fill="white" transform="translate(12 12)"></rect>
                       </clippath>
                     </defs>
-                  </svg></a><a class="svg-hover" href="#"> 
+                  </svg></a><a class="svg-hover" href="https://t.me/ronnny_studio"> 
                   <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                     <rect width="48" height="48" rx="24" fill="#62215B"></rect>
                     <path d="M15.1648 22.5325L26.4825 18.0803C27.5997 17.6165 31.3884 16.1324 31.3884 16.1324C31.3884 16.1324 33.1371 15.4831 32.9914 17.06C32.9428 17.7093 32.5542 19.9818 32.1656 22.4398L30.9513 29.7211C30.9513 29.7211 30.8541 30.7878 30.0284 30.9733C29.2026 31.1588 27.8426 30.324 27.5997 30.1385C27.4054 29.9994 23.9567 27.9124 22.6938 26.892C22.3537 26.6138 21.9652 26.0572 22.7423 25.408C24.491 23.8775 26.5797 21.976 27.8426 20.7702C28.4255 20.2137 29.0083 18.9151 26.5797 20.4919L19.7308 24.8978C19.7308 24.8978 18.9536 25.3616 17.4964 24.9442C16.0392 24.5268 14.3391 23.9703 14.3391 23.9703C14.3391 23.9703 13.1733 23.2746 15.1648 22.5325Z" fill="#FFF4EA"></path>
@@ -1368,7 +1393,7 @@
                   <div class="footer__form-input">
                     <div class="input-wrapper" data-input-parent="">
                       <div class="input-wrapper__placeholder">ваш e-mail</div>
-                      <input class="input" data-input="" required="required" name="" placeholder="ваш e-mail"/>
+                      <input class="input" data-input="" required="required" name="" placeholder="ваш e-mail" type="email"/>
                       <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
                         <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                         <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
