@@ -7,7 +7,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
-    <script type="module" crossorigin src="assets/index-01b56e81.js"></script>
+    <script type="module" crossorigin src="assets/index-4c28ecec.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body class="isMessage" style="opacity:0">
@@ -156,6 +156,8 @@
               <div class="message__inner">
                 <div class="message__block">
                   <p class="--active">-1000 ₽ на первый заказ от 7000 ₽ по промокоду «скидка»</p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, excepturi!</p>
+                  <p>Lorem ipsum dolor sit.</p>
                 </div>
                 <div class="message__close"> 
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -229,33 +231,57 @@
                                     <p class="catalog-card__newPrice">1000 ₽</p>
                                     <p class="catalog-card__oldPrice">2000 ₽</p>
                                   </div>
-                                  <div class="catalog-card__colors"><a class="catalog-card__colors-item active">
+                                  <div class="catalog-card__colors"><a class="catalog-card__colors-item --active">
                                       <div class="catalog-card__colors-circle" style=" background-color:#A972A9"></div></a></div>
                                 </div>
                               </div>
                             </div>
-                            <div class="catalog-card catalog-card-search">
+                            <div class="catalog-card catalog-card-search" data-card="data-card">
                               <div class="catalog-card__inner">
                                 <div class="catalog-card__top">
-                                  <div class="catalog-card__windows catalog-card__windows_2">
-                                    <div class="catalog-card__window" data-card-window="1">
-                                      <div class="catalog-card__window-item"></div>
+                                  <div class="catalog-card-color --active" data-card-color="red">
+                                    <div class="catalog-card__windows catalog-card__windows_2">
+                                      <div class="catalog-card__window" data-card-window="1">
+                                        <div class="catalog-card__window-item"></div>
+                                      </div>
+                                      <div class="catalog-card__window" data-card-window="2">
+                                        <div class="catalog-card__window-item"></div>
+                                      </div>
                                     </div>
-                                    <div class="catalog-card__window" data-card-window="2">
-                                      <div class="catalog-card__window-item"></div>
+                                    <div class="catalog-card__img active" data-card-img="1">
+                                      <picture class="picture">
+                                        <source class="lazyload" type="image/webp" srcset="webp/slide3.webp 1x" alt="slide3.jpg" media="(min-width: 769px)"/>
+                                        <source class="lazyload" type="image/jpeg" srcset="images/slide3.jpg 1x" alt="slide3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide3.jpg" alt="slide3.jpg"/>
+                                      </picture>
+                                    </div>
+                                    <div class="catalog-card__img" data-card-img="2">
+                                      <picture class="picture">
+                                        <source class="lazyload" type="image/webp" srcset="webp/slide1.webp 1x" alt="slide1.jpg" media="(min-width: 769px)"/>
+                                        <source class="lazyload" type="image/jpeg" srcset="images/slide1.jpg 1x" alt="slide1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide1.jpg" alt="slide1.jpg"/>
+                                      </picture>
                                     </div>
                                   </div>
-                                  <div class="catalog-card__img active" data-card-img="1">
-                                    <picture class="picture">
-                                      <source class="lazyload" type="image/webp" srcset="webp/slide3.webp 1x" alt="slide3.jpg" media="(min-width: 769px)"/>
-                                      <source class="lazyload" type="image/jpeg" srcset="images/slide3.jpg 1x" alt="slide3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide3.jpg" alt="slide3.jpg"/>
-                                    </picture>
-                                  </div>
-                                  <div class="catalog-card__img" data-card-img="2">
-                                    <picture class="picture">
-                                      <source class="lazyload" type="image/webp" srcset="webp/slide1.webp 1x" alt="slide1.jpg" media="(min-width: 769px)"/>
-                                      <source class="lazyload" type="image/jpeg" srcset="images/slide1.jpg 1x" alt="slide1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide1.jpg" alt="slide1.jpg"/>
-                                    </picture>
+                                  <div class="catalog-card-color" data-card-color="blue">
+                                    <div class="catalog-card__windows catalog-card__windows_2">
+                                      <div class="catalog-card__window" data-card-window="1">
+                                        <div class="catalog-card__window-item"></div>
+                                      </div>
+                                      <div class="catalog-card__window" data-card-window="2">
+                                        <div class="catalog-card__window-item"></div>
+                                      </div>
+                                    </div>
+                                    <div class="catalog-card__img active" data-card-img="1">
+                                      <picture class="picture">
+                                        <source class="lazyload" type="image/webp" srcset="webp/slide1.webp 1x" alt="slide1.jpg" media="(min-width: 769px)"/>
+                                        <source class="lazyload" type="image/jpeg" srcset="images/slide1.jpg 1x" alt="slide1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide1.jpg" alt="slide1.jpg"/>
+                                      </picture>
+                                    </div>
+                                    <div class="catalog-card__img" data-card-img="2">
+                                      <picture class="picture">
+                                        <source class="lazyload" type="image/webp" srcset="webp/pr1.webp 1x" alt="pr1.jpg" media="(min-width: 769px)"/>
+                                        <source class="lazyload" type="image/jpeg" srcset="images/pr1.jpg 1x" alt="pr1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/pr1.jpg" alt="pr1.jpg"/>
+                                      </picture>
+                                    </div>
                                   </div>
                                   <div class="catalog-card__favourites">
                                     <svg class="catalog-card__favourites-empty active" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -281,43 +307,89 @@
                                     <p class="catalog-card__newPrice">1000 ₽</p>
                                     <p class="catalog-card__oldPrice">2000 ₽</p>
                                   </div>
-                                  <div class="catalog-card__colors"><a class="catalog-card__colors-item active">
-                                      <div class="catalog-card__colors-circle" style=" background-color:#A972A9"></div></a><a class="catalog-card__colors-item">
+                                  <div class="catalog-card__colors"><a class="catalog-card__colors-item --active" data-card-color="red">
+                                      <div class="catalog-card__colors-circle" style=" background-color:#A972A9"></div></a><a class="catalog-card__colors-item" data-card-color="blue">
                                       <div class="catalog-card__colors-circle" style=" background-color:#E8C9AA"></div></a></div>
                                 </div>
                               </div>
                             </div>
-                            <div class="catalog-card catalog-card-search">
+                            <div class="catalog-card catalog-card-search" data-card="data-card">
                               <div class="catalog-card__inner">
                                 <div class="catalog-card__top">
-                                  <div class="catalog-card__windows catalog-card__windows_3">
-                                    <div class="catalog-card__window" data-card-window="1">
-                                      <div class="catalog-card__window-item"></div>
+                                  <div class="catalog-card-color --active" data-card-color="red">
+                                    <div class="catalog-card__windows catalog-card__windows_3">
+                                      <div class="catalog-card__window" data-card-window="1">
+                                        <div class="catalog-card__window-item"></div>
+                                      </div>
+                                      <div class="catalog-card__window" data-card-window="2">
+                                        <div class="catalog-card__window-item"></div>
+                                      </div>
+                                      <div class="catalog-card__window" data-card-window="3">
+                                        <div class="catalog-card__window-item"></div>
+                                      </div>
                                     </div>
-                                    <div class="catalog-card__window" data-card-window="2">
-                                      <div class="catalog-card__window-item"></div>
+                                    <div class="catalog-card__img active" data-card-img="1">
+                                      <picture class="picture">
+                                        <source class="lazyload" type="image/webp" srcset="webp/slide3.webp 1x" alt="slide3.jpg" media="(min-width: 769px)"/>
+                                        <source class="lazyload" type="image/jpeg" srcset="images/slide3.jpg 1x" alt="slide3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide3.jpg" alt="slide3.jpg"/>
+                                      </picture>
                                     </div>
-                                    <div class="catalog-card__window" data-card-window="3">
-                                      <div class="catalog-card__window-item"></div>
+                                    <div class="catalog-card__img" data-card-img="2">
+                                      <picture class="picture">
+                                        <source class="lazyload" type="image/webp" srcset="webp/slide1.webp 1x" alt="slide1.jpg" media="(min-width: 769px)"/>
+                                        <source class="lazyload" type="image/jpeg" srcset="images/slide1.jpg 1x" alt="slide1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide1.jpg" alt="slide1.jpg"/>
+                                      </picture>
+                                    </div>
+                                    <div class="catalog-card__img" data-card-img="3">
+                                      <picture class="picture">
+                                        <source class="lazyload" type="image/webp" srcset="webp/pr1.webp 1x" alt="pr1.jpg" media="(min-width: 769px)"/>
+                                        <source class="lazyload" type="image/jpeg" srcset="images/pr1.jpg 1x" alt="pr1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/pr1.jpg" alt="pr1.jpg"/>
+                                      </picture>
                                     </div>
                                   </div>
-                                  <div class="catalog-card__img active" data-card-img="1">
-                                    <picture class="picture">
-                                      <source class="lazyload" type="image/webp" srcset="webp/slide3.webp 1x" alt="slide3.jpg" media="(min-width: 769px)"/>
-                                      <source class="lazyload" type="image/jpeg" srcset="images/slide3.jpg 1x" alt="slide3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide3.jpg" alt="slide3.jpg"/>
-                                    </picture>
+                                  <div class="catalog-card-color" data-card-color="blue">
+                                    <div class="catalog-card__windows catalog-card__windows_2">
+                                      <div class="catalog-card__window" data-card-window="1">
+                                        <div class="catalog-card__window-item"></div>
+                                      </div>
+                                      <div class="catalog-card__window" data-card-window="2">
+                                        <div class="catalog-card__window-item"></div>
+                                      </div>
+                                    </div>
+                                    <div class="catalog-card__img active" data-card-img="1">
+                                      <picture class="picture">
+                                        <source class="lazyload" type="image/webp" srcset="webp/slide1.webp 1x" alt="slide1.jpg" media="(min-width: 769px)"/>
+                                        <source class="lazyload" type="image/jpeg" srcset="images/slide1.jpg 1x" alt="slide1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide1.jpg" alt="slide1.jpg"/>
+                                      </picture>
+                                    </div>
+                                    <div class="catalog-card__img" data-card-img="2">
+                                      <picture class="picture">
+                                        <source class="lazyload" type="image/webp" srcset="webp/pr1.webp 1x" alt="pr1.jpg" media="(min-width: 769px)"/>
+                                        <source class="lazyload" type="image/jpeg" srcset="images/pr1.jpg 1x" alt="pr1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/pr1.jpg" alt="pr1.jpg"/>
+                                      </picture>
+                                    </div>
                                   </div>
-                                  <div class="catalog-card__img" data-card-img="2">
-                                    <picture class="picture">
-                                      <source class="lazyload" type="image/webp" srcset="webp/slide1.webp 1x" alt="slide1.jpg" media="(min-width: 769px)"/>
-                                      <source class="lazyload" type="image/jpeg" srcset="images/slide1.jpg 1x" alt="slide1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide1.jpg" alt="slide1.jpg"/>
-                                    </picture>
-                                  </div>
-                                  <div class="catalog-card__img" data-card-img="3">
-                                    <picture class="picture">
-                                      <source class="lazyload" type="image/webp" srcset="webp/pr1.webp 1x" alt="pr1.jpg" media="(min-width: 769px)"/>
-                                      <source class="lazyload" type="image/jpeg" srcset="images/pr1.jpg 1x" alt="pr1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/pr1.jpg" alt="pr1.jpg"/>
-                                    </picture>
+                                  <div class="catalog-card-color" data-card-color="green">
+                                    <div class="catalog-card__windows catalog-card__windows_2">
+                                      <div class="catalog-card__window" data-card-window="1">
+                                        <div class="catalog-card__window-item"></div>
+                                      </div>
+                                      <div class="catalog-card__window" data-card-window="2">
+                                        <div class="catalog-card__window-item"></div>
+                                      </div>
+                                    </div>
+                                    <div class="catalog-card__img active" data-card-img="1">
+                                      <picture class="picture">
+                                        <source class="lazyload" type="image/webp" srcset="webp/slide1.webp 1x" alt="slide1.jpg" media="(min-width: 769px)"/>
+                                        <source class="lazyload" type="image/jpeg" srcset="images/slide1.jpg 1x" alt="slide1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide1.jpg" alt="slide1.jpg"/>
+                                      </picture>
+                                    </div>
+                                    <div class="catalog-card__img" data-card-img="2">
+                                      <picture class="picture">
+                                        <source class="lazyload" type="image/webp" srcset="webp/pr1.webp 1x" alt="pr1.jpg" media="(min-width: 769px)"/>
+                                        <source class="lazyload" type="image/jpeg" srcset="images/pr1.jpg 1x" alt="pr1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/pr1.jpg" alt="pr1.jpg"/>
+                                      </picture>
+                                    </div>
                                   </div>
                                   <div class="catalog-card__favourites">
                                     <svg class="catalog-card__favourites-empty active" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -343,50 +415,96 @@
                                     <p class="catalog-card__newPrice">1000 ₽</p>
                                     <p class="catalog-card__oldPrice">2000 ₽</p>
                                   </div>
-                                  <div class="catalog-card__colors"><a class="catalog-card__colors-item active">
-                                      <div class="catalog-card__colors-circle" style=" background-color:#A972A9"></div></a><a class="catalog-card__colors-item">
-                                      <div class="catalog-card__colors-circle" style=" background-color:#CD0200"></div></a><a class="catalog-card__colors-item">
-                                      <div class="catalog-card__colors-circle" style=" background-color:#E8C9AA"></div></a></div>
+                                  <div class="catalog-card__colors"><a class="catalog-card__colors-item --active" data-card-color="red">
+                                      <div class="catalog-card__colors-circle" style=" background-color:#A972A9"></div></a><a class="catalog-card__colors-item" data-card-color="blue">
+                                      <div class="catalog-card__colors-circle" style=" background-color:#E8C9AA"></div></a><a class="catalog-card__colors-item" data-card-color="green">
+                                      <div class="catalog-card__colors-circle" style=" background-color:#CD0200"></div></a></div>
                                 </div>
                               </div>
                             </div>
-                            <div class="catalog-card catalog-card-search">
+                            <div class="catalog-card catalog-card-search" data-card="data-card">
                               <div class="catalog-card__inner">
                                 <div class="catalog-card__top">
-                                  <div class="catalog-card__windows catalog-card__windows_3">
-                                    <div class="catalog-card__window" data-card-window="1">
-                                      <div class="catalog-card__window-item"></div>
+                                  <div class="catalog-card-color --active" data-card-color="red">
+                                    <div class="catalog-card__windows catalog-card__windows_3">
+                                      <div class="catalog-card__window" data-card-window="1">
+                                        <div class="catalog-card__window-item"></div>
+                                      </div>
+                                      <div class="catalog-card__window" data-card-window="2">
+                                        <div class="catalog-card__window-item"></div>
+                                      </div>
+                                      <div class="catalog-card__window" data-card-window="3">
+                                        <div class="catalog-card__window-item"></div>
+                                      </div>
                                     </div>
-                                    <div class="catalog-card__window" data-card-window="2">
-                                      <div class="catalog-card__window-item"></div>
+                                    <div class="catalog-card__img active" data-card-img="1">
+                                      <picture class="picture">
+                                        <source class="lazyload" type="image/webp" srcset="webp/slide3.webp 1x" alt="slide3.jpg" media="(min-width: 769px)"/>
+                                        <source class="lazyload" type="image/jpeg" srcset="images/slide3.jpg 1x" alt="slide3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide3.jpg" alt="slide3.jpg"/>
+                                      </picture>
                                     </div>
-                                    <div class="catalog-card__window" data-card-window="3">
-                                      <div class="catalog-card__window-item"></div>
+                                    <div class="catalog-card__img" data-card-img="2">
+                                      <picture class="picture">
+                                        <source class="lazyload" type="image/webp" srcset="webp/slide1.webp 1x" alt="slide1.jpg" media="(min-width: 769px)"/>
+                                        <source class="lazyload" type="image/jpeg" srcset="images/slide1.jpg 1x" alt="slide1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide1.jpg" alt="slide1.jpg"/>
+                                      </picture>
+                                    </div>
+                                    <div class="catalog-card__img" data-card-img="3">
+                                      <picture class="picture">
+                                        <source class="lazyload" type="image/webp" srcset="webp/pr1.webp 1x" alt="pr1.jpg" media="(min-width: 769px)"/>
+                                        <source class="lazyload" type="image/jpeg" srcset="images/pr1.jpg 1x" alt="pr1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/pr1.jpg" alt="pr1.jpg"/>
+                                      </picture>
+                                    </div>
+                                    <div class="catalog-card__img" data-card-img="4">
+                                      <picture class="picture">
+                                        <source class="lazyload" type="image/webp" srcset="webp/slide3.webp 1x" alt="slide3.jpg" media="(min-width: 769px)"/>
+                                        <source class="lazyload" type="image/jpeg" srcset="images/slide3.jpg 1x" alt="slide3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide3.jpg" alt="slide3.jpg"/>
+                                      </picture>
                                     </div>
                                   </div>
-                                  <div class="catalog-card__img active" data-card-img="1">
-                                    <picture class="picture">
-                                      <source class="lazyload" type="image/webp" srcset="webp/slide3.webp 1x" alt="slide3.jpg" media="(min-width: 769px)"/>
-                                      <source class="lazyload" type="image/jpeg" srcset="images/slide3.jpg 1x" alt="slide3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide3.jpg" alt="slide3.jpg"/>
-                                    </picture>
+                                  <div class="catalog-card-color" data-card-color="blue">
+                                    <div class="catalog-card__windows catalog-card__windows_2">
+                                      <div class="catalog-card__window" data-card-window="1">
+                                        <div class="catalog-card__window-item"></div>
+                                      </div>
+                                      <div class="catalog-card__window" data-card-window="2">
+                                        <div class="catalog-card__window-item"></div>
+                                      </div>
+                                    </div>
+                                    <div class="catalog-card__img active" data-card-img="1">
+                                      <picture class="picture">
+                                        <source class="lazyload" type="image/webp" srcset="webp/slide1.webp 1x" alt="slide1.jpg" media="(min-width: 769px)"/>
+                                        <source class="lazyload" type="image/jpeg" srcset="images/slide1.jpg 1x" alt="slide1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide1.jpg" alt="slide1.jpg"/>
+                                      </picture>
+                                    </div>
+                                    <div class="catalog-card__img" data-card-img="2">
+                                      <picture class="picture">
+                                        <source class="lazyload" type="image/webp" srcset="webp/pr1.webp 1x" alt="pr1.jpg" media="(min-width: 769px)"/>
+                                        <source class="lazyload" type="image/jpeg" srcset="images/pr1.jpg 1x" alt="pr1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/pr1.jpg" alt="pr1.jpg"/>
+                                      </picture>
+                                    </div>
                                   </div>
-                                  <div class="catalog-card__img" data-card-img="2">
-                                    <picture class="picture">
-                                      <source class="lazyload" type="image/webp" srcset="webp/slide1.webp 1x" alt="slide1.jpg" media="(min-width: 769px)"/>
-                                      <source class="lazyload" type="image/jpeg" srcset="images/slide1.jpg 1x" alt="slide1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide1.jpg" alt="slide1.jpg"/>
-                                    </picture>
-                                  </div>
-                                  <div class="catalog-card__img" data-card-img="3">
-                                    <picture class="picture">
-                                      <source class="lazyload" type="image/webp" srcset="webp/pr1.webp 1x" alt="pr1.jpg" media="(min-width: 769px)"/>
-                                      <source class="lazyload" type="image/jpeg" srcset="images/pr1.jpg 1x" alt="pr1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/pr1.jpg" alt="pr1.jpg"/>
-                                    </picture>
-                                  </div>
-                                  <div class="catalog-card__img" data-card-img="4">
-                                    <picture class="picture">
-                                      <source class="lazyload" type="image/webp" srcset="webp/slide3.webp 1x" alt="slide3.jpg" media="(min-width: 769px)"/>
-                                      <source class="lazyload" type="image/jpeg" srcset="images/slide3.jpg 1x" alt="slide3.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide3.jpg" alt="slide3.jpg"/>
-                                    </picture>
+                                  <div class="catalog-card-color" data-card-color="green">
+                                    <div class="catalog-card__windows catalog-card__windows_2">
+                                      <div class="catalog-card__window" data-card-window="1">
+                                        <div class="catalog-card__window-item"></div>
+                                      </div>
+                                      <div class="catalog-card__window" data-card-window="2">
+                                        <div class="catalog-card__window-item"></div>
+                                      </div>
+                                    </div>
+                                    <div class="catalog-card__img active" data-card-img="1">
+                                      <picture class="picture">
+                                        <source class="lazyload" type="image/webp" srcset="webp/slide1.webp 1x" alt="slide1.jpg" media="(min-width: 769px)"/>
+                                        <source class="lazyload" type="image/jpeg" srcset="images/slide1.jpg 1x" alt="slide1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/slide1.jpg" alt="slide1.jpg"/>
+                                      </picture>
+                                    </div>
+                                    <div class="catalog-card__img" data-card-img="2">
+                                      <picture class="picture">
+                                        <source class="lazyload" type="image/webp" srcset="webp/pr1.webp 1x" alt="pr1.jpg" media="(min-width: 769px)"/>
+                                        <source class="lazyload" type="image/jpeg" srcset="images/pr1.jpg 1x" alt="pr1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/pr1.jpg" alt="pr1.jpg"/>
+                                      </picture>
+                                    </div>
                                   </div>
                                   <div class="catalog-card__favourites">
                                     <svg class="catalog-card__favourites-empty active" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -412,10 +530,10 @@
                                     <p class="catalog-card__newPrice">1000 ₽</p>
                                     <p class="catalog-card__oldPrice">2000 ₽</p>
                                   </div>
-                                  <div class="catalog-card__colors"><a class="catalog-card__colors-item active">
-                                      <div class="catalog-card__colors-circle" style=" background-color:#A972A9"></div></a><a class="catalog-card__colors-item">
-                                      <div class="catalog-card__colors-circle" style=" background-color:#CD0200"></div></a><a class="catalog-card__colors-item">
-                                      <div class="catalog-card__colors-circle" style=" background-color:#E8C9AA"></div></a><a class="catalog-card__colors-more">+еще цвета</a></div>
+                                  <div class="catalog-card__colors"><a class="catalog-card__colors-item --active" data-card-color="red">
+                                      <div class="catalog-card__colors-circle" style=" background-color:#A972A9"></div></a><a class="catalog-card__colors-item" data-card-color="blue">
+                                      <div class="catalog-card__colors-circle" style=" background-color:#E8C9AA"></div></a><a class="catalog-card__colors-item" data-card-color="green">
+                                      <div class="catalog-card__colors-circle" style=" background-color:#CD0200"></div></a><a class="catalog-card__colors-more">+еще цвета</a></div>
                                 </div>
                               </div>
                             </div>
@@ -769,11 +887,11 @@
                 </div>
               </div>
               <div class="footer__right max-m"><a class="footer__phone" href="tel:89123261417">+7 912 326-14-17</a><a class="footer__mail" href="mailto:ronnny@ronnny.com">ronnny@ronnny.com</a>
-                <div class="footer__socials"> <a class="svg-hover" href="#"> 
+                <div class="footer__socials"> <a class="svg-hover" href="https://vk.com/ronnny_studio" target="blank"> 
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                       <rect width="48" height="48" rx="24" fill="#62215B"></rect>
                       <path d="M25.0718 32C16.8719 32 12.1949 26.3694 12 17H16.1074C16.2423 23.8769 19.2704 26.7898 21.6689 27.3904V17H25.5366V22.9309C27.9051 22.6757 30.3933 19.973 31.2328 17H35.1004C34.4558 20.6637 31.7575 23.3664 29.8387 24.4775C31.7575 25.3784 34.8307 27.7357 36 32H31.7425C30.8281 29.1471 28.5497 26.9399 25.5366 26.6396V32H25.0718Z" fill="#FFF4EA"></path>
-                    </svg></a><a class="svg-hover" href="#"> 
+                    </svg></a><a class="svg-hover" href="whatsapp://send/?phone=79123261417" target="blank"> 
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <rect width="48" height="48" rx="24" fill="#62215B"></rect>
                       <g clip-path="url(#clip0_51_2267)">
@@ -784,7 +902,7 @@
                           <rect width="24" height="24" fill="white" transform="translate(12 12)"></rect>
                         </clippath>
                       </defs>
-                    </svg></a><a class="svg-hover" href="#"> 
+                    </svg></a><a class="svg-hover" href="https://t.me/ronnny_studio" target="blank"> 
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                       <rect width="48" height="48" rx="24" fill="#62215B"></rect>
                       <path d="M15.1648 22.5325L26.4825 18.0803C27.5997 17.6165 31.3884 16.1324 31.3884 16.1324C31.3884 16.1324 33.1371 15.4831 32.9914 17.06C32.9428 17.7093 32.5542 19.9818 32.1656 22.4398L30.9513 29.7211C30.9513 29.7211 30.8541 30.7878 30.0284 30.9733C29.2026 31.1588 27.8426 30.324 27.5997 30.1385C27.4054 29.9994 23.9567 27.9124 22.6938 26.892C22.3537 26.6138 21.9652 26.0572 22.7423 25.408C24.491 23.8775 26.5797 21.976 27.8426 20.7702C28.4255 20.2137 29.0083 18.9151 26.5797 20.4919L19.7308 24.8978C19.7308 24.8978 18.9536 25.3616 17.4964 24.9442C16.0392 24.5268 14.3391 23.9703 14.3391 23.9703C14.3391 23.9703 13.1733 23.2746 15.1648 22.5325Z" fill="#FFF4EA"></path>
@@ -809,11 +927,11 @@
               </div>
             </div>
             <div class="footer__right min-m"><a class="footer__phone" href="tel:89123261417">+7 912 326-14-17</a><a class="footer__mail" href="mailto:ronnny@ronnny.com">ronnny@ronnny.com</a>
-              <div class="footer__socials"> <a class="svg-hover" href="https://vk.com/ronnny_studio"> 
+              <div class="footer__socials"> <a class="svg-hover" href="https://vk.com/ronnny_studio" target="blank"> 
                   <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                     <rect width="48" height="48" rx="24" fill="#62215B"></rect>
                     <path d="M25.0718 32C16.8719 32 12.1949 26.3694 12 17H16.1074C16.2423 23.8769 19.2704 26.7898 21.6689 27.3904V17H25.5366V22.9309C27.9051 22.6757 30.3933 19.973 31.2328 17H35.1004C34.4558 20.6637 31.7575 23.3664 29.8387 24.4775C31.7575 25.3784 34.8307 27.7357 36 32H31.7425C30.8281 29.1471 28.5497 26.9399 25.5366 26.6396V32H25.0718Z" fill="#FFF4EA"></path>
-                  </svg></a><a class="svg-hover" href="whatsapp://send/?phone=79123261417"> 
+                  </svg></a><a class="svg-hover" href="whatsapp://send/?phone=79123261417" target="blank"> 
                   <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="48" height="48" rx="24" fill="#62215B"></rect>
                     <g clip-path="url(#clip0_51_2267)">
@@ -824,7 +942,7 @@
                         <rect width="24" height="24" fill="white" transform="translate(12 12)"></rect>
                       </clippath>
                     </defs>
-                  </svg></a><a class="svg-hover" href="https://t.me/ronnny_studio"> 
+                  </svg></a><a class="svg-hover" href="https://t.me/ronnny_studio" target="blank"> 
                   <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                     <rect width="48" height="48" rx="24" fill="#62215B"></rect>
                     <path d="M15.1648 22.5325L26.4825 18.0803C27.5997 17.6165 31.3884 16.1324 31.3884 16.1324C31.3884 16.1324 33.1371 15.4831 32.9914 17.06C32.9428 17.7093 32.5542 19.9818 32.1656 22.4398L30.9513 29.7211C30.9513 29.7211 30.8541 30.7878 30.0284 30.9733C29.2026 31.1588 27.8426 30.324 27.5997 30.1385C27.4054 29.9994 23.9567 27.9124 22.6938 26.892C22.3537 26.6138 21.9652 26.0572 22.7423 25.408C24.491 23.8775 26.5797 21.976 27.8426 20.7702C28.4255 20.2137 29.0083 18.9151 26.5797 20.4919L19.7308 24.8978C19.7308 24.8978 18.9536 25.3616 17.4964 24.9442C16.0392 24.5268 14.3391 23.9703 14.3391 23.9703C14.3391 23.9703 13.1733 23.2746 15.1648 22.5325Z" fill="#FFF4EA"></path>
@@ -845,6 +963,7 @@
                   <div class="footer__form-btn">
                     <button class="btn" data-btn="data-btn" type="submit">Подписаться</button>
                   </div>
+                  <p class="footer__form-success">Спасибо за подписку!</p>
                 </div>
               </form>
             </div>
