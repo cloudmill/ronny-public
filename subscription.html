@@ -7,10 +7,10 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
-    <script type="module" crossorigin src="assets/index-e4807884.js"></script>
+    <script type="module" crossorigin src="assets/index-320f9a91.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
-  <body style="opacity:0">
+  <body class="isMessage" style="opacity:0">
     <div class="wrapper">
       <div class="all-modals" style="opacity:0">
         <div class="modal" data-modal="login">
@@ -152,6 +152,22 @@
       <header class="header">
         <div class="header__inner">
           <div class="header-block">
+            <div class="message">
+              <div class="message__inner">
+                <div class="message__block">
+                  <p class="--active">-1000 ₽ на первый заказ от 7000 ₽ по промокоду «скидка»</p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, excepturi!</p>
+                  <p>Lorem ipsum dolor sit.</p>
+                </div>
+                <div class="message__close"> 
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Add">
+                      <path id="Vector" d="M4.22876 4.22876L11.7712 11.7712M4.22876 11.7712L8 7.99999L11.7712 4.22876" stroke="#62215B" stroke-width="1.5" stroke-linecap="round"></path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
             <div class="header-block__inner">
               <div class="search">
                 <div class="overlay"></div>
@@ -534,15 +550,8 @@
       </header>
       <section class="subscription">
         <div class="container">
-          <div class="lk-response">
-            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g id="Tick">
-                <path id="Vector" d="M13 1.25L8.95699 6.10161C7.35489 8.02413 6.55384 8.98539 5.5 8.98539C4.44616 8.98539 3.64511 8.02413 2.043 6.10161L1 4.85" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
-              </g>
-            </svg>
-            <p>данные успешно обновлены</p>
-          </div>
           <div class="subscription__inner"> 
+            <div class="toasters"></div>
             <div class="breadcrumbs">
               <div class="breadcrumb"><a href="#">Главная</a><span>•</span></div>
               <div class="breadcrumb active"><a href="#">Корзина</a><span>•</span></div>
@@ -588,7 +597,7 @@
               </div>
               <div class="subscription__block"> 
                 <h1 class="title subscription__title">Управление рассылками</h1>
-                <p class="subscription__description">Здесь Вы можете настроить темы рассылок или отказаться от рассылки совсем</p>
+                <h3 class="subscription__description">Здесь Вы можете настроить темы рассылок или отказаться от рассылки совсем</h3>
                 <form class="subscription__form">
                   <div class="checkbox">
                     <label class="container">
