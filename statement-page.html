@@ -7,7 +7,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
-    <script type="module" crossorigin src="assets/index-61fec080.js"></script>
+    <script type="module" crossorigin src="assets/index-6314e609.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body class="isMessage" style="opacity:0">
@@ -16,21 +16,16 @@
         <div class="modal" data-modal="statement">
           <div class="overlay"> </div>
           <div class="modal__inner">
-            <div class="modal__close">
-              <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="Add">
-                  <path id="Vector" d="M9.57191 9.57191L28.4281 28.4281M9.57191 28.4281L19 19L28.4281 9.5719" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
-                </g>
-              </svg>
-            </div>
-            <div class="footer-modal">
-              <div class="footer-modal__inner"> 
+            <div class="statement-modal">
+              <div class="statement-modal__inner"> 
                 <svg xmlns="http://www.w3.org/2000/svg" width="61" height="61" viewBox="0 0 61 61" fill="none">
                   <path d="M54.5752 3.50509C53.5888 2.76534 52.1091 2.76534 51.1227 3.99826L43.971 12.8753C40.0253 10.1629 35.3397 8.68337 30.1609 8.68337C16.5974 8.68337 5.5 19.7797 5.5 33.3418C5.5 46.9039 16.5974 58.0002 30.1609 58.0002C43.7244 58.0002 54.8218 46.9039 54.8218 33.3418C54.8218 28.4101 53.3422 23.9716 50.8761 20.0262L49.1498 21.9989L47.4235 23.9716L33.1202 41.9723C32.627 42.4654 31.8872 42.9586 31.1473 42.9586C30.4075 42.9586 29.9143 42.712 29.4211 42.2188L18.8169 30.876C18.0771 30.1362 18.0771 28.9033 18.3237 28.1635C18.3237 27.9169 18.5703 27.6704 18.8169 27.4238C19.8033 26.4374 21.283 26.4374 22.2694 27.4238L30.9007 36.794L44.4642 19.7797L45.9439 17.807L47.4235 15.8343L54.5752 6.95728C55.8083 5.97094 55.8083 4.49143 54.5752 3.50509Z" fill="#C19F86"></path>
                 </svg>
-                <p class="max-w-480">Отправлено!</p>
-                <p class="max-w-480"> Спасибо. Мы свяжемся с вами в ближайшее время</p>
-                <div class="footer-modal__btn" data-statement-modal-close="data-statement-modal-close">
+                <div class="statement-modal__block">
+                  <p class="statement-modal__title">Отправлено!</p>
+                  <p class="statement-modal__text"> Спасибо. Мы свяжемся с вами в ближайшее время</p>
+                </div>
+                <div class="statement-modal__btn" data-statement-modal-close="data-statement-modal-close">
                   <button class="btn" data-btn="data-btn">Закрыть</button>
                 </div>
               </div>
@@ -480,9 +475,7 @@
                       </div>
                     </li>
                     <li class="header-navigation__item desk">
-                      <div class="header-navigation__link">
-                        <p>Выбор цвета    </p>
-                      </div>
+                      <div class="header-navigation__link"><a href="#"> Выбор цвета    </a></div>
                     </li>
                     <li class="header-controls__item max-t"><a class="header-controls__link" data-search-button>
                         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -553,7 +546,7 @@
           </div>
         </div>
       </header>
-      <section class="statement">
+      <section class="statement-page">
         <div class="container"> 
           <div class="breadcrumbs">
             <div class="breadcrumb"><a href="#">Главная</a><span>•</span></div>
@@ -568,23 +561,35 @@
                 <div class="statement__block statement__block_first">
                   <div class="statement__form-row">
                     <p>Мной</p>
-                    <input class="fio" type="text" placeholder="ФИО" required="required"/>
-                    <input class="date" type="text" placeholder="ДАТА" required="required"/>
+                    <div class="statement__input">
+                      <input class="fio" type="text" placeholder="ФИО" required="required"/>
+                    </div>
+                    <div class="statement__input">
+                      <input class="date" type="text" placeholder="ДАТА" required="required"/>
+                    </div>
                     <p>даты рождения,</p>
                   </div>
                   <div class="statement__form-row">
                     <p>Паспорт </p>
-                    <input type="text" placeholder="серия и номер" required="required"/>
+                    <div class="statement__input">
+                      <input class="ser" type="text" placeholder="серия и номер" required="required"/>
+                    </div>
                     <p>Выдан</p>
-                    <input type="text" placeholder="где был выдан паспорт" required="required"/>
+                    <div class="statement__input">
+                      <input class="pas" type="text" placeholder="где был выдан паспорт" required="required"/>
+                    </div>
                   </div>
                   <div class="statement__form-row">
                     <p>в интернет-магазине ronnny.com был оплачен заказ №</p>
-                    <input type="text" placeholder="номер заказа" required="required"/>
+                    <div class="statement__input">
+                      <input type="text" placeholder="номер заказа" required="required"/>
+                    </div>
                   </div>
                   <div class="statement__form-row">
                     <p>На сумму </p>
-                    <input class="max-w-242" type="text" placeholder="точная сумма заказа" required="required"/>
+                    <div class="statement__input">
+                      <input class="sum" type="text" placeholder="точная сумма заказа" required="required"/>
+                    </div>
                     <p>руб.</p>
                   </div>
                 </div>
