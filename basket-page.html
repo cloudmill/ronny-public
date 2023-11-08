@@ -7,7 +7,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
-    <script type="module" crossorigin src="assets/index-8f697bc7.js"></script>
+    <script type="module" crossorigin src="assets/index-9bd60e81.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body class="isMessage" style="opacity:0">
@@ -155,9 +155,9 @@
             <div class="message">
               <div class="message__inner">
                 <div class="message__block">
-                  <p class="--active">-1000 ₽ на первый заказ от 7000 ₽ по промокоду «скидка»</p>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, excepturi!</p>
-                  <p>Lorem ipsum dolor sit.</p>
+                  <p class="--active">-1000 ₽ на заказ по промокоду «скидка»</p>
+                  <p>-1000 ₽ на заказ по промокоду "Клаудмил"</p>
+                  <p> Бесценно по промокоду "Спартак"</p>
                 </div>
                 <div class="message__close"> 
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -679,7 +679,7 @@
                         <p>оформление заказа</p></a><a class="basket__tub"> <span>3</span>
                         <p>завершение</p></a></div>
                     <div class="basket__container">
-                      <div class="basket__things">
+                      <div class="basket__things" data-thing-container="data-thing-container">
                         <div class="thing">
                           <div class="thing__inner"> 
                             <div class="thing__img">
@@ -765,7 +765,105 @@
                                   </div>
                                 </div>
                               </div>
+                              <div class="thing__block-b">
+                                <p class="thing__price">3400 ₽</p>
+                                <button class="thing__delete" data-basket-delete="data-basket-delete">
+                                  <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Delete 2">
+                                      <path id="Vector" d="M13.4317 10.6489L14.4221 10.7868L13.4317 10.6489ZM13.213 12.2198L14.2035 12.3576V12.3576L13.213 12.2198ZM2.78826 12.2198L3.77872 12.0819L2.78826 12.2198ZM2.56965 10.6489L1.5792 10.7868L2.56965 10.6489ZM5.65369 18.1134L5.2649 19.0347H5.2649L5.65369 18.1134ZM3.39655 15.4663L4.3352 15.1214L3.39655 15.4663ZM12.6047 15.4663L13.5434 15.8112L12.6047 15.4663ZM10.3476 18.1134L9.95883 17.192H9.95882L10.3476 18.1134ZM3.16283 7.40476C3.1106 6.85495 2.62254 6.45159 2.07273 6.50383C1.52292 6.55607 1.11956 7.04413 1.1718 7.59394L3.16283 7.40476ZM14.8295 7.59394C14.8817 7.04413 14.4784 6.55607 13.9286 6.50383C13.3788 6.45159 12.8907 6.85495 12.8385 7.40476L14.8295 7.59394ZM14.6673 6.83268C15.2196 6.83268 15.6673 6.38497 15.6673 5.83268C15.6673 5.2804 15.2196 4.83268 14.6673 4.83268V6.83268ZM1.33398 4.83268C0.7817 4.83268 0.333984 5.2804 0.333984 5.83268C0.333984 6.38497 0.7817 6.83268 1.33398 6.83268V4.83268ZM5.33398 14.9993C5.33398 15.5516 5.7817 15.9993 6.33398 15.9993C6.88627 15.9993 7.33398 15.5516 7.33398 14.9993H5.33398ZM7.33398 8.33268C7.33398 7.7804 6.88627 7.33268 6.33398 7.33268C5.7817 7.33268 5.33398 7.7804 5.33398 8.33268H7.33398ZM8.66732 14.9993C8.66732 15.5516 9.11503 15.9993 9.66732 15.9993C10.2196 15.9993 10.6673 15.5516 10.6673 14.9993H8.66732ZM10.6673 8.33268C10.6673 7.7804 10.2196 7.33268 9.66732 7.33268C9.11503 7.33268 8.66732 7.7804 8.66732 8.33268H10.6673ZM11.334 5.83268V6.83268H12.334V5.83268H11.334ZM4.66732 5.83268H3.66732V6.83268H4.66732V5.83268ZM12.4412 10.5111L12.2226 12.0819L14.2035 12.3576L14.4221 10.7868L12.4412 10.5111ZM3.77872 12.0819L3.56011 10.5111L1.5792 10.7868L1.79781 12.3576L3.77872 12.0819ZM8.00065 17.3327C6.69266 17.3327 6.33092 17.3138 6.04248 17.192L5.2649 19.0347C6.01586 19.3516 6.87232 19.3327 8.00065 19.3327V17.3327ZM1.79781 12.3576C2.02819 14.013 2.15966 14.9994 2.4579 15.8112L4.3352 15.1214C4.12966 14.562 4.02353 13.8411 3.77872 12.0819L1.79781 12.3576ZM6.04248 17.192C5.39566 16.9191 4.74043 16.2244 4.3352 15.1214L2.4579 15.8112C2.99476 17.2724 3.96801 18.4874 5.2649 19.0347L6.04248 17.192ZM12.2226 12.0819C11.9778 13.8411 11.8716 14.562 11.6661 15.1214L13.5434 15.8112C13.8416 14.9994 13.9731 14.013 14.2035 12.3576L12.2226 12.0819ZM8.00065 19.3327C9.12898 19.3327 9.98544 19.3516 10.7364 19.0347L9.95882 17.192C9.67038 17.3138 9.30864 17.3327 8.00065 17.3327V19.3327ZM11.6661 15.1214C11.2609 16.2244 10.6056 16.9191 9.95883 17.192L10.7364 19.0347C12.0333 18.4874 13.0065 17.2724 13.5434 15.8112L11.6661 15.1214ZM3.56011 10.5111C3.37456 9.17783 3.23773 8.19305 3.16283 7.40476L1.1718 7.59394C1.25177 8.43564 1.39602 9.47052 1.5792 10.7868L3.56011 10.5111ZM14.4221 10.7868C14.6053 9.47052 14.7495 8.43564 14.8295 7.59394L12.8385 7.40476C12.7636 8.19305 12.6267 9.17782 12.4412 10.5111L14.4221 10.7868ZM14.6673 4.83268H1.33398V6.83268H14.6673V4.83268ZM7.33398 14.9993V8.33268H5.33398V14.9993H7.33398ZM10.6673 14.9993V8.33268H8.66732V14.9993H10.6673ZM10.334 4.99935V5.83268H12.334V4.99935H10.334ZM11.334 4.83268H4.66732V6.83268H11.334V4.83268ZM5.66732 5.83268V4.99935H3.66732V5.83268H5.66732ZM8.00065 2.66602C9.28932 2.66602 10.334 3.71068 10.334 4.99935H12.334C12.334 2.60612 10.3939 0.666016 8.00065 0.666016V2.66602ZM8.00065 0.666016C5.60742 0.666016 3.66732 2.60612 3.66732 4.99935H5.66732C5.66732 3.71068 6.71199 2.66602 8.00065 2.66602V0.666016Z" fill="#62215B"></path>
+                                    </g>
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="thing">
+                          <div class="thing__inner"> 
+                            <div class="thing__img">
+                              <picture class="picture">
+                                <source class="lazyload" type="image/webp" srcset="webp/bayers-card.webp 1x" alt="bayers-card.jpg" media="(min-width: 769px)"/>
+                                <source class="lazyload" type="image/jpeg" srcset="images/bayers-card.jpg 1x" alt="bayers-card.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/bayers-card.jpg" alt="bayers-card.jpg"/>
+                              </picture>
+                            </div>
+                            <div class="thing__descriptions">
+                              <div class="thing__description">
+                                <h3>Джемпер ажурный </h3>
+                                <p class="thing__subtext">Артикул: 12345678</p>
+                                <p class="thing__subtext">Цвет<span style="background-color: #A6C4E8"></span></p>
+                              </div>
                               <div class="thing__block">
+                                <div class="thing__variants">
+                                  <p class="thing__subtext">Размер</p>
+                                  <div class="select select-wrapper">
+                                    <div class="select__button">
+                                      <input type="text" readonly="readonly" required="required" value="48"/>
+                                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 7.91675L10 12.9167L15 7.91675" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                    </div>
+                                    <div class="select__list">
+                                      <ul>
+                                        <li>
+                                          <p>48</p>
+                                        </li>
+                                        <li>
+                                          <p>50</p>
+                                        </li>
+                                        <li>
+                                          <p>52</p>
+                                        </li>
+                                        <li>
+                                          <p>54</p>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="thing__variants">
+                                  <p class="thing__subtext">Рост</p>
+                                  <div class="select select-wrapper">
+                                    <div class="select__button">
+                                      <input type="text" readonly="readonly" required="required" value="164"/>
+                                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 7.91675L10 12.9167L15 7.91675" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                    </div>
+                                    <div class="select__list">
+                                      <ul>
+                                        <li>
+                                          <p>164</p>
+                                        </li>
+                                        <li>
+                                          <p>170</p>
+                                        </li>
+                                        <li>
+                                          <p>180</p>
+                                        </li>
+                                        <li>
+                                          <p>190</p>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="thing__variants"> 
+                                  <p class="thing__subtext">Количество</p>
+                                  <div class="stepper">
+                                    <button class="decrement disable">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="2" viewBox="0 0 16 2" fill="none">
+                                        <path d="M1.33203 1H14.6654" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                                      </svg>
+                                    </button><span class="count">1</span>
+                                    <button class="increment">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M1.33203 8H14.6654M7.9987 14.6667V8L7.9987 1.33334" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                                      </svg>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="thing__block-b">
                                 <p class="thing__price">3400 ₽</p>
                                 <button class="thing__delete" data-basket-delete="data-basket-delete">
                                   <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -863,7 +961,105 @@
                                   </div>
                                 </div>
                               </div>
+                              <div class="thing__block-b">
+                                <p class="thing__price">3400 ₽</p>
+                                <button class="thing__delete" data-basket-delete="data-basket-delete">
+                                  <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Delete 2">
+                                      <path id="Vector" d="M13.4317 10.6489L14.4221 10.7868L13.4317 10.6489ZM13.213 12.2198L14.2035 12.3576V12.3576L13.213 12.2198ZM2.78826 12.2198L3.77872 12.0819L2.78826 12.2198ZM2.56965 10.6489L1.5792 10.7868L2.56965 10.6489ZM5.65369 18.1134L5.2649 19.0347H5.2649L5.65369 18.1134ZM3.39655 15.4663L4.3352 15.1214L3.39655 15.4663ZM12.6047 15.4663L13.5434 15.8112L12.6047 15.4663ZM10.3476 18.1134L9.95883 17.192H9.95882L10.3476 18.1134ZM3.16283 7.40476C3.1106 6.85495 2.62254 6.45159 2.07273 6.50383C1.52292 6.55607 1.11956 7.04413 1.1718 7.59394L3.16283 7.40476ZM14.8295 7.59394C14.8817 7.04413 14.4784 6.55607 13.9286 6.50383C13.3788 6.45159 12.8907 6.85495 12.8385 7.40476L14.8295 7.59394ZM14.6673 6.83268C15.2196 6.83268 15.6673 6.38497 15.6673 5.83268C15.6673 5.2804 15.2196 4.83268 14.6673 4.83268V6.83268ZM1.33398 4.83268C0.7817 4.83268 0.333984 5.2804 0.333984 5.83268C0.333984 6.38497 0.7817 6.83268 1.33398 6.83268V4.83268ZM5.33398 14.9993C5.33398 15.5516 5.7817 15.9993 6.33398 15.9993C6.88627 15.9993 7.33398 15.5516 7.33398 14.9993H5.33398ZM7.33398 8.33268C7.33398 7.7804 6.88627 7.33268 6.33398 7.33268C5.7817 7.33268 5.33398 7.7804 5.33398 8.33268H7.33398ZM8.66732 14.9993C8.66732 15.5516 9.11503 15.9993 9.66732 15.9993C10.2196 15.9993 10.6673 15.5516 10.6673 14.9993H8.66732ZM10.6673 8.33268C10.6673 7.7804 10.2196 7.33268 9.66732 7.33268C9.11503 7.33268 8.66732 7.7804 8.66732 8.33268H10.6673ZM11.334 5.83268V6.83268H12.334V5.83268H11.334ZM4.66732 5.83268H3.66732V6.83268H4.66732V5.83268ZM12.4412 10.5111L12.2226 12.0819L14.2035 12.3576L14.4221 10.7868L12.4412 10.5111ZM3.77872 12.0819L3.56011 10.5111L1.5792 10.7868L1.79781 12.3576L3.77872 12.0819ZM8.00065 17.3327C6.69266 17.3327 6.33092 17.3138 6.04248 17.192L5.2649 19.0347C6.01586 19.3516 6.87232 19.3327 8.00065 19.3327V17.3327ZM1.79781 12.3576C2.02819 14.013 2.15966 14.9994 2.4579 15.8112L4.3352 15.1214C4.12966 14.562 4.02353 13.8411 3.77872 12.0819L1.79781 12.3576ZM6.04248 17.192C5.39566 16.9191 4.74043 16.2244 4.3352 15.1214L2.4579 15.8112C2.99476 17.2724 3.96801 18.4874 5.2649 19.0347L6.04248 17.192ZM12.2226 12.0819C11.9778 13.8411 11.8716 14.562 11.6661 15.1214L13.5434 15.8112C13.8416 14.9994 13.9731 14.013 14.2035 12.3576L12.2226 12.0819ZM8.00065 19.3327C9.12898 19.3327 9.98544 19.3516 10.7364 19.0347L9.95882 17.192C9.67038 17.3138 9.30864 17.3327 8.00065 17.3327V19.3327ZM11.6661 15.1214C11.2609 16.2244 10.6056 16.9191 9.95883 17.192L10.7364 19.0347C12.0333 18.4874 13.0065 17.2724 13.5434 15.8112L11.6661 15.1214ZM3.56011 10.5111C3.37456 9.17783 3.23773 8.19305 3.16283 7.40476L1.1718 7.59394C1.25177 8.43564 1.39602 9.47052 1.5792 10.7868L3.56011 10.5111ZM14.4221 10.7868C14.6053 9.47052 14.7495 8.43564 14.8295 7.59394L12.8385 7.40476C12.7636 8.19305 12.6267 9.17782 12.4412 10.5111L14.4221 10.7868ZM14.6673 4.83268H1.33398V6.83268H14.6673V4.83268ZM7.33398 14.9993V8.33268H5.33398V14.9993H7.33398ZM10.6673 14.9993V8.33268H8.66732V14.9993H10.6673ZM10.334 4.99935V5.83268H12.334V4.99935H10.334ZM11.334 4.83268H4.66732V6.83268H11.334V4.83268ZM5.66732 5.83268V4.99935H3.66732V5.83268H5.66732ZM8.00065 2.66602C9.28932 2.66602 10.334 3.71068 10.334 4.99935H12.334C12.334 2.60612 10.3939 0.666016 8.00065 0.666016V2.66602ZM8.00065 0.666016C5.60742 0.666016 3.66732 2.60612 3.66732 4.99935H5.66732C5.66732 3.71068 6.71199 2.66602 8.00065 2.66602V0.666016Z" fill="#62215B"></path>
+                                    </g>
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="thing">
+                          <div class="thing__inner"> 
+                            <div class="thing__img">
+                              <picture class="picture">
+                                <source class="lazyload" type="image/webp" srcset="webp/bayers-card.webp 1x" alt="bayers-card.jpg" media="(min-width: 769px)"/>
+                                <source class="lazyload" type="image/jpeg" srcset="images/bayers-card.jpg 1x" alt="bayers-card.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/bayers-card.jpg" alt="bayers-card.jpg"/>
+                              </picture>
+                            </div>
+                            <div class="thing__descriptions">
+                              <div class="thing__description">
+                                <h3>Джемпер ажурный </h3>
+                                <p class="thing__subtext">Артикул: 12345678</p>
+                                <p class="thing__subtext">Цвет<span style="background-color: #A6C4E8"></span></p>
+                              </div>
                               <div class="thing__block">
+                                <div class="thing__variants">
+                                  <p class="thing__subtext">Размер</p>
+                                  <div class="select select-wrapper">
+                                    <div class="select__button">
+                                      <input type="text" readonly="readonly" required="required" value="48"/>
+                                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 7.91675L10 12.9167L15 7.91675" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                    </div>
+                                    <div class="select__list">
+                                      <ul>
+                                        <li>
+                                          <p>48</p>
+                                        </li>
+                                        <li>
+                                          <p>50</p>
+                                        </li>
+                                        <li>
+                                          <p>52</p>
+                                        </li>
+                                        <li>
+                                          <p>54</p>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="thing__variants">
+                                  <p class="thing__subtext">Рост</p>
+                                  <div class="select select-wrapper">
+                                    <div class="select__button">
+                                      <input type="text" readonly="readonly" required="required" value="164"/>
+                                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 7.91675L10 12.9167L15 7.91675" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                    </div>
+                                    <div class="select__list">
+                                      <ul>
+                                        <li>
+                                          <p>164</p>
+                                        </li>
+                                        <li>
+                                          <p>170</p>
+                                        </li>
+                                        <li>
+                                          <p>180</p>
+                                        </li>
+                                        <li>
+                                          <p>190</p>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="thing__variants"> 
+                                  <p class="thing__subtext">Количество</p>
+                                  <div class="stepper">
+                                    <button class="decrement disable">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="2" viewBox="0 0 16 2" fill="none">
+                                        <path d="M1.33203 1H14.6654" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                                      </svg>
+                                    </button><span class="count">1</span>
+                                    <button class="increment">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M1.33203 8H14.6654M7.9987 14.6667V8L7.9987 1.33334" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                                      </svg>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="thing__block-b">
                                 <p class="thing__price">3400 ₽</p>
                                 <button class="thing__delete" data-basket-delete="data-basket-delete">
                                   <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -961,7 +1157,105 @@
                                   </div>
                                 </div>
                               </div>
+                              <div class="thing__block-b">
+                                <p class="thing__price">3400 ₽</p>
+                                <button class="thing__delete" data-basket-delete="data-basket-delete">
+                                  <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Delete 2">
+                                      <path id="Vector" d="M13.4317 10.6489L14.4221 10.7868L13.4317 10.6489ZM13.213 12.2198L14.2035 12.3576V12.3576L13.213 12.2198ZM2.78826 12.2198L3.77872 12.0819L2.78826 12.2198ZM2.56965 10.6489L1.5792 10.7868L2.56965 10.6489ZM5.65369 18.1134L5.2649 19.0347H5.2649L5.65369 18.1134ZM3.39655 15.4663L4.3352 15.1214L3.39655 15.4663ZM12.6047 15.4663L13.5434 15.8112L12.6047 15.4663ZM10.3476 18.1134L9.95883 17.192H9.95882L10.3476 18.1134ZM3.16283 7.40476C3.1106 6.85495 2.62254 6.45159 2.07273 6.50383C1.52292 6.55607 1.11956 7.04413 1.1718 7.59394L3.16283 7.40476ZM14.8295 7.59394C14.8817 7.04413 14.4784 6.55607 13.9286 6.50383C13.3788 6.45159 12.8907 6.85495 12.8385 7.40476L14.8295 7.59394ZM14.6673 6.83268C15.2196 6.83268 15.6673 6.38497 15.6673 5.83268C15.6673 5.2804 15.2196 4.83268 14.6673 4.83268V6.83268ZM1.33398 4.83268C0.7817 4.83268 0.333984 5.2804 0.333984 5.83268C0.333984 6.38497 0.7817 6.83268 1.33398 6.83268V4.83268ZM5.33398 14.9993C5.33398 15.5516 5.7817 15.9993 6.33398 15.9993C6.88627 15.9993 7.33398 15.5516 7.33398 14.9993H5.33398ZM7.33398 8.33268C7.33398 7.7804 6.88627 7.33268 6.33398 7.33268C5.7817 7.33268 5.33398 7.7804 5.33398 8.33268H7.33398ZM8.66732 14.9993C8.66732 15.5516 9.11503 15.9993 9.66732 15.9993C10.2196 15.9993 10.6673 15.5516 10.6673 14.9993H8.66732ZM10.6673 8.33268C10.6673 7.7804 10.2196 7.33268 9.66732 7.33268C9.11503 7.33268 8.66732 7.7804 8.66732 8.33268H10.6673ZM11.334 5.83268V6.83268H12.334V5.83268H11.334ZM4.66732 5.83268H3.66732V6.83268H4.66732V5.83268ZM12.4412 10.5111L12.2226 12.0819L14.2035 12.3576L14.4221 10.7868L12.4412 10.5111ZM3.77872 12.0819L3.56011 10.5111L1.5792 10.7868L1.79781 12.3576L3.77872 12.0819ZM8.00065 17.3327C6.69266 17.3327 6.33092 17.3138 6.04248 17.192L5.2649 19.0347C6.01586 19.3516 6.87232 19.3327 8.00065 19.3327V17.3327ZM1.79781 12.3576C2.02819 14.013 2.15966 14.9994 2.4579 15.8112L4.3352 15.1214C4.12966 14.562 4.02353 13.8411 3.77872 12.0819L1.79781 12.3576ZM6.04248 17.192C5.39566 16.9191 4.74043 16.2244 4.3352 15.1214L2.4579 15.8112C2.99476 17.2724 3.96801 18.4874 5.2649 19.0347L6.04248 17.192ZM12.2226 12.0819C11.9778 13.8411 11.8716 14.562 11.6661 15.1214L13.5434 15.8112C13.8416 14.9994 13.9731 14.013 14.2035 12.3576L12.2226 12.0819ZM8.00065 19.3327C9.12898 19.3327 9.98544 19.3516 10.7364 19.0347L9.95882 17.192C9.67038 17.3138 9.30864 17.3327 8.00065 17.3327V19.3327ZM11.6661 15.1214C11.2609 16.2244 10.6056 16.9191 9.95883 17.192L10.7364 19.0347C12.0333 18.4874 13.0065 17.2724 13.5434 15.8112L11.6661 15.1214ZM3.56011 10.5111C3.37456 9.17783 3.23773 8.19305 3.16283 7.40476L1.1718 7.59394C1.25177 8.43564 1.39602 9.47052 1.5792 10.7868L3.56011 10.5111ZM14.4221 10.7868C14.6053 9.47052 14.7495 8.43564 14.8295 7.59394L12.8385 7.40476C12.7636 8.19305 12.6267 9.17782 12.4412 10.5111L14.4221 10.7868ZM14.6673 4.83268H1.33398V6.83268H14.6673V4.83268ZM7.33398 14.9993V8.33268H5.33398V14.9993H7.33398ZM10.6673 14.9993V8.33268H8.66732V14.9993H10.6673ZM10.334 4.99935V5.83268H12.334V4.99935H10.334ZM11.334 4.83268H4.66732V6.83268H11.334V4.83268ZM5.66732 5.83268V4.99935H3.66732V5.83268H5.66732ZM8.00065 2.66602C9.28932 2.66602 10.334 3.71068 10.334 4.99935H12.334C12.334 2.60612 10.3939 0.666016 8.00065 0.666016V2.66602ZM8.00065 0.666016C5.60742 0.666016 3.66732 2.60612 3.66732 4.99935H5.66732C5.66732 3.71068 6.71199 2.66602 8.00065 2.66602V0.666016Z" fill="#62215B"></path>
+                                    </g>
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="thing">
+                          <div class="thing__inner"> 
+                            <div class="thing__img">
+                              <picture class="picture">
+                                <source class="lazyload" type="image/webp" srcset="webp/bayers-card.webp 1x" alt="bayers-card.jpg" media="(min-width: 769px)"/>
+                                <source class="lazyload" type="image/jpeg" srcset="images/bayers-card.jpg 1x" alt="bayers-card.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/bayers-card.jpg" alt="bayers-card.jpg"/>
+                              </picture>
+                            </div>
+                            <div class="thing__descriptions">
+                              <div class="thing__description">
+                                <h3>Джемпер ажурный </h3>
+                                <p class="thing__subtext">Артикул: 12345678</p>
+                                <p class="thing__subtext">Цвет<span style="background-color: #A6C4E8"></span></p>
+                              </div>
                               <div class="thing__block">
+                                <div class="thing__variants">
+                                  <p class="thing__subtext">Размер</p>
+                                  <div class="select select-wrapper">
+                                    <div class="select__button">
+                                      <input type="text" readonly="readonly" required="required" value="48"/>
+                                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 7.91675L10 12.9167L15 7.91675" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                    </div>
+                                    <div class="select__list">
+                                      <ul>
+                                        <li>
+                                          <p>48</p>
+                                        </li>
+                                        <li>
+                                          <p>50</p>
+                                        </li>
+                                        <li>
+                                          <p>52</p>
+                                        </li>
+                                        <li>
+                                          <p>54</p>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="thing__variants">
+                                  <p class="thing__subtext">Рост</p>
+                                  <div class="select select-wrapper">
+                                    <div class="select__button">
+                                      <input type="text" readonly="readonly" required="required" value="164"/>
+                                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 7.91675L10 12.9167L15 7.91675" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                    </div>
+                                    <div class="select__list">
+                                      <ul>
+                                        <li>
+                                          <p>164</p>
+                                        </li>
+                                        <li>
+                                          <p>170</p>
+                                        </li>
+                                        <li>
+                                          <p>180</p>
+                                        </li>
+                                        <li>
+                                          <p>190</p>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="thing__variants"> 
+                                  <p class="thing__subtext">Количество</p>
+                                  <div class="stepper">
+                                    <button class="decrement disable">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="2" viewBox="0 0 16 2" fill="none">
+                                        <path d="M1.33203 1H14.6654" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                                      </svg>
+                                    </button><span class="count">1</span>
+                                    <button class="increment">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M1.33203 8H14.6654M7.9987 14.6667V8L7.9987 1.33334" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                                      </svg>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="thing__block-b">
                                 <p class="thing__price">3400 ₽</p>
                                 <button class="thing__delete" data-basket-delete="data-basket-delete">
                                   <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1013,7 +1307,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="basket-empty">
+                <div class="basket-empty" data-basket-empty="data-basket-empty">
                   <div class="basket-empty__block"> 
                     <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M40.002 15.2067V15C40.002 9.47715 35.5248 5 30.002 5C24.4791 5 20.002 9.47715 20.002 15V15.2067M40.002 15.2067C38.0352 15 35.5289 15 32.0322 15H27.9717C24.475 15 21.9688 15 20.002 15.2067M40.002 15.2067C41.5071 15.3649 42.6963 15.6441 43.7716 16.1371C45.9573 17.1391 47.8077 18.7502 49.1008 20.7773C50.5683 23.0777 50.9929 26.1347 51.8421 32.2486C52.9325 40.0998 53.4777 44.0253 52.2789 47.0742C51.2265 49.7507 49.2832 51.9825 46.7769 53.3932C43.922 55 39.9587 55 32.0322 55H27.9717C20.0453 55 16.082 55 13.2271 53.3932C10.7207 51.9825 8.7775 49.7507 7.72506 47.0742C6.52624 44.0253 7.07145 40.0998 8.16189 32.2486C9.01105 26.1347 9.43563 23.0777 10.9031 20.7773C12.1963 18.7502 14.0466 17.1391 16.2324 16.1371C17.3077 15.6441 18.4968 15.3649 20.002 15.2067" stroke="#C19F86" stroke-width="2" stroke-linecap="round"></path>
