@@ -8,7 +8,7 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <script type="module" crossorigin src="assets/index-8b63eb37.js"></script>
+    <script type="module" crossorigin src="assets/index-723d8b8b.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body class="isMessage" style="opacity:0">
@@ -19,7 +19,7 @@
           <div class="menu-mobile__inner">
             <div class="mobile-general"> 
               <div class="mobile-general__top"> 
-                <div class="mobile-general__close"> 
+                <div class="mobile-general__close" data-mobile-btn="close">
                   <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3.83301 10.0002H17.1663M10.4997 16.6668V10.0002L10.4997 3.3335" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
                   </svg>
@@ -27,7 +27,7 @@
               </div>
               <div class="mobile-general__middle"> 
                 <ul>
-                  <li> 
+                  <li data-mobile-btn="catalog">
                     <p>каталог</p>
                     <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g id="Vector">
@@ -35,7 +35,7 @@
                       </g>
                     </svg>
                   </li>
-                  <li> 
+                  <li data-mobile-btn="buyers"> 
                     <p>Покупателям</p>
                     <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g id="Vector">
@@ -54,8 +54,8 @@
                   </svg>
                   <p>войти в профиль </p></a></div>
             </div>
-            <div class="mobile-bayers">
-              <div class="mobile-bayers__top">
+            <div class="mobile-buyers" data-mobile-screen="buyers">
+              <div class="mobile-buyers__top" data-mobile-back="buyers">
                 <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g id="Vector">
                     <path id="vector-5" d="M1 1.91675L6 6.91675L11 1.91675" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -63,7 +63,7 @@
                 </svg>
                 <p>покупателям</p>
               </div>
-              <div class="mobile-bayers__bottom"> 
+              <div class="mobile-buyers__bottom"> 
                 <ul>
                   <li><a href="#">О нас</a></li>
                   <li><a href="#">Отследить заказ</a></li>
@@ -72,6 +72,113 @@
                   <li><a href="#">Контакты</a></li>
                   <li><a href="#">Размерная таблица</a></li>
                 </ul>
+              </div>
+            </div>
+            <div class="mobile-catalog" data-mobile-screen="catalog"> 
+              <div class="mobile-buyers__top" data-mobile-back="catalog">
+                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="Vector">
+                    <path id="vector-5" d="M1 1.91675L6 6.91675L11 1.91675" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </g>
+                </svg>
+                <p>Каталог</p>
+              </div>
+              <div class="mobile-catalog__box"> 
+                <div class="accordion">
+                  <div class="accordion__button" data-mobile-accordion="button">
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="Vector">
+                        <path id="vector-5" d="M1 1.91675L6 6.91675L11 1.91675" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </g>
+                    </svg>
+                    <p>Женщинам вяжем</p>
+                  </div>
+                  <div class="accordion__list" data-mobile-accordion="list">
+                    <ul>
+                      <li><a href="#">Джемперы</a></li>
+                      <li><a href="#">Водолазки</a></li>
+                      <li><a href="#">Платья</a></li>
+                      <li><a href="#">Кардиганы</a></li>
+                      <li><a href="#">Верхняя одежда</a></li>
+                      <li><a href="#">Юбки</a></li>
+                      <li><a href="#">Брюки</a></li>
+                      <li><a href="#">Майки</a></li>
+                      <li><a href="#">Шапки и шарфы</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="accordion">
+                  <div class="accordion__button" data-mobile-accordion="button">
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="Vector">
+                        <path id="vector-5" d="M1 1.91675L6 6.91675L11 1.91675" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </g>
+                    </svg>
+                    <p>Женщинам шьем</p>
+                  </div>
+                  <div class="accordion__list" data-mobile-accordion="list">
+                    <ul>
+                      <li><a href="#">Платья</a></li>
+                      <li><a href="#">Юбки</a></li>
+                      <li><a href="#">Брюки</a></li>
+                      <li><a href="#">Шорты</a></li>
+                      <li><a href="#">Футболки</a></li>
+                      <li><a href="#">Рубашки, блузки</a></li>
+                      <li><a href="#">Толстовки</a></li>
+                      <li><a href="#">Жакеты и жилеты</a></li>
+                      <li><a href="#">Спортивные костюмы</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="accordion">
+                  <div class="accordion__button" data-mobile-accordion="button">
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="Vector">
+                        <path id="vector-5" d="M1 1.91675L6 6.91675L11 1.91675" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </g>
+                    </svg>
+                    <p>Мужчинам</p>
+                  </div>
+                  <div class="accordion__list" data-mobile-accordion="list">
+                    <ul>
+                      <li><a href="#">Водолазки</a></li>
+                      <li><a href="#">Джемперы</a></li>
+                      <li><a href="#">Жакеты, жилеты</a></li>
+                      <li><a href="#">Брюки</a></li>
+                      <li><a href="#">Футболки</a></li>
+                      <li><a href="#">Спортивные костюмы</a></li>
+                    </ul>
+                  </div>
+                </div><a href="#">Новинки</a><a href="#">Распродажа</a><a href="#">Коллекция Glow</a><a href="#">Коллекция Твид</a><a href="#">Коллекция Kelt</a>
+                <div class="header-menu__banners"><a class="header-banner" href="#"> 
+                    <div class="header-banner__inner">
+                      <div class="header-banner__block">
+                        <div class="header-banner__title">Новинки</div>
+                        <div class="place place_new">
+                          <p>new</p>
+                        </div>
+                      </div>
+                      <div class="header-banner__img"> 
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/menu1.webp 1x" alt="menu1.jpg" media="(min-width: 769px)"/>
+                          <source class="lazyload" type="image/jpeg" srcset="images/menu1.jpg 1x" alt="menu1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/menu1.jpg" alt="menu1.jpg"/>
+                        </picture>
+                      </div>
+                    </div></a><a class="header-banner" href="#"> 
+                    <div class="header-banner__inner">
+                      <div class="header-banner__block">
+                        <div class="header-banner__title">Распродажа</div>
+                        <div class="place place_sale">
+                          <p>sale</p>
+                        </div>
+                      </div>
+                      <div class="header-banner__img"> 
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/menu2.webp 1x" alt="menu2.jpg" media="(min-width: 769px)"/>
+                          <source class="lazyload" type="image/jpeg" srcset="images/menu2.jpg 1x" alt="menu2.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/menu2.jpg" alt="menu2.jpg"/>
+                        </picture>
+                      </div>
+                    </div></a></div>
               </div>
             </div>
           </div>
@@ -232,20 +339,13 @@
               </div>
             </div>
             <div class="header-block__inner">
-              <div class="search">
+              <div class="search active">
                 <div class="overlay"></div>
                 <div class="search__inner"> 
                   <div class="search__top"> 
                     <p class="search__title">вам может понравиться</p>
                     <form class="search__form">
-                      <div class="input-wrapper" data-input-parent="">
-                        <div class="input-wrapper__placeholder">Введите адрес в обычном формате | например, кардиган</div>
-                        <input class="input" data-input="" required="required" autocomplete="off" name="" placeholder="Введите адрес в обычном формате | например, кардиган"/>
-                        <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
-                          <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                          <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                      </div>
+                      <input class="input input_default" data-input="" required="required" autocomplete="off" placeholder="Введите адрес в обычном формате | например, кардиган"/>
                       <button class="btn" data-btn="data-btn">Найти</button>
                     </form>
                     <div class="search__close">
@@ -644,7 +744,7 @@
                 <nav class="header-navigation">
                   <ul class="header-navigation__list">
                     <li class="desk header-navigation__item" data-header-menu-trigger>
-                      <div class="header-navigation__link_bayer header-navigation__link-catalog">
+                      <div class="header-navigation__link_buyer header-navigation__link-catalog">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M5 6.25C4.30964 6.25 3.75 6.80964 3.75 7.5C3.75 8.19036 4.30964 8.75 5 8.75V6.25ZM19 8.75C19.6904 8.75 20.25 8.19036 20.25 7.5C20.25 6.80964 19.6904 6.25 19 6.25V8.75ZM5 11.25C4.30964 11.25 3.75 11.8096 3.75 12.5C3.75 13.1904 4.30964 13.75 5 13.75V11.25ZM17 13.75C17.6904 13.75 18.25 13.1904 18.25 12.5C18.25 11.8096 17.6904 11.25 17 11.25V13.75ZM5 16.25C4.30964 16.25 3.75 16.8096 3.75 17.5C3.75 18.1904 4.30964 18.75 5 18.75V16.25ZM12 18.75C12.6904 18.75 13.25 18.1904 13.25 17.5C13.25 16.8096 12.6904 16.25 12 16.25V18.75ZM5 8.75H19V6.25H5V8.75ZM5 13.75H17V11.25H5V13.75ZM5 18.75H12V16.25H5V18.75Z" fill="#62215B"></path>
                         </svg>
@@ -652,7 +752,7 @@
                       </div>
                     </li>
                     <li class="max-d-flex header-navigation__item" data-burger>
-                      <div class="header-navigation__link_bayer header-navigation__link-catalog">
+                      <div class="header-navigation__link_buyer header-navigation__link-catalog">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M5 6.25C4.30964 6.25 3.75 6.80964 3.75 7.5C3.75 8.19036 4.30964 8.75 5 8.75V6.25ZM19 8.75C19.6904 8.75 20.25 8.19036 20.25 7.5C20.25 6.80964 19.6904 6.25 19 6.25V8.75ZM5 11.25C4.30964 11.25 3.75 11.8096 3.75 12.5C3.75 13.1904 4.30964 13.75 5 13.75V11.25ZM17 13.75C17.6904 13.75 18.25 13.1904 18.25 12.5C18.25 11.8096 17.6904 11.25 17 11.25V13.75ZM5 16.25C4.30964 16.25 3.75 16.8096 3.75 17.5C3.75 18.1904 4.30964 18.75 5 18.75V16.25ZM12 18.75C12.6904 18.75 13.25 18.1904 13.25 17.5C13.25 16.8096 12.6904 16.25 12 16.25V18.75ZM5 8.75H19V6.25H5V8.75ZM5 13.75H17V11.25H5V13.75ZM5 18.75H12V16.25H5V18.75Z" fill="#62215B"></path>
                         </svg>
@@ -668,7 +768,7 @@
                           </g>
                         </svg></a></li>
                     <li class="header-navigation__item desk">
-                      <div class="header-navigation__link header-navigation__link_bayer" data-header-button="bayers">                              
+                      <div class="header-navigation__link header-navigation__link_buyer" data-header-button="buyers">                              
                         <p>Покупателям  </p>
                         <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <g id="Vector">
@@ -676,7 +776,7 @@
                           </g>
                         </svg>
                       </div>
-                      <div class="header-block__bayers"> <a>О нас</a><a>Отследить заказ</a><a>Доставка и возврат</a><a>Оплата</a><a>Контакты</a><a>Размерная таблица</a>
+                      <div class="header-block__buyers"> <a>О нас</a><a>Отследить заказ</a><a>Доставка и возврат</a><a>Оплата</a><a>Контакты</a><a>Размерная таблица</a>
                       </div>
                     </li>
                   </ul>
@@ -768,6 +868,7 @@
                 <div class="footer__form-btn">
                   <button class="btn" data-btn="data-btn" type="submit">Подписаться</button>
                 </div>
+                <p class="footer__form-success">Спасибо за подписку!</p>
               </div>
             </form>
             <div class="footer__left"> 

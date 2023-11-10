@@ -3,12 +3,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>bayers-pay</title>
+    <title>buyers-page</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <script type="module" crossorigin src="assets/index-8b63eb37.js"></script>
+    <script type="module" crossorigin src="assets/index-723d8b8b.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body class="isMessage" style="opacity:0">
@@ -19,7 +19,7 @@
           <div class="menu-mobile__inner">
             <div class="mobile-general"> 
               <div class="mobile-general__top"> 
-                <div class="mobile-general__close"> 
+                <div class="mobile-general__close" data-mobile-btn="close">
                   <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3.83301 10.0002H17.1663M10.4997 16.6668V10.0002L10.4997 3.3335" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
                   </svg>
@@ -27,7 +27,7 @@
               </div>
               <div class="mobile-general__middle"> 
                 <ul>
-                  <li> 
+                  <li data-mobile-btn="catalog">
                     <p>каталог</p>
                     <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g id="Vector">
@@ -35,7 +35,7 @@
                       </g>
                     </svg>
                   </li>
-                  <li> 
+                  <li data-mobile-btn="buyers"> 
                     <p>Покупателям</p>
                     <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g id="Vector">
@@ -54,8 +54,8 @@
                   </svg>
                   <p>войти в профиль </p></a></div>
             </div>
-            <div class="mobile-bayers">
-              <div class="mobile-bayers__top">
+            <div class="mobile-buyers" data-mobile-screen="buyers">
+              <div class="mobile-buyers__top" data-mobile-back="buyers">
                 <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g id="Vector">
                     <path id="vector-5" d="M1 1.91675L6 6.91675L11 1.91675" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -63,7 +63,7 @@
                 </svg>
                 <p>покупателям</p>
               </div>
-              <div class="mobile-bayers__bottom"> 
+              <div class="mobile-buyers__bottom"> 
                 <ul>
                   <li><a href="#">О нас</a></li>
                   <li><a href="#">Отследить заказ</a></li>
@@ -72,6 +72,113 @@
                   <li><a href="#">Контакты</a></li>
                   <li><a href="#">Размерная таблица</a></li>
                 </ul>
+              </div>
+            </div>
+            <div class="mobile-catalog" data-mobile-screen="catalog"> 
+              <div class="mobile-buyers__top" data-mobile-back="catalog">
+                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="Vector">
+                    <path id="vector-5" d="M1 1.91675L6 6.91675L11 1.91675" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </g>
+                </svg>
+                <p>Каталог</p>
+              </div>
+              <div class="mobile-catalog__box"> 
+                <div class="accordion">
+                  <div class="accordion__button" data-mobile-accordion="button">
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="Vector">
+                        <path id="vector-5" d="M1 1.91675L6 6.91675L11 1.91675" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </g>
+                    </svg>
+                    <p>Женщинам вяжем</p>
+                  </div>
+                  <div class="accordion__list" data-mobile-accordion="list">
+                    <ul>
+                      <li><a href="#">Джемперы</a></li>
+                      <li><a href="#">Водолазки</a></li>
+                      <li><a href="#">Платья</a></li>
+                      <li><a href="#">Кардиганы</a></li>
+                      <li><a href="#">Верхняя одежда</a></li>
+                      <li><a href="#">Юбки</a></li>
+                      <li><a href="#">Брюки</a></li>
+                      <li><a href="#">Майки</a></li>
+                      <li><a href="#">Шапки и шарфы</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="accordion">
+                  <div class="accordion__button" data-mobile-accordion="button">
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="Vector">
+                        <path id="vector-5" d="M1 1.91675L6 6.91675L11 1.91675" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </g>
+                    </svg>
+                    <p>Женщинам шьем</p>
+                  </div>
+                  <div class="accordion__list" data-mobile-accordion="list">
+                    <ul>
+                      <li><a href="#">Платья</a></li>
+                      <li><a href="#">Юбки</a></li>
+                      <li><a href="#">Брюки</a></li>
+                      <li><a href="#">Шорты</a></li>
+                      <li><a href="#">Футболки</a></li>
+                      <li><a href="#">Рубашки, блузки</a></li>
+                      <li><a href="#">Толстовки</a></li>
+                      <li><a href="#">Жакеты и жилеты</a></li>
+                      <li><a href="#">Спортивные костюмы</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="accordion">
+                  <div class="accordion__button" data-mobile-accordion="button">
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="Vector">
+                        <path id="vector-5" d="M1 1.91675L6 6.91675L11 1.91675" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </g>
+                    </svg>
+                    <p>Мужчинам</p>
+                  </div>
+                  <div class="accordion__list" data-mobile-accordion="list">
+                    <ul>
+                      <li><a href="#">Водолазки</a></li>
+                      <li><a href="#">Джемперы</a></li>
+                      <li><a href="#">Жакеты, жилеты</a></li>
+                      <li><a href="#">Брюки</a></li>
+                      <li><a href="#">Футболки</a></li>
+                      <li><a href="#">Спортивные костюмы</a></li>
+                    </ul>
+                  </div>
+                </div><a href="#">Новинки</a><a href="#">Распродажа</a><a href="#">Коллекция Glow</a><a href="#">Коллекция Твид</a><a href="#">Коллекция Kelt</a>
+                <div class="header-menu__banners"><a class="header-banner" href="#"> 
+                    <div class="header-banner__inner">
+                      <div class="header-banner__block">
+                        <div class="header-banner__title">Новинки</div>
+                        <div class="place place_new">
+                          <p>new</p>
+                        </div>
+                      </div>
+                      <div class="header-banner__img"> 
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/menu1.webp 1x" alt="menu1.jpg" media="(min-width: 769px)"/>
+                          <source class="lazyload" type="image/jpeg" srcset="images/menu1.jpg 1x" alt="menu1.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/menu1.jpg" alt="menu1.jpg"/>
+                        </picture>
+                      </div>
+                    </div></a><a class="header-banner" href="#"> 
+                    <div class="header-banner__inner">
+                      <div class="header-banner__block">
+                        <div class="header-banner__title">Распродажа</div>
+                        <div class="place place_sale">
+                          <p>sale</p>
+                        </div>
+                      </div>
+                      <div class="header-banner__img"> 
+                        <picture class="picture">
+                          <source class="lazyload" type="image/webp" srcset="webp/menu2.webp 1x" alt="menu2.jpg" media="(min-width: 769px)"/>
+                          <source class="lazyload" type="image/jpeg" srcset="images/menu2.jpg 1x" alt="menu2.jpg" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/menu2.jpg" alt="menu2.jpg"/>
+                        </picture>
+                      </div>
+                    </div></a></div>
               </div>
             </div>
           </div>
@@ -232,20 +339,13 @@
               </div>
             </div>
             <div class="header-block__inner">
-              <div class="search">
+              <div class="search active">
                 <div class="overlay"></div>
                 <div class="search__inner"> 
                   <div class="search__top"> 
                     <p class="search__title">вам может понравиться</p>
                     <form class="search__form">
-                      <div class="input-wrapper" data-input-parent="">
-                        <div class="input-wrapper__placeholder">Введите адрес в обычном формате | например, кардиган</div>
-                        <input class="input" data-input="" required="required" autocomplete="off" name="" placeholder="Введите адрес в обычном формате | например, кардиган"/>
-                        <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
-                          <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                          <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                      </div>
+                      <input class="input input_default" data-input="" required="required" autocomplete="off" placeholder="Введите адрес в обычном формате | например, кардиган"/>
                       <button class="btn" data-btn="data-btn">Найти</button>
                     </form>
                     <div class="search__close">
@@ -644,7 +744,7 @@
                 <nav class="header-navigation">
                   <ul class="header-navigation__list">
                     <li class="desk header-navigation__item" data-header-menu-trigger>
-                      <div class="header-navigation__link_bayer header-navigation__link-catalog">
+                      <div class="header-navigation__link_buyer header-navigation__link-catalog">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M5 6.25C4.30964 6.25 3.75 6.80964 3.75 7.5C3.75 8.19036 4.30964 8.75 5 8.75V6.25ZM19 8.75C19.6904 8.75 20.25 8.19036 20.25 7.5C20.25 6.80964 19.6904 6.25 19 6.25V8.75ZM5 11.25C4.30964 11.25 3.75 11.8096 3.75 12.5C3.75 13.1904 4.30964 13.75 5 13.75V11.25ZM17 13.75C17.6904 13.75 18.25 13.1904 18.25 12.5C18.25 11.8096 17.6904 11.25 17 11.25V13.75ZM5 16.25C4.30964 16.25 3.75 16.8096 3.75 17.5C3.75 18.1904 4.30964 18.75 5 18.75V16.25ZM12 18.75C12.6904 18.75 13.25 18.1904 13.25 17.5C13.25 16.8096 12.6904 16.25 12 16.25V18.75ZM5 8.75H19V6.25H5V8.75ZM5 13.75H17V11.25H5V13.75ZM5 18.75H12V16.25H5V18.75Z" fill="#62215B"></path>
                         </svg>
@@ -652,7 +752,7 @@
                       </div>
                     </li>
                     <li class="max-d-flex header-navigation__item" data-burger>
-                      <div class="header-navigation__link_bayer header-navigation__link-catalog">
+                      <div class="header-navigation__link_buyer header-navigation__link-catalog">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M5 6.25C4.30964 6.25 3.75 6.80964 3.75 7.5C3.75 8.19036 4.30964 8.75 5 8.75V6.25ZM19 8.75C19.6904 8.75 20.25 8.19036 20.25 7.5C20.25 6.80964 19.6904 6.25 19 6.25V8.75ZM5 11.25C4.30964 11.25 3.75 11.8096 3.75 12.5C3.75 13.1904 4.30964 13.75 5 13.75V11.25ZM17 13.75C17.6904 13.75 18.25 13.1904 18.25 12.5C18.25 11.8096 17.6904 11.25 17 11.25V13.75ZM5 16.25C4.30964 16.25 3.75 16.8096 3.75 17.5C3.75 18.1904 4.30964 18.75 5 18.75V16.25ZM12 18.75C12.6904 18.75 13.25 18.1904 13.25 17.5C13.25 16.8096 12.6904 16.25 12 16.25V18.75ZM5 8.75H19V6.25H5V8.75ZM5 13.75H17V11.25H5V13.75ZM5 18.75H12V16.25H5V18.75Z" fill="#62215B"></path>
                         </svg>
@@ -668,7 +768,7 @@
                           </g>
                         </svg></a></li>
                     <li class="header-navigation__item desk">
-                      <div class="header-navigation__link header-navigation__link_bayer" data-header-button="bayers">                              
+                      <div class="header-navigation__link header-navigation__link_buyer" data-header-button="buyers">                              
                         <p>Покупателям  </p>
                         <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <g id="Vector">
@@ -676,7 +776,7 @@
                           </g>
                         </svg>
                       </div>
-                      <div class="header-block__bayers"> <a>О нас</a><a>Отследить заказ</a><a>Доставка и возврат</a><a>Оплата</a><a>Контакты</a><a>Размерная таблица</a>
+                      <div class="header-block__buyers"> <a>О нас</a><a>Отследить заказ</a><a>Доставка и возврат</a><a>Оплата</a><a>Контакты</a><a>Размерная таблица</a>
                       </div>
                     </li>
                   </ul>
@@ -735,62 +835,172 @@
           <div class="breadcrumbs">
             <div class="breadcrumb"><a href="#">Главная</a><span>•</span></div>
             <div class="breadcrumb"><a href="#">Покупателям</a><span>•</span></div>
-            <div class="breadcrumb active"><a href="#">Оплата</a><span>•</span></div>
+            <div class="breadcrumb active"><a href="#">Доставка</a><span>•</span></div>
           </div>
-          <section class="bayers">
-            <div class="bayers__inner">
-              <h1 class="title bayers__title">Покупателям</h1>
-              <ul class="bayers-tubs">
-                <li class="bayers-tubs__item"> <a>Доставка</a></li>
-                <li class="bayers-tubs__item active"> <a>Оплата</a></li>
-                <li class="bayers-tubs__item"> <a>Возврат</a></li>
-                <li class="bayers-tubs__item"> <a>Размерная таблица</a></li>
-                <li class="bayers-tubs__item"> <a>Отследить заказ</a></li>
+          <section class="buyers">
+            <div class="buyers__inner">
+              <h1 class="title buyers__title">Покупателям</h1>
+              <ul class="buyers-tubs">
+                <li class="buyers-tubs__item active"> <a> 
+                    <h3>Доставка</h3></a></li>
+                <li class="buyers-tubs__item"> <a> 
+                    <h3>Оплата</h3></a></li>
+                <li class="buyers-tubs__item"> <a> 
+                    <h3>Возврат</h3></a></li>
+                <li class="buyers-tubs__item"> <a> 
+                    <h3>Размерная таблица</h3></a></li>
+                <li class="buyers-tubs__item"> <a> 
+                    <h3>Отследить заказ</h3></a></li>
               </ul>
-              <div class="bayers__content"> 
-                <div class="bayers-pay">
-                  <div class="bayers-pay__inner"> 
-                    <h2 class="bayers-pay__title title2">Как оплатить заказ?</h2>
-                    <div class="bayers-pay__block"> 
-                      <div class="bayers-pay__card">
-                        <div class="bayers-pay__top"> 
-                          <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="webp/bayers-pay-1.webp 1x" alt="bayers-pay-1.png" media="(min-width: 769px)"/>
-                            <source class="lazyload" type="image/jpeg" srcset="images/bayers-pay-1.jpg 1x" alt="bayers-pay-1.png" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/bayers-pay-1.png" alt="bayers-pay-1.png"/>
-                          </picture>
-                        </div>
-                        <div class="bayers-pay__bottom"> 
-                          <p class="bayers-pay__subtitle">При его получении в пунктах выдачи</p>
-                          <p class="bayers-pay__text">СДЭК, Boxberry, Яндекс или при курьерской доставке СДЭК. Вы можете сначала примерить товары и оплатить только те, что подошли. </p>
-                        </div>
-                      </div>
-                      <div class="bayers-pay__card">
-                        <div class="bayers-pay__top"> 
-                          <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="webp/bayers-pay-2.webp 1x" alt="bayers-pay-2.png" media="(min-width: 769px)"/>
-                            <source class="lazyload" type="image/jpeg" srcset="images/bayers-pay-2.jpg 1x" alt="bayers-pay-2.png" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/bayers-pay-2.png" alt="bayers-pay-2.png"/>
-                          </picture>
-                        </div>
-                        <div class="bayers-pay__bottom"> 
-                          <p class="bayers-pay__subtitle">При оформлении заказа на сайте</p>
-                          <p class="bayers-pay__text">Оплата онлайн осуществляется через систему платежей ООО «Робокасса». На выбор Вам будут предложены следующие способы оплаты: оплата Банковскими картами (Visa, Mastercard, Maestro, Union Pay, МИР), СБП, Yandex pay, также оплата частями «Подели» и картой рассрочки Халва. Все данные, указанные Вами, защищены в соответствии с требованиями международного стандарта безопасности PCI DSS.</p>
+              <div class="buyers__content"> 
+                <section class="buyers-delivery">
+                  <div class="buyers-delivery__inner"> 
+                    <div class="buyers-delivery__cards"> 
+                      <div class="buyers-delivery__card"> 
+                        <div class="buyers-delivery__card-inner"> 
+                          <div class="buyers-delivery__card-svg"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 42.175V23.1425H52.5V42.3275C52.5 50.175 47.5604 55 39.657 55H20.3183C12.489 55 7.5 50.075 7.5 42.175ZM19.8985 36.025C18.7623 36.0775 17.8238 35.175 17.7744 34.0275C17.7744 32.8775 18.6636 31.9275 19.7997 31.875C20.9111 31.875 21.8249 32.7525 21.8496 33.875C21.899 35.0275 21.0099 35.9775 19.8985 36.025ZM30.0494 36.025C28.9133 36.0775 27.9748 35.175 27.9254 34.0275C27.9254 32.8775 28.8145 31.9275 29.9506 31.875C31.062 31.875 31.9759 32.7525 32.0005 33.875C32.0499 35.0275 31.1608 35.9775 30.0494 36.025ZM40.1262 45.225C38.9901 45.2 38.0763 44.25 38.0763 43.1C38.0516 41.95 38.9654 41.0025 40.1015 40.9775H40.1262C41.287 40.9775 42.2256 41.9275 42.2256 43.1C42.2256 44.275 41.287 45.225 40.1262 45.225ZM27.9254 43.1C27.9748 44.25 28.9133 45.1525 30.0494 45.1C31.1608 45.0525 32.0499 44.1025 32.0005 42.9525C31.9759 41.8275 31.062 40.95 29.9506 40.95C28.8145 41.0025 27.9254 41.95 27.9254 43.1ZM17.7497 43.1C17.7991 44.25 18.7377 45.1525 19.8738 45.1C20.9852 45.0525 21.8743 44.1025 21.8249 42.9525C21.8002 41.8275 20.8864 40.95 19.775 40.95C18.6389 41.0025 17.7497 41.95 17.7497 43.1ZM38.101 34.0025C38.101 32.8525 38.9901 31.9275 40.1262 31.9025C41.2377 31.9025 42.1268 32.8 42.1762 33.9025C42.2009 35.0525 41.3117 36.0025 40.2003 36.025C39.0642 36.05 38.1257 35.175 38.101 34.0275V34.0025Z" fill="#C19F86"></path>
+                              <path opacity="0.4" d="M7.5083 23.1422C7.54041 21.6747 7.6639 18.7622 7.89606 17.8247C9.08157 12.5522 13.1074 9.20223 18.862 8.72473H41.1397C46.845 9.22723 50.9202 12.5997 52.1057 17.8247C52.3354 18.7372 52.4589 21.6722 52.491 23.1422H7.5083Z" fill="#C19F86"></path>
+                              <path d="M20.7621 16.475C21.8488 16.475 22.6639 15.6525 22.6639 14.55V6.9275C22.6639 5.825 21.8488 5 20.7621 5C19.6754 5 18.8604 5.825 18.8604 6.9275V14.55C18.8604 15.6525 19.6754 16.475 20.7621 16.475Z" fill="#C19F86"></path>
+                              <path d="M39.2372 16.475C40.2992 16.475 41.139 15.6525 41.139 14.55V6.9275C41.139 5.825 40.2992 5 39.2372 5C38.1505 5 37.3354 5.825 37.3354 6.9275V14.55C37.3354 15.6525 38.1505 16.475 39.2372 16.475Z" fill="#C19F86"></path>
+                            </svg>
+                          </div>
+                          <div class="buyers-delivery__card-text">Каждое изделие выполняется индивидуально, на это нам необходимо  <span> приблизительно 5 рабочих дней</span> </div>
                         </div>
                       </div>
-                      <div class="bayers-pay__card">
-                        <div class="bayers-pay__top"> 
-                          <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="data:image/webp;base64,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 1x" alt="bayers-pay-3.png" media="(min-width: 769px)"/>
-                            <source class="lazyload" type="image/jpeg" srcset="images/bayers-pay-3.jpg 1x" alt="bayers-pay-3.png" media="(min-width: 769px)"/><img class="picture__img lazyload" data-src="images/bayers-pay-3.png" alt="bayers-pay-3.png"/>
-                          </picture>
+                      <div class="buyers-delivery__card"> 
+                        <div class="buyers-delivery__card-inner"> 
+                          <div class="buyers-delivery__card-svg"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M21.3291 7.34193C26.7912 4.16819 33.5051 4.22366 38.9159 7.48724C44.2736 10.8173 47.5299 16.7604 47.4996 23.1536C47.3749 29.5048 43.8832 35.475 39.5187 40.0902C36.9996 42.766 34.1815 45.1321 31.1221 47.1401C30.807 47.3223 30.4619 47.4443 30.1037 47.5C29.759 47.4853 29.4233 47.3835 29.1269 47.2036C24.4561 44.1864 20.3583 40.3351 17.0308 35.8349C14.2465 32.0784 12.6646 27.54 12.5 22.836C12.4964 16.4306 15.8669 10.5157 21.3291 7.34193ZM24.4854 25.4869C25.4042 27.7521 27.573 29.2296 29.979 29.2296C31.5553 29.2409 33.0705 28.6096 34.187 27.4762C35.3036 26.3428 35.9287 24.8016 35.9231 23.1959C35.9315 20.7451 34.4886 18.5308 32.2682 17.5869C30.0477 16.6431 27.4876 17.1559 25.7833 18.8859C24.079 20.6159 23.5666 23.2218 24.4854 25.4869Z" fill="#C19F86"></path>
+                              <ellipse opacity="0.4" cx="30" cy="52.5" rx="12.5" ry="2.5" fill="#C19F86"></ellipse>
+                            </svg>
+                          </div>
+                          <div class="buyers-delivery__card-text">Выбор вида доставки происходит в корзине после указания вашего города</div>
                         </div>
-                        <div class="bayers-pay__bottom"> 
-                          <p class="bayers-pay__subtitle">При получении в нашем отделе</p>
-                          <p class="bayers-pay__text">Наличными или банковской картой. Самовывоз в настоящий момент доступен только для г. Челябинск.</p>
+                      </div>
+                      <div class="buyers-delivery__card"> 
+                        <div class="buyers-delivery__card-inner"> 
+                          <div class="buyers-delivery__card-svg"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                              <path d="M37.5 5V30C37.5 32.75 35.25 35 32.5 35H5V15C5 9.475 9.475 5 15 5H37.5Z" fill="#C19F86"></path>
+                              <path opacity="0.4" d="M55 35V42.5C55 46.65 51.65 50 47.5 50H45C45 47.25 42.75 45 40 45C37.25 45 35 47.25 35 50H25C25 47.25 22.75 45 20 45C17.25 45 15 47.25 15 50H12.5C8.35 50 5 46.65 5 42.5V35H32.5C35.25 35 37.5 32.75 37.5 30V12.5H42.1C43.9 12.5 45.55 13.475 46.45 15.025L50.725 22.5H47.5C46.125 22.5 45 23.625 45 25V32.5C45 33.875 46.125 35 47.5 35H55Z" fill="#C19F86"></path>
+                              <path d="M20 55C22.7614 55 25 52.7614 25 50C25 47.2386 22.7614 45 20 45C17.2386 45 15 47.2386 15 50C15 52.7614 17.2386 55 20 55Z" fill="#C19F86"></path>
+                              <path d="M40 55C42.7614 55 45 52.7614 45 50C45 47.2386 42.7614 45 40 45C37.2386 45 35 47.2386 35 50C35 52.7614 37.2386 55 40 55Z" fill="#C19F86"></path>
+                              <path d="M55 30V35H47.5C46.125 35 45 33.875 45 32.5V25C45 23.625 46.125 22.5 47.5 22.5H50.725L55 30Z" fill="#FFF2EA"></path>
+                            </svg>
+                          </div>
+                          <div class="buyers-delivery__card-text">Доставка занимает <span>от 4 до 15 дней </span> в зависимости от удалённости и без учета сроков, необходимых для производства и сборки заказа</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="buyers-delivery__info"> 
+                      <h2 class="buyers-delivery__info-title title2">Как мой заказ будет доставлен?</h2>
+                      <div class="buyers-delivery__info-box">
+                        <div class="buyers-delivery__left"> 
+                          <div class="buyers-delivery__list"> 
+                            <h3 class="buyers-delivery__list-title">Доставка почтовой компанией СДЭК</h3>
+                            <ul>
+                              <li class="buyers-delivery__text">Доставка до пунктов выдачи бесплатна при сумме заказа <span>от 10 000 ₽.</span></li>
+                              <li class="buyers-delivery__text">Стоимость доставки до пунктов выдачи при сумме заказа <span> до 10 000 ₽</span>, а также стоимость курьерской доставки автоматически рассчитываютсяв корзине после выбора пункта назначения.</li>
+                              <li class="buyers-delivery__text">Доступны примерка до оплаты и частичный возврат.</li>
+                            </ul>
+                          </div>
+                          <div class="buyers-delivery__list"> 
+                            <h3 class="buyers-delivery__list-title">Доставка почтовой компанией Boxberry</h3>
+                            <ul>
+                              <li class="buyers-delivery__text">Доставка до пунктов выдачи бесплатна при сумме заказа <span>от 10 000 ₽.</span></li>
+                              <li class="buyers-delivery__text">Доступны примерка до оплаты и частичный возврат.</li>
+                            </ul>
+                          </div>
+                          <div class="buyers-delivery__list"> 
+                            <h3 class="buyers-delivery__list-title">Доставка Почтой России</h3>
+                            <ul>
+                              <li class="buyers-delivery__text">Стоимость доставки автоматически рассчитывается в корзине после выбора пункта назначения.</li>
+                            </ul>
+                          </div>
+                          <div class="buyers-delivery__list"> 
+                            <h3 class="buyers-delivery__list-title">Доставка Яндекс</h3>
+                            <ul>
+                              <li class="buyers-delivery__text">Доставка до пунктов выдачи бесплатна при сумме заказа <span>от 10 000 ₽.</span></li>
+                              <li class="buyers-delivery__text">Доступны примерка до оплаты и частичный возврат.</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="buyers-delivery__right"> 
+                          <h3 class="buyers-delivery__right-title">Самовывоз</h3>
+                          <p class="buyers-delivery__right-description">Самовывоз возможен в Челябинске из следующих отделов:</p>
+                          <div class="buyers-delivery__right-box"> 
+                            <div class="address-card">
+                              <div class="address-card__inner"> 
+                                <div class="address-card__svg"> <span> </span></div>
+                                <div class="address-card__block"> 
+                                  <h3 class="address-card__title">ТРЦ «Космос» </h3>
+                                  <p class="address-card__address">г. Челябинск, ул. Чичерина, 28, 2 этаж</p>
+                                  <div class="address-card__time"> 
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <g id="Time Circle 6">
+                                        <g id="Vector">
+                                          <path d="M4.47639 1.87676C4.71898 1.68269 4.75831 1.32871 4.56424 1.08613C4.37017 0.843545 4.01619 0.804214 3.77361 0.998282L1.89861 2.49828C1.65602 2.69235 1.61669 3.04633 1.81076 3.28891C2.00483 3.5315 2.35881 3.57083 2.60139 3.37676L4.47639 1.87676Z" fill="#62215B"></path>
+                                          <path d="M14.2264 0.998282C13.9838 0.804214 13.6298 0.843545 13.4358 1.08613C13.2417 1.32871 13.281 1.68269 13.5236 1.87676L15.3986 3.37676C15.6412 3.57083 15.9952 3.5315 16.1892 3.28891C16.3833 3.04633 16.344 2.69235 16.1014 2.49828L14.2264 0.998282Z" fill="#62215B"></path>
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.43752C4.5472 1.43752 0.9375 5.04723 0.9375 9.50002C0.9375 13.9528 4.5472 17.5625 9 17.5625C13.4528 17.5625 17.0625 13.9528 17.0625 9.50002C17.0625 5.04723 13.4528 1.43752 9 1.43752ZM9.5625 6.50002C9.5625 6.18936 9.31066 5.93752 9 5.93752C8.68934 5.93752 8.4375 6.18936 8.4375 6.50002L8.4375 9.12502C8.4375 10.057 9.19302 10.8125 10.125 10.8125H11.25C11.5607 10.8125 11.8125 10.5607 11.8125 10.25C11.8125 9.93936 11.5607 9.68752 11.25 9.68752H10.125C9.81434 9.68752 9.5625 9.43568 9.5625 9.12502L9.5625 6.50002Z" fill="#62215B"></path>
+                                        </g>
+                                      </g>
+                                    </svg>
+                                    <p>Режим работы 10:00-21:00</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="address-card">
+                              <div class="address-card__inner"> 
+                                <div class="address-card__svg"> <span> </span></div>
+                                <div class="address-card__block"> 
+                                  <h3 class="address-card__title">ТК «Кольцо»</h3>
+                                  <p class="address-card__address">г. Челябинск, ул. Дарвина, 18, 2 этаж</p>
+                                  <div class="address-card__time"> 
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <g id="Time Circle 6">
+                                        <g id="Vector">
+                                          <path d="M4.47639 1.87676C4.71898 1.68269 4.75831 1.32871 4.56424 1.08613C4.37017 0.843545 4.01619 0.804214 3.77361 0.998282L1.89861 2.49828C1.65602 2.69235 1.61669 3.04633 1.81076 3.28891C2.00483 3.5315 2.35881 3.57083 2.60139 3.37676L4.47639 1.87676Z" fill="#62215B"></path>
+                                          <path d="M14.2264 0.998282C13.9838 0.804214 13.6298 0.843545 13.4358 1.08613C13.2417 1.32871 13.281 1.68269 13.5236 1.87676L15.3986 3.37676C15.6412 3.57083 15.9952 3.5315 16.1892 3.28891C16.3833 3.04633 16.344 2.69235 16.1014 2.49828L14.2264 0.998282Z" fill="#62215B"></path>
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.43752C4.5472 1.43752 0.9375 5.04723 0.9375 9.50002C0.9375 13.9528 4.5472 17.5625 9 17.5625C13.4528 17.5625 17.0625 13.9528 17.0625 9.50002C17.0625 5.04723 13.4528 1.43752 9 1.43752ZM9.5625 6.50002C9.5625 6.18936 9.31066 5.93752 9 5.93752C8.68934 5.93752 8.4375 6.18936 8.4375 6.50002L8.4375 9.12502C8.4375 10.057 9.19302 10.8125 10.125 10.8125H11.25C11.5607 10.8125 11.8125 10.5607 11.8125 10.25C11.8125 9.93936 11.5607 9.68752 11.25 9.68752H10.125C9.81434 9.68752 9.5625 9.43568 9.5625 9.12502L9.5625 6.50002Z" fill="#62215B"></path>
+                                        </g>
+                                      </g>
+                                    </svg>
+                                    <p>Режим работы 10:00-21:00</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="address-card">
+                              <div class="address-card__inner"> 
+                                <div class="address-card__svg"> <span> </span></div>
+                                <div class="address-card__block"> 
+                                  <h3 class="address-card__title">ТРЦ «Куба»</h3>
+                                  <p class="address-card__address">г. Челябинск, ул. Цвиллинга, 25, 1 этаж</p>
+                                  <div class="address-card__time"> 
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <g id="Time Circle 6">
+                                        <g id="Vector">
+                                          <path d="M4.47639 1.87676C4.71898 1.68269 4.75831 1.32871 4.56424 1.08613C4.37017 0.843545 4.01619 0.804214 3.77361 0.998282L1.89861 2.49828C1.65602 2.69235 1.61669 3.04633 1.81076 3.28891C2.00483 3.5315 2.35881 3.57083 2.60139 3.37676L4.47639 1.87676Z" fill="#62215B"></path>
+                                          <path d="M14.2264 0.998282C13.9838 0.804214 13.6298 0.843545 13.4358 1.08613C13.2417 1.32871 13.281 1.68269 13.5236 1.87676L15.3986 3.37676C15.6412 3.57083 15.9952 3.5315 16.1892 3.28891C16.3833 3.04633 16.344 2.69235 16.1014 2.49828L14.2264 0.998282Z" fill="#62215B"></path>
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.43752C4.5472 1.43752 0.9375 5.04723 0.9375 9.50002C0.9375 13.9528 4.5472 17.5625 9 17.5625C13.4528 17.5625 17.0625 13.9528 17.0625 9.50002C17.0625 5.04723 13.4528 1.43752 9 1.43752ZM9.5625 6.50002C9.5625 6.18936 9.31066 5.93752 9 5.93752C8.68934 5.93752 8.4375 6.18936 8.4375 6.50002L8.4375 9.12502C8.4375 10.057 9.19302 10.8125 10.125 10.8125H11.25C11.5607 10.8125 11.8125 10.5607 11.8125 10.25C11.8125 9.93936 11.5607 9.68752 11.25 9.68752H10.125C9.81434 9.68752 9.5625 9.43568 9.5625 9.12502L9.5625 6.50002Z" fill="#62215B"></path>
+                                        </g>
+                                      </g>
+                                    </svg>
+                                    <p>Режим работы 10:00-21:00</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </section>
               </div>
             </div>
           </section>
@@ -816,6 +1026,7 @@
                 <div class="footer__form-btn">
                   <button class="btn" data-btn="data-btn" type="submit">Подписаться</button>
                 </div>
+                <p class="footer__form-success">Спасибо за подписку!</p>
               </div>
             </form>
             <div class="footer__left"> 
