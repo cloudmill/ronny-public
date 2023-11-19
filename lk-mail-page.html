@@ -3,12 +3,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>lk-success</title>
+    <title>lk-mail-page</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <script type="module" crossorigin src="assets/index-da2c760a.js"></script>
+    <script type="module" crossorigin src="assets/index-2b71aae2.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body class="isMessage" style="opacity:0">
@@ -346,7 +346,7 @@
                     <p class="search__title">вам может понравиться</p>
                     <form class="search__form">
                       <div class="input-wrapper input-wrapper_default" data-input-parent="">
-                        <input class="input" data-input="" required="required" autocomplete="off" name="" placeholder="Введите адрес в обычном формате | например, кардиган"/>
+                        <input class="input" data-input="" required="required" autocomplete="off" name="" placeholder="| например, кардиган"/>
                         <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
                           <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                           <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -836,14 +836,215 @@
           </div>
         </div>
       </header>
-      <div class="lk">
+      <div class="modal" data-modal="lk-delete">
+        <div class="overlay"> </div>
+        <div class="modal__inner">
+          <div class="modal__close">
+            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="Add">
+                <path id="Vector" d="M9.57191 9.57191L28.4281 28.4281M9.57191 28.4281L19 19L28.4281 9.5719" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+              </g>
+            </svg>
+          </div>
+          <div class="address-delete-modal">
+            <p class="address-delete-modal__title"> удалить этот адрес?</p>
+            <div class="address-delete-modal__bottom"> 
+              <button class="btn btn_white address-delete-modal__close" data-btn-white="data-btn-white" data-delete-modal="close">Нет</button>
+              <button class="btn address-delete-modal__ok" data-btn="data-btn">да</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lk-address-page">
         <div class="container">
           <div class="breadcrumbs">
             <div class="breadcrumb"><a href="#">Главная</a><span>•</span></div>
             <div class="breadcrumb active"><a href="#">Личный кабинет</a><span>•</span></div>
           </div>
-          <div class="toasters"></div>
-          <div class="lk__inner">
+          <div class="sidebar">
+            <div class="overlay"></div>
+            <div class="sidebar__inner">
+              <div class="sidebar-map" data-sidebar="map">
+                <div class="sidebar-map__inner">
+                  <button class="closeButton sidebar__close" data-sidebar-close="map">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.5719 10.5721L29.4281 29.4283M10.5719 29.4283L20 20.0002L29.4281 10.5721" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                    </svg>
+                  </button>
+                  <div class="sidebar-map__left">
+                    <div class="sidebar-map__top"> 
+                      <h3 class="sidebar-map__top__title">Пункты выдачи в г. Москва</h3>
+                      <div class="input-wrapper" data-input-parent="">
+                        <div class="input-wrapper__placeholder">введите адрес</div>
+                        <input class="input" data-input="" required="required" autocomplete="off" name="" placeholder="введите адрес"/>
+                        <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
+                          <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <ul class="sidebar-map__list" data-map-list="data-map-list">
+                      <li class="sidebar-map__item" data-placemark="Москва, 5–й Донской проезд, 23" data-type="СДЭК">
+                        <p class="sidebar-map__item-title">CDEK</p>
+                        <p class="sidebar-map__item-address">ул. Черняховского, 19</p>
+                        <div class="sidebar-map__item-time">
+                          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Time Circle 6">
+                              <g id="Vector">
+                                <path d="M4.47639 1.87676C4.71898 1.68269 4.75831 1.32871 4.56424 1.08613C4.37017 0.843545 4.01619 0.804214 3.77361 0.998282L1.89861 2.49828C1.65602 2.69235 1.61669 3.04633 1.81076 3.28891C2.00483 3.5315 2.35881 3.57083 2.60139 3.37676L4.47639 1.87676Z" fill="#62215B"></path>
+                                <path d="M14.2264 0.998282C13.9838 0.804214 13.6298 0.843545 13.4358 1.08613C13.2417 1.32871 13.281 1.68269 13.5236 1.87676L15.3986 3.37676C15.6412 3.57083 15.9952 3.5315 16.1892 3.28891C16.3833 3.04633 16.344 2.69235 16.1014 2.49828L14.2264 0.998282Z" fill="#62215B"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.43752C4.5472 1.43752 0.9375 5.04723 0.9375 9.50002C0.9375 13.9528 4.5472 17.5625 9 17.5625C13.4528 17.5625 17.0625 13.9528 17.0625 9.50002C17.0625 5.04723 13.4528 1.43752 9 1.43752ZM9.5625 6.50002C9.5625 6.18936 9.31066 5.93752 9 5.93752C8.68934 5.93752 8.4375 6.18936 8.4375 6.50002L8.4375 9.12502C8.4375 10.057 9.19302 10.8125 10.125 10.8125H11.25C11.5607 10.8125 11.8125 10.5607 11.8125 10.25C11.8125 9.93936 11.5607 9.68752 11.25 9.68752H10.125C9.81434 9.68752 9.5625 9.43568 9.5625 9.12502L9.5625 6.50002Z" fill="#62215B"></path>
+                              </g>
+                            </g>
+                          </svg>
+                          <p>Режим работы 10:00-21:00</p>
+                        </div>
+                      </li>
+                      <div class="sidebar-map__item"> 
+                        <p class="sidebar-map__item-title">CDEK</p>
+                        <p class="sidebar-map__item-address">ул. Черняховского, 19</p>
+                        <div class="sidebar-map__item-time">
+                          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Time Circle 6">
+                              <g id="Vector">
+                                <path d="M4.47639 1.87676C4.71898 1.68269 4.75831 1.32871 4.56424 1.08613C4.37017 0.843545 4.01619 0.804214 3.77361 0.998282L1.89861 2.49828C1.65602 2.69235 1.61669 3.04633 1.81076 3.28891C2.00483 3.5315 2.35881 3.57083 2.60139 3.37676L4.47639 1.87676Z" fill="#62215B"></path>
+                                <path d="M14.2264 0.998282C13.9838 0.804214 13.6298 0.843545 13.4358 1.08613C13.2417 1.32871 13.281 1.68269 13.5236 1.87676L15.3986 3.37676C15.6412 3.57083 15.9952 3.5315 16.1892 3.28891C16.3833 3.04633 16.344 2.69235 16.1014 2.49828L14.2264 0.998282Z" fill="#62215B"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.43752C4.5472 1.43752 0.9375 5.04723 0.9375 9.50002C0.9375 13.9528 4.5472 17.5625 9 17.5625C13.4528 17.5625 17.0625 13.9528 17.0625 9.50002C17.0625 5.04723 13.4528 1.43752 9 1.43752ZM9.5625 6.50002C9.5625 6.18936 9.31066 5.93752 9 5.93752C8.68934 5.93752 8.4375 6.18936 8.4375 6.50002L8.4375 9.12502C8.4375 10.057 9.19302 10.8125 10.125 10.8125H11.25C11.5607 10.8125 11.8125 10.5607 11.8125 10.25C11.8125 9.93936 11.5607 9.68752 11.25 9.68752H10.125C9.81434 9.68752 9.5625 9.43568 9.5625 9.12502L9.5625 6.50002Z" fill="#62215B"></path>
+                              </g>
+                            </g>
+                          </svg>
+                          <p>Режим работы 10:00-21:00</p>
+                        </div>
+                      </div>
+                      <div class="sidebar-map__item"> 
+                        <p class="sidebar-map__item-title">CDEK</p>
+                        <p class="sidebar-map__item-address">ул. Черняховского, 19</p>
+                        <div class="sidebar-map__item-time">
+                          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Time Circle 6">
+                              <g id="Vector">
+                                <path d="M4.47639 1.87676C4.71898 1.68269 4.75831 1.32871 4.56424 1.08613C4.37017 0.843545 4.01619 0.804214 3.77361 0.998282L1.89861 2.49828C1.65602 2.69235 1.61669 3.04633 1.81076 3.28891C2.00483 3.5315 2.35881 3.57083 2.60139 3.37676L4.47639 1.87676Z" fill="#62215B"></path>
+                                <path d="M14.2264 0.998282C13.9838 0.804214 13.6298 0.843545 13.4358 1.08613C13.2417 1.32871 13.281 1.68269 13.5236 1.87676L15.3986 3.37676C15.6412 3.57083 15.9952 3.5315 16.1892 3.28891C16.3833 3.04633 16.344 2.69235 16.1014 2.49828L14.2264 0.998282Z" fill="#62215B"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.43752C4.5472 1.43752 0.9375 5.04723 0.9375 9.50002C0.9375 13.9528 4.5472 17.5625 9 17.5625C13.4528 17.5625 17.0625 13.9528 17.0625 9.50002C17.0625 5.04723 13.4528 1.43752 9 1.43752ZM9.5625 6.50002C9.5625 6.18936 9.31066 5.93752 9 5.93752C8.68934 5.93752 8.4375 6.18936 8.4375 6.50002L8.4375 9.12502C8.4375 10.057 9.19302 10.8125 10.125 10.8125H11.25C11.5607 10.8125 11.8125 10.5607 11.8125 10.25C11.8125 9.93936 11.5607 9.68752 11.25 9.68752H10.125C9.81434 9.68752 9.5625 9.43568 9.5625 9.12502L9.5625 6.50002Z" fill="#62215B"></path>
+                              </g>
+                            </g>
+                          </svg>
+                          <p>Режим работы 10:00-21:00</p>
+                        </div>
+                      </div>
+                      <div class="sidebar-map__item"> 
+                        <p class="sidebar-map__item-title">CDEK</p>
+                        <p class="sidebar-map__item-address">ул. Черняховского, 19</p>
+                        <div class="sidebar-map__item-time">
+                          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Time Circle 6">
+                              <g id="Vector">
+                                <path d="M4.47639 1.87676C4.71898 1.68269 4.75831 1.32871 4.56424 1.08613C4.37017 0.843545 4.01619 0.804214 3.77361 0.998282L1.89861 2.49828C1.65602 2.69235 1.61669 3.04633 1.81076 3.28891C2.00483 3.5315 2.35881 3.57083 2.60139 3.37676L4.47639 1.87676Z" fill="#62215B"></path>
+                                <path d="M14.2264 0.998282C13.9838 0.804214 13.6298 0.843545 13.4358 1.08613C13.2417 1.32871 13.281 1.68269 13.5236 1.87676L15.3986 3.37676C15.6412 3.57083 15.9952 3.5315 16.1892 3.28891C16.3833 3.04633 16.344 2.69235 16.1014 2.49828L14.2264 0.998282Z" fill="#62215B"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.43752C4.5472 1.43752 0.9375 5.04723 0.9375 9.50002C0.9375 13.9528 4.5472 17.5625 9 17.5625C13.4528 17.5625 17.0625 13.9528 17.0625 9.50002C17.0625 5.04723 13.4528 1.43752 9 1.43752ZM9.5625 6.50002C9.5625 6.18936 9.31066 5.93752 9 5.93752C8.68934 5.93752 8.4375 6.18936 8.4375 6.50002L8.4375 9.12502C8.4375 10.057 9.19302 10.8125 10.125 10.8125H11.25C11.5607 10.8125 11.8125 10.5607 11.8125 10.25C11.8125 9.93936 11.5607 9.68752 11.25 9.68752H10.125C9.81434 9.68752 9.5625 9.43568 9.5625 9.12502L9.5625 6.50002Z" fill="#62215B"></path>
+                              </g>
+                            </g>
+                          </svg>
+                          <p>Режим работы 10:00-21:00</p>
+                        </div>
+                      </div>
+                      <div class="sidebar-map__item"> 
+                        <p class="sidebar-map__item-title">CDEK</p>
+                        <p class="sidebar-map__item-address">ул. Черняховского, 19</p>
+                        <div class="sidebar-map__item-time">
+                          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Time Circle 6">
+                              <g id="Vector">
+                                <path d="M4.47639 1.87676C4.71898 1.68269 4.75831 1.32871 4.56424 1.08613C4.37017 0.843545 4.01619 0.804214 3.77361 0.998282L1.89861 2.49828C1.65602 2.69235 1.61669 3.04633 1.81076 3.28891C2.00483 3.5315 2.35881 3.57083 2.60139 3.37676L4.47639 1.87676Z" fill="#62215B"></path>
+                                <path d="M14.2264 0.998282C13.9838 0.804214 13.6298 0.843545 13.4358 1.08613C13.2417 1.32871 13.281 1.68269 13.5236 1.87676L15.3986 3.37676C15.6412 3.57083 15.9952 3.5315 16.1892 3.28891C16.3833 3.04633 16.344 2.69235 16.1014 2.49828L14.2264 0.998282Z" fill="#62215B"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.43752C4.5472 1.43752 0.9375 5.04723 0.9375 9.50002C0.9375 13.9528 4.5472 17.5625 9 17.5625C13.4528 17.5625 17.0625 13.9528 17.0625 9.50002C17.0625 5.04723 13.4528 1.43752 9 1.43752ZM9.5625 6.50002C9.5625 6.18936 9.31066 5.93752 9 5.93752C8.68934 5.93752 8.4375 6.18936 8.4375 6.50002L8.4375 9.12502C8.4375 10.057 9.19302 10.8125 10.125 10.8125H11.25C11.5607 10.8125 11.8125 10.5607 11.8125 10.25C11.8125 9.93936 11.5607 9.68752 11.25 9.68752H10.125C9.81434 9.68752 9.5625 9.43568 9.5625 9.12502L9.5625 6.50002Z" fill="#62215B"></path>
+                              </g>
+                            </g>
+                          </svg>
+                          <p>Режим работы 10:00-21:00</p>
+                        </div>
+                      </div>
+                      <div class="sidebar-map__item"> 
+                        <p class="sidebar-map__item-title">CDEK</p>
+                        <p class="sidebar-map__item-address">ул. Черняховского, 19</p>
+                        <div class="sidebar-map__item-time">
+                          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Time Circle 6">
+                              <g id="Vector">
+                                <path d="M4.47639 1.87676C4.71898 1.68269 4.75831 1.32871 4.56424 1.08613C4.37017 0.843545 4.01619 0.804214 3.77361 0.998282L1.89861 2.49828C1.65602 2.69235 1.61669 3.04633 1.81076 3.28891C2.00483 3.5315 2.35881 3.57083 2.60139 3.37676L4.47639 1.87676Z" fill="#62215B"></path>
+                                <path d="M14.2264 0.998282C13.9838 0.804214 13.6298 0.843545 13.4358 1.08613C13.2417 1.32871 13.281 1.68269 13.5236 1.87676L15.3986 3.37676C15.6412 3.57083 15.9952 3.5315 16.1892 3.28891C16.3833 3.04633 16.344 2.69235 16.1014 2.49828L14.2264 0.998282Z" fill="#62215B"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.43752C4.5472 1.43752 0.9375 5.04723 0.9375 9.50002C0.9375 13.9528 4.5472 17.5625 9 17.5625C13.4528 17.5625 17.0625 13.9528 17.0625 9.50002C17.0625 5.04723 13.4528 1.43752 9 1.43752ZM9.5625 6.50002C9.5625 6.18936 9.31066 5.93752 9 5.93752C8.68934 5.93752 8.4375 6.18936 8.4375 6.50002L8.4375 9.12502C8.4375 10.057 9.19302 10.8125 10.125 10.8125H11.25C11.5607 10.8125 11.8125 10.5607 11.8125 10.25C11.8125 9.93936 11.5607 9.68752 11.25 9.68752H10.125C9.81434 9.68752 9.5625 9.43568 9.5625 9.12502L9.5625 6.50002Z" fill="#62215B"></path>
+                              </g>
+                            </g>
+                          </svg>
+                          <p>Режим работы 10:00-21:00</p>
+                        </div>
+                      </div>
+                      <div class="sidebar-map__item"> 
+                        <p class="sidebar-map__item-title">CDEK</p>
+                        <p class="sidebar-map__item-address">ул. Черняховского, 19</p>
+                        <div class="sidebar-map__item-time">
+                          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Time Circle 6">
+                              <g id="Vector">
+                                <path d="M4.47639 1.87676C4.71898 1.68269 4.75831 1.32871 4.56424 1.08613C4.37017 0.843545 4.01619 0.804214 3.77361 0.998282L1.89861 2.49828C1.65602 2.69235 1.61669 3.04633 1.81076 3.28891C2.00483 3.5315 2.35881 3.57083 2.60139 3.37676L4.47639 1.87676Z" fill="#62215B"></path>
+                                <path d="M14.2264 0.998282C13.9838 0.804214 13.6298 0.843545 13.4358 1.08613C13.2417 1.32871 13.281 1.68269 13.5236 1.87676L15.3986 3.37676C15.6412 3.57083 15.9952 3.5315 16.1892 3.28891C16.3833 3.04633 16.344 2.69235 16.1014 2.49828L14.2264 0.998282Z" fill="#62215B"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.43752C4.5472 1.43752 0.9375 5.04723 0.9375 9.50002C0.9375 13.9528 4.5472 17.5625 9 17.5625C13.4528 17.5625 17.0625 13.9528 17.0625 9.50002C17.0625 5.04723 13.4528 1.43752 9 1.43752ZM9.5625 6.50002C9.5625 6.18936 9.31066 5.93752 9 5.93752C8.68934 5.93752 8.4375 6.18936 8.4375 6.50002L8.4375 9.12502C8.4375 10.057 9.19302 10.8125 10.125 10.8125H11.25C11.5607 10.8125 11.8125 10.5607 11.8125 10.25C11.8125 9.93936 11.5607 9.68752 11.25 9.68752H10.125C9.81434 9.68752 9.5625 9.43568 9.5625 9.12502L9.5625 6.50002Z" fill="#62215B"></path>
+                              </g>
+                            </g>
+                          </svg>
+                          <p>Режим работы 10:00-21:00</p>
+                        </div>
+                      </div>
+                      <div class="sidebar-map__item"> 
+                        <p class="sidebar-map__item-title">CDEK</p>
+                        <p class="sidebar-map__item-address">ул. Черняховского, 19</p>
+                        <div class="sidebar-map__item-time">
+                          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Time Circle 6">
+                              <g id="Vector">
+                                <path d="M4.47639 1.87676C4.71898 1.68269 4.75831 1.32871 4.56424 1.08613C4.37017 0.843545 4.01619 0.804214 3.77361 0.998282L1.89861 2.49828C1.65602 2.69235 1.61669 3.04633 1.81076 3.28891C2.00483 3.5315 2.35881 3.57083 2.60139 3.37676L4.47639 1.87676Z" fill="#62215B"></path>
+                                <path d="M14.2264 0.998282C13.9838 0.804214 13.6298 0.843545 13.4358 1.08613C13.2417 1.32871 13.281 1.68269 13.5236 1.87676L15.3986 3.37676C15.6412 3.57083 15.9952 3.5315 16.1892 3.28891C16.3833 3.04633 16.344 2.69235 16.1014 2.49828L14.2264 0.998282Z" fill="#62215B"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.43752C4.5472 1.43752 0.9375 5.04723 0.9375 9.50002C0.9375 13.9528 4.5472 17.5625 9 17.5625C13.4528 17.5625 17.0625 13.9528 17.0625 9.50002C17.0625 5.04723 13.4528 1.43752 9 1.43752ZM9.5625 6.50002C9.5625 6.18936 9.31066 5.93752 9 5.93752C8.68934 5.93752 8.4375 6.18936 8.4375 6.50002L8.4375 9.12502C8.4375 10.057 9.19302 10.8125 10.125 10.8125H11.25C11.5607 10.8125 11.8125 10.5607 11.8125 10.25C11.8125 9.93936 11.5607 9.68752 11.25 9.68752H10.125C9.81434 9.68752 9.5625 9.43568 9.5625 9.12502L9.5625 6.50002Z" fill="#62215B"></path>
+                              </g>
+                            </g>
+                          </svg>
+                          <p>Режим работы 10:00-21:00</p>
+                        </div>
+                      </div>
+                      <div class="sidebar-map__item"> 
+                        <p class="sidebar-map__item-title">CDEK</p>
+                        <p class="sidebar-map__item-address">ул. Черняховского, 19</p>
+                        <div class="sidebar-map__item-time">
+                          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Time Circle 6">
+                              <g id="Vector">
+                                <path d="M4.47639 1.87676C4.71898 1.68269 4.75831 1.32871 4.56424 1.08613C4.37017 0.843545 4.01619 0.804214 3.77361 0.998282L1.89861 2.49828C1.65602 2.69235 1.61669 3.04633 1.81076 3.28891C2.00483 3.5315 2.35881 3.57083 2.60139 3.37676L4.47639 1.87676Z" fill="#62215B"></path>
+                                <path d="M14.2264 0.998282C13.9838 0.804214 13.6298 0.843545 13.4358 1.08613C13.2417 1.32871 13.281 1.68269 13.5236 1.87676L15.3986 3.37676C15.6412 3.57083 15.9952 3.5315 16.1892 3.28891C16.3833 3.04633 16.344 2.69235 16.1014 2.49828L14.2264 0.998282Z" fill="#62215B"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.43752C4.5472 1.43752 0.9375 5.04723 0.9375 9.50002C0.9375 13.9528 4.5472 17.5625 9 17.5625C13.4528 17.5625 17.0625 13.9528 17.0625 9.50002C17.0625 5.04723 13.4528 1.43752 9 1.43752ZM9.5625 6.50002C9.5625 6.18936 9.31066 5.93752 9 5.93752C8.68934 5.93752 8.4375 6.18936 8.4375 6.50002L8.4375 9.12502C8.4375 10.057 9.19302 10.8125 10.125 10.8125H11.25C11.5607 10.8125 11.8125 10.5607 11.8125 10.25C11.8125 9.93936 11.5607 9.68752 11.25 9.68752H10.125C9.81434 9.68752 9.5625 9.43568 9.5625 9.12502L9.5625 6.50002Z" fill="#62215B"></path>
+                              </g>
+                            </g>
+                          </svg>
+                          <p>Режим работы 10:00-21:00</p>
+                        </div>
+                      </div>
+                    </ul>
+                    <div class="sidebar-map__button" data-address-button="data-address-button">
+                      <button class="btn" data-btn="data-btn">выбрать</button>
+                    </div>
+                  </div>
+                  <div class="sidebar-map__map" id="map">
+                    <button class="closeButton sidebar__close" data-sidebar-close="map">
+                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5719 10.5721L29.4281 29.4283M10.5719 29.4283L20 20.0002L29.4281 10.5721" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lk-address-page__inner">
             <sidebar class="sidebar-lk">
               <div class="sidebar-lk__desktop">
                 <h2 class="sidebar-lk__title">Здравствуйте, Спартак</h2>
@@ -860,7 +1061,7 @@
               <div class="sidebar-lk__mobile" aria-hidden="true">
                 <div class="select select-wrapper">
                   <div class="select__button">
-                    <input type="text" readonly="readonly" required="required"/>
+                    <input type="text" readonly="readonly" required="required" placeholder="мои адреса"/>
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M5 7.91675L10 12.9167L15 7.91675" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
@@ -880,88 +1081,103 @@
                 <h2 class="sidebar-lk__title">Здравствуйте, Спартак</h2>
               </div>
             </sidebar>
-            <div class="lk-block">
-              <h1 class="lk-block__title title">мои данные</h1>
-              <form class="lk-block__form">
-                <div class="lk-block__input"> 
-                  <p class="lk-block__name">имя</p>
-                  <div class="input-wrapper" data-input-parent="">
-                    <div class="input-wrapper__placeholder">укажите имя</div>
-                    <input class="input" data-input="" required="required" autocomplete="off" name="" placeholder="укажите имя"/>
-                    <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
-                      <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
+            <div class="lk-pvz lk-mail-block">
+              <div class="lk-pvz__inner">
+                <h1 class="title lk-address__title">Мои адреса</h1>
+                <div class="lk-address__tubs"><a class="lk-address__link">курьерская доставка</a><a class="lk-address__link">пункты выдачи заказов</a><a class="lk-address__link active">почта россии</a>
+                </div>
+                <div class="lk-pvz-empty" data-empty="data-empty">
+                  <p class="lk-pvz-empty__text">список отделений пуст</p>
+                  <div class="lk-pvz-empty__button" data-button-add="data-button-add">
+                    <button class="btn" data-btn="data-btn">Добавить</button>
                   </div>
                 </div>
-                <div class="lk-block__input"> 
-                  <p class="lk-block__name">фамилия</p>
-                  <div class="input-wrapper" data-input-parent="">
-                    <div class="input-wrapper__placeholder">укажите фамилию</div>
-                    <input class="input" data-input="" required="required" autocomplete="off" name="" placeholder="укажите фамилию"/>
-                    <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
-                      <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                  </div>
-                </div>
-                <div class="lk-block__input"> 
-                  <p class="lk-block__name">телефон *</p>
-                  <div class="input-wrapper pointer-events-none" data-input-parent="">
-                    <div class="input-wrapper__placeholder">88005553535</div>
-                    <input class="input" value="" autocomplete="off" placeholder="88005553535"/>
-                    <div class="input-wrapper-phone-data">
-                      <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="Tick">
-                          <path id="Vector" d="M13 1.25L8.95699 6.10161C7.35489 8.02413 6.55384 8.98539 5.5 8.98539C4.44616 8.98539 3.64511 8.02413 2.043 6.10161L1 4.85" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
-                        </g>
-                      </svg>
+                <div class="lk-pvz-add" data-add-window="data-add-window">
+                  <div class="lk-pvz-add__inner"> 
+                    <h3 class="lk-pvz-add__title">добавить отделение</h3>
+                    <p class="lk-pvz-add__description">Населенный пункт *</p>
+                    <div class="lk-pvz-add__input">
+                      <div class="input-wrapper" data-input-parent="" data-input-city="">
+                        <div class="input-wrapper__placeholder">введите значение</div>
+                        <input class="input" data-input="" autocomplete="off" required="required" name="" placeholder="введите значение" data-pvz-input="data-pvz-input"/>
+                        <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
+                          <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                        <div class="input-city"> 
+                          <div class="input-city__inner"> 
+                            <ul>
+                              <li>
+                                <p href="#">Россия, Санкт-Петербург</p>
+                              </li>
+                              <li>
+                                <p href="#">Россия, Санкт-Петербург</p>
+                              </li>
+                              <li>
+                                <p href="#">Россия, Санкт-Петербург</p>
+                              </li>
+                              <li>
+                                <p href="#">Россия, Санкт-Петербург          </p>
+                              </li>
+                              <li>
+                                <p href="#">Россия, Санкт-Петербург</p>
+                              </li>
+                              <li>
+                                <p href="#">Россия, Санкт-Петербург</p>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info">
+                      <div class="info__inner">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g id="Information Circle">
+                            <path id="Vector" d="M11 10V16M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                            <path id="Vector_2" d="M12 7C12 7.55228 11.5523 8 11 8C10.4477 8 10 7.55228 10 7C10 6.44772 10.4477 6 11 6C11.5523 6 12 6.44772 12 7Z" fill="#62215B"></path>
+                          </g>
+                        </svg>
+                        <p>укажите населенный пункт, чтобы выбрать пункт выдачи</p>
+                      </div>
+                    </div>
+                    <div class="button-add">
+                      <div class="button-add__inner">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M3.83301 10.0002H17.1663M10.4997 16.6668V10.0002L10.4997 3.3335" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                        </svg>
+                        <p>Выбрать пункт выдачи</p>
+                      </div>
+                    </div>
+                    <div class="address">
+                      <div class="address__inner">
+                        <div class="address__top">
+                          <p class="address__text">Воронеж, ул. Черняховского, 19, корп. 2, кв. 401</p>
+                        </div>
+                        <div class="address__bottom"> 
+                          <button class="address__delete">
+                            <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g id="Delete 2">
+                                <path id="Vector" d="M13.4317 10.6489L14.4221 10.7868L13.4317 10.6489ZM13.213 12.2198L14.2035 12.3576V12.3576L13.213 12.2198ZM2.78826 12.2198L3.77872 12.0819L2.78826 12.2198ZM2.56965 10.6489L1.5792 10.7868L2.56965 10.6489ZM5.65369 18.1134L5.2649 19.0347H5.2649L5.65369 18.1134ZM3.39655 15.4663L4.3352 15.1214L3.39655 15.4663ZM12.6047 15.4663L13.5434 15.8112L12.6047 15.4663ZM10.3476 18.1134L9.95883 17.192H9.95882L10.3476 18.1134ZM3.16283 7.40476C3.1106 6.85495 2.62254 6.45159 2.07273 6.50383C1.52292 6.55607 1.11956 7.04413 1.1718 7.59394L3.16283 7.40476ZM14.8295 7.59394C14.8817 7.04413 14.4784 6.55607 13.9286 6.50383C13.3788 6.45159 12.8907 6.85495 12.8385 7.40476L14.8295 7.59394ZM14.6673 6.83268C15.2196 6.83268 15.6673 6.38497 15.6673 5.83268C15.6673 5.2804 15.2196 4.83268 14.6673 4.83268V6.83268ZM1.33398 4.83268C0.7817 4.83268 0.333984 5.2804 0.333984 5.83268C0.333984 6.38497 0.7817 6.83268 1.33398 6.83268V4.83268ZM5.33398 14.9993C5.33398 15.5516 5.7817 15.9993 6.33398 15.9993C6.88627 15.9993 7.33398 15.5516 7.33398 14.9993H5.33398ZM7.33398 8.33268C7.33398 7.7804 6.88627 7.33268 6.33398 7.33268C5.7817 7.33268 5.33398 7.7804 5.33398 8.33268H7.33398ZM8.66732 14.9993C8.66732 15.5516 9.11503 15.9993 9.66732 15.9993C10.2196 15.9993 10.6673 15.5516 10.6673 14.9993H8.66732ZM10.6673 8.33268C10.6673 7.7804 10.2196 7.33268 9.66732 7.33268C9.11503 7.33268 8.66732 7.7804 8.66732 8.33268H10.6673ZM11.334 5.83268V6.83268H12.334V5.83268H11.334ZM4.66732 5.83268H3.66732V6.83268H4.66732V5.83268ZM12.4412 10.5111L12.2226 12.0819L14.2035 12.3576L14.4221 10.7868L12.4412 10.5111ZM3.77872 12.0819L3.56011 10.5111L1.5792 10.7868L1.79781 12.3576L3.77872 12.0819ZM8.00065 17.3327C6.69266 17.3327 6.33092 17.3138 6.04248 17.192L5.2649 19.0347C6.01586 19.3516 6.87232 19.3327 8.00065 19.3327V17.3327ZM1.79781 12.3576C2.02819 14.013 2.15966 14.9994 2.4579 15.8112L4.3352 15.1214C4.12966 14.562 4.02353 13.8411 3.77872 12.0819L1.79781 12.3576ZM6.04248 17.192C5.39566 16.9191 4.74043 16.2244 4.3352 15.1214L2.4579 15.8112C2.99476 17.2724 3.96801 18.4874 5.2649 19.0347L6.04248 17.192ZM12.2226 12.0819C11.9778 13.8411 11.8716 14.562 11.6661 15.1214L13.5434 15.8112C13.8416 14.9994 13.9731 14.013 14.2035 12.3576L12.2226 12.0819ZM8.00065 19.3327C9.12898 19.3327 9.98544 19.3516 10.7364 19.0347L9.95882 17.192C9.67038 17.3138 9.30864 17.3327 8.00065 17.3327V19.3327ZM11.6661 15.1214C11.2609 16.2244 10.6056 16.9191 9.95883 17.192L10.7364 19.0347C12.0333 18.4874 13.0065 17.2724 13.5434 15.8112L11.6661 15.1214ZM3.56011 10.5111C3.37456 9.17783 3.23773 8.19305 3.16283 7.40476L1.1718 7.59394C1.25177 8.43564 1.39602 9.47052 1.5792 10.7868L3.56011 10.5111ZM14.4221 10.7868C14.6053 9.47052 14.7495 8.43564 14.8295 7.59394L12.8385 7.40476C12.7636 8.19305 12.6267 9.17782 12.4412 10.5111L14.4221 10.7868ZM14.6673 4.83268H1.33398V6.83268H14.6673V4.83268ZM7.33398 14.9993V8.33268H5.33398V14.9993H7.33398ZM10.6673 14.9993V8.33268H8.66732V14.9993H10.6673ZM10.334 4.99935V5.83268H12.334V4.99935H10.334ZM11.334 4.83268H4.66732V6.83268H11.334V4.83268ZM5.66732 5.83268V4.99935H3.66732V5.83268H5.66732ZM8.00065 2.66602C9.28932 2.66602 10.334 3.71068 10.334 4.99935H12.334C12.334 2.60612 10.3939 0.666016 8.00065 0.666016V2.66602ZM8.00065 0.666016C5.60742 0.666016 3.66732 2.60612 3.66732 4.99935H5.66732C5.66732 3.71068 6.71199 2.66602 8.00065 2.66602V0.666016Z" fill="#62215B"></path>
+                              </g>
+                            </svg>
+                            <p>удалить</p>
+                          </button>
+                          <div class="checkbox">
+                            <label class="container">
+                              <input type="checkbox" data-checkbox-address=""/><span class="checkmark">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M20 7L14.6093 13.4688C12.4732 16.0322 11.4051 17.3139 10 17.3139C8.59488 17.3139 7.52681 16.0322 5.39067 13.4688L4 11.8" stroke="#62215B" stroke-width="2" stroke-linecap="round"></path>
+                                </svg></span>
+                              <p>Адрес по умолчанию</p>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="lk-block__input"> 
-                  <p class="lk-block__name">электронная почта</p>
-                  <div class="input-wrapper" data-input-parent="">
-                    <div class="input-wrapper__placeholder">ваш e-mail</div>
-                    <input class="input" data-input="" required="required" autocomplete="off" name="" placeholder="ваш e-mail" type="email"/>
-                    <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
-                      <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                  </div>
-                </div>
-                <div class="lk-block__input lk-block__input_select">
-                  <div class="input-wrapper" data-input-parent="">
-                    <div class="input-wrapper__placeholder">дата рождения</div>
-                    <input class="input" data-input="" required="required" autocomplete="off" name="" placeholder="дата рождения" data-birthdate="data-birthdate"/>
-                    <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
-                      <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                  </div>
-                  <div class="select select-wrapper">
-                    <div class="select__button">
-                      <input type="text" readonly="readonly" required="required" placeholder="Пол"/>
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 7.91675L10 12.9167L15 7.91675" stroke="#62215B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                      </svg>
-                    </div>
-                    <div class="select__list">
-                      <ul>
-                        <li>
-                          <p>Мужской</p>
-                        </li>
-                        <li>
-                          <p>Женский</p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="lk-block__button"> 
-                  <button class="btn" data-btn="data-btn">Сохранить</button>
-                </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>
