@@ -8,7 +8,7 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <script type="module" crossorigin src="assets/index-124e5ee5.js"></script>
+    <script type="module" crossorigin src="assets/index-25d26943.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body class="isMessage" style="opacity:0">
@@ -568,7 +568,7 @@
                   <div class="statement__form-row">
                     <p>Мной</p>
                     <div class="statement__input">
-                      <input class="fio" type="text" placeholder="ФИО" required="required"/>
+                      <input class="fio" type="text" placeholder="ФИО" required="required" data-parsley-words="data-parsley-words"/>
                     </div>
                     <div class="statement__input">
                       <input class="date" type="text" placeholder="ДАТА" required="required" data-birthdate="data-birthdate"/>
@@ -578,7 +578,7 @@
                   <div class="statement__form-row">
                     <p>Паспорт </p>
                     <div class="statement__input">
-                      <input class="ser" type="text" placeholder="серия и номер" required="required"/>
+                      <input class="ser" type="text" placeholder="серия и номер" required="required" data-parsley-type="number"/>
                     </div>
                     <p>Выдан</p>
                     <div class="statement__input">
@@ -588,13 +588,13 @@
                   <div class="statement__form-row">
                     <p>в интернет-магазине ronnny.com был оплачен заказ №</p>
                     <div class="statement__input">
-                      <input class="ord" type="text" placeholder="номер заказа" required="required"/>
+                      <input class="ord" type="text" placeholder="номер заказа" required="required" data-parsley-type="number"/>
                     </div>
                   </div>
                   <div class="statement__form-row">
                     <p>На сумму </p>
                     <div class="statement__input">
-                      <input class="sum" type="text" placeholder="точная сумма заказа" required="required"/>
+                      <input class="sum" type="text" placeholder="точная сумма заказа" required="required" data-parsley-type="number"/>
                     </div>
                     <p>руб.</p>
                   </div>
@@ -632,7 +632,7 @@
                       <div class="statement__s">
                         <div class="input-wrapper" data-input-parent="">
                           <div class="input-wrapper__placeholder"> Стоимость, руб.</div>
-                          <input class="input" data-input="" required="required" autocomplete="off" name="" placeholder=" Стоимость, руб."/>
+                          <input class="input" data-input="" required="required" autocomplete="off" name="" placeholder=" Стоимость, руб." data-parsley-type="number"/>
                           <svg class="input-wrapper-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
                             <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                             <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
