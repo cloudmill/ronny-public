@@ -9,10 +9,10 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <script type="module" crossorigin src="assets/index-b0a4b9d3.js"></script>
+    <script type="module" crossorigin src="assets/index-63b95c58.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
-  <body style="opacity:0">
+  <body class="isMessage" style="opacity:0">
     <div class="wrapper">
       <div class="all-modals" style="opacity:0">
         <div class="modal" data-modal="statement">
@@ -38,6 +38,22 @@
       <header class="header">
         <div class="header__inner">
           <div class="header-block">
+            <div class="message">
+              <div class="message__inner">
+                <div class="message__block">
+                  <p class="--active">-1000 ₽ на заказ по промокоду «скидка»</p>
+                  <p>-1000 ₽ на заказ по промокоду "Клаудмил"</p>
+                  <p> Бесценно по промокоду "Спартак"</p>
+                </div>
+                <div class="message__close"> 
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Add">
+                      <path id="Vector" d="M4.22876 4.22876L11.7712 11.7712M4.22876 11.7712L8 7.99999L11.7712 4.22876" stroke="#62215B" stroke-width="1.5" stroke-linecap="round"></path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
             <div class="header-block__inner">
               <div class="search">
                 <div class="overlay"></div>
@@ -541,7 +557,40 @@
               <h1 class="title statement__title">Заявление на возврат</h1>
               <form class="statement__form">
                 <h2 class="statement__subtitle">Пожалуйста, ознакомьтесь с условиями возврата ниже. Укажите возвращаемый товар и Ваши личные данные для получения денежных средств.</h2>
-                <div class="statement__block statement__block_first">
+                <div class="statement__block statement__block_first t-min">
+                  <div class="statement__form-row">
+                    <p>Мной</p>
+                    <div class="statement__input">
+                      <input class="fio" type="text" placeholder="ФИО" required="required" data-parsley-words="data-parsley-words"/>
+                    </div>
+                    <div class="statement__input">
+                      <input class="date" type="text" placeholder="ДАТА" required="required" data-birthdate="data-birthdate"/>
+                    </div>
+                    <p>даты рождения,</p>
+                  </div>
+                  <div class="statement__form-row">
+                    <p>Паспорт </p>
+                    <div class="statement__input">
+                      <input class="ser" type="text" placeholder="серия и номер" required="required" data-parsley-type="number"/>
+                    </div>
+                    <p>Выдан</p>
+                    <input class="pas" type="text" placeholder="где был выдан паспорт" required="required"/>
+                  </div>
+                  <div class="statement__form-row">
+                    <p>в интернет-магазине ronnny.com был оплачен заказ №</p>
+                    <div class="statement__input">
+                      <input class="ord" type="text" placeholder="номер заказа" required="required" data-parsley-type="number"/>
+                    </div>
+                  </div>
+                  <div class="statement__form-row">
+                    <p>На сумму </p>
+                    <div class="statement__input">
+                      <input class="sum" type="text" placeholder="точная сумма заказа" required="required" data-parsley-type="number"/>
+                    </div>
+                    <p>руб.</p>
+                  </div>
+                </div>
+                <div class="statement__block statement__block_first t-max">
                   <div class="statement__form-row">
                     <p>Мной</p>
                     <div class="statement__input">
