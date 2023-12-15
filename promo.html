@@ -9,7 +9,7 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <script type="module" crossorigin src="assets/index-c310ed5c.js"></script>
+    <script type="module" crossorigin src="assets/index-4b824c92.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body style="opacity:0">
@@ -209,30 +209,32 @@
                     </div>
                     <button class="btn login-registration__button" data-btn="data-btn" disabled="disabled" data-btn-phone="data-btn-phone">Далее</button>
                   </form>
-                  <form class="form login-sms login__block" data-form-sms="data-form-sms">
-                    <p class="login-sms__text" data-text-sms="data-text-sms"></p>
-                    <div class="input-wrapper" data-input-parent="">
-                      <div class="input-wrapper__placeholder">код из смс</div>
-                      <input class="input" pattern="[0-9]*" data-input="" autocomplete="off" required="required" oninput="this.value = this.value.replace(/[^0-9]/g, '')" placeholder="код из смс"/>
-                      <svg class="input-wrapper-svg input-reset" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
-                        <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                      </svg>
-                      <div class="spinner input-wrapper__spinner">
-                        <svg id="loader-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                          <path fill="#000" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
-                            <animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform>
-                          </path>
+                  <div class="login-sms-wrapper">
+                    <form class="form login-sms login__block" data-form-sms="data-form-sms">
+                      <p class="login-sms__text" data-text-sms="data-text-sms"></p>
+                      <div class="input-wrapper" data-input-parent="">
+                        <div class="input-wrapper__placeholder">код из смс</div>
+                        <input class="input" pattern="[0-9]*" data-input="" autocomplete="off" required="required" oninput="this.value = this.value.replace(/[^0-9]/g, '')" placeholder="код из смс"/>
+                        <svg class="input-wrapper-svg input-reset" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
+                          <path d="M18.15 18.15L29.85 29.85" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M18.15 29.85L29.85 18.15" stroke="#A5B7B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
+                        <div class="spinner input-wrapper__spinner">
+                          <svg id="loader-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                            <path fill="#000" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
+                              <animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform>
+                            </path>
+                          </svg>
+                        </div>
                       </div>
-                    </div>
-                    <div class="login-sms__bottom">
-                      <div class="login-sms__block login-sms__time" data-sms-time="data-sms-time">
-                        <p>Повторная отправка через <span>0:59</span></p>
+                      <div class="login-sms__bottom">
+                        <div class="login-sms__block login-sms__time" data-sms-time="data-sms-time">
+                          <p>Повторная отправка через <span>0:59</span></p>
+                        </div>
+                        <div class="login-sms__block login-sms__link" data-sms-link="data-sms-link"><a>Запросить новый код</a></div>
                       </div>
-                      <div class="login-sms__block login-sms__link" data-sms-link="data-sms-link"><a>Запросить новый код</a></div>
-                    </div>
-                  </form>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
